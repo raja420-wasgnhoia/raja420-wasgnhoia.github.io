@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sequences and Series - Formula Hub</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: black;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+        }
+
+        .section-title {
+            margin: 30px 20px 15px;
+            font-size: 28px;
+        }
+
+        .formula-box {
+            margin: 0 20px;
+            padding: 10px 20px;
+            background: #fff7fa;
+            border: 3px solid #f8bbd0;
+            border-radius: 18px;
+        }
+
+        .formula {
+            padding: 16px 5px;
+            font-size: 19px;
+            border-bottom: 1px solid #f3c1d4;
+        }
+
+        .formula:last-child {
+            border-bottom: none;
+        }
+
+        .main {
+            font-weight: bold;
+        }
+    .back-button {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 20px;
+    padding: 8px 16px;
+    background: #fff0f5;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+    .copy-btn {
+    float: right;
+    background: white;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    padding: 5px 9px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+        .sub-title {
+            color: #ad1457;
+            margin: 25px 20px 10px;
+            font-size: 22px;
+        }
+
+        .key-points {
+            margin: 30px 20px;
+            padding: 20px;
+            background: #fff0f5;
+            border-left: 5px solid #d81b60;
+            border-radius: 12px;
+        }
+
+        .key-points h2 {
+            color: #ad1457;
+        }
+
+        .key-points p {
+            font-size: 17px;
+            margin: 12px 0;
+        }
+    </style>
+</head>
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+<body>
+
+    <header>
+        <h1>Chapter 4 — Sequences and Series</h1>
+        <a href="1.html" class="back-button">← Back to Chapters</a>
+    </header>
+
+    <h2 class="section-title">Formulas</h2>
+
+    <div class="formula-box">
+
+      
+
+    <div class="formula">
+        <span class="main">aₙ</span> = a₁ + (n − 1)d
+        <button class="copy-btn" onclick="copyFormula(this, 'aₙ = a₁ + (n − 1)d')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">d</span> = A − a = b − A
+        <button class="copy-btn" onclick="copyFormula(this, 'd = A − a = b − A')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">A</span> = (a + b)/2
+        <button class="copy-btn" onclick="copyFormula(this, 'A = (a + b)/2')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Sₙ</span> = n/2 [a₁ + aₙ]
+        <button class="copy-btn" onclick="copyFormula(this, 'Sₙ = n/2 [a₁ + aₙ]')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Sₙ</span> = n/2 [2a₁ + (n − 1)d]
+        <button class="copy-btn" onclick="copyFormula(this, 'Sₙ = n/2 [2a₁ + (n − 1)d]')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">aₙ</span> = a₁rⁿ⁻¹
+        <button class="copy-btn" onclick="copyFormula(this, 'aₙ = a₁rⁿ⁻¹')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">aₙ</span> = a₁rⁿ⁻¹
+        <br>
+        (For Geometric Sequence)
+        <button class="copy-btn" onclick="copyFormula(this, 'aₙ = a₁rⁿ⁻¹')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">G</span> = √(ab)
+        <button class="copy-btn" onclick="copyFormula(this, 'G = √(ab)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Sₙ</span> = a₁(1 − rⁿ)/(1 − r)
+        <button class="copy-btn" onclick="copyFormula(this, 'Sₙ = a₁(1 − rⁿ)/(1 − r)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">S∞</span> = a₁/(1 − r)
+        <button class="copy-btn" onclick="copyFormula(this, 'S∞ = a₁/(1 − r)')">📋</button>
+    </div>
+
+</div>
+
+    <h2 class="sub-title">For Harmonic Sequence</h2>
+
+    <div class="formula-box">
+
+    <div class="formula">
+        <span class="main">1/aₙ</span> = 1/[a₁ + (n − 1)d]
+        <button class="copy-btn" onclick="copyFormula(this, '1/aₙ = 1/[a₁ + (n − 1)d]')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">H</span> = 2ab/(a + b)
+        <button class="copy-btn" onclick="copyFormula(this, 'H = 2ab/(a + b)')">📋</button>
+    </div>
+
+</div>
+
+    <h2 class="sub-title">For Arithmetico-Geometric Sequence</h2>
+
+    
+<div class="formula-box">
+
+    <div class="formula">
+        <span class="main">S∞</span> = a/(1 − r) + dr/(1 − r)²
+        <button class="copy-btn" onclick="copyFormula(this, 'S∞ = a/(1 − r) + dr/(1 − r)²')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Sₙ</span> =
+        a/(1 − r)
+        + dr(1 − rⁿ)/(1 − r)²
+        − (a + nd)rⁿ/(1 − r)
+        <button class="copy-btn" onclick="copyFormula(this, 'Sₙ = a/(1 − r) + dr(1 − rⁿ)/(1 − r)² − (a + nd)rⁿ/(1 − r)')">📋</button>
+    </div>
+
+</div>
+    <div class="key-points">
+
+        <h2>📌 Key Points</h2>
+
+        <p>
+            • <b>Finite Sequence:</b>
+            A sequence with a countable number of terms and a last term.
+        </p>
+
+        <p>
+            • <b>Infinite Sequence:</b>
+            A sequence that continues without bound.
+        </p>
+
+        <p>
+            • A formula for the nth term is called the
+            <b>general term</b>.
+        </p>
+
+        <p>
+            • <b>Σ</b><sub>k=1</sub><sup>n</sup>
+            [kᵐ − (k − 1)ᵐ] = nᵐ
+        </p>
+
+        <p>
+            • <b>Σ</b><sub>k=1</sub><sup>n</sup> 1 = n
+        </p>
+
+        <p>
+            • <b>Σ</b><sub>k=1</sub><sup>n</sup> k =
+            n(n + 1)/2
+        </p>
+
+        <p>
+            • <b>Σ</b><sub>k=1</sub><sup>n</sup> k³ =
+            [n(n + 1)/2]²
+        </p>
+
+    </div>
+
+</body>
+</html>

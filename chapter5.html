@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Polynomial and Rational Functions - Formula Hub</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: black;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+        }
+
+        .section-title {
+            margin: 30px 20px 15px;
+            font-size: 28px;
+        }
+
+        .formula-box {
+            margin: 0 20px;
+            padding: 10px 20px;
+            background: #fff7fa;
+            border: 3px solid #f8bbd0;
+            border-radius: 18px;
+        }
+
+        .formula {
+            padding: 16px 5px;
+            font-size: 19px;
+            border-bottom: 1px solid #f3c1d4;
+        }
+
+        .formula:last-child {
+            border-bottom: none;
+        }
+
+        .main {
+            font-weight: bold;
+        }
+    .back-button {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 20px;
+    padding: 8px 16px;
+    background: #fff0f5;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+    .copy-btn {
+    float: right;
+    background: white;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    padding: 5px 9px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+        .key-points {
+            margin: 30px 20px;
+            padding: 20px;
+            background: #fff0f5;
+            border-left: 5px solid #d81b60;
+            border-radius: 12px;
+        }
+
+        .key-points h2 {
+            color: #ad1457;
+        }
+
+        .key-points p {
+            font-size: 17px;
+            margin: 12px 0;
+        }
+    </style>
+</head>
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+<body>
+
+    <header>
+        <h1>Chapter 5 — Polynomial and Rational Functions</h1>
+        <a href="1.html" class="back-button">← Back to Chapters</a>
+    </header>
+
+    <h2 class="section-title">Formulas</h2>
+
+    <div class="formula-box">
+
+    <div class="formula">
+        <span class="main">Dividend</span> =
+        Divisor × Quotient + Remainder
+        <button class="copy-btn" onclick="copyFormula(this, 'Dividend = Divisor × Quotient + Remainder')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">p(x)</span> =
+        (x − c)q(x) + r
+        <br>
+        where <span class="main">r</span> = p(c)
+        <button class="copy-btn" onclick="copyFormula(this, 'p(x) = (x − c)q(x) + r, where r = p(c)')">📋</button>
+    </div>
+
+</div>
+
+    <div class="key-points">
+
+        <h2>📌 Key Points</h2>
+
+        <p>
+            • Exponent of the variable must be a
+            <b>whole number</b> for a polynomial.
+        </p>
+
+        <p>
+            • <b>P(x)/Q(x)</b> is rational only if
+            <b>Q(x) ≠ 0</b>.
+        </p>
+
+        <p>
+            • Every factor is a divisor, but every divisor is not a factor.
+        </p>
+
+        <p>
+            • <b>Remainder = p(c)</b> when divided by <b>x − c</b>.
+        </p>
+
+        <p>
+            • If <b>p(c) = 0</b>, then <b>x − c</b> is a factor.
+        </p>
+
+    </div>
+
+</body>
+</html>

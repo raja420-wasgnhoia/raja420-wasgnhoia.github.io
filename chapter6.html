@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Permutation and Combination - Formula Hub</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: black;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+        }
+
+        .section-title {
+            margin: 30px 20px 15px;
+            font-size: 28px;
+        }
+
+        .formula-box {
+            margin: 0 20px;
+            padding: 10px 20px;
+            background: #fff7fa;
+            border: 3px solid #f8bbd0;
+            border-radius: 18px;
+        }
+
+        .formula {
+            padding: 16px 5px;
+            font-size: 19px;
+            border-bottom: 1px solid #f3c1d4;
+        }
+
+        .formula:last-child {
+            border-bottom: none;
+        }
+
+        .main {
+            font-weight: bold;
+        }
+    .back-button {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 20px;
+    padding: 8px 16px;
+    background: #fff0f5;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.copy-btn {
+    float: right;
+    background: white;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    padding: 5px 9px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+        .key-points {
+            margin: 30px 20px;
+            padding: 20px;
+            background: #fff0f5;
+            border-left: 5px solid #d81b60;
+            border-radius: 12px;
+        }
+
+        .key-points h2 {
+            color: #ad1457;
+        }
+
+        .key-points p {
+            font-size: 17px;
+            margin: 12px 0;
+        }
+    </style>
+</head>
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+<body>
+
+    <header>
+        <h1>Chapter 6 — Permutation and Combination</h1><a href="1.html" class="back-button">← Back to Chapters</a>
+    </header>
+
+    <h2 class="section-title">Formulas</h2>
+
+    <div class="formula-box">
+
+    <div class="formula">
+        <span class="main">n!</span> = n(n − 1)(n − 2) ··· 1
+        <button class="copy-btn" onclick="copyFormula(this, 'n! = n(n − 1)(n − 2) ··· 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">0!</span> = 1
+        <button class="copy-btn" onclick="copyFormula(this, '0! = 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">(n + 1)!</span> = (n + 1)n!
+        <button class="copy-btn" onclick="copyFormula(this, '(n + 1)! = (n + 1)n!')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">ⁿPᵣ</span> = n!/(n − r)!
+        <button class="copy-btn" onclick="copyFormula(this, 'ⁿPᵣ = n!/(n − r)!')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">ⁿPₙ</span> = n!
+        <button class="copy-btn" onclick="copyFormula(this, 'ⁿPₙ = n!')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Permutation of alike objects</span> =
+        n!/(n₁! n₂! ··· nₖ!)
+        <button class="copy-btn" onclick="copyFormula(this, 'Permutation of alike objects = n!/(n₁! n₂! ··· nₖ!)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Circular permutation</span> = (n − 1)!
+        <button class="copy-btn" onclick="copyFormula(this, 'Circular permutation = (n − 1)!')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">ⁿCᵣ</span> = n!/[r!(n − r)!]
+        <button class="copy-btn" onclick="copyFormula(this, 'ⁿCᵣ = n!/[r!(n − r)!]')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">ⁿCᵣ</span> = ⁿPᵣ/r!
+        <button class="copy-btn" onclick="copyFormula(this, 'ⁿCᵣ = ⁿPᵣ/r!')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">ⁿC₀</span> = 1
+        <button class="copy-btn" onclick="copyFormula(this, 'ⁿC₀ = 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">ⁿCₙ</span> = 1
+        <button class="copy-btn" onclick="copyFormula(this, 'ⁿCₙ = 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">ⁿC₁</span> = n
+        <button class="copy-btn" onclick="copyFormula(this, 'ⁿC₁ = n')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">ⁿCᵣ</span> = ⁿCₙ₋ᵣ
+        <button class="copy-btn" onclick="copyFormula(this, 'ⁿCᵣ = ⁿCₙ₋ᵣ')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">ⁿCᵣ + ⁿCᵣ₋₁</span> = ⁿ⁺¹Cᵣ
+        <button class="copy-btn" onclick="copyFormula(this, 'ⁿCᵣ + ⁿCᵣ₋₁ = ⁿ⁺¹Cᵣ')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">r · ⁿCᵣ</span> = n · ⁿ⁻¹Cᵣ₋₁
+        <button class="copy-btn" onclick="copyFormula(this, 'r · ⁿCᵣ = n · ⁿ⁻¹Cᵣ₋₁')">📋</button>
+    </div>
+
+</div>
+
+    <div class="key-points">
+
+        <h2>📌 Key Points</h2>
+
+        <p>• In <b>permutation</b>, order matters.</p>
+
+        <p>• In <b>combination</b>, order does not matter.</p>
+
+        <p>• <b>ⁿPᵣ ≥ ⁿCᵣ</b> for the relevant positive values of r.</p>
+
+        <p>• <b>(n + n)! ≠ n! + n!</b></p>
+
+        <p>• <b>(n × n)! ≠ n! × n!</b></p>
+
+        <p>• If <b>r = n</b>, then <b>ⁿPₙ = n!</b></p>
+
+        <p>• If objects are alike, divide by
+        <b>n₁! n₂! ···</b></p>
+
+        <p>• In a line arrangement = <b>n!</b></p>
+
+        <p>• In a circular arrangement = <b>(n − 1)!</b></p>
+
+        <p>• <b>ⁿC₀ = 1</b> and <b>ⁿCₙ = 1</b></p>
+
+    </div>
+
+</body>
+</html>

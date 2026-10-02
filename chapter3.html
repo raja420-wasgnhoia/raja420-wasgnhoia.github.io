@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vectors - Formula Hub</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: black;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+        }
+
+        .section-title {
+            margin: 30px 20px 15px;
+            font-size: 28px;
+        }
+
+        .formula-box {
+            margin: 0 20px;
+            padding: 10px 20px;
+            background: #fff7fa;
+            border: 3px solid #f8bbd0;
+            border-radius: 18px;
+        }
+    .main {
+    font-weight: bold;
+}
+    .back-button {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 20px;
+    padding: 8px 16px;
+    background: #fff0f5;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+    .copy-btn {
+    float: right;
+    background: white;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    padding: 5px 9px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+        .formula {
+            padding: 16px 5px;
+            font-size: 19px;
+            border-bottom: 1px solid #f3c1d4;
+        }
+
+        .formula:last-child {
+            border-bottom: none;
+        }
+
+        .key-points {
+            margin: 30px 20px;
+            padding: 20px;
+            background: #fff0f5;
+            border-left: 5px solid #d81b60;
+            border-radius: 12px;
+        }
+
+        .key-points h2 {
+            color: #ad1457;
+        }
+
+        .key-points p {
+            font-size: 17px;
+            margin: 12px 0;
+        }
+
+        .definitions {
+            margin: 30px 20px;
+            padding: 20px;
+            background: #fff7fa;
+            border: 3px solid #f8bbd0;
+            border-radius: 18px;
+        }
+
+        .definitions h2 {
+            color: #ad1457;
+        }
+
+        .definitions p {
+            font-size: 17px;
+            margin: 14px 0;
+        }
+    </style>
+</head>
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+<body>
+
+    <header>
+        <h1>Chapter 3 — Vectors</h1>
+        <a href="1.html" class="back-button">← Back to Chapters</a>
+    </header>
+
+    <h2 class="section-title">Formulas</h2>
+
+    <div class="formula-box">
+
+    <div class="formula">
+        <span class="main">r</span> = x<i>i</i> + y<i>j</i> + z<i>k</i>
+        <button class="copy-btn" onclick="copyFormula(this, 'r = xi + yj + zk')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">|r|</span> = √(x² + y² + z²)
+        <button class="copy-btn" onclick="copyFormula(this, '|r| = √(x² + y² + z²)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">r</span> = (mb + na)/(m + n)
+        <button class="copy-btn" onclick="copyFormula(this, 'r = (mb + na)/(m + n)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">r</span> = (a + b)/2
+        <button class="copy-btn" onclick="copyFormula(this, 'r = (a + b)/2')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">r</span> = (2b − 3a)/(2 − 3)
+        <button class="copy-btn" onclick="copyFormula(this, 'r = (2b − 3a)/(2 − 3)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">r̂</span> = r/|r|
+        <button class="copy-btn" onclick="copyFormula(this, 'r̂ = r/|r|')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">λ</span> = x₁/x₂ = y₁/y₂ = z₁/z₂
+        <button class="copy-btn" onclick="copyFormula(this, 'λ = x₁/x₂ = y₁/y₂ = z₁/z₂')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">λr</span> = λ(x<i>i</i> + y<i>j</i> + z<i>k</i>)
+        <button class="copy-btn" onclick="copyFormula(this, 'λr = λ(xi + yj + zk)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">a · b</span> = |a||b| cos θ
+        <button class="copy-btn" onclick="copyFormula(this, 'a · b = |a||b| cos θ')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">cos α</span> = |OA|/|OP| = x/|r|
+        <button class="copy-btn" onclick="copyFormula(this, 'cos α = |OA|/|OP| = x/|r|')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">cos β</span> = |OB|/|OP| = y/|r|
+        <button class="copy-btn" onclick="copyFormula(this, 'cos β = |OB|/|OP| = y/|r|')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">cos γ</span> = |OC|/|OP| = z/|r|
+        <button class="copy-btn" onclick="copyFormula(this, 'cos γ = |OC|/|OP| = z/|r|')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">l</span> = cos α
+        <button class="copy-btn" onclick="copyFormula(this, 'l = cos α')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">m</span> = cos β
+        <button class="copy-btn" onclick="copyFormula(this, 'm = cos β')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">n</span> = cos γ
+        <button class="copy-btn" onclick="copyFormula(this, 'n = cos γ')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">l² + m² + n²</span> = 1
+        <button class="copy-btn" onclick="copyFormula(this, 'l² + m² + n² = 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">cos θ</span> = (a · b)/(|a||b|)
+        <button class="copy-btn" onclick="copyFormula(this, 'cos θ = (a · b)/(|a||b|)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">θ</span> = cos⁻¹[(a · b)/(|a||b|)]
+        <button class="copy-btn" onclick="copyFormula(this, 'θ = cos⁻¹[(a · b)/(|a||b|)]')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">θ</span> = cos⁻¹[(a₁b₁ + a₂b₂ + a₃b₃) /
+        (√(a₁² + a₂² + a₃²) √(b₁² + b₂² + b₃²))]
+        <button class="copy-btn" onclick="copyFormula(this, 'θ = cos⁻¹[(a₁b₁ + a₂b₂ + a₃b₃)/(√(a₁² + a₂² + a₃²) √(b₁² + b₂² + b₃²))]')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">cos(α − β)</span> =
+        cos α cos β + sin α sin β
+        <button class="copy-btn" onclick="copyFormula(this, 'cos(α − β) = cos α cos β + sin α sin β')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Area of triangle</span> = ½|a × b|
+        <button class="copy-btn" onclick="copyFormula(this, 'Area of triangle = ½|a × b|')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Volume of Tetrahedron</span> = ⅙[a · (b × c)]
+        <button class="copy-btn" onclick="copyFormula(this, 'Volume of Tetrahedron = ⅙[a · (b × c)]')">📋</button>
+    </div>
+
+</div>
+            
+
+    <div class="definitions">
+
+        <h2>📖 Definitions</h2>
+
+        <p>• <b>Unit Vector:</b> Vector with magnitude 1 in the direction of r.</p>
+
+        <p>• <b>Scalar Multiplication:</b>
+        λv = (λx)i + (λy)j + (λz)k</p>
+
+        <p>• <b>Parallel Vectors:</b>
+        r₁ = λr₂ for non-zero scalar λ.</p>
+
+        <p>• <b>Zero Vector:</b> All components are zero.</p>
+
+        <p>• If θ is the angle between two non-zero vectors a and b.</p>
+
+    </div>
+
+    <div class="key-points">
+
+        <h2>📌 Key Points</h2>
+
+        <p>• Position vector of P(x, y, z) is OP = xi + yj + zk.</p>
+
+        <p>• If λ is positive, same direction. If λ is negative, opposite direction.</p>
+
+        <p>• Every vector has an opposite vector; their sum is zero.</p>
+
+        <p>• 0 is identity for vector addition. Adding zero vector doesn't change vector.</p>
+
+        <p>• Same vectors = 1 (θ = 0°).</p>
+
+        <p>• Different vectors = 0 (θ = 90°).</p>
+
+        <p>• Sum of squares of direction cosines of any vector is always 1.</p>
+
+        <p>• sin(α − β) = sin α cos β − cos α sin β.</p>
+
+    </div>
+
+</body>
+</html>

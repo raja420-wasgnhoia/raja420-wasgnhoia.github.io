@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mathematical Induction and Binomial Theorem - Formula Hub</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: black;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+        }
+
+        .section-title {
+            margin: 30px 20px 15px;
+            font-size: 28px;
+        }
+
+        .formula-box {
+            margin: 0 20px;
+            padding: 10px 20px;
+            background: #fff7fa;
+            border: 3px solid #f8bbd0;
+            border-radius: 18px;
+        }
+
+        .formula {
+            padding: 16px 5px;
+            font-size: 19px;
+            border-bottom: 1px solid #f3c1d4;
+            line-height: 1.6;
+        }
+
+        .formula:last-child {
+            border-bottom: none;
+        }
+
+        .main {
+            font-weight: bold;
+        }
+    .back-button {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 20px;
+    padding: 8px 16px;
+    background: #fff0f5;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.copy-btn {
+    float: right;
+    background: white;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    padding: 5px 9px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+        .key-points {
+            margin: 30px 20px;
+            padding: 20px;
+            background: #fff0f5;
+            border-left: 5px solid #d81b60;
+            border-radius: 12px;
+        }
+
+        .key-points h2 {
+            color: #ad1457;
+        }
+
+        .key-points p {
+            font-size: 17px;
+            margin: 12px 0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+<body>
+
+    <header>
+        <h1>Chapter 7 — Mathematical Induction and Binomial Theorem</h1>
+        <a href="1.html" class="back-button">← Back to Chapters</a>
+    </header>
+
+    <h2 class="section-title">Formulas</h2>
+<div class="formula-box">
+
+    <div class="formula">
+        <span class="main">Σ<sub>k=1</sub><sup>n</sup> k</span>
+        = n(n + 1)/2
+        <button class="copy-btn" onclick="copyFormula(this, 'Σ(k=1 to n) k = n(n + 1)/2')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Σ<sub>k=1</sub><sup>n</sup> k²</span>
+        = n(n + 1)(2n + 1)/6
+        <button class="copy-btn" onclick="copyFormula(this, 'Σ(k=1 to n) k² = n(n + 1)(2n + 1)/6')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Σ<sub>k=1</sub><sup>n</sup> k³</span>
+        = [n(n + 1)/2]²
+        <button class="copy-btn" onclick="copyFormula(this, 'Σ(k=1 to n) k³ = [n(n + 1)/2]²')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Σ<sub>k=1</sub><sup>n</sup> 1/[k(k + 1)]</span>
+        = n/(n + 1)
+        <button class="copy-btn" onclick="copyFormula(this, 'Σ(k=1 to n) 1/[k(k + 1)] = n/(n + 1)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">(a + b)²</span>
+        = a² + 2ab + b²
+        <button class="copy-btn" onclick="copyFormula(this, '(a + b)² = a² + 2ab + b²')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">(a + b)³</span>
+        = a³ + 3a²b + 3ab² + b³
+        <button class="copy-btn" onclick="copyFormula(this, '(a + b)³ = a³ + 3a²b + 3ab² + b³')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">C(k + 1, r)</span>
+        = C(k, r) + C(k, r − 1)
+        <button class="copy-btn" onclick="copyFormula(this, 'C(k + 1, r) = C(k, r) + C(k, r − 1)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">T<sub>r+1</sub></span>
+        = C(n, r)aⁿ⁻ʳbʳ
+        <button class="copy-btn" onclick="copyFormula(this, 'T(r+1) = C(n, r)a^(n−r)b^r')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">T<sub>r+1</sub></span>
+        = C(10, r)x¹⁰⁻ʳ(2/x)ʳ
+        <button class="copy-btn" onclick="copyFormula(this, 'T(r+1) = C(10, r)x^(10−r)(2/x)^r')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">(1 + x)ⁿ</span>
+        = C(n,0) + C(n,1)x + ... + C(n,n)xⁿ
+        <button class="copy-btn" onclick="copyFormula(this, '(1 + x)^n = C(n,0) + C(n,1)x + ... + C(n,n)x^n')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">(a + b)ⁿ</span>
+        = Σ C(n,r)aⁿ⁻ʳbʳ
+        <button class="copy-btn" onclick="copyFormula(this, '(a + b)^n = Σ C(n,r)a^(n−r)b^r')">📋</button>
+    </div>
+
+</div>
+
+    <div class="key-points">
+
+        <h2>📌 Key Points</h2>
+
+        <p>• Mathematical induction has two main steps: Base Case and Inductive Step.</p>
+
+        <p>• In the base case, we prove the formula for n = 1.</p>
+
+        <p>• In the inductive step, assume the formula is true for n = k and prove it for n = k + 1.</p>
+
+        <p>• If both steps are proved, the formula is true for all natural numbers.</p>
+
+        <p>• Pascal's Triangle gives the coefficients of the binomial expansion.</p>
+
+        <p>• Each number in Pascal's Triangle is the sum of the two numbers directly above it.</p>
+
+        <p>• In the expansion of (a + b)<sup>n</sup>, the total number of terms is n + 1.</p>
+
+        <p>• The sum of the powers of a and b in every term is n.</p>
+
+        <p>• The coefficients from the beginning and the end are equal.</p>
+
+        <p>• For finding remainder, convert the number into (a + 1)<sup>n</sup> or (a − 1)<sup>n</sup> form.</p>
+
+        <p>• For finding unit or last digits, use the binomial theorem to separate large powers into multiples of 10 or 100.</p>
+
+    </div>
+
+</body>
+</html>

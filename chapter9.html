@@ -1,0 +1,396 @@
+
+   <!DOCTYPE html>  <html>  
+<head>  
+    <title>Trigonometric Functions and Their Graphs - Formula Hub</title>  <style>  
+    body {  
+        margin: 0;  
+        font-family: Arial, sans-serif;  
+        background: white;  
+        color: black;  
+    }  
+
+    header {  
+        background: #f8bbd0;  
+        padding: 25px 15px;  
+        text-align: center;  
+    }  
+
+    h1 {  
+        color: #ad1457;  
+        margin: 0;  
+    }  
+
+    .section-title {  
+        margin: 30px 20px 15px;  
+        font-size: 28px;  
+    }  
+
+    .formula-box {  
+        margin: 0 20px;  
+        padding: 10px 20px;  
+        background: #fff7fa;  
+        border: 3px solid #f8bbd0;  
+        border-radius: 18px;  
+    }  
+
+    .formula {  
+        padding: 16px 5px;  
+        font-size: 19px;  
+        border-bottom: 1px solid #f3c1d4;  
+        line-height: 1.7;  
+    }  
+
+    .formula:last-child {  
+        border-bottom: none;  
+    }  
+
+    .main {  
+        font-weight: bold;  
+    }  
+    .back-button {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 20px;
+    padding: 8px 16px;
+    background: #fff0f5;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.copy-btn {
+    float: right;
+    background: white;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    padding: 5px 9px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+    .key-points {  
+        margin: 30px 20px;  
+        padding: 20px;  
+        background: #fff0f5;  
+        border-left: 5px solid #d81b60;  
+        border-radius: 12px;  
+    }  
+
+    .key-points h2 {  
+        color: #ad1457;  
+    }  
+
+    .key-points p {  
+        font-size: 17px;  
+        margin: 12px 0;  
+        line-height: 1.5;  
+    }  
+</style>
+
+</head>  <body>  <header>  
+    <h1>Chapter 9 — Trigonometric Functions and Their Graphs</h1>  
+    <a href="1.html" class="back-button">← Back to Chapters</a>
+</header>  
+
+<h2 class="section-title">Formulas</h2>
+   
+
+    <div class="formula-box">
+
+    <div class="formula">
+        <span class="main">sin θ</span> = y/r
+        <button class="copy-btn" onclick="copyFormula(this, 'sin θ = y/r')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">cos θ</span> = x/r
+        <button class="copy-btn" onclick="copyFormula(this, 'cos θ = x/r')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">−1</span> ≤ sin θ ≤ <span class="main">1</span>
+        <button class="copy-btn" onclick="copyFormula(this, '−1 ≤ sin θ ≤ 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">−1</span> ≤ cos θ ≤ <span class="main">1</span>
+        <button class="copy-btn" onclick="copyFormula(this, '−1 ≤ cos θ ≤ 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">|sec θ|</span> ≥ 1
+        <button class="copy-btn" onclick="copyFormula(this, '|sec θ| ≥ 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">|csc θ|</span> ≥ 1
+        <button class="copy-btn" onclick="copyFormula(this, '|csc θ| ≥ 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">csc θ</span> = 1/sin θ
+        <button class="copy-btn" onclick="copyFormula(this, 'csc θ = 1/sin θ')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">sec θ</span> = 1/cos θ
+        <button class="copy-btn" onclick="copyFormula(this, 'sec θ = 1/cos θ')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">f(x+p)</span> = f(x)
+        <button class="copy-btn" onclick="copyFormula(this, 'f(x+p) = f(x)')">📋</button>
+    </div>
+
+    <div class="formula">
+        If period of f(x) is <span class="main">p</span>,
+        then period of f(ax+b) is <span class="main">p/|a|</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'If period of f(x) is p, then period of f(ax+b) is p/|a|')">📋</button>
+    </div>
+
+    <div class="formula">
+        Period of <span class="main">sin x</span> = 2π
+        <button class="copy-btn" onclick="copyFormula(this, 'Period of sin x = 2π')">📋</button>
+    </div>
+
+    <div class="formula">
+        Period of <span class="main">cos x</span> = 2π
+        <button class="copy-btn" onclick="copyFormula(this, 'Period of cos x = 2π')">📋</button>
+    </div>
+
+    <div class="formula">
+        Period of <span class="main">tan x</span> = π
+        <button class="copy-btn" onclick="copyFormula(this, 'Period of tan x = π')">📋</button>
+    </div>
+
+    <div class="formula">
+        Period of <span class="main">cot x</span> = π
+        <button class="copy-btn" onclick="copyFormula(this, 'Period of cot x = π')">📋</button>
+    </div>
+
+    <div class="formula">
+        Period of <span class="main">sec x</span> = 2π
+        <button class="copy-btn" onclick="copyFormula(this, 'Period of sec x = 2π')">📋</button>
+    </div>
+
+    <div class="formula">
+        Period of <span class="main">csc x</span> = 2π
+        <button class="copy-btn" onclick="copyFormula(this, 'Period of csc x = 2π')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Maximum</span> of a + b sin θ = a + |b|
+        <button class="copy-btn" onclick="copyFormula(this, 'Maximum of a + b sin θ = a + |b|')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Minimum</span> of a + b sin θ = a − |b|
+        <button class="copy-btn" onclick="copyFormula(this, 'Minimum of a + b sin θ = a − |b|')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Maximum</span> of a + b cos θ = a + |b|
+        <button class="copy-btn" onclick="copyFormula(this, 'Maximum of a + b cos θ = a + |b|')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Minimum</span> of a + b cos θ = a − |b|
+        <button class="copy-btn" onclick="copyFormula(this, 'Minimum of a + b cos θ = a − |b|')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Maximum</span> of a + b sin(cθ+d) = a + |b|
+        <button class="copy-btn" onclick="copyFormula(this, 'Maximum of a + b sin(cθ+d) = a + |b|')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Minimum</span> of a + b sin(cθ+d) = a − |b|
+        <button class="copy-btn" onclick="copyFormula(this, 'Minimum of a + b sin(cθ+d) = a − |b|')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Maximum</span> of a + b cos(cθ+d) = a + |b|
+        <button class="copy-btn" onclick="copyFormula(this, 'Maximum of a + b cos(cθ+d) = a + |b|')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Minimum</span> of a + b cos(cθ+d) = a − |b|
+        <button class="copy-btn" onclick="copyFormula(this, 'Minimum of a + b cos(cθ+d) = a − |b|')">📋</button>
+    </div>
+
+    <div class="formula">
+        For y = a + b sin(cθ+d):
+        <span class="main">Amplitude</span> = |b|
+        <button class="copy-btn" onclick="copyFormula(this, 'For y = a + b sin(cθ+d): Amplitude = |b|')">📋</button>
+    </div>
+
+    <div class="formula">
+        For y = a + b cos(cθ+d):
+        <span class="main">Amplitude</span> = |b|
+        <button class="copy-btn" onclick="copyFormula(this, 'For y = a + b cos(cθ+d): Amplitude = |b|')">📋</button>
+    </div>
+
+    <div class="formula">
+        Period of <span class="main">sin(bx)</span> = 2π/|b|
+        <button class="copy-btn" onclick="copyFormula(this, 'Period of sin(bx) = 2π/|b|')">📋</button>
+    </div>
+
+    <div class="formula">
+        Period of <span class="main">cos(bx)</span> = 2π/|b|
+        <button class="copy-btn" onclick="copyFormula(this, 'Period of cos(bx) = 2π/|b|')">📋</button>
+    </div>
+
+    <div class="formula">
+        Period of <span class="main">tan(bx)</span> = π/|b|
+        <button class="copy-btn" onclick="copyFormula(this, 'Period of tan(bx) = π/|b|')">📋</button>
+    </div>
+
+    <div class="formula">
+        Period of <span class="main">cot(bx)</span> = π/|b|
+        <button class="copy-btn" onclick="copyFormula(this, 'Period of cot(bx) = π/|b|')">📋</button>
+    </div>
+
+    <div class="formula">
+        If maximum = M > 0 and minimum = m > 0,
+        then for the reciprocal function:
+        <span class="main">Maximum = 1/m</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'If maximum = M > 0 and minimum = m > 0, then reciprocal maximum = 1/m')">📋</button>
+    </div>
+
+    <div class="formula">
+        If maximum = M > 0 and minimum = m > 0,
+        then for the reciprocal function:
+        <span class="main">Minimum = 1/M</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'If maximum = M > 0 and minimum = m > 0, then reciprocal minimum = 1/M')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">f(−x)</span> = −f(x) → Odd Function
+        <button class="copy-btn" onclick="copyFormula(this, 'f(−x) = −f(x) → Odd Function')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">f(−x)</span> = f(x) → Even Function
+        <button class="copy-btn" onclick="copyFormula(this, 'f(−x) = f(x) → Even Function')">📋</button>
+    </div>
+
+</div>
+
+<h2 class="section-title">Graph Characteristics</h2>  
+
+<div class="formula-box">
+
+    <div class="formula">
+        <span class="main">y = sin x</span>:
+        Range = [−1,1], Period = 2π, Amplitude = 1, Odd
+        <button class="copy-btn" onclick="copyFormula(this, 'y = sin x: Range = [−1,1], Period = 2π, Amplitude = 1, Odd')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">y = cos x</span>:
+        Range = [−1,1], Period = 2π, Amplitude = 1, Even
+        <button class="copy-btn" onclick="copyFormula(this, 'y = cos x: Range = [−1,1], Period = 2π, Amplitude = 1, Even')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">y = tan x</span>:
+        Range = R, Period = π, Amplitude = none, Odd
+        <button class="copy-btn" onclick="copyFormula(this, 'y = tan x: Range = R, Period = π, Amplitude = none, Odd')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">y = csc x</span>:
+        Range = (−∞,−1] ∪ [1,∞), Period = 2π, Odd
+        <button class="copy-btn" onclick="copyFormula(this, 'y = csc x: Range = (−∞,−1] ∪ [1,∞), Period = 2π, Odd')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">y = sec x</span>:
+        Range = (−∞,−1] ∪ [1,∞), Period = 2π, Even
+        <button class="copy-btn" onclick="copyFormula(this, 'y = sec x: Range = (−∞,−1] ∪ [1,∞), Period = 2π, Even')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">y = cot x</span>:
+        Range = R, Period = π, Amplitude = none, Odd
+        <button class="copy-btn" onclick="copyFormula(this, 'y = cot x: Range = R, Period = π, Amplitude = none, Odd')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">y = 3sin 2x</span>:
+        Range = [−3,3], Period = π, Amplitude = 3, Odd
+        <button class="copy-btn" onclick="copyFormula(this, 'y = 3sin 2x: Range = [−3,3], Period = π, Amplitude = 3, Odd')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">y = 3cos 2x</span>:
+        Range = [−3,3], Period = π, Amplitude = 3, Even
+        <button class="copy-btn" onclick="copyFormula(this, 'y = 3cos 2x: Range = [−3,3], Period = π, Amplitude = 3, Even')">📋</button>
+    </div>
+
+</div>  
+
+
+<div class="key-points">  
+
+    <h2>📌 Key Points</h2>  
+
+    <p>• Domain means all x-values for which a function is defined.</p>  
+
+    <p>• Range means all y-values which a function can take.</p>  
+
+    <p>• Sin and cos are defined for all real numbers and their values lie between −1 and 1.</p>  
+
+    <p>• Tan is not defined at odd multiples of π/2.</p>  
+
+    <p>• Cot is not defined at multiples of π.</p>  
+
+    <p>• Sec is not defined at odd multiples of π/2.</p>  
+
+    <p>• Cosec is not defined at multiples of π.</p>  
+
+    <p>• A periodic function repeats its values after a fixed interval.</p>  
+
+    <p>• Sin, cos, sec and cosec have period 2π.</p>  
+
+    <p>• Tan and cot have period π.</p>  
+
+    <p>• Multiplying a function by a constant or adding a constant does not change its period.</p>  
+
+    <p>• sin x, tan x, cot x and cosec x are odd functions.</p>  
+
+    <p>• cos x and sec x are even functions.</p>  
+
+    <p>• The graph of an even function is symmetric about the y-axis.</p>  
+
+    <p>• The graph of an odd function is symmetric about the origin.</p>  
+
+    <p>• In y = a sin(bx) or y = a cos(bx), |a| represents the amplitude.</p>  
+
+    <p>• For y = a sin(bx) or y = a cos(bx), the period is 2π/|b|.</p>  
+
+    <p>• For y = a tan(bx) or y = a cot(bx), the period is π/|b|.</p>  
+
+    <p>• Cosec and sec graphs have values only outside the interval (−1,1).</p>  
+
+    <p>• Tan, cot and their graphs have no amplitude.</p>  
+
+    <p>• In y = a + b sin(cθ+d) or y = a + b cos(cθ+d), a represents the vertical shift and |b| represents amplitude.</p>  
+
+</div>
+
+</body>  
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complex Numbers - Formula Hub</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: black;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+        }
+
+        .section-title {
+            margin: 30px 20px 15px;
+            font-size: 28px;
+        }
+
+        .formula-box {
+            margin: 0 20px;
+            padding: 10px 20px;
+            background: #fff7fa;
+            border: 3px solid #f8bbd0;
+            border-radius: 18px;
+        }
+
+        .formula {
+            padding: 16px 5px;
+            font-size: 19px;
+            border-bottom: 1px solid #f3c1d4;
+        }
+
+        .formula:last-child {
+            border-bottom: none;
+        }
+    
+   .copy-btn {
+    float: right;
+    background: white;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    padding: 5px 9px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+        .main {
+            font-weight: bold;
+        }
+.back-button {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 20px;
+    padding: 8px 16px;
+    background: #fff0f5;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+        .key-points {
+            margin: 30px 20px;
+            padding: 20px;
+            background: #fff0f5;
+            border-left: 5px solid #d81b60;
+            border-radius: 12px;
+        }
+
+        .key-points h2 {
+            color: #ad1457;
+        }
+
+        .key-points p {
+            font-size: 17px;
+            margin: 12px 0;
+        }
+    </style>
+</head>
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent =  "✓";
+
+    setTimeout(function() {
+        button.textContent = "Copied";
+    }, 1500);
+}
+</script>
+<body>
+
+    <header>
+        <h1>Chapter 1 — Complex Numbers</h1>
+        <a href="1.html" class="back-button">← Back to Chapters</a>
+    </header>
+
+    <h2 class="section-title">Formulas</h2>
+<div class="formula-box">
+
+    <div class="formula">
+        <span class="main">z</span> = x + <i>i</i>y
+        <button class="copy-btn" onclick="copyFormula(this, 'z = x + iy')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">|z|</span> = √(x² + y²)
+        <button class="copy-btn" onclick="copyFormula(this, '|z| = √(x² + y²)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">z̄</span> = x − <i>i</i>y
+        <button class="copy-btn" onclick="copyFormula(this, 'z̄ = x − iy')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">|z|²</span> = x² + y²
+        <button class="copy-btn" onclick="copyFormula(this, '|z|² = x² + y²')">📋</button>
+    </div>
+
+    <div class="formula">
+        x² + y² = <span class="main">r²</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'x² + y² = r²')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">r</span> = √(x² + y²)
+        <button class="copy-btn" onclick="copyFormula(this, 'r = √(x² + y²)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">x</span>/r = cos θ
+        <button class="copy-btn" onclick="copyFormula(this, 'x/r = cos θ')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">x</span> = r cos θ
+        <button class="copy-btn" onclick="copyFormula(this, 'x = r cos θ')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">y</span>/r = sin θ
+        <button class="copy-btn" onclick="copyFormula(this, 'y/r = sin θ')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">y</span> = r sin θ
+        <button class="copy-btn" onclick="copyFormula(this, 'y = r sin θ')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">z</span> = r(cos θ + <i>i</i> sin θ)
+        <button class="copy-btn" onclick="copyFormula(this, 'z = r(cos θ + i sin θ)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">z₁/z₂</span> =
+        (r₁/r₂)[cos(θ₁ − θ₂) + <i>i</i> sin(θ₁ − θ₂)]
+        <button class="copy-btn" onclick="copyFormula(this, 'z₁/z₂ = (r₁/r₂)[cos(θ₁ − θ₂) + i sin(θ₁ − θ₂)]')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">x</span> = xₘₐₓe<sup><i>i</i>θ</sup>
+        <button class="copy-btn" onclick="copyFormula(this, 'x = xₘₐₓeⁱθ')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">E</span> = IZ
+        <button class="copy-btn" onclick="copyFormula(this, 'E = IZ')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">I</span> = E/Z
+        <button class="copy-btn" onclick="copyFormula(this, 'I = E/Z')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">Z</span> = E/I
+        <button class="copy-btn" onclick="copyFormula(this, 'Z = E/I')">📋</button>
+    </div>
+
+</div>
+    
+    <div class="key-points">
+
+        <h2>📌 Key Points</h2>
+
+        <p>• <i>i</i> = √−1</p>
+        <p>• <i>i</i>² = −1</p>
+        <p>• z̄₁z̄₂ = z̄₁z̄₂</p>
+        <p>• z̄₁/z̄₂ = z̄₁/z̄₂</p>
+        <p>• x = Real part</p>
+        <p>• y = Imaginary part</p>
+        <p>• |z₁z₂| = |z₁||z₂|</p>
+        <p>• |z₁/z₂| = |z₁|/|z₂|</p>
+        <p>• Re(z₁)Re(z₂) ≠ Re(z₁z₂)</p>
+        <p>• Im(z₁)Im(z₂) ≠ Im(z₁z₂)</p>
+        <p>• θ = arg(z)</p>
+        <p>• cos θ + <i>i</i> sin θ = e<sup><i>i</i>θ</sup> — Euler's Formula</p>
+        <p>• sin(θ + 2kπ) = sin θ</p>
+        <p>• cos(θ + 2kπ) = cos θ</p>
+        <p>• arg(z₁z₂) = arg(z₁) + arg(z₂)</p>
+        <p>• arg(z₁/z₂) = arg(z₁) − arg(z₂)</p>
+
+    </div>
+
+</body>
+</html>

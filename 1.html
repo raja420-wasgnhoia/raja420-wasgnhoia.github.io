@@ -1,0 +1,219 @@
+
+<html>
+<head>
+    <title>Class 11 Mathematics</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fce4ec;
+            color: #222;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+        }
+
+        .search {
+            width: 85%;
+            max-width: 500px;
+            padding: 15px;
+            margin: 25px auto;
+            display: block;
+            border: 2px solid #f8bbd0;
+            border-radius: 25px;
+            font-size: 16px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .chapters {
+            padding: 10px 20px 30px;
+        }
+
+        .chapter {
+            background: white;
+            margin: 12px 0;
+            padding: 18px;
+            border-radius: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 3px 10px #f3d1dc;
+            color: #222;
+            text-decoration: none;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        .chapter:hover {
+            background: #fff0f5;
+        }
+
+        .no-result {
+            text-align: center;
+            color: #ad1457;
+            font-size: 17px;
+            display: none;
+            margin-top: 25px;
+        }
+    .formula-results {
+    width: 85%;
+    max-width: 500px;
+    margin: 10px auto 20px;
+}
+
+.formula-result {
+    background: white;
+    padding: 16px;
+    margin: 10px 0;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px #f3d1dc;
+}
+
+.formula-result h3 {
+    color: #ad1457;
+    margin: 0 0 8px;
+    font-size: 17px;
+}
+
+.formula-result p {
+    margin: 0;
+    font-size: 18px;
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>FBISE Class 11 Mathematics</h1>
+    </header>
+
+    <input
+        type="text"
+        id="searchBox"
+        class="search"
+        placeholder="🔎 Search formulas..."
+    >
+
+    <div class="chapters">
+
+    <a href="chapter1.html" class="chapter" data-search="chapter 1 complex numbers z complex number modulus conjugate argument polar form euler formula imaginary real part iota ">Chapter 1</a>
+
+   <a href="chapter2.html" class="chapter" data-search="chapter 2 matrices determinants matrix inverse transpose adjoint determinant singular non singular symmetric skew symmetric reversal law">Chapter 2</a>
+
+    <a href="chapter3.html" class="chapter" data-search="chapter 3 vectors unit vector scalar multiplication parallel vectors zero vector position vector direction cosines dot product angle cross product area triangle volume tetrahedron">Chapter 3</a>
+
+    <a href="chapter4.html" class="chapter" data-search="chapter 4 sequences series arithmetic progression AP geometric progression GP harmonic sequence HP arithmetic geometric sequence common difference common ratio nth term sum finite infinite sequence">Chapter 4</a>
+
+    <a href="chapter5.html" class="chapter" data-search="chapter 5 polynomial rational functions polynomial division dividend divisor quotient remainder factor factor theorem remainder theorem rational function exponent">Chapter 5</a>
+
+    <a href="chapter6.html" class="chapter" data-search="chapter 6 permutation combination factorial nPr nCr permutation of alike objects circular permutation combination order matters order does not matter">Chapter 6</a>
+
+    <a href="chapter7.html" class="chapter" data-search="chapter 7 mathematical induction binomial theorem induction base case inductive step sigma summation pascal triangle binomial expansion coefficients general term remainder last digit unit digit">Chapter 7</a>
+
+    <a href="chapter8.html" class="chapter" data-search="chapter 8 fundamentals trigonometry trigonometric ratios sin cos tan allied angles compound angles addition subtraction double angle half angle triple angle product to sum sum to product identities">Chapter 8</a>
+<a href="chapter9.html" class="chapter" data-search="chapter 9 trigonometric functions graphs domain range periodicity period maximum minimum amplitude sine cosine tangent cotangent secant cosecant even odd function transformation">Chapter 9</a>
+    <div id="formulaResults" class="formula-results"></div>
+    <p id="noResult" class="no-result">No matching chapter found.</p>
+
+</div>
+
+
+    <script>
+
+        const searchBox = document.getElementById("searchBox");
+        const chapters = document.querySelectorAll(".chapter");
+        const noResult = document.getElementById("noResult");
+
+        searchBox.addEventListener("input", function() {
+
+    const searchText = searchBox.value.toLowerCase().trim();
+
+    const formulaResults = document.getElementById("formulaResults");
+
+    formulaResults.innerHTML = "";
+
+    let found = false;
+
+    const formulas = [
+        {
+            chapter: "Chapter 1 — Complex Numbers",
+            keywords: "z complex number modulus",
+            formula: "z = x + iy"
+        },
+        {
+            chapter: "Chapter 1 — Complex Numbers",
+            keywords: "modulus absolute value",
+            formula: "|z| = √(x² + y²)"
+        },
+        {
+            chapter: "Chapter 1 — Complex Numbers",
+            keywords: "conjugate",
+            formula: "z̄ = x − iy"
+        }
+    ];
+
+    formulas.forEach(function(item) {
+
+        if (
+            searchText !== "" &&
+            item.keywords.includes(searchText)
+        ) {
+
+            formulaResults.innerHTML += `
+                <div class="formula-result">
+                    <h3>${item.chapter}</h3>
+                    <p>${item.formula}</p>
+                </div>
+            `;
+
+            found = true;
+        }
+
+    });
+
+    chapters.forEach(function(chapter) {
+
+        const chapterText =
+            chapter.dataset.search.toLowerCase();
+
+        if (
+            searchText === "" ||
+            chapterText.includes(searchText)
+        ) {
+            chapter.style.display = "block";
+        } else {
+            chapter.style.display = "none";
+        }
+
+    });
+
+    if (searchText === "") {
+
+        noResult.style.display = "none";
+
+    } else if (!found) {
+
+        noResult.style.display = "block";
+
+    } else {
+
+        noResult.style.display = "none";
+
+    }
+
+});
+
+    </script>
+
+</body>
+</html>

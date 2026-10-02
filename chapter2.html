@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matrices and Determinants - Formula Hub</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: black;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+        }
+
+        .section-title {
+            margin: 30px 20px 15px;
+            font-size: 28px;
+        }
+
+        .formula-box {
+            margin: 0 20px;
+            padding: 10px 20px;
+            background: #fff7fa;
+            border: 3px solid #f8bbd0;
+            border-radius: 18px;
+        }
+
+        .formula {
+            padding: 16px 5px;
+            font-size: 19px;
+            border-bottom: 1px solid #f3c1d4;
+        }
+
+        .formula:last-child {
+            border-bottom: none;
+        }
+
+        .main {
+            font-weight: bold;
+        }
+    .back-button {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 20px;
+    padding: 8px 16px;
+    background: #fff0f5;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+    .copy-btn {
+    float: right;
+    background: white;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    padding: 5px 9px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+        .key-points {
+            margin: 30px 20px;
+            padding: 20px;
+            background: #fff0f5;
+            border-left: 5px solid #d81b60;
+            border-radius: 12px;
+        }
+
+        .key-points h2 {
+            color: #ad1457;
+        }
+
+        .key-points p {
+            font-size: 17px;
+            margin: 12px 0;
+        }
+    </style>
+</head>
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+<body>
+
+    <header>
+        <h1>Chapter 2 — Matrices and Determinants</h1>
+        <a href="1.html" class="back-button">← Back to Chapters</a>
+    </header>
+
+    <h2 class="section-title">Formulas</h2>
+
+    <div class="formula-box">
+
+    <div class="formula">
+        <span class="main">|A|</span> =
+        a<sub>11</sub>a<sub>22</sub> −
+        a<sub>21</sub>a<sub>12</sub>
+        <button class="copy-btn" onclick="copyFormula(this, '|A| = a₁₁a₂₂ − a₂₁a₁₂')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">|A|</span> =
+        a<sub>11</sub>(a<sub>22</sub>a<sub>33</sub> − a<sub>23</sub>a<sub>32</sub>)
+        − a<sub>12</sub>(a<sub>21</sub>a<sub>33</sub> − a<sub>23</sub>a<sub>31</sub>)
+        + a<sub>13</sub>(a<sub>21</sub>a<sub>32</sub> − a<sub>22</sub>a<sub>31</sub>)
+        <button class="copy-btn" onclick="copyFormula(this, '|A| = a₁₁(a₂₂a₃₃ − a₂₃a₃₂) − a₁₂(a₂₁a₃₃ − a₂₃a₃₁) + a₁₃(a₂₁a₃₂ − a₂₂a₃₁)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">A<sup>−1</sup></span> =
+        <sup>1</sup>/<sub>|A|</sub> adj(A)
+        <button class="copy-btn" onclick="copyFormula(this, 'A⁻¹ = 1/|A| adj(A)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="main">adj(A)</span> =
+        (−1)<sup>i+j</sup> |A|
+        <button class="copy-btn" onclick="copyFormula(this, 'adj(A) = (−1)ⁱ⁺ʲ |A|')">📋</button>
+    </div>
+
+</div>
+
+    <div class="key-points">
+
+        <h2>📌 Key Points</h2>
+
+        <p>• If A is a square matrix, then order of A and A<sup>t</sup> is same.</p>
+
+        <p>• For square matrix A, if A = A<sup>t</sup>, then A is a symmetric matrix.</p>
+
+        <p>• For square matrix A, if A = −A<sup>t</sup>, then A is a skew symmetric matrix.</p>
+
+        <p>• If |A| = 0, then matrix is singular.</p>
+
+        <p>• If |A| ≠ 0, then matrix is non-singular.</p>
+
+        <p>• A<sup>−1</sup> ≠ 1/A.</p>
+
+        <p>• (AB)<sup>−1</sup> = B<sup>−1</sup>A<sup>−1</sup> is known as reversal law of inverse.</p>
+
+    </div>
+
+</body>
+</html>
