@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FBISE Class 12 Mathematics - Chapter 3</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #222;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        h2 {
+            color: #ad1457;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 10px auto 20px;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            margin: 15px;
+            padding: 20px;
+            background: #fff0f5;
+            border: 1px solid #f8bbd0;
+            border-radius: 15px;
+            line-height: 1.8;
+            overflow-x: auto;
+        }
+
+        .section-title {
+            color: #ad1457;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 8px;
+        }
+
+        .formula {
+            background: white;
+            margin: 12px 0;
+            padding: 13px;
+            border-radius: 10px;
+            border-left: 4px solid #f8bbd0;
+            font-size: 17px;
+            overflow-x: auto;
+        }
+     .formula strong {
+            color: #ad1457;
+        }
+
+        .copy-btn {
+            float: right;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 9px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .point {
+            background: white;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #f8bbd0;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #f8bbd0;
+            color: #ad1457;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 3 — Integration</h1>
+</header>
+
+<a href="class12.html" class="back-button">← Back to Chapters</a>
+
+<h2>Important Formulas & Definitions</h2>
+
+<div class="box">
+
+    <!-- 3.1 ANTIDERIVATIVE -->
+
+    <div class="section-title">1. Antiderivative / Indefinite Integral</div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 'F′(x) = f(x) → F(x) is an anti-derivative of f(x)')">📋</button>
+        <strong>F′(x) = f(x)</strong> → F(x) is an anti-derivative of f(x)
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ f(x) dx = F(x) + c')">📋</button>
+        <strong>∫ f(x) dx = F(x) + c</strong>
+    </div>
+
+    <!-- POWER RULE -->
+
+    <div class="section-title">2. Formula 3.1 — Power Rule</div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ xⁿ dx = xⁿ⁺¹/(n+1) + c, n ≠ -1')">📋</button>
+        <strong>∫ xⁿ dx = xⁿ⁺¹/(n+1) + c, &nbsp;n ≠ −1</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ [f(x)]ⁿ f′(x) dx = [f(x)]ⁿ⁺¹/(n+1) + c, n ≠ -1')">📋</button>
+        <strong>∫ [f(x)]ⁿf′(x)dx = [f(x)]ⁿ⁺¹/(n+1) + c</strong>
+    </div>
+
+    <!-- LOG RULE -->
+
+    <div class="section-title">3. Formula 3.2 — Log Rule</div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ 1/x dx = ln|x| + c')">📋</button>
+        <strong>∫ 1/x dx = ln|x| + c</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ f′(x)/f(x) dx = ln|f(x)| + c')">📋</button>
+        <strong>∫ f′(x)/f(x) dx = ln|f(x)| + c</strong>
+    </div>
+
+    <!-- EXPONENTIAL -->
+
+    <div class="section-title">4. Formula 3.3 — Exponential eˣ</div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ eˣ dx = eˣ + c')">📋</button>
+        <strong>∫ eˣ dx = eˣ + c</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ eᶠ⁽ˣ⁾ f′(x) dx = eᶠ⁽ˣ⁾ + c')">📋</button>
+        <strong>∫ e<sup>f(x)</sup>f′(x)dx = e<sup>f(x)</sup> + c</strong>
+    </div>
+
+    <!-- a^x -->
+
+    <div class="section-title">5. Formula 3.4 — Exponential aˣ</div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ aˣ dx = aˣ/ln(a) + c, a > 0, a ≠ 1')">📋</button>
+        <strong>∫ aˣ dx = aˣ/ln(a) + c, &nbsp;a &gt; 0, a ≠ 1</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ aᶠ⁽ˣ⁾ f′(x) dx = aᶠ⁽ˣ⁾/ln(a) + c')">📋</button>
+        <strong>∫ a<sup>f(x)</sup>f′(x)dx = a<sup>f(x)</sup>/ln(a) + c</strong>
+    </div>
+
+    <!-- PROPERTIES -->
+
+    <div class="section-title">6. Theorem 3.1 — Properties of Indefinite Integrals</div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ c f(x) dx = c ∫ f(x) dx')">📋</button>
+        <strong>∫ cf(x)dx = c∫f(x)dx</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ [f(x)+g(x)] dx = ∫f(x)dx + ∫g(x)dx')">📋</button>
+        <strong>∫[f(x)+g(x)]dx = ∫f(x)dx + ∫g(x)dx</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ [f(x)-g(x)] dx = ∫f(x)dx - ∫g(x)dx')">📋</button>
+        <strong>∫[f(x)−g(x)]dx = ∫f(x)dx − ∫g(x)dx</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ [af(x) ± bg(x)] dx = a∫f(x)dx ± b∫g(x)dx')">📋</button>
+        <strong>∫[af(x) ± bg(x)]dx = a∫f(x)dx ± b∫g(x)dx</strong>
+    </div>
+
+    <!-- TRIG -->
+
+    <div class="section-title">7. 3.2 — Trigonometric Integration</div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, '∫ cos x dx = sin x + c')">📋</button><strong>∫ cos x dx = sin x + c</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, '∫ sin x dx = -cos x + c')">📋</button><strong>∫ sin x dx = −cos x + c</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, '∫ cos(kx) dx = sin(kx)/k + c')">📋</button><strong>∫ cos(kx)dx = sin(kx)/k + c</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, '∫ sin(kx) dx = -cos(kx)/k + c')">📋</button><strong>∫ sin(kx)dx = −cos(kx)/k + c</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, '∫ sec²x dx = tan x + c')">📋</button><strong>∫ sec²x dx = tan x + c</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, '∫ csc²x dx = -cot x + c')">📋</button><strong>∫ csc²x dx = −cot x + c</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, '∫ sec x tan x dx = sec x + c')">📋</button><strong>∫ sec x tan x dx = sec x + c</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, '∫ csc x cot x dx = -csc x + c')">📋</button><strong>∫ csc x cot x dx = −csc x + c</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, '∫ sec x dx = ln|sec x + tan x| + c')">📋</button><strong>∫ sec x dx = ln|sec x + tan x| + c</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, '∫ csc x dx = ln|csc x - cot x| + c')">📋</button><strong>∫ csc x dx = ln|csc x − cot x| + c</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, '∫ tan x dx = ln|sec x| + c')">📋</button><strong>∫ tan x dx = ln|sec x| + c</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, '∫ cot x dx = ln|sin x| + c')">📋</button><strong>∫ cot x dx = ln|sin x| + c</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, 'sin²x = (1-cos2x)/2')">📋</button><strong>sin²x = (1 − cos2x)/2</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, 'cos²x = (1+cos2x)/2')">📋</button><strong>cos²x = (1 + cos2x)/2</strong></div>
+
+    <!-- SUBSTITUTION -->
+
+    <div class="section-title">8. Substitution Method</div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 't = g(x), dt = g′(x)dx')">📋</button>
+        <strong>t = g(x), &nbsp;dt = g′(x)dx</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ f(g(x))g′(x)dx = ∫f(t)dt')">📋</button>
+        <strong>∫f(g(x))g′(x)dx = ∫f(t)dt</strong>
+    </div>
+
+    <!-- STANDARD FORMS -->
+
+    <div class="section-title">9. Standard Integration Forms — 3.5 to 3.9</div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ dx/√(a²-x²) = sin⁻¹(x/a) + c')">📋</button>
+        <strong>∫ dx/√(a²−x²) = sin⁻¹(x/a) + c</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ √(a²-x²) dx = x√(a²-x²)/2 + a²/2 sin⁻¹(x/a) + c')">📋</button>
+        <strong>∫√(a²−x²)dx = x√(a²−x²)/2 + (a²/2)sin⁻¹(x/a) + c</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ dx/√(x²-a²) = ln|x+√(x²-a²)| + c')">📋</button>
+        <strong>∫dx/√(x²−a²) = ln|x+√(x²−a²)| + c</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ dx/√(x²+a²) = ln|x+√(x²+a²)| + c')">📋</button>
+        <strong>∫dx/√(x²+a²) = ln|x+√(x²+a²)| + c</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ dx/(a²+x²) = (1/a)tan⁻¹(x/a) + c')">📋</button>
+        <strong>∫dx/(a²+x²) = (1/a)tan⁻¹(x/a) + c</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ √(a²+x²) dx = x√(a²+x²)/2 + a²/2 ln|x+√(a²+x²)| + c')">📋</button>
+        <strong>∫√(a²+x²)dx = x√(a²+x²)/2 + (a²/2)ln|x+√(a²+x²)| + c</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ √(x²-a²) dx = x√(x²-a²)/2 - a²/2 ln|x+√(x²-a²)| + c')">📋</button>
+        <strong>∫√(x²−a²)dx = x√(x²−a²)/2 − (a²/2)ln|x+√(x²−a²)| + c</strong>
+    </div>
+
+    <!-- BY PARTS -->
+
+    <div class="section-title">10. 3.4 — Integration by Parts</div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫u dv = uv - ∫v du')">📋</button>
+        <strong>∫u dv = uv − ∫v du</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫f·g dx = f∫g dx - ∫[f′(x)∫g dx]dx')">📋</button>
+        <strong>∫f·g dx = f∫g dx − ∫[f′(x)∫g dx]dx</strong>
+    </div>
+
+    <div class="formula">
+        <strong>ILATE order:</strong>
+        Inverse → Logarithmic → Algebraic/Power → Trigonometric → Exponential
+    </div>
+
+    <!-- PARTIAL FRACTIONS -->
+
+    <div class="section-title">11. 3.5 — Partial Fractions</div>
+
+    <div class="formula">
+        <strong>Proper rational function:</strong>
+        deg P(x) &lt; deg Q(x)
+    </div>
+
+    <div class="formula">
+        <strong>If deg P ≥ deg Q:</strong> first perform polynomial division.
+    </div>
+
+    <div class="formula">
+        <strong>Form 1:</strong>
+        1/[(x+a)(x+b)] = A/(x+a) + B/(x+b)
+    </div>
+
+    <div class="formula">
+        <strong>Form 2:</strong>
+        1/(x+a)³ = A/(x+a) + B/(x+a)² + C/(x+a)³
+    </div>
+
+    <div class="formula">
+        <strong>Form 3:</strong>
+        1/[(x+a)(x²+1)] = A/(x+a) + (Bx+C)/(x²+1)
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ dx/(x+a) = ln|x+a| + c')">📋</button>
+        <strong>∫dx/(x+a) = ln|x+a| + c</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫ dx/(x²+1) = tan⁻¹x + c')">📋</button>
+        <strong>∫dx/(x²+1) = tan⁻¹x + c</strong>
+    </div>
+
+    <!-- EXPONENTIAL TRIG -->
+
+    <div class="section-title">12. Other Standard Results</div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫e^(ax)sin(bx)dx = e^(ax)[a sin(bx)-b cos(bx)]/(a²+b²)+c')">📋</button>
+        <strong>∫e<sup>ax</sup>sin(bx)dx =
+        e<sup>ax</sup>[a sin(bx) − b cos(bx)]/(a²+b²) + c</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫e^(ax)cos(bx)dx = e^(ax)[a cos(bx)+b sin(bx)]/(a²+b²)+c')">📋</button>
+        <strong>∫e<sup>ax</sup>cos(bx)dx =
+        e<sup>ax</sup>[a cos(bx) + b sin(bx)]/(a²+b²) + c</strong>
+    </div>
+
+
+    <!-- DEFINITE INTEGRAL -->
+
+    <div class="section-title">13. 3.6 — Definite Integral</div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 'Δx = (b-a)/n')">📋</button>
+        <strong>Δx = (b−a)/n</strong>
+    </div>
+
+    <div class="formula">
+        <strong>a = x₀ &lt; x₁ &lt; ... &lt; xₙ = b</strong>
+    </div>
+
+    <div class="formula">
+        <strong>Δxₖ = xₖ − xₖ₋₁</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 'A ≈ Σ f(xk)Δxk')">📋</button>
+        <strong>A ≈ Σ f(xₖ)Δxₖ</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 'A = lim Δx→0 Σ f(xk)Δxk')">📋</button>
+        <strong>A = lim Δx→0 Σ f(xₖ)Δxₖ</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫aᵇ f(x)dx = lim Δx→0 Σ f(xk)Δxk')">📋</button>
+        <strong>∫ₐᵇf(x)dx = lim Δx→0 Σf(xₖ)Δxₖ</strong>
+    </div>
+
+
+    <!-- PROPERTIES -->
+
+    <div class="section-title">14. 3.7 — Properties of Definite Integrals</div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫aᵃ f(x)dx = 0')">📋</button>
+        <strong>∫ₐᵃf(x)dx = 0</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫bᵃ f(x)dx = -∫aᵇ f(x)dx')">📋</button>
+        <strong>∫ᵦᵃf(x)dx = −∫ₐᵇf(x)dx</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫aᵇ f(x)dx = ∫aᶜ f(x)dx + ∫cᵇ f(x)dx')">📋</button>
+        <strong>∫ₐᵇf(x)dx = ∫ₐᶜf(x)dx + ∫ᶜᵇf(x)dx</strong>
+    </div>
+
+    <div class="formula">
+        <strong>∫ₐᵇ cf(x)dx = c∫ₐᵇf(x)dx</strong>
+    </div>
+
+    <div class="formula">
+        <strong>∫ₐᵇ[f(x) ± g(x)]dx = ∫ₐᵇf(x)dx ± ∫ₐᵇg(x)dx</strong>
+    </div>
+
+    <div class="formula">
+        <strong>∫ₐᵇ[cf(x) ± dg(x)]dx =
+        c∫ₐᵇf(x)dx ± d∫ₐᵇg(x)dx</strong>
+    </div>
+
+
+    <!-- FUNDAMENTAL THEOREM -->
+
+    <div class="section-title">15. 3.8 — Fundamental Theorem of Calculus</div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 'A(x) = ∫aˣ f(t)dt')">📋</button>
+        <strong>A(x) = ∫ₐˣf(t)dt</strong>
+    </div>
+
+    <div class="formula">
+        <strong>A(a) = 0</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 'A′(x) = f(x)')">📋</button>
+        <strong>A′(x) = f(x)</strong>
+    </div>
+
+    <div class="formula">
+        <strong>F(x) = A(x) + c</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, '∫aᵇ f(x)dx = F(b)-F(a) = [F(x)]aᵇ')">📋</button>
+        <strong>∫ₐᵇf(x)dx = F(b) − F(a) = [F(x)]ₐᵇ</strong>
+    </div>
+
+
+    <!-- DEFINITE METHODS -->
+
+    <div class="section-title">16. Definite Integration Methods</div>
+
+    <div class="formula">
+        <strong>Method 1 — Substitution without changing limits:</strong><br>
+        Put u = g(x), integrate in u, convert back to x, then apply original x-limits.
+    </div>
+
+    <div class="formula">
+        <strong>Method 2 — Substitution with changing limits:</strong><br>
+        Convert the lower and upper x-limits into u-limits and integrate directly using u.
+    </div>
+
+
+    <!-- AREA -->
+
+    <div class="section-title">17. 3.9 / 3.10 — Area</div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 'f(x) ≥ 0 → A = ∫aᵇ f(x)dx')">📋</button>
+        <strong>f(x) ≥ 0 → A = ∫ₐᵇf(x)dx</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 'A = ∫aᵇ [f(x)-g(x)]dx')">📋</button>
+        <strong>Area between curves = ∫ₐᵇ[f(x)−g(x)]dx</strong>
+    </div>
+
+    <div class="formula">
+        <strong>Intersection:</strong> Solve f(x) = g(x) to find the limits.
+    </div>
+
+    <div class="formula">
+        <strong>Below x-axis:</strong> The definite integral is negative.
+        Geometric area is taken as positive.
+    </div>
+
+
+    <!-- VOLUME -->
+
+    <div class="section-title">18. 3.11 — Volume by Disc Method</div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 'V = πr²h')">📋</button>
+        <strong>V = πr²h</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 'V = Σ π[f(xk)]²Δxk')">📋</button>
+        <strong>V ≈ Σπ[f(xₖ)]²Δxₖ</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 'V = π∫aᵇ [f(x)]²dx')">📋</button>
+        <strong>X-axis rotation: V = π∫ₐᵇ[f(x)]²dx</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 'V = π∫aᵇ [g(y)]²dy')">📋</button>
+        <strong>Y-axis rotation: V = π∫ₐᵇ[g(y)]²dy</strong>
+    </div>
+
+    <div class="formula">
+        <strong>If y = √x:</strong> x = y² = g(y)
+    </div>
+
+
+    <!-- CONSUMER PRODUCER -->
+
+    <div class="section-title">19. 3.12.1 — Consumer & Producer Surplus</div>
+
+    <div class="formula">
+        <strong>Equilibrium:</strong> D(x) = S(x)
+    </div>
+
+    <div class="formula">
+        <strong>Equilibrium price:</strong> x = p
+    </div>
+
+    <div class="formula">
+        <strong>D(b) = 0</strong> → demand becomes zero
+    </div>
+
+    <div class="formula">
+        <strong>S(c) = 0</strong> → supply becomes zero
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 'Cs = ∫pᵇ D(x)dx')">📋</button>
+        <strong>Consumer Surplus: Cs = ∫ₚᵇD(x)dx</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 'Ps = ∫cᵖ S(x)dx')">📋</button>
+        <strong>Producer Surplus: Ps = ∫ᶜₚS(x)dx</strong>
+    </div>
+
+
+    <!-- MOTION -->
+
+    <div class="section-title">20. 3.12.2 — Rectilinear Motion</div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 'v(t) = dS/dt')">📋</button>
+        <strong>v(t) = dS/dt</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 'a(t) = dv/dt')">📋</button>
+        <strong>a(t) = dv/dt</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyFormula(this, 'S(t) = ∫v(t)dt')">📋</button>
+        <strong>S(t) = ∫v(t)dt</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn"
+        onclick="copyForm
+          <div class="box">
+    <h2>Definitions</h2>
+
+    <ul>
+        <li><b>Antiderivative:</b> Agar F′(x) = f(x), to F(x), f(x) ka antiderivative hai.</li>
+
+        <li><b>Indefinite Integral:</b> ∫f(x)dx = F(x) + c, jahan c arbitrary constant hai.</li>
+
+        <li><b>Constant of Integration:</b> Indefinite integral mein c arbitrary constant hota hai.</li>
+
+        <li><b>Definite Integral:</b> Aisa integral jisme lower aur upper limits di hui hoti hain.</li>
+
+        <li><b>Lower Limit:</b> Integral ki neeche wali limit lower limit kehlati hai.</li>
+
+        <li><b>Upper Limit:</b> Integral ki upar wali limit upper limit kehlati hai.</li>
+
+        <li><b>Area:</b> Curve aur axis ke darmiyan enclosed region ka measure.</li>
+
+        <li><b>Velocity:</b> Position ka rate of change velocity kehlata hai.</li>
+
+        <li><b>Acceleration:</b> Velocity ka rate of change acceleration kehlata hai.</li>
+
+        <li><b>Work:</b> Force ke displacement ke along kiye gaye effect ko work kehte hain.</li>
+
+        <li><b>Hooke’s Law:</b> Spring ka restoring force displacement ke proportional hota hai.</li>
+
+        <li><b>Consumer Surplus:</b> Demand aur equilibrium price se related surplus area.</li>
+
+        <li><b>Producer Surplus:</b> Supply aur equilibrium price se related surplus area.</li>
+    </ul>
+</div>
+      <div class="box">
+    <h2>Key Points</h2>
+
+    <ul>
+        <li>Integration, differentiation ka reverse process hai.</li>
+
+        <li>Indefinite integral mein <b>+c</b> add karna zaroori hota hai.</li>
+
+        <li>Constant ko integration se bahar nikala ja sakta hai.</li>
+
+        <li>Power rule mein power mein 1 add karke new power se divide karte hain.</li>
+
+        <li>Logarithmic integration mein absolute value ka khayal rakha jata hai.</li>
+
+        <li>Trigonometric integrals solve karne ke liye standard formulas use hote hain.</li>
+
+        <li>Substitution method tab useful hota hai jab function ke saath uska derivative bhi maujood ho.</li>
+
+        <li>Integration by parts product of functions ke integration ke liye use hota hai.</li>
+
+        <li>ILATE function choose karne ka order hai: Inverse, Logarithmic, Algebraic, Trigonometric, Exponential.</li>
+
+        <li>Partial fractions rational functions ko simpler fractions mein divide karne ka method hai.</li>
+
+        <li>Definite integral ka result ek fixed value hota hai.</li>
+
+        <li>Fundamental Theorem of Calculus definite integral ko antiderivative se connect karta hai.</li>
+
+        <li>Area between two curves mein upper function se lower function subtract karte hain.</li>
+
+        <li>Disc method se axis ke around rotation wale solid ka volume find kiya jata hai.</li>
+
+        <li>Distance find karte waqt velocity ke sign ka khayal rakhna zaroori hai.</li>
+
+        <li>Variable force ke liye work ko integration se find kiya jata hai.</li>
+    </ul>
+</div>
+        <script>
+function copyFormula(button, formula) {
+    var textArea = document.createElement("textarea");
+    textArea.value = formula;
+
+    document.body.appendChild(textArea);
+    textArea.select();
+    textArea.setSelectionRange(0, 99999);
+
+    try {
+        document.execCommand("copy");
+        button.textContent = "✓";
+    } catch (err) {
+        button.textContent = "❌";
+    }
+
+    document.body.removeChild(textArea);
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>

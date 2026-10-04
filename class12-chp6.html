@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FBISE Class 12 Mathematics - Chapter 6</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 10px auto 20px;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 15px;
+            background: #fff0f5;
+            border: 1px solid #f8bbd0;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: #ad1457;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #ad1457;
+        }
+
+        .formula {
+            background: white;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border-left: 4px solid #d81b60;
+            overflow-x: auto;
+        }
+
+        .copy-btn {
+            float: right;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 9px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 6 — Analytical Geometry</h1>
+</header>
+
+<a href="class12.html" class="back-button">← Back to Chapters</a>
+
+
+<!-- IMPORTANT FORMULAS -->
+
+<div class="box">
+    <h2>Important Formulas</h2>
+
+    <h3>1. Point of Intersection</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'l₁: a₁x + b₁y + c₁ = 0')">📋</button>
+        <b>l₁: a₁x + b₁y + c₁ = 0</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'l₂: a₂x + b₂y + c₂ = 0')">📋</button>
+        <b>l₂: a₂x + b₂y + c₂ = 0</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'x/(b₁c₂-b₂c₁) = y/(c₁a₂-c₂a₁) = 1/(a₁b₂-a₂b₁)')">📋</button>
+        <b>
+            x/(b₁c₂ − b₂c₁)
+            =
+            y/(c₁a₂ − c₂a₁)
+            =
+            1/(a₁b₂ − a₂b₁)
+        </b>
+    </div>
+
+
+    <h3>2. Condition of Concurrency</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'a₁x + b₁y + c₁ = 0')">📋</button>
+        <b>a₁x + b₁y + c₁ = 0</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'a₂x + b₂y + c₂ = 0')">📋</button>
+        <b>a₂x + b₂y + c₂ = 0</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'a₃x + b₃y + c₃ = 0')">📋</button>
+        <b>a₃x + b₃y + c₃ = 0</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'determinant = 0')">📋</button>
+        <b>
+            | a₁ b₁ c₁ |
+            <br>
+            | a₂ b₂ c₂ | = 0
+            <br>
+            | a₃ b₃ c₃ |
+        </b>
+    </div>
+
+
+    <h3>3. Triangle Centers</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, '(x₃-x₂)x + (y₃-y₂)y - x₁(x₃-x₂) - y₁(y₃-y₂) = 0')">📋</button>
+        <b>
+            Altitude:
+            (x₃−x₂)x + (y₃−y₂)y
+            − x₁(x₃−x₂) − y₁(y₃−y₂) = 0
+        </b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, '(x₃-x₂)x + (y₃-y₂)y - 1/2(x₃²-x₂²) - 1/2(y₃²-y₂²) = 0')">📋</button>
+        <b>
+            Perpendicular Bisector:
+            (x₃−x₂)x + (y₃−y₂)y
+            − ½(x₃²−x₂²) − ½(y₃²−y₂²) = 0
+        </b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'D = ((x₂+x₃)/2, (y₂+y₃)/2)')">📋</button>
+        <b>
+            Midpoint of BC:
+            D = ((x₂+x₃)/2, (y₂+y₃)/2)
+        </b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, '(y-y₁)/((y₂+y₃)/2-y₁) = (x-x₁)/((x₂+x₃)/2-x₁)')">📋</button>
+        <b>
+            Median:
+            (y−y₁)/((y₂+y₃)/2−y₁)
+            =
+            (x−x₁)/((x₂+x₃)/2−x₁)
+        </b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'm = (y₂-y₁)/(x₂-x₁)')">📋</button>
+        <b>m = (y₂−y₁)/(x₂−x₁)</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'm₁m₂ = -1')">📋</button>
+        <b>For perpendicular lines: m₁m₂ = −1</b>
+    </div>
+
+
+    <h3>4. Area of Triangle</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'A = 1/2 × (sum of parallel sides) × distance')">📋</button>
+        <b>
+            Area of Trapezium =
+            ½ × (sum of parallel sides) × distance
+        </b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'A = 1/2 |x₁(y₂-y₃) + x₂(y₃-y₁) + x₃(y₁-y₂)|')">📋</button>
+        <b>
+            A = ½ |x₁(y₂−y₃) + x₂(y₃−y₁) + x₃(y₁−y₂)|
+        </b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Area = 1/2 |determinant|')">📋</button>
+        <b>
+            Area =
+            ½ |
+            x₁ y₁ 1
+            <br>
+            x₂ y₂ 1
+            <br>
+            x₃ y₃ 1
+            |
+        </b>
+    </div>
+
+
+    <h3>5. Joint Equation of Two Lines</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, '(a₁x+b₁y+c₁)(a₂x+b₂y+c₂)=0')">📋</button>
+        <b>
+            (a₁x+b₁y+c₁)(a₂x+b₂y+c₂) = 0
+        </b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'ax² + 2hxy + by² + 2gx + 2fy + c = 0')">📋</button>
+        <b>
+            ax² + 2hxy + by² + 2gx + 2fy + c = 0
+        </b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, '(a₁x+b₁y)(a₂x+b₂y)=0')">📋</button>
+        <b>
+            Homogeneous pair:
+            (a₁x+b₁y)(a₂x+b₂y) = 0
+        </b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'ax² + 2hxy + by² = 0')">📋</button>
+        <b>ax² + 2hxy + by² = 0</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, '(y-m₁x)(y-m₂x)=0')">📋</button>
+        <b>(y−m₁x)(y−m₂x) = 0</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'm₁m₂ = a/b')">📋</button>
+        <b>m₁m₂ = a/b</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'm₁+m₂ = -2h/b')">📋</button>
+        <b>m₁ + m₂ = −2h/b</b>
+    </div>
+
+
+    <h3>6. Angle Between Pair of Lines</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'tanθ = |(m₁-m₂)/(1+m₁m₂)|')">📋</button>
+        <b>
+            tan θ = |(m₁−m₂)/(1+m₁m₂)|
+        </b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'tanθ = 2√(h²-ab)/|a+b|')">📋</button>
+        <b>
+            tan θ = 2√(h²−ab) / |a+b|
+        </b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'h²-ab=0')">📋</button>
+        <b>Coincident lines: h² − ab = 0</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'a+b=0')">📋</button>
+        <b>Perpendicular lines: a + b = 0</b>
+    </div>
+
+
+    <h3>7. Nature of Pair of Lines</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'h² > ab → real and distinct')">📋</button>
+        <b>h² &gt; ab → Real and distinct</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'h² = ab → real and coincident')">📋</button>
+        <b>h² = ab → Real and coincident</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'h² < ab → imaginary')">📋</button>
+        <b>h² &lt; ab → Imaginary</b>
+    </div>
+
+
+    <h3>8. Useful Example Results</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, '3k + 7 = 0 → k = -7/3')">📋</button>
+        <b>3k + 7 = 0 → k = −7/3</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'x²-7xy+12y² = (x-3y)(x-4y)')">📋</button>
+        <b>x² − 7xy + 12y² = (x−3y)(x−4y)</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'x²-4xy-12y² = (x+2y)(x-6y)')">📋</button>
+        <b>x² − 4xy − 12y² = (x+2y)(x−6y)</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'tanθ = 8/13')">📋</button>
+        <b>For the rail-track example: tan θ = 8/13</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'θ ≈ 36.03°')">📋</button>
+        <b>θ ≈ 36.03°</b>
+    </div>
+
+</div>
+
+
+<!-- DEFINITIONS -->
+
+<div class="box">
+    <h2>Definitions</h2>
+
+    <ul>
+        <li>
+            <b>Point of Intersection:</b>
+            The common point of two non-parallel lines.
+        </li>
+
+        <li>
+            <b>Concurrent Lines:</b>
+            Three or more lines passing through the same point.
+        </li>
+
+        <li>
+            <b>Point of Concurrency:</b>
+            The point at which three or more lines meet.
+        </li>
+
+        <li>
+            <b>Incenter:</b>
+            The point of intersection of the three angle bisectors of a triangle.
+        </li>
+
+        <li>
+            <b>Circumcenter:</b>
+            The point of intersection of the three perpendicular bisectors of a triangle.
+        </li>
+
+        <li>
+            <b>Centroid:</b>
+            The point of intersection of the three medians of a triangle.
+        </li>
+
+        <li>
+            <b>Orthocenter:</b>
+            The point of intersection of the three altitudes of a triangle.
+        </li>
+
+        <li>
+            <b>Homogeneous Linear Equation:</b>
+            A linear equation of the form ax + by = 0.
+        </li>
+
+        <li>
+            <b>Non-Homogeneous Linear Equation:</b>
+            A linear equation containing a non-zero constant term, such as ax + by + c = 0.
+        </li>
+
+        <li>
+            <b>Joint Equation:</b>
+            A single equation representing two lines together.
+        </li>
+
+        <li>
+            <b>Homogeneous Quadratic Equation:</b>
+            A second-degree equation of the form ax² + 2hxy + by² = 0.
+        </li>
+
+        <li>
+            <b>Pair of Lines:</b>
+            Two straight lines represented together by one joint equation.
+        </li>
+    </ul>
+</div>
+
+
+<!-- KEY POINTS -->
+
+<div class="box">
+    <h2>Key Points</h2>
+
+    <ul>
+        <li>If the determinant of three lines is zero, the lines are concurrent.</li>
+
+        <li>Alternatively, find the intersection of two lines and substitute it into the third line.</li>
+
+        <li>Three diameters of a circle are always concurrent at the center.</li>
+
+        <li>The three altitudes of a triangle are concurrent at the orthocenter.</li>
+
+        <li>The three perpendicular bisectors of a triangle are concurrent at the circumcenter.</li>
+
+        <li>The three medians of a triangle are concurrent at the centroid.</li>
+
+        <li>The centroid divides each median in the ratio 2:1.</li>
+
+        <li>A homogeneous linear equation has no constant term and passes through the origin.</li>
+
+        <li>A homogeneous quadratic equation also represents a pair of lines passing through the origin.</li>
+
+        <li>A joint equation is obtained by combining two line equations into one equation.</li>
+
+        <li>The general second-degree equation can represent a pair of straight lines under a specific condition.</li>
+
+        <li>The condition for the pair of lines to be perpendicular is a + b = 0.</li>
+
+        <li>If h² &gt; ab, the pair of lines is real and distinct.</li>
+
+        <li>If h² = ab, the pair of lines is real and coincident.</li>
+
+        <li>If h² &lt; ab, the pair of lines is imaginary.</li>
+
+        <li>For perpendicular lines, the product of their slopes is −1.</li>
+
+        <li>The angle between two lines can be found from their slopes or from the coefficients of their joint equation.</li>
+
+        <li>The area of a triangle is always taken as a positive value.</li>
+
+        <li>If the area calculated from the determinant is zero, the three points are collinear.</li>
+
+        <li>The area of a triangle can also be found by dividing it into trapeziums.</li>
+
+        <li>Heron's formula can also be used to find the area of a triangle after finding its three side lengths.</li>
+
+        <li>Real-life roads or tracks can be checked for concurrency using the determinant or direct substitution method.</li>
+
+        <li>For a joint equation representing two tracks, factorization gives the individual equations of the tracks.</li>
+    </ul>
+</div>
+
+
+<script>
+function copyFormula(button, formula) {
+    var textArea = document.createElement("textarea");
+    textArea.value = formula;
+
+    document.body.appendChild(textArea);
+    textArea.select();
+    textArea.setSelectionRange(0, 99999);
+
+    try {
+        document.execCommand("copy");
+        button.textContent = "✓";
+    } catch (err) {
+        button.textContent = "❌";
+    }
+
+    document.body.removeChild(textArea);
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FBISE Class 12 Mathematics - Chapter 2</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #222;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        h2 {
+            color: #ad1457;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 10px auto 20px;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            margin: 15px;
+            padding: 20px;
+            background: #fff0f5;
+            border: 1px solid #f8bbd0;
+            border-radius: 15px;
+            line-height: 1.8;
+            overflow-x: auto;
+        }
+
+        .formula {
+            background: white;
+            margin: 12px 0;
+            padding: 13px;
+            border-radius: 10px;
+            border-left: 4px solid #f8bbd0;
+            font-size: 17px;
+            overflow-x: auto;
+        }
+
+        .formula strong {
+            color: #ad1457;
+        }
+
+        .copy-btn {
+            float: right;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 9px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .point {
+            background: white;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        .section-title {
+            color: #ad1457;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #f8bbd0;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #f8bbd0;
+            color: #ad1457;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 2 — Limit, Continuity and Derivative</h1>
+</header>
+
+<a href="class12.html" class="back-button">← Back to Chapters</a>
+
+<h2>Important Formulas</h2>
+
+<div class="box">
+
+    <div class="section-title">1. Limits</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'lim x→a f(x) = L')">📋</button>
+        <strong>lim x→a f(x) = L</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'lim x→a⁻ f(x) = lim x→a⁺ f(x) = L')">📋</button>
+        <strong>lim x→a⁻ f(x) = lim x→a⁺ f(x) = L</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'lim c = c')">📋</button>
+        <strong>lim c = c</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'lim [c f(x)] = c lim f(x)')">📋</button>
+        <strong>lim [c f(x)] = c lim f(x)</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'lim [f(x)+g(x)] = lim f(x) + lim g(x)')">📋</button>
+        <strong>lim [f(x)+g(x)] = lim f(x) + lim g(x)</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'lim [f(x)/g(x)] = lim f(x)/lim g(x), lim g(x) ≠ 0')">📋</button>
+        <strong>lim [f(x)/g(x)] = lim f(x) / lim g(x), &nbsp;lim g(x) ≠ 0</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'lim [f(x)]ⁿ = [lim f(x)]ⁿ')">📋</button>
+        <strong>lim [f(x)]ⁿ = [lim f(x)]ⁿ</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'lim x→0 (sin x)/x = 1')">📋</button>
+        <strong>lim x→0 (sin x)/x = 1</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'lim x→0 (1-cos x)/x = 0')">📋</button>
+        <strong>lim x→0 (1 − cos x)/x = 0</strong>
+    </div>
+
+
+    <div class="section-title">2. Continuity</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'f(a) is defined')">📋</button>
+        <strong>f(a)</strong> is defined
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'lim x→a f(x) exists')">📋</button>
+        <strong>lim x→a f(x)</strong> exists
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'lim x→a f(x) = f(a)')">📋</button>
+        <strong>lim x→a f(x) = f(a)</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'dy/dx = f′(x)')">📋</button>
+        <strong>dy/dx = f′(x)</strong>
+    </div>
+
+
+    <div class="section-title">3. Tangent and Rate of Change</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'm_sec = Δy/Δx')">📋</button>
+        <strong>m<sub>sec</sub> = Δy/Δx</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'm_tan = lim Δx→0 Δy/Δx')">📋</button>
+        <strong>m<sub>tan</sub> = lim Δx→0 Δy/Δx</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'f′(x) = lim Δx→0 [f(x+Δx)-f(x)]/Δx')">📋</button>
+        <strong>f′(x) = lim Δx→0 [f(x+Δx) − f(x)]/Δx</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'v(t) = lim Δt→0 Δs/Δt')">📋</button>
+        <strong>v(t) = lim Δt→0 Δs/Δt</strong>
+    </div>
+
+
+    <div class="section-title">4. Basic Differentiation Rules</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'd/dx [xⁿ] = n xⁿ⁻¹')">📋</button>
+        <strong>d/dx [xⁿ] = n xⁿ⁻¹</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'd/dx [c] = 0')">📋</button>
+        <strong>d/dx [c] = 0</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'd/dx [c f(x)] = c f′(x)')">📋</button>
+        <strong>d/dx [c f(x)] = c f′(x)</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'd/dx [f(x) ± g(x)] = f′(x) ± g′(x)')">📋</button>
+        <strong>d/dx [f(x) ± g(x)] = f′(x) ± g′(x)</strong>
+    </div>
+
+
+    <div class="section-title">5. Product and Quotient Rules</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'd/dx [f(x)g(x)] = f(x)g′(x) + g(x)f′(x)')">📋</button>
+        <strong>d/dx [f(x)g(x)] = f(x)g′(x) + g(x)f′(x)</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'd/dx [f(x)/g(x)] = [g(x)f′(x)-f(x)g′(x)]/[g(x)]²')">📋</button>
+        <strong>d/dx [f/g] = [g f′ − f g′]/g²</strong>
+    </div>
+
+
+    <div class="section-title">6. Trigonometric Derivatives</div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, 'd/dx sin x = cos x')">📋</button><strong>d/dx(sin x) = cos x</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, 'd/dx cos x = -sin x')">📋</button><strong>d/dx(cos x) = −sin x</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, 'd/dx tan x = sec² x')">📋</button><strong>d/dx(tan x) = sec²x</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, 'd/dx cot x = -csc² x')">📋</button><strong>d/dx(cot x) = −csc²x</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, 'd/dx sec x = sec x tan x')">📋</button><strong>d/dx(sec x) = sec x tan x</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, 'd/dx csc x = -csc x cot x')">📋</button><strong>d/dx(csc x) = −csc x cot x</strong></div>
+
+
+    <div class="section-title">7. Inverse Trigonometric Derivatives</div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, 'd/dx sin⁻¹x = 1/√(1-x²)')">📋</button><strong>d/dx(sin⁻¹x) = 1/√(1−x²)</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, 'd/dx cos⁻¹x = -1/√(1-x²)')">📋</button><strong>d/dx(cos⁻¹x) = −1/√(1−x²)</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, 'd/dx tan⁻¹x = 1/(1+x²)')">📋</button><strong>d/dx(tan⁻¹x) = 1/(1+x²)</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, 'd/dx cot⁻¹x = -1/(1+x²)')">📋</button><strong>d/dx(cot⁻¹x) = −1/(1+x²)</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, 'd/dx sec⁻¹x = 1/[x√(x²-1)]')">📋</button><strong>d/dx(sec⁻¹x) = 1/[x√(x²−1)]</strong></div>
+
+    <div class="formula"><button class="copy-btn" onclick="copyFormula(this, 'd/dx csc⁻¹x = -1/[x√(x²-1)]')">📋</button><strong>d/dx(csc⁻¹x) = −1/[x√(x²−1)]</strong></div>
+
+
+    <div class="section-title">8. Chain Rule</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'd/dx [g(x)]ⁿ = n[g(x)]ⁿ⁻¹g′(x)')">📋</button>
+        <strong>d/dx [g(x)]ⁿ = n[g(x)]ⁿ⁻¹g′(x)</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'dy/dx = dy/du × du/dx')">📋</button>
+        <strong>dy/dx = (dy/du)(du/dx)</strong>
+    </div>
+
+
+    <div class="section-title">9. Implicit Differentiation</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'dy/dx = -y/x')">📋</button>
+        <strong>dy/dx = −y/x</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, '5y² + sin y = x² → dy/dx = 2x/(10y+cos y)')">📋</button>
+        <strong>5y² + sin y = x² → dy/dx = 2x/(10y + cos y)</strong>
+    </div>
+
+
+    <div class="section-title">10. Exponential and Logarithmic Derivatives</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'd/dx eˣ = eˣ')">📋</button>
+        <strong>d/dx(eˣ) = eˣ</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'd/dx eᵘ = eᵘ u′')">📋</button>
+        <strong>d/dx(eᵘ) = eᵘu′</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'd/dx ln x = 1/x')">📋</button>
+        <strong>d/dx(ln x) = 1/x</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'd/dx ln g(x) = g′(x)/g(x)')">📋</button>
+        <strong>d/dx[ln g(x)] = g′(x)/g(x)</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'd/dx aˣ = aˣ ln a')">📋</button>
+        <strong>d/dx(aˣ) = aˣ ln a</strong>
+    </div>
+
+
+    <div class="section-title">11. Parametric Differentiation</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'dy/dx = (dy/dt)/(dx/dt)')">📋</button>
+        <strong>dy/dx = (dy/dt)/(dx/dt)</strong>
+    </div>
+
+
+    <div class="section-title">12. Differentials and Approximation</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'dx = Δx')">📋</button>
+        <strong>dx = Δx</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'dy = f′(x)dx')">📋</button>
+        <strong>dy = f′(x)dx</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Δy ≈ dy')">📋</button>
+        <strong>Δy ≈ dy</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'f(x+Δx) ≈ f(x) + f′(x)dx')">📋</button>
+        <strong>f(x+Δx) ≈ f(x) + f′(x)dx</strong>
+    </div>
+
+
+    <div class="section-title">13. Higher Derivatives</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'd²y/dx² = d/dx(dy/dx)')">📋</button>
+        <strong>d²y/dx² = d/dx(dy/dx)</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'd³y/dx³ = d/dx(d²y/dx²)')">📋</button>
+        <strong>d³y/dx³ = d/dx(d²y/dx²)</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'dⁿy/dxⁿ = d/dx(dⁿ⁻¹y/dxⁿ⁻¹)')">📋</button>
+        <strong>dⁿy/dxⁿ = d/dx(dⁿ⁻¹y/dxⁿ⁻¹)</strong>
+    </div>
+
+
+    <div class="section-title">14. Extrema</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Absolute maximum: f(x) ≤ f(c)')">📋</button>
+        <strong>Absolute Maximum:</strong> f(x) ≤ f(c)
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Absolute minimum: f(x) ≥ f(c)')">📋</button>
+        <strong>Absolute Minimum:</strong> f(x) ≥ f(c)
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Critical number: f′(c)=0 or f′(c) does not exist')">📋</button>
+        <strong>Critical number:</strong> f′(c)=0 or f′(c) does not exist
+    </div>
+
+
+    <div class="section-title">15. Concavity</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'f″(x) > 0 → concave upward')">📋</button>
+        <strong>f″(x) &gt; 0 → Concave upward</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'f″(x) < 0 → concave downward')">📋</button>
+        <strong>f″(x) &lt; 0 → Concave downward</strong>
+    </div>
+
+
+    <div class="section-title">16. Second Derivative Test</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'f″(c)>0 → relative minimum')">📋</button>
+        <strong>f″(c) &gt; 0 → Relative minimum</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'f″(c)<0 → relative maximum')">📋</button>
+        <strong>f″(c) &lt; 0 → Relative maximum</strong>
+    </div>
+
+
+    <div class="section-title">17. Point of Inflection</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Point of inflection occurs where concavity changes')">📋</button>
+        <strong>Point of inflection:</strong> point where concavity changes.
+    </div>
+
+
+    <div class="section-title">18. Related Rates</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'A=x² → dA/dt = 2x dx/dt')">📋</button>
+        <strong>A=x² → dA/dt = 2x(dx/dt)</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'V=4/3πr³ → dV/dt = 4πr² dr/dt')">📋</button>
+        <strong>V=4/3πr³ → dV/dt = 4πr²(dr/dt)</strong>
+    </div>
+
+
+    <div class="section-title">19. Price Growth Model</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'P(t)=P₀eʳᵗ')">📋</button>
+        <strong>P(t)=P₀eʳᵗ</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'dP/dt = P₀ r eʳᵗ')">📋</button>
+        <strong>dP/dt = P₀reʳᵗ</strong>
+    </div>
+
+
+    <div class="section-title">20. Economics</div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Marginal Revenue = R′(x)')">📋</button>
+        <strong>Marginal Revenue = R′(x)</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Marginal Cost = C′(x)')">📋</button>
+        <strong>Marginal Cost = C′(x)</strong>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Break-even: R(x)=C(x)')">📋</button>
+        <strong>Break-even: R(x) = C(x)</strong>
+    </div>
+
+</div>
+
+
+<h2>Key Points</h2>
+
+<div class="box">
+
+    <div class="point">
+        <strong>Limit:</strong> A limit describes the value that a function approaches as x approaches a particular value.
+    </div>
+
+    <div class="point">
+        <strong>Left-hand limit:</strong> x approaches a from values less than a.
+    </div>
+
+    <div class="point">
+        <strong>Right-hand limit:</strong> x approaches a from values greater than a.
+    </div>
+
+    <div class="point">
+        A two-sided limit exists when the left-hand and right-hand limits are equal.
+    </div>
+
+    <div class="point">
+        The existence of a limit does not require f(a) to be defined.
+    </div>
+
+    <div class="point">
+        <strong>Continuity at x=a:</strong> f(a) must be defined, the limit must exist, and the limit must equal f(a).
+    </div>
+
+    <div class="point">
+        A function can be continuous but not differentiable, such as |x| at x=0.
+    </div>
+
+    <div class="point">
+        Differentiability at a point implies continuity at that point.
+    </div>
+
+    <div class="point">
+        <strong>Derivative:</strong> The derivative represents the instantaneous rate of change and the slope of the tangent.
+    </div>
+
+    <div class="point">
+        A tangent line may cross the graph and still be a tangent.
+    </div>
+
+    <div class="point">
+        Tangent may fail to exist at a discontinuity, corner, cusp, or sharp point.
+    </div>
+
+    <div class="point">
+        <strong>Critical number:</strong> A number in the domain where f′(c)=0 or f′(c) does not exist.
+    </div>
+
+    <div class="point">
+        Critical numbers are candidates for relative extrema, but every critical number is not necessarily an extremum.
+    </div>
+
+    <div class="point">
+        <strong>Absolute extrema</strong> are also called global extrema.
+    </div>
+
+    <div class="point">
+        A function continuous on a closed interval [a,b] has an absolute maximum and an absolute minimum.
+    </div>
+
+    <div class="point">
+        <strong>Concave upward:</strong> the graph bends upward and f″(x)>0.
+    </div>
+
+    <div class="point">
+        <strong>Concave downward:</strong> the graph bends downward and f″(x)<0.
+    </div>
+
+    <div class="point">
+        A point of inflection occurs when the concavity changes from upward to downward or vice versa.
+    </div>
+
+    <div class="point">
+        For the second derivative test: f″(c)>0 gives a relative minimum, while f″(c)<0 gives a relative maximum.
+    </div>
+
+    <div class="point">
+        <strong>Differentials:</strong> For a small change in x, Δy is approximately equal to dy.
+    </div>
+
+    <div class="point">
+        <strong>Parametric differentiation:</strong> dy/dx is found by dividing dy/dt by dx/dt.
+    </div>
+
+    <div class="point">
+        <strong>Higher derivatives</strong> are obtained by repeatedly differentiating the previous derivative.
+    </div>
+
+    <div class="point">
+        <strong>Related rates:</strong> Quantities changing with time are related by differentiating their mathematical relationship with respect to time.
+    </div>
+
+    <div class="point">
+        In economics, marginal revenue is the derivative of revenue and marginal cost is the derivative of cost.
+    </div>
+
+</div>
+
+
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+
+</body>
+</html>

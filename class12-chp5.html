@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FBISE Class 12 Mathematics - Chapter 5</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 10px auto 20px;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 15px;
+            background: #fff0f5;
+            border: 1px solid #f8bbd0;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: #ad1457;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #ad1457;
+        }
+
+        .formula {
+            background: white;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border-left: 4px solid #d81b60;
+            overflow-x: auto;
+        }
+
+        .copy-btn {
+            float: right;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 9px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 5 — Kinematics</h1>
+</header>
+
+<a href="class12.html" class="back-button">← Back to Chapters</a>
+
+
+<!-- FORMULAS -->
+
+<div class="box">
+    <h2>Important Formulas</h2>
+
+    <h3>1. Velocity and Displacement</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'v = dS/dt')">📋</button>
+        <b>v = dS/dt</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'S = ∫v dt')">📋</button>
+        <b>S = ∫v dt</b>
+    </div>
+
+
+    <h3>2. Acceleration</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'a = dv/dt')">📋</button>
+        <b>a = dv/dt</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'a = d²S/dt²')">📋</button>
+        <b>a = d²S/dt²</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'v = ∫a dt')">📋</button>
+        <b>v = ∫a dt</b>
+    </div>
+
+
+    <h3>3. Displacement-Time Graph</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Slope of displacement-time graph = velocity')">📋</button>
+        <b>Slope of d-t graph = Velocity</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Slope = displacement/time')">📋</button>
+        <b>Slope = d/t</b>
+    </div>
+
+
+    <h3>4. Velocity-Time Graph</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Slope = (v2-v1)/(t2-t1) = acceleration')">📋</button>
+        <b>
+            Slope =
+            (v₂ − v₁)/(t₂ − t₁)
+            = Acceleration
+        </b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Area under velocity-time graph = displacement')">📋</button>
+        <b>Area under v-t graph = Displacement</b>
+    </div>
+
+
+    <h3>5. Position Function</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'S(t) gives displacement at time t')">📋</button>
+        <b>S(t) = displacement at time t</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Displacement = S(t2) - S(t1)')">📋</button>
+        <b>Displacement = S(t₂) − S(t₁)</b>
+    </div>
+
+
+    <h3>6. Acceleration from Position</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'v(t) = dS/dt')">📋</button>
+        <b>v(t) = dS/dt</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'a(t) = d²S/dt²')">📋</button>
+        <b>a(t) = d²S/dt²</b>
+    </div>
+
+
+    <h3>7. Upward Throw</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'a = -g')">📋</button>
+        <b>a = −g</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'v = -gt + u')">📋</button>
+        <b>v = −gt + u</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'S = -1/2 gt² + ut')">📋</button>
+        <b>S = −½gt² + ut</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'At maximum height, v = 0')">📋</button>
+        <b>At maximum height: v = 0</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Time to maximum height = u/g')">📋</button>
+        <b>Time to maximum height = u/g</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Maximum height = u²/(2g)')">📋</button>
+        <b>Maximum height = u²/(2g)</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Total distance = u²/g')">📋</button>
+        <b>Total distance = u²/g</b>
+    </div>
+
+
+    <h3>8. Vector-Valued Function</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'r(t) = x(t)i + y(t)j + z(t)k')">📋</button>
+        <b>r(t) = x(t)î + y(t)ĵ + z(t)k̂</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, '|r| = sqrt(x²+y²+z²)')">📋</button>
+        <b>|r| = √(x² + y² + z²)</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'v(t) = r\'(t)')">📋</button>
+        <b>v(t) = r′(t)</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'a(t) = r\'\'(t)')">📋</button>
+        <b>a(t) = r″(t)</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'f\'(t) = f1\'(t)i + f2\'(t)j + f3\'(t)k')">📋</button>
+        <b>
+            f′(t) =
+            f₁′(t)î + f₂′(t)ĵ + f₃′(t)k̂
+        </b>
+    </div>
+
+</div>
+
+
+<!-- DEFINITIONS -->
+
+<div class="box">
+    <h2>Definitions</h2>
+
+    <ul>
+        <li><b>Scalar:</b> A physical quantity having magnitude only.</li>
+
+        <li><b>Vector:</b> A physical quantity having both magnitude and direction.</li>
+
+        <li><b>Distance:</b> The total path length travelled by an object.</li>
+
+        <li><b>Speed:</b> The rate at which distance is covered with respect to time.</li>
+
+        <li><b>Displacement:</b> The directed straight-line distance from initial position to final position.</li>
+
+        <li><b>Velocity:</b> The rate of change of displacement with respect to time.</li>
+
+        <li><b>Acceleration:</b> The rate of change of velocity with respect to time.</li>
+
+        <li><b>Instantaneous Velocity:</b> Velocity at a particular instant of time.</li>
+
+        <li><b>Uniform Motion:</b> Motion in which an object covers equal displacements in equal intervals of time.</li>
+
+        <li><b>Vector-Valued Function:</b> A function whose output is a vector.</li>
+
+        <li><b>Scalar-Valued Function:</b> A function whose output is a single real number.</li>
+
+        <li><b>Domain of Vector Function:</b> The common set of values of t for which all component functions are defined.</li>
+    </ul>
+</div>
+
+
+<!-- KEY POINTS -->
+
+<div class="box">
+    <h2>Key Points</h2>
+
+    <ul>
+        <li>Distance, mass, time and speed are scalar quantities.</li>
+
+        <li>Displacement, velocity, acceleration and weight are vector quantities.</li>
+
+        <li>Distance depends on the total path travelled.</li>
+
+        <li>Displacement depends only on initial and final positions.</li>
+
+        <li>Speed has no direction, while velocity has direction.</li>
+
+        <li>In a displacement-time graph, the slope represents velocity.</li>
+
+        <li>Positive slope represents positive velocity.</li>
+
+        <li>Negative slope represents negative velocity.</li>
+
+        <li>A horizontal displacement-time graph means velocity is zero.</li>
+
+        <li>In a velocity-time graph, the slope represents acceleration.</li>
+
+        <li>A horizontal velocity-time graph represents constant velocity.</li>
+
+        <li>Positive slope of a v-t graph represents positive acceleration.</li>
+
+        <li>Negative slope represents negative acceleration or retardation.</li>
+
+        <li>The area under a velocity-time graph gives displacement.</li>
+
+        <li>To find velocity from a position function, differentiate the position function.</li>
+
+        <li>To find acceleration, differentiate velocity or take the second derivative of position.</li>
+
+        <li>To find displacement from velocity, integrate velocity with respect to time.</li>
+
+        <li>To find velocity from acceleration, integrate acceleration with respect to time.</li>
+
+        <li>For upward motion, gravity acts downward, so if upward is positive, a = −g.</li>
+
+        <li>At maximum height, the instantaneous velocity becomes zero.</li>
+
+        <li>For a vector-valued function, each component is differentiated separately.</li>
+
+        <li>The derivative of a vector-valued position function gives velocity.</li>
+
+        <li>The second derivative of a vector-valued position function gives acceleration.</li>
+
+        <li>The domain of a vector-valued function is the intersection of the domains of all its components.</li>
+    </ul>
+</div>
+
+
+<script>
+function copyFormula(button, formula) {
+    var textArea = document.createElement("textarea");
+    textArea.value = formula;
+
+    document.body.appendChild(textArea);
+    textArea.select();
+    textArea.setSelectionRange(0, 99999);
+
+    try {
+        document.execCommand("copy");
+        button.textContent = "✓";
+    } catch (err) {
+        button.textContent = "❌";
+    }
+
+    document.body.removeChild(textArea);
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+
+</body>
+</html>

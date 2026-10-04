@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FBISE Class 12 Mathematics - Chapter 1</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #222;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        h2 {
+            color: #ad1457;
+            text-align: center;
+        }
+
+        .box {
+            width: 90%;
+            max-width: 750px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff7fa;
+            border: 1px solid #f8bbd0;
+            border-radius: 15px;
+            box-sizing: border-box;
+        }
+
+        .formula {
+            background: white;
+            margin: 10px 0;
+            padding: 13px 45px 13px 12px;
+            border-radius: 10px;
+            font-size: 17px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .copy-btn {
+            position: absolute;
+            right: 8px;
+            top: 10px;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 9px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .key-box li {
+            margin: 12px 0;
+            line-height: 1.5;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th, td {
+            border: 1px solid #f8bbd0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #f8bbd0;
+            color: #ad1457;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 15px auto 25px;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>FBISE Class 12 Mathematics</h1>
+</header>
+
+<a href="class12.html" class="back-button">← Back to Chapters</a>
+
+<div class="box">
+    <h2>Chapter 1 — Functions and Graphs</h2>
+</div>
+
+<div class="box">
+
+    <h2>Important Formulas</h2>
+
+    <div class="formula">
+        <b>f</b>: A → B
+        <button class="copy-btn" onclick="copyFormula(this, 'f: A → B')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>f</b>(x) = y
+        <button class="copy-btn" onclick="copyFormula(this, 'f(x) = y')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>f</b>(x₁) = f(x₂) ⇒ x₁ = x₂
+        <button class="copy-btn" onclick="copyFormula(this, 'f(x₁) = f(x₂) ⇒ x₁ = x₂')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>f</b>(f⁻¹(x)) = f⁻¹(f(x)) = x
+        <button class="copy-btn" onclick="copyFormula(this, 'f(f⁻¹(x)) = f⁻¹(f(x)) = x')">📋</button>
+    </div>
+
+    <div class="formula">
+        Domain of <b>f</b> = Range of f⁻¹
+        <button class="copy-btn" onclick="copyFormula(this, 'Domain of f = Range of f⁻¹')">📋</button>
+    </div>
+
+    <div class="formula">
+        Range of <b>f</b> = Domain of f⁻¹
+        <button class="copy-btn" onclick="copyFormula(this, 'Range of f = Domain of f⁻¹')">📋</button>
+    </div>
+
+    <div class="formula">
+        If <b>f</b>(x) = ax + b, then f⁻¹(x) = (x − b)/a
+        <button class="copy-btn" onclick="copyFormula(this, 'If f(x) = ax + b, then f⁻¹(x) = (x − b)/a')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>y</b> = ax + b
+        <button class="copy-btn" onclick="copyFormula(this, 'y = ax + b')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>y</b> = ax² + bx + c
+        <button class="copy-btn" onclick="copyFormula(this, 'y = ax² + bx + c')">📋</button>
+    </div>
+
+    <div class="formula">
+        x = −b/(2a)
+        <button class="copy-btn" onclick="copyFormula(this, 'x = −b/(2a)')">📋</button>
+    </div>
+
+    <div class="formula">
+        x<sub>vertex</sub> = (x₁ + x₂)/2
+        <button class="copy-btn" onclick="copyFormula(this, 'x_vertex = (x₁ + x₂)/2')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>y</b> = |x|
+        <button class="copy-btn" onclick="copyFormula(this, 'y = |x|')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>p</b>(x) = aₙxⁿ + aₙ₋₁xⁿ⁻¹ + ... + a₁x + a₀
+        <button class="copy-btn" onclick="copyFormula(this, 'p(x) = aₙxⁿ + aₙ₋₁xⁿ⁻¹ + ... + a₁x + a₀')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>f</b>(x) = p(x)/q(x), q(x) ≠ 0
+        <button class="copy-btn" onclick="copyFormula(this, 'f(x) = p(x)/q(x), q(x) ≠ 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>f</b>(x) = kxᵃ
+        <button class="copy-btn" onclick="copyFormula(this, 'f(x) = kxᵃ')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>y</b> = aˣ, a &gt; 0, a ≠ 1
+        <button class="copy-btn" onclick="copyFormula(this, 'y = aˣ, a > 0, a ≠ 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        logₐ(aˣ) = x
+        <button class="copy-btn" onclick="copyFormula(this, 'logₐ(aˣ) = x')">📋</button>
+    </div>
+
+    <div class="formula">
+        a<sup>logₐx</sup> = x
+        <button class="copy-btn" onclick="copyFormula(this, 'a^(logₐx) = x')">📋</button>
+    </div>
+
+    <div class="formula">
+        logₐ(xy) = logₐx + logₐy
+        <button class="copy-btn" onclick="copyFormula(this, 'logₐ(xy) = logₐx + logₐy')">📋</button>
+    </div>
+
+    <div class="formula">
+        logₐ(x/y) = logₐx − logₐy
+        <button class="copy-btn" onclick="copyFormula(this, 'logₐ(x/y) = logₐx − logₐy')">📋</button>
+    </div>
+
+    <div class="formula">
+        logₐ(xⁿ) = n logₐx
+        <button class="copy-btn" onclick="copyFormula(this, 'logₐ(xⁿ) = n logₐx')">📋</button>
+    </div>
+
+    <div class="formula">
+        logₐx = logᵦx / logᵦa
+        <button class="copy-btn" onclick="copyFormula(this, 'logₐx = logᵦx / logᵦa')">📋</button>
+    </div>
+
+    <div class="formula">
+        A(t) = P(1 + r)ᵗ
+        <button class="copy-btn" onclick="copyFormula(this, 'A(t) = P(1 + r)ᵗ')">📋</button>
+    </div>
+
+    <div class="formula">
+        P(t) = P₀eʳᵗ
+        <button class="copy-btn" onclick="copyFormula(this, 'P(t) = P₀eʳᵗ')">📋</button>
+    </div>
+
+    <div class="formula">
+        P(t) = P₀e⁻ʳᵗ
+        <button class="copy-btn" onclick="copyFormula(this, 'P(t) = P₀e⁻ʳᵗ')">📋</button>
+    </div>
+
+    <div class="formula">
+        pH = −log₁₀[H⁺]
+        <button class="copy-btn" onclick="copyFormula(this, 'pH = −log₁₀[H⁺]')">📋</button>
+    </div>
+
+</div>
+
+<div class="box">
+
+    <h2>Trigonometric Functions</h2>
+
+    <table>
+        <tr>
+            <th>Function</th>
+            <th>Domain</th>
+            <th>Range</th>
+        </tr>
+
+        <tr>
+            <td>sin x</td>
+            <td>R</td>
+            <td>[-1, 1]</td>
+        </tr>
+
+        <tr>
+            <td>cos x</td>
+            <td>R</td>
+            <td>[-1, 1]</td>
+        </tr>
+
+        <tr>
+            <td>tan x</td>
+            <td>x ≠ (2n+1)π/2</td>
+            <td>R</td>
+        </tr>
+
+        <tr>
+            <td>cot x</td>
+            <td>x ≠ nπ</td>
+            <td>R</td>
+        </tr>
+
+        <tr>
+            <td>sec x</td>
+            <td>x ≠ (2n+1)π/2</td>
+            <td>(−∞,−1] ∪ [1,∞)</td>
+        </tr>
+
+        <tr>
+            <td>csc x</td>
+            <td>x ≠ nπ</td>
+            <td>(−∞,−1] ∪ [1,∞)</td>
+        </tr>
+    </table>
+
+</div>
+
+<div class="box">
+
+    <h2>Inverse Trigonometric Functions</h2>
+
+    <table>
+        <tr>
+            <th>Function</th>
+            <th>Domain</th>
+            <th>Principal Range</th>
+        </tr>
+
+        <tr>
+            <td>sin⁻¹x</td>
+            <td>[-1,1]</td>
+            <td>[-π/2, π/2]</td>
+        </tr>
+
+        <tr>
+            <td>cos⁻¹x</td>
+            <td>[-1,1]</td>
+            <td>[0, π]</td>
+        </tr>
+
+        <tr>
+            <td>tan⁻¹x</td>
+            <td>R</td>
+            <td>(−π/2, π/2)</td>
+        </tr>
+
+        <tr>
+            <td>cot⁻¹x</td>
+            <td>R</td>
+            <td>(0, π)</td>
+        </tr>
+
+        <tr>
+            <td>sec⁻¹x</td>
+            <td>|x| ≥ 1</td>
+            <td>[0,π/2) ∪ (π/2,π]</td>
+        </tr>
+
+        <tr>
+            <td>csc⁻¹x</td>
+            <td>|x| ≥ 1</td>
+            <td>[-π/2,0) ∪ (0,π/2]</td>
+        </tr>
+    </table>
+
+</div>
+
+<div class="box">
+
+    <h2>Common Functions</h2>
+
+    <table>
+        <tr>
+            <th>Function</th>
+            <th>Domain</th>
+            <th>Range</th>
+        </tr>
+
+        <tr>
+            <td>y = x</td>
+            <td>R</td>
+            <td>R</td>
+        </tr>
+
+        <tr>
+            <td>y = x²</td>
+            <td>R</td>
+            <td>[0,∞)</td>
+        </tr>
+
+        <tr>
+            <td>y = |x|</td>
+            <td>R</td>
+            <td>[0,∞)</td>
+        </tr>
+
+        <tr>
+            <td>y = √x</td>
+            <td>[0,∞)</td>
+            <td>[0,∞)</td>
+        </tr>
+
+        <tr>
+            <td>y = aˣ</td>
+            <td>R</td>
+            <td>(0,∞)</td>
+        </tr>
+
+        <tr>
+            <td>y = logₐx</td>
+            <td>(0,∞)</td>
+            <td>R</td>
+        </tr>
+    </table>
+
+</div>
+
+<div class="box key-box">
+
+    <h2>Key Points</h2>
+
+    <ul>
+
+        <li><b>Domain</b> is the set of all allowed input values.</li>
+
+        <li><b>Range</b> is the set of actual output values.</li>
+
+        <li>A function assigns each element of the domain exactly one element of the codomain.</li>
+
+        <li>A function is <b>one-to-one</b> when different inputs have different outputs.</li>
+
+        <li>A function is <b>onto</b> when every element of the codomain has a preimage.</li>
+
+        <li>A function is <b>bijective</b> when it is both one-to-one and onto.</li>
+
+        <li>A bijective function has an inverse function from its codomain to its domain.</li>
+
+        <li>The graph of a function and its inverse are reflections in the line <b>y = x</b>.</li>
+
+        <li>For a quadratic function, <b>a</b> determines the opening direction and affects its width.</li>
+
+        <li>The axis of symmetry of a quadratic function is <b>x = −b/(2a)</b>.</li>
+
+        <li>The modulus function <b>y = |x|</b> has a V-shaped graph.</li>
+
+        <li>A polynomial has only non-negative integer powers of x.</li>
+
+        <li>In a rational function, the denominator cannot be zero.</li>
+
+        <li>For <b>y = aˣ</b>, the domain is R and the range is (0,∞).</li>
+
+        <li>For <b>y = logₐx</b>, x must be positive.</li>
+
+        <li>If <b>a &gt; 1</b>, the exponential function represents growth.</li>
+
+        <li>If <b>0 &lt; a &lt; 1</b>, the exponential function represents decay.</li>
+
+        <li>The graph of <b>y = logₐx</b> has a vertical asymptote at x = 0.</li>
+
+        <li>The horizontal line test can be used to check whether a function is one-to-one.</li>
+
+        <li>Graph transformations include translations, reflections, stretches and compressions.</li>
+
+        <li>For <b>y = cf(x)</b>, |c| &gt; 1 gives vertical stretching.</li>
+
+        <li>For <b>y = cf(x)</b>, 0 &lt; |c| &lt; 1 gives vertical compression.</li>
+
+        <li>For <b>y = f(cx)</b>, |c| &gt; 1 gives horizontal compression.</li>
+
+        <li>For <b>y = f(cx)</b>, 0 &lt; |c| &lt; 1 gives horizontal stretching.</li>
+
+        <li>Trigonometric functions have different domains and ranges.</li>
+
+        <li>Inverse trigonometric functions use restricted principal ranges so that they remain functions.</li>
+
+    </ul>
+
+</div>
+
+<a href="class12.html" class="back-button">← Back to Chapters</a>
+
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+
+</body>
+</html>

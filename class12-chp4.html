@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FBISE Class 12 Mathematics - Chapter 4</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 10px auto 20px;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 15px;
+            background: #fff0f5;
+            border: 1px solid #f8bbd0;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: #ad1457;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #ad1457;
+        }
+
+        .formula {
+            background: white;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border-left: 4px solid #d81b60;
+            overflow-x: auto;
+        }
+
+        .copy-btn {
+            float: right;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 9px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 4 — Differential Equations</h1>
+</header>
+
+<a href="class12.html" class="back-button">← Back to Chapters</a>
+
+
+<!-- FORMULAS -->
+
+<div class="box">
+    <h2>Important Formulas</h2>
+
+    <h3>1. Basic Differential Equation</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'dy/dx = f(x)')">📋</button>
+        <b>dy/dx = f(x)</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'y = ∫f(x)dx = F(x) + c')">📋</button>
+        <b>y = ∫f(x)dx = F(x) + c</b>
+    </div>
+
+
+    <h3>2. Order and Degree</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Order = highest order derivative')">📋</button>
+        <b>Order = highest order derivative</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Degree = power of highest order derivative')">📋</button>
+        <b>Degree = power of highest order derivative</b>
+    </div>
+
+
+    <h3>3. General Form of an nth Order ODE</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'F(x,y,y\',...,y^(n-1)) = y^(n)')">📋</button>
+        <b>F(x, y, y′, ..., y<sup>(n−1)</sup>) = y<sup>(n)</sup></b>
+    </div>
+
+
+    <h3>4. nth Order Linear Differential Equation</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'a_n(x)y^(n) + a_(n-1)(x)y^(n-1) + ... + a_1(x)y\' + a_0(x)y = f(x)')">📋</button>
+        <b>
+            a<sub>n</sub>(x)y<sup>(n)</sup> +
+            a<sub>n−1</sub>(x)y<sup>(n−1)</sup> +
+            ... +
+            a<sub>1</sub>(x)y′ +
+            a<sub>0</sub>(x)y = f(x)
+        </b>
+    </div>
+
+
+    <h3>5. Formation of Differential Equation</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'Differentiate to eliminate arbitrary constants')">📋</button>
+        <b>Differentiate to eliminate arbitrary constants.</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'y = e^x → y\' = e^x → y\' - y = 0')">📋</button>
+        <b>y = e<sup>x</sup> → y′ = e<sup>x</sup> → y′ − y = 0</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'y = a cos x + b sin x → y\'\' + y = 0')">📋</button>
+        <b>y = a cos x + b sin x → y″ + y = 0</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'y = A sin(2x-B) → y\'\' + 4y = 0')">📋</button>
+        <b>y = A sin(2x − B) → y″ + 4y = 0</b>
+    </div>
+
+
+    <h3>6. Variable Separable Differential Equation</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'dy/dx = f(x)g(y)')">📋</button>
+        <b>dy/dx = f(x)g(y)</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'dy/g(y) = f(x)dx')">📋</button>
+        <b>dy/g(y) = f(x)dx</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, '∫dy/g(y) = ∫f(x)dx')">📋</button>
+        <b>∫dy/g(y) = ∫f(x)dx</b>
+    </div>
+
+
+    <h3>7. Initial Value Problem (IVP)</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'dy/dx = f(x,y), y(x0) = y0')">📋</button>
+        <b>dy/dx = f(x,y), &nbsp; y(x₀) = y₀</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'General solution → substitute x0 and y0 → find c')">📋</button>
+        <b>General solution → put x₀, y₀ → find c</b>
+    </div>
+
+
+    <h3>8. Homogeneous Function</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'f(tx,ty) = t^n f(x,y)')">📋</button>
+        <b>f(tx, ty) = t<sup>n</sup>f(x, y)</b>
+    </div>
+
+
+    <h3>9. Homogeneous Differential Equation</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'M(x,y)dx + N(x,y)dy = 0')">📋</button>
+        <b>M(x,y)dx + N(x,y)dy = 0</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'y = ux → dy/dx = u + x du/dx')">📋</button>
+        <b>y = ux → dy/dx = u + x(du/dx)</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'dy = u dx + x du')">📋</button>
+        <b>dy = u dx + x du</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'x = vy')">📋</button>
+        <b>x = vy</b>
+    </div>
+
+
+    <h3>10. Falling Body</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'a = dv/dt = g')">📋</button>
+        <b>a = dv/dt = g</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'v = gt')">📋</button>
+        <b>v = gt</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'S = gt^2/2')">📋</button>
+        <b>S = gt²/2</b>
+    </div>
+
+
+    <h3>11. Newton’s Law of Cooling</h3>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'dT/dt = k(T-T0)')">📋</button>
+        <b>dT/dt = k(T − T₀)</b>
+    </div>
+
+    <div class="formula">
+        <button class="copy-btn" onclick="copyFormula(this, 'T - T0 = ce^(kt)')">📋</button>
+        <b>T − T₀ = ce<sup>kt</sup></b>
+    </div>
+
+</div>
+
+
+<!-- DEFINITIONS -->
+
+<div class="box">
+    <h2>Definitions</h2>
+
+    <ul>
+        <li><b>Differential Equation:</b> An equation containing one or more derivatives of an unknown function.</li>
+
+        <li><b>Ordinary Differential Equation (ODE):</b> A differential equation involving derivatives with respect to only one independent variable.</li>
+
+        <li><b>Order:</b> The order of a differential equation is the highest order derivative present in it.</li>
+
+        <li><b>Degree:</b> The power of the highest order derivative after the equation is made polynomial in derivatives.</li>
+
+        <li><b>Linear Differential Equation:</b> A differential equation in which the dependent variable and all its derivatives occur only to the first power and are not multiplied together.</li>
+
+        <li><b>Non-linear Differential Equation:</b> A differential equation that does not satisfy the conditions of a linear differential equation.</li>
+
+        <li><b>Solution of DE:</b> A function which satisfies the given differential equation on an interval.</li>
+
+        <li><b>General Solution:</b> A solution containing arbitrary constants and representing a family of solutions.</li>
+
+        <li><b>Particular Solution:</b> A solution obtained by assigning specific values to the arbitrary constants.</li>
+
+        <li><b>Explicit Solution:</b> A solution written in the form y = f(x).</li>
+
+        <li><b>Implicit Solution:</b> A solution written in the form F(x,y) = 0.</li>
+
+        <li><b>Variable Separable Equation:</b> A differential equation in which variables can be separated so that x and y occur on opposite sides.</li>
+
+        <li><b>Initial Value Problem:</b> A differential equation together with a specified initial condition such as y(x₀) = y₀.</li>
+
+        <li><b>Homogeneous Function:</b> A function satisfying f(tx,ty) = t<sup>n</sup>f(x,y).</li>
+
+        <li><b>Homogeneous Differential Equation:</b> A differential equation that can be transformed into a separable equation using y = ux or x = vy.</li>
+
+        <li><b>Newton’s Law of Cooling:</b> The rate of change of temperature is proportional to the difference between the object's temperature and surrounding temperature.</li>
+    </ul>
+</div>
+
+
+<!-- KEY POINTS -->
+
+<div class="box">
+    <h2>Key Points</h2>
+
+    <ul>
+        <li>DE contains derivative(s) of an unknown function.</li>
+
+        <li>ODE has only one independent variable.</li>
+
+        <li>Order is determined by the highest derivative.</li>
+
+        <li>Degree is determined by the power of the highest order derivative, provided the equation is polynomial in derivatives.</li>
+
+        <li>Order and degree are positive integers when degree is defined.</li>
+
+        <li>If a derivative occurs inside a logarithm, exponential, trigonometric function, etc., degree may not be defined.</li>
+
+        <li>An nth-order differential equation generally has n arbitrary constants in its general solution.</li>
+
+        <li>A first-order DE generally has one arbitrary constant.</li>
+
+        <li>A second-order DE generally has two arbitrary constants.</li>
+
+        <li>General solution represents a family of curves.</li>
+
+        <li>Particular solution represents one member of that family.</li>
+
+        <li>To form a differential equation, differentiate the given equation enough times to eliminate arbitrary constants.</li>
+
+        <li>For a linear DE, y and its derivatives must occur to the first power and must not be multiplied together.</li>
+
+        <li>Terms such as y², yy′, or (y′)² make a differential equation non-linear.</li>
+
+        <li>In a separable equation, separate x and y variables before integrating.</li>
+
+        <li>For an IVP, first find the general solution, then use the given initial condition to find the constant.</li>
+
+        <li>For a homogeneous equation, the substitution y = ux gives dy/dx = u + x(du/dx).</li>
+
+        <li>The substitution x = vy can also be used for homogeneous equations.</li>
+
+        <li>For falling-body problems, acceleration is represented by g when air resistance is ignored.</li>
+
+        <li>In falling-body problems, choose the sign of g according to the selected direction as positive.</li>
+
+        <li>In Newton’s Law of Cooling, k is usually negative when an object cools toward the surrounding temperature.</li>
+
+        <li>For Newton’s Law of Cooling, T₀ represents the surrounding temperature.</li>
+    </ul>
+</div>
+
+
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+
+</body>
+</html>

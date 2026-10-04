@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class 12 - Chapter 7 | Conic Sections</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #222;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        h2 {
+            color: #ad1457;
+            margin-top: 0;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 10px auto 20px;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 15px;
+            background: #fff0f5;
+            box-shadow: 0 3px 10px #f3d1dc;
+        }
+
+        .formula {
+            background: white;
+            margin: 12px 0;
+            padding: 14px;
+            border-radius: 10px;
+            font-size: 17px;
+            line-height: 1.7;
+            position: relative;
+            padding-right: 60px;
+        }
+
+        .formula b {
+            color: #ad1457;
+        }
+
+        .copy-btn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 9px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .definition {
+            background: white;
+            margin: 12px 0;
+            padding: 14px;
+            border-radius: 10px;
+            line-height: 1.6;
+        }
+
+        .key {
+            background: white;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 10px;
+            line-height: 1.6;
+        }
+
+        .section-title {
+            color: #ad1457;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .box {
+                margin: 12px;
+                padding: 15px;
+            }
+
+            .formula {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Class 12 Mathematics — Chapter 7</h1>
+    <p>Conic Sections</p>
+</header>
+
+<a href="class12.html" class="back-button">← Back to Chapters</a>
+
+
+<!-- DEFINITIONS -->
+
+<div class="box">
+    <h2>Definitions</h2>
+
+    <div class="definition">
+        <b>Conic Section:</b> A conic section is a curve obtained by intersecting a plane with a right circular cone.
+    </div>
+
+    <div class="definition">
+        <b>Circle:</b> The set of all points that are at a fixed distance from a fixed point called the centre.
+    </div>
+
+    <div class="definition">
+        <b>Parabola:</b> The set of all points equidistant from a fixed point called the focus and a fixed line called the directrix.
+    </div>
+
+    <div class="definition">
+        <b>Ellipse:</b> The set of all points for which the sum of distances from two fixed points called foci is constant.
+    </div>
+
+    <div class="definition">
+        <b>Hyperbola:</b> The set of all points for which the difference of distances from two fixed points called foci is constant.
+    </div>
+
+    <div class="definition">
+        <b>Focus:</b> A fixed point used in defining a conic.
+    </div>
+
+    <div class="definition">
+        <b>Directrix:</b> A fixed line used in defining a parabola and other conics.
+    </div>
+
+    <div class="definition">
+        <b>Eccentricity:</b> The ratio of the distance of a point from the focus to its perpendicular distance from the directrix.
+    </div>
+
+    <div class="definition">
+        <b>Tangent:</b> A line that touches a curve at a point.
+    </div>
+
+    <div class="definition">
+        <b>Normal:</b> A line perpendicular to the tangent at the point of contact.
+    </div>
+
+    <div class="definition">
+        <b>Secant:</b> A line that intersects a circle at two points.
+    </div>
+
+    <div class="definition">
+        <b>Latus Rectum:</b> A focal chord perpendicular to the major axis of an ellipse or transverse axis of a hyperbola.
+    </div>
+</div>
+
+
+<!-- CIRCLE -->
+
+<div class="box">
+    <h2>1. Circle</h2>
+
+    <div class="formula">
+        <b>(x − h)² + (y − k)² = r²</b>
+        <button class="copy-btn" onclick="copyFormula(this, '(x − h)² + (y − k)² = r²')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>x² + y² = r²</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'x² + y² = r²')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>x² + y² + 2gx + 2fy + c = 0</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'x² + y² + 2gx + 2fy + c = 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        Centre = <b>(−g, −f)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Centre = (−g, −f)')">📋</button>
+    </div>
+
+    <div class="formula">
+        Radius = <b>√(g² + f² − c)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Radius = √(g² + f² − c)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>h = −g, k = −f</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'h = −g, k = −f')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>c = h² + k² − r²</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'c = h² + k² − r²')">📋</button>
+    </div>
+
+    <div class="formula">
+        Point circle: <b>g² + f² − c = 0</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Point circle: g² + f² − c = 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        Real circle: <b>g² + f² − c &gt; 0</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Real circle: g² + f² − c > 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        Imaginary circle: <b>g² + f² − c &lt; 0</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Imaginary circle: g² + f² − c < 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        Distance from point (x₀,y₀) to line ax + by + c = 0:
+        <b>d = |ax₀ + by₀ + c| / √(a² + b²)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'd = |ax₀ + by₀ + c| / √(a² + b²)')">📋</button>
+    </div>
+
+    <div class="formula">
+        Distance from centre to line y = mx + c:
+        <b>d = |c| / √(m² + 1)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'd = |c| / √(m² + 1)')">📋</button>
+    </div>
+
+    <div class="formula">
+        Two intersections: <b>d &lt; r</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Two intersections: d < r')">📋</button>
+    </div>
+
+    <div class="formula">
+        Tangent: <b>d = r</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Tangent: d = r')">📋</button>
+    </div>
+
+    <div class="formula">
+        No intersection: <b>d &gt; r</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'No intersection: d > r')">📋</button>
+    </div>
+
+    <div class="formula">
+        Tangent lines to x² + y² = r²:
+        <b>y = mx ± r√(m² + 1)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'y = mx ± r√(m² + 1)')">📋</button>
+    </div>
+
+    <div class="formula">
+        Tangent to general circle at P(x₁,y₁):
+        <b>(x₁+g)x + (y₁+f)y + gx₁ + fy₁ + c = 0</b>
+        <button class="copy-btn" onclick="copyFormula(this, '(x₁+g)x + (y₁+f)y + gx₁ + fy₁ + c = 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        Tangent slope:
+        <b>dy/dx = −(x₁+g)/(y₁+f)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'dy/dx = −(x₁+g)/(y₁+f)')">📋</button>
+    </div>
+
+    <div class="formula">
+        Normal slope:
+        <b>(y₁+f)/(x₁+g)</b>
+        <button class="copy-btn" onclick="copyFormula(this, '(y₁+f)/(x₁+g)')">📋</button>
+    </div>
+
+    <div class="formula">
+        Tangent length from external point:
+        <b>PA = √(x₁² + y₁² + 2gx₁ + 2fy₁ + c)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'PA = √(x₁² + y₁² + 2gx₁ + 2fy₁ + c)')">📋</button>
+    </div>
+</div>
+
+
+<!-- PARABOLA -->
+
+<div class="box">
+    <h2>2. Parabola</h2>
+
+    <div class="formula">
+        <b>y² = 4ax</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'y² = 4ax')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>y² = −4ax</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'y² = −4ax')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>x² = 4ay</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'x² = 4ay')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>x² = −4ay</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'x² = −4ay')">📋</button>
+    </div>
+
+    <div class="formula">
+        Focus of y² = 4ax: <b>(a,0)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Focus = (a,0)')">📋</button>
+    </div>
+
+    <div class="formula">
+        Directrix of y² = 4ax: <b>x = −a</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Directrix: x = −a')">📋</button>
+    </div>
+
+    <div class="formula">
+        Eccentricity: <b>e = 1</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'e = 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        Latus rectum length: <b>4a</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Latus rectum = 4a')">📋</button>
+    </div>
+
+    <div class="formula">
+        Vertex form:
+        <b>(y − k)² = 4a(x − h)</b>
+        <button class="copy-btn" onclick="copyFormula(this, '(y − k)² = 4a(x − h)')">📋</button>
+    </div>
+
+    <div class="formula">
+        General parabola y = Ax² + Bx + C:
+        <b>h = −B/(2A)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'h = −B/(2A)')">📋</button>
+    </div>
+
+    <div class="formula">
+        For y = Ax² + Bx + C:
+        <b>k = −(B² − 4AC)/(4A)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'k = −(B² − 4AC)/(4A)')">📋</button>
+    </div>
+
+    <div class="formula">
+        For (y − k)² = 4a(x − h):
+        <b>dy/dx = 2a/(y − k)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'dy/dx = 2a/(y − k)')">📋</button>
+    </div>
+
+    <div class="formula">
+        Tangent at P(x₁,y₁):
+        <b>2a(x − x₁) − (y₁ − k)(y − y₁) = 0</b>
+        <button class="copy-btn" onclick="copyFormula(this, '2a(x − x₁) − (y₁ − k)(y − y₁) = 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        Normal at P(x₁,y₁):
+        <b>(y₁ − k)(x − x₁) + 2a(y − y₁) = 0</b>
+        <button class="copy-btn" onclick="copyFormula(this, '(y₁ − k)(x − x₁) + 2a(y − y₁) = 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        Tangent to y² = 4ax:
+        <b>y = mx + a/m</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'y = mx + a/m')">📋</button>
+    </div>
+</div>
+
+
+<!-- ELLIPSE -->
+
+<div class="box">
+    <h2>3. Ellipse</h2>
+
+    <div class="formula">
+        <b>x²/a² + y²/b² = 1</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'x²/a² + y²/b² = 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>y²/a² + x²/b² = 1</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'y²/a² + x²/b² = 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>b² = a² − c²</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'b² = a² − c²')">📋</button>
+    </div>
+
+    <div class="formula">
+        Eccentricity:
+        <b>e = c/a</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'e = c/a')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>e = √(a² − b²)/a</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'e = √(a² − b²)/a')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>b² = a²(1 − e²)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'b² = a²(1 − e²)')">📋</button>
+    </div>
+
+    <div class="formula">
+        Horizontal foci:
+        <b>(±c,0)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Foci = (±c,0)')">📋</button>
+    </div>
+
+    <div class="formula">
+        Vertical foci:
+        <b>(0,±c)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Foci = (0,±c)')">📋</button>
+    </div>
+
+    <div class="formula">
+        Latus rectum length:
+        <b>2b²/a</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Latus rectum = 2b²/a')">📋</button>
+    </div>
+
+    <div class="formula">
+        Horizontal directrices:
+        <b>x = ±a/e = ±a²/c</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'x = ±a/e = ±a²/c')">📋</button>
+    </div>
+
+    <div class="formula">
+        Vertical directrices:
+        <b>y = ±a/e = ±a²/c</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'y = ±a/e = ±a²/c')">📋</button>
+    </div>
+
+    <div class="formula">
+        Shifted horizontal ellipse:
+        <b>(x − h)²/a² + (y − k)²/b² = 1</b>
+        <button class="copy-btn" onclick="copyFormula(this, '(x − h)²/a² + (y − k)²/b² = 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        Shifted vertical ellipse:
+        <b>(x − h)²/b² + (y − k)²/a² = 1</b>
+        <button class="copy-btn" onclick="copyFormula(this, '(x − h)²/b² + (y − k)²/a² = 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        Tangent at P(x₁,y₁):
+        <b>(x₁−h)(x−h)/a² + (y₁−k)(y−k)/b² = 1</b>
+        <button class="copy-btn" onclick="copyFormula(this, '(x₁−h)(x−h)/a² + (y₁−k)(y−k)/b² = 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        Tangent at origin-centred ellipse:
+        <b>x₁x/a² + y₁y/b² = 1</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'x₁x/a² + y₁y/b² = 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        Tangent slope:
+        <b>dy/dx = −b²(x−h) / [a²(y−k)]</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'dy/dx = −b²(x−h) / [a²(y−k)]')">📋</button>
+    </div>
+
+    <div class="formula">
+        Normal slope:
+        <b>a²(y₁−k) / [b²(x₁−h)]</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'a²(y₁−k) / [b²(x₁−h)]')">📋</button>
+    </div>
+
+    <div class="formula">
+        Tangency condition:
+        <b>D = 0</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'D = 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        Tangent from origin:
+        <b>y = mx ± √(a²m² + b²)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'y = mx ± √(a²m² + b²)')">📋</button>
+    </div>
+</div>
+
+
+<!-- HYPERBOLA -->
+
+<div class="box">
+    <h2>4. Hyperbola</h2>
+
+    <div class="formula">
+        <b>x²/a² − y²/b² = 1</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'x²/a² − y²/b² = 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>y²/a² − x²/b² = 1</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'y²/a² − x²/b² = 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>c² = a² + b²</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'c² = a² + b²')">📋</button>
+    </div>
+
+    <div class="formula">
+        Eccentricity:
+        <b>e = c/a</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'e = c/a')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>e &gt; 1</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'e > 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        Horizontal foci:
+        <b>(±c,0)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Foci = (±c,0)')">📋</button>
+    </div>
+
+    <div class="formula">
+        Vertical foci:
+        <b>(0,±c)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Foci = (0,±c)')">📋</button>
+    </div>
+
+    <div class="formula">
+        Horizontal latus rectum:
+        <b>2b²/a</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Latus rectum = 2b²/a')">📋</button>
+    </div>
+
+    <div class="formula">
+        Horizontal directrices:
+        <b>x = ±a/e = ±a²/c</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'x = ±a/e = ±a²/c')">📋</button>
+    </div>
+
+    <div class="formula">
+        Vertical directrices:
+        <b>y = ±a/e = ±a²/c</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'y = ±a/e = ±a²/c')">📋</button>
+    </div>
+
+    <div class="formula">
+        Shifted horizontal hyperbola:
+        <b>(x − h)²/a² − (y − k)²/b² = 1</b>
+        <button class="copy-btn" onclick="copyFormula(this, '(x − h)²/a² − (y − k)²/b² = 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        Shifted vertical hyperbola:
+        <b>(y − k)²/a² − (x − h)²/b² = 1</b>
+        <button class="copy-btn" onclick="copyFormula(this, '(y − k)²/a² − (x − h)²/b² = 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        Tangent from origin:
+        <b>y = mx ± √(a²m² − b²)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'y = mx ± √(a²m² − b²)')">📋</button>
+    </div>
+
+    <div class="formula">
+        Tangent at P(x₁,y₁):
+        <b>x₁x/a² − y₁y/b² = 1</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'x₁x/a² − y₁y/b² = 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        Tangent slope:
+        <b>dy/dx = b²x / (a²y)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'dy/dx = b²x / (a²y)')">📋</button>
+    </div>
+
+    <div class="formula">
+        Normal slope:
+        <b>−a²y₁ / (b²x₁)</b>
+        <button class="copy-btn" onclick="copyFormula(this, '−a²y₁ / (b²x₁)')">📋</button>
+    </div>
+
+    <div class="formula">
+        Normal at P(x₁,y₁):
+        <b>a²y₁(x−x₁) + b²x₁(y−y₁) = 0</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'a²y₁(x−x₁) + b²x₁(y−y₁) = 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        Tangency condition:
+        <b>D = 0</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'D = 0')">📋</button>
+    </div>
+</div>
+
+
+<!-- KEY POINTS -->
+
+<div class="box">
+    <h2>Key Points</h2>
+
+    <div class="key">
+        • A circle has eccentricity <b>e = 0</b>.
+    </div>
+
+    <div class="key">
+        • A parabola has eccentricity <b>e = 1</b>.
+    </div>
+
+    <div class="key">
+        • An ellipse has <b>0 &lt; e &lt; 1</b>.
+    </div>
+
+    <div class="key">
+        • A hyperbola has <b>e &gt; 1</b>.
+    </div>
+
+    <div class="key">
+        • For a parabola, the vertex-to-focus distance is <b>a</b>.
+    </div>
+
+    <div class="key">
+        • For an ellipse, <b>a &gt; b</b> and <b>a &gt; c</b>.
+    </div>
+
+    <div class="key">
+        • For a hyperbola, <b>c² = a² + b²</b>.
+    </div>
+
+    <div class="key">
+        • For an ellipse, <b>b² = a² − c²</b>.
+    </div>
+
+    <div class="key">
+        • Tangent and radius are perpendicular at the point of contact.
+    </div>
+
+    <div class="key">
+        • A tangent gives one repeated intersection, so <b>D = 0</b>.
+    </div>
+
+    <div class="key">
+        • For a secant, <b>D &gt; 0</b>.
+    </div>
+
+    <div class="key">
+        • For no real intersection, <b>D &lt; 0</b>.
+    </div>
+
+    <div class="key">
+        • Completing the square is used to convert general conic equations into standard form.
+    </div>
+
+    <div class="key">
+        • The centre of an ellipse or hyperbola is the midpoint of its two foci.
+    </div>
+
+    <div class="key">
+        • In an ellipse, the sum of distances from the two foci is constant.
+    </div>
+
+    <div class="key">
+        • In a hyperbola, the difference of distances from the two foci is constant.
+    </div>
+
+    <div class="key">
+        • The major/transverse axis passes through the foci.
+    </div>
+</div>
+
+<script>
+function copyFormula(button, formula) {
+    var textArea = document.createElement("textarea");
+    textArea.value = formula;
+
+    document.body.appendChild(textArea);
+    textArea.select();
+    textArea.setSelectionRange(0, 99999);
+
+    try {
+        document.execCommand("copy");
+        button.textContent = "✓";
+    } catch (err) {
+        button.textContent = "❌";
+    }
+
+    document.body.removeChild(textArea);
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+</body>
+</html>

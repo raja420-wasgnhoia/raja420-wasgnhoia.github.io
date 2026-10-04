@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class 12 - Chapter 8 | Inverse Trigonometric Functions</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #222;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        header p {
+            margin-bottom: 0;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 10px auto 20px;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 15px;
+            background: #fff0f5;
+            box-shadow: 0 3px 10px #f3d1dc;
+        }
+
+        .formula {
+            background: white;
+            margin: 12px 0;
+            padding: 14px 60px 14px 14px;
+            border-radius: 10px;
+            font-size: 17px;
+            line-height: 1.7;
+            position: relative;
+        }
+
+        .formula b {
+            color: #ad1457;
+        }
+
+        .copy-btn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 9px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .definition,
+        .key {
+            background: white;
+            margin: 12px 0;
+            padding: 14px;
+            border-radius: 10px;
+            line-height: 1.6;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            min-width: 650px;
+        }
+
+        th,
+        td {
+            border: 1px solid #f8bbd0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #f8bbd0;
+            color: #ad1457;
+        }
+
+        @media (max-width: 600px) {
+            .box {
+                margin: 12px;
+                padding: 15px;
+            }
+
+            .formula {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Class 12 Mathematics — Chapter 8</h1>
+    <p>Inverse Trigonometric Functions</p>
+</header>
+
+<a href="class12.html" class="back-button">← Back to Chapters</a>
+
+
+<div class="box">
+    <h2>Definitions</h2>
+
+    <div class="definition">
+        <b>Inverse Trigonometric Function:</b>
+        An inverse trigonometric function gives the angle corresponding to a given trigonometric value.
+    </div>
+
+    <div class="definition">
+        <b>Principal Value:</b>
+        The unique angle selected from a specified interval for an inverse trigonometric function.
+    </div>
+
+    <div class="definition">
+        <b>Principal Cosine Function:</b>
+        Cosine restricted to x ∈ [0, π], making it one-to-one.
+    </div>
+
+    <div class="definition">
+        <b>Principal Sine Function:</b>
+        Sine restricted to x ∈ [−π/2, π/2], making it one-to-one.
+    </div>
+
+    <div class="definition">
+        <b>Principal Tangent Function:</b>
+        Tangent restricted to x ∈ (−π/2, π/2), making it one-to-one.
+    </div>
+
+    <div class="definition">
+        <b>Principal Cotangent Function:</b>
+        Cotangent restricted to x ∈ (0, π), making it one-to-one.
+    </div>
+
+    <div class="definition">
+        <b>Principal Secant Function:</b>
+        Secant restricted to [0, π] except π/2.
+    </div>
+
+    <div class="definition">
+        <b>Principal Cosecant Function:</b>
+        Cosecant restricted to [−π/2, π/2] except 0.
+    </div>
+
+    <div class="definition">
+        <b>Graph of an Inverse Function:</b>
+        The graph of an inverse function is the reflection of the original restricted function in the line y = x.
+    </div>
+</div>
+
+
+<div class="box">
+    <h2>1. Basic Inverse Trigonometric Functions</h2>
+
+    <div class="formula">
+        <b>Arccos x = Cos⁻¹x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Arccos x = Cos⁻¹x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Arcsin x = Sin⁻¹x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Arcsin x = Sin⁻¹x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Arctan x = Tan⁻¹x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Arctan x = Tan⁻¹x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Arcsec x = Sec⁻¹x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Arcsec x = Sec⁻¹x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Arccsc x = Csc⁻¹x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Arccsc x = Csc⁻¹x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Arccot x = Cot⁻¹x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Arccot x = Cot⁻¹x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cos⁻¹(0.5) = π/3</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Cos⁻¹(0.5) = π/3')">📋</button>
+    </div>
+</div>
+
+
+<div class="box">
+    <h2>2. Domain and Range</h2>
+
+    <div class="table-wrap">
+        <table>
+            <tr>
+                <th>Function</th>
+                <th>Domain</th>
+                <th>Range</th>
+                <th>Nature</th>
+            </tr>
+
+            <tr>
+                <td>Cos⁻¹x</td>
+                <td>[−1, 1]</td>
+                <td>[0, π]</td>
+                <td>Decreasing, one-to-one</td>
+            </tr>
+
+            <tr>
+                <td>Sin⁻¹x</td>
+                <td>[−1, 1]</td>
+                <td>[−π/2, π/2]</td>
+                <td>Increasing, odd, one-to-one</td>
+            </tr>
+
+            <tr>
+                <td>Tan⁻¹x</td>
+                <td>R</td>
+                <td>(−π/2, π/2)</td>
+                <td>Increasing, odd, one-to-one</td>
+            </tr>
+
+            <tr>
+                <td>Cot⁻¹x</td>
+                <td>R</td>
+                <td>(0, π)</td>
+                <td>Decreasing, one-to-one</td>
+            </tr>
+
+            <tr>
+                <td>Sec⁻¹x</td>
+                <td>(−∞,−1] ∪ [1,∞)</td>
+                <td>[0,π/2) ∪ (π/2,π]</td>
+                <td>Non-periodic</td>
+            </tr>
+
+            <tr>
+                <td>Csc⁻¹x</td>
+                <td>(−∞,−1] ∪ [1,∞)</td>
+                <td>[−π/2,0) ∪ (0,π/2]</td>
+                <td>Non-periodic, odd</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="formula">
+        <b>Inverse graph = reflection of original graph in y = x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Inverse graph = reflection of original graph in y = x')">📋</button>
+    </div>
+</div>
+
+
+<div class="box">
+    <h2>3. Inverse Cosine</h2>
+
+    <div class="formula">
+        <b>y = Cos⁻¹x</b>, x ∈ [−1,1], y ∈ [0,π]
+        <button class="copy-btn" onclick="copyFormula(this, 'y = Cos⁻¹x, x ∈ [−1,1], y ∈ [0,π]')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cos⁻¹(1) = 0</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Cos⁻¹(1) = 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cos⁻¹(0) = π/2</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Cos⁻¹(0) = π/2')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cos⁻¹(−1) = π</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Cos⁻¹(−1) = π')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cos⁻¹(−1/2) = 2π/3</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Cos⁻¹(−1/2) = 2π/3')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cos(Cos⁻¹x) = x</b>, x ∈ [−1,1]
+        <button class="copy-btn" onclick="copyFormula(this, 'Cos(Cos⁻¹x) = x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cos⁻¹(Cos x) = x</b>, x ∈ [0,π]
+        <button class="copy-btn" onclick="copyFormula(this, 'Cos⁻¹(Cos x) = x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cos⁻¹(−x) = π − Cos⁻¹x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Cos⁻¹(−x) = π − Cos⁻¹x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cos⁻¹x = Sin⁻¹(√(1−x²))</b>, x ∈ [0,1]
+        <button class="copy-btn" onclick="copyFormula(this, 'Cos⁻¹x = Sin⁻¹(√(1−x²))')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cos⁻¹x = π − Sin⁻¹(√(1−x²))</b>, x ∈ [−1,0]
+        <button class="copy-btn" onclick="copyFormula(this, 'Cos⁻¹x = π − Sin⁻¹(√(1−x²))')">📋</button>
+    </div>
+</div>
+
+
+<div class="box">
+    <h2>4. Inverse Sine</h2>
+
+    <div class="formula">
+        <b>y = Sin⁻¹x</b>, x ∈ [−1,1], y ∈ [−π/2,π/2]
+        <button class="copy-btn" onclick="copyFormula(this, 'y = Sin⁻¹x, x ∈ [−1,1], y ∈ [−π/2,π/2]')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sin⁻¹(−1) = −π/2</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sin⁻¹(−1) = −π/2')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sin⁻¹(0) = 0</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sin⁻¹(0) = 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sin⁻¹(1) = π/2</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sin⁻¹(1) = π/2')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sin⁻¹(−1/√2) = −π/4</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sin⁻¹(−1/√2) = −π/4')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sin(Sin⁻¹x) = x</b>, x ∈ [−1,1]
+        <button class="copy-btn" onclick="copyFormula(this, 'Sin(Sin⁻¹x) = x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sin⁻¹(Sin x) = x</b>, x ∈ [−π/2,π/2]
+        <button class="copy-btn" onclick="copyFormula(this, 'Sin⁻¹(Sin x) = x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sin⁻¹(−x) = −Sin⁻¹x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sin⁻¹(−x) = −Sin⁻¹x')">📋</button>
+    </div>
+</div>
+
+
+<div class="box">
+    <h2>5. Inverse Tangent</h2>
+
+    <div class="formula">
+        <b>y = Tan⁻¹x</b>, x ∈ R, y ∈ (−π/2,π/2)
+        <button class="copy-btn" onclick="copyFormula(this, 'y = Tan⁻¹x, x ∈ R, y ∈ (−π/2,π/2)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Tan⁻¹(0) = 0</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Tan⁻¹(0) = 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Tan⁻¹(1) = π/4</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Tan⁻¹(1) = π/4')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Tan⁻¹(√3) = π/3</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Tan⁻¹(√3) = π/3')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Tan⁻¹(−1/√3) = −π/6</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Tan⁻¹(−1/√3) = −π/6')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Tan(Tan⁻¹x) = x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Tan(Tan⁻¹x) = x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Tan⁻¹(Tan x) = x</b>, x ∈ (−π/2,π/2)
+        <button class="copy-btn" onclick="copyFormula(this, 'Tan⁻¹(Tan x) = x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Tan⁻¹(−x) = −Tan⁻¹x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Tan⁻¹(−x) = −Tan⁻¹x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Tan⁻¹x + Tan⁻¹(1/x) = π/2</b>, x &gt; 0
+        <button class="copy-btn" onclick="copyFormula(this, 'Tan⁻¹x + Tan⁻¹(1/x) = π/2, x > 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Tan⁻¹x + Tan⁻¹(1/x) = −π/2</b>, x &lt; 0
+        <button class="copy-btn" onclick="copyFormula(this, 'Tan⁻¹x + Tan⁻¹(1/x) = −π/2, x < 0')">📋</button>
+    </div>
+</div>
+
+
+<div class="box">
+    <h2>6. Inverse Cotangent</h2>
+
+    <div class="formula">
+        <b>y = Cot⁻¹x</b>, x ∈ R, y ∈ (0,π)
+        <button class="copy-btn" onclick="copyFormula(this, 'y = Cot⁻¹x, x ∈ R, y ∈ (0,π)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cot⁻¹(1) = π/4</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Cot⁻¹(1) = π/4')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cot⁻¹(0) = π/2</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Cot⁻¹(0) = π/2')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cot⁻¹(−√3) = 2π/3</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Cot⁻¹(−√3) = 2π/3')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cot(Cot⁻¹x) = x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Cot(Cot⁻¹x) = x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cot⁻¹(Cot x) = x</b>, x ∈ (0,π)
+        <button class="copy-btn" onclick="copyFormula(this, 'Cot⁻¹(Cot x) = x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cot⁻¹(−x) = π − Cot⁻¹x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Cot⁻¹(−x) = π − Cot⁻¹x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cot⁻¹x = Tan⁻¹(1/x)</b>, x &gt; 0
+        <button class="copy-btn" onclick="copyFormula(this, 'Cot⁻¹x = Tan⁻¹(1/x), x > 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cot⁻¹x = Tan⁻¹(1/x) + π</b>, x &lt; 0
+        <button class="copy-btn" onclick="copyFormula(this, 'Cot⁻¹x = Tan⁻¹(1/x) + π, x < 0')">📋</button>
+    </div>
+</div>
+
+
+<div class="box">
+    <h2>7. Inverse Secant</h2>
+
+    <div class="formula">
+        <b>y = Sec⁻¹x</b>, x ∈ (−∞,−1] ∪ [1,∞)
+        <button class="copy-btn" onclick="copyFormula(this, 'y = Sec⁻¹x, x ∈ (−∞,−1] ∪ [1,∞)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Range = [0,π/2) ∪ (π/2,π]</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Range = [0,π/2) ∪ (π/2,π]')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sec⁻¹(1) = 0</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sec⁻¹(1) = 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sec⁻¹(−1) = π</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sec⁻¹(−1) = π')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sec⁻¹(2/√3) = π/6</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sec⁻¹(2/√3) = π/6')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sec⁻¹(−2) = 2π/3</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sec⁻¹(−2) = 2π/3')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sec(Sec⁻¹x) = x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sec(Sec⁻¹x) = x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sec⁻¹(Sec x) = x</b>, x ∈ [0,π/2) ∪ (π/2,π]
+        <button class="copy-btn" onclick="copyFormula(this, 'Sec⁻¹(Sec x) = x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sec⁻¹(−x) = π − Sec⁻¹x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sec⁻¹(−x) = π − Sec⁻¹x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sec⁻¹x = Cos⁻¹(1/x)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sec⁻¹x = Cos⁻¹(1/x)')">📋</button>
+    </div>
+</div>
+
+
+<div class="box">
+    <h2>8. Inverse Cosecant</h2>
+
+    <div class="formula">
+        <b>y = Csc⁻¹x</b>, x ∈ (−∞,−1] ∪ [1,∞)
+        <button class="copy-btn" onclick="copyFormula(this, 'y = Csc⁻¹x, x ∈ (−∞,−1] ∪ [1,∞)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Range = [−π/2,0) ∪ (0,π/2]</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Range = [−π/2,0) ∪ (0,π/2]')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Csc⁻¹(−1) = −π/2</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Csc⁻¹(−1) = −π/2')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Csc⁻¹(1) = π/2</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Csc⁻¹(1) = π/2')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Csc⁻¹(√2) = π/4</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Csc⁻¹(√2) = π/4')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Csc⁻¹(−√2) = −π/4</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Csc⁻¹(−√2) = −π/4')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Csc(Csc⁻¹x) = x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Csc(Csc⁻¹x) = x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Csc⁻¹(Csc x) = x</b>, x ∈ [−π/2,0) ∪ (0,π/2]
+        <button class="copy-btn" onclick="copyFormula(this, 'Csc⁻¹(Csc x) = x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Csc⁻¹(−x) = −Csc⁻¹x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Csc⁻¹(−x) = −Csc⁻¹x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Csc⁻¹x = Sin⁻¹(1/x)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Csc⁻¹x = Sin⁻¹(1/x)')">📋</button>
+    </div>
+</div>
+
+
+<div class="box">
+    <h2>9. Important Properties</h2>
+
+    <div class="formula">
+        <b>Sin⁻¹x + Cos⁻¹x = π/2</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sin⁻¹x + Cos⁻¹x = π/2')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Tan⁻¹x + Cot⁻¹x = π/2</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Tan⁻¹x + Cot⁻¹x = π/2')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sec⁻¹x + Csc⁻¹x = π/2</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sec⁻¹x + Csc⁻¹x = π/2')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sin⁻¹(1/x) = Csc⁻¹x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sin⁻¹(1/x) = Csc⁻¹x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cos⁻¹(1/x) = Sec⁻¹x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Cos⁻¹(1/x) = Sec⁻¹x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Tan⁻¹(1/x) = Cot⁻¹x</b>, x &gt; 0
+        <button class="copy-btn" onclick="copyFormula(this, 'Tan⁻¹(1/x) = Cot⁻¹x, x > 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Tan⁻¹(1/x) = −π + Cot⁻¹x</b>, x &lt; 0
+        <button class="copy-btn" onclick="copyFormula(this, 'Tan⁻¹(1/x) = −π + Cot⁻¹x, x < 0')">📋</button>
+    </div>
+</div>
+
+
+div class="box">
+    <h2>10. Graphs of Inverse Trigonometric Functions</h2>
+
+    <div class="formula">
+        <b>Cos⁻¹x:</b> Domain [−1,1], Range [0,π], decreasing.
+        <button class="copy-btn" onclick="copyFormula(this, 'Cos⁻¹x: Domain [−1,1], Range [0,π], decreasing')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sin⁻¹x:</b> Domain [−1,1], Range [−π/2,π/2], increasing and odd.
+        <button class="copy-btn" onclick="copyFormula(this, 'Sin⁻¹x: Domain [−1,1], Range [−π/2,π/2], increasing and odd')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Tan⁻¹x:</b> Domain R, Range (−π/2,π/2), increasing.
+        <button class="copy-btn" onclick="copyFormula(this, 'Tan⁻¹x: Domain R, Range (−π/2,π/2), increasing')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cot⁻¹x:</b> Domain R, Range (0,π), decreasing.
+        <button class="copy-btn" onclick="copyFormula(this, 'Cot⁻¹x: Domain R, Range (0,π), decreasing')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sec⁻¹x:</b> Domain (−∞,−1] ∪ [1,∞), Range [0,π/2) ∪ (π/2,π].
+        <button class="copy-btn" onclick="copyFormula(this, 'Sec⁻¹x: Domain (−∞,−1] ∪ [1,∞), Range [0,π/2) ∪ (π/2,π]')">📋</button>
+    </div>
+
+ <div class="box">
+    <h2>10. Graphs of Inverse Trigonometric Functions</h2>
+
+    <div class="formula">
+        <b>Cos⁻¹x:</b> Domain [−1,1], Range [0,π], decreasing.
+        <button class="copy-btn" onclick="copyFormula(this, 'Cos⁻¹x: Domain [−1,1], Range [0,π], decreasing')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sin⁻¹x:</b> Domain [−1,1], Range [−π/2,π/2], increasing and odd.
+        <button class="copy-btn" onclick="copyFormula(this, 'Sin⁻¹x: Domain [−1,1], Range [−π/2,π/2], increasing and odd')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Tan⁻¹x:</b> Domain R, Range (−π/2,π/2), increasing.
+        <button class="copy-btn" onclick="copyFormula(this, 'Tan⁻¹x: Domain R, Range (−π/2,π/2), increasing')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cot⁻¹x:</b> Domain R, Range (0,π), decreasing.
+        <button class="copy-btn" onclick="copyFormula(this, 'Cot⁻¹x: Domain R, Range (0,π), decreasing')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sec⁻¹x:</b> Domain (−∞,−1] ∪ [1,∞), Range [0,π/2) ∪ (π/2,π].
+        <button class="copy-btn" onclick="copyFormula(this, 'Sec⁻¹x: Domain (−∞,−1] ∪ [1,∞), Range [0,π/2) ∪ (π/2,π]')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Csc⁻¹x:</b> Domain (−∞,−1] ∪ [1,∞), Range [−π/2,0) ∪ (0,π/2].
+        <button class="copy-btn" onclick="copyFormula(this, 'Csc⁻¹x: Domain (−∞,−1] ∪ [1,∞), Range [−π/2,0) ∪ (0,π/2]')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Tan⁻¹x asymptotes:</b> y = ±π/2
+        <button class="copy-btn" onclick="copyFormula(this, 'Tan⁻¹x asymptotes: y = ±π/2')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cot⁻¹x asymptotes:</b> y = 0 and y = π
+        <button class="copy-btn" onclick="copyFormula(this, 'Cot⁻¹x asymptotes: y = 0 and y = π')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sec⁻¹x asymptote:</b> y = π/2
+        <button class="copy-btn" onclick="copyFormula(this, 'Sec⁻¹x asymptote: y = π/2')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Csc⁻¹x asymptote:</b> y = 0
+        <button class="copy-btn" onclick="copyFormula(this, 'Csc⁻¹x asymptote: y = 0')">📋</button>
+    </div>
+</div>
+
+<div class="box">
+    <h2>11. Important Principal Values</h2>
+
+    <div class="formula">
+        <b>Cos⁻¹(√3/2) = π/6</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Cos⁻¹(√3/2) = π/6')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sin⁻¹(1) = π/2</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sin⁻¹(1) = π/2')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Tan⁻¹(√3) = π/3</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Tan⁻¹(√3) = π/3')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cot⁻¹(1/√3) = π/3</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Cot⁻¹(1/√3) = π/3')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Sec⁻¹(2/√3) = π/6</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sec⁻¹(2/√3) = π/6')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Csc⁻¹(−√2) = −π/4</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Csc⁻¹(−√2) = −π/4')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Cos⁻¹(−1/2) = 2π/3</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Cos⁻¹(−1/2) = 2π/3')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Tan⁻¹(1/√3) = π/6</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Tan⁻¹(1/√3) = π/6')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>Csc⁻¹(−2) = −π/6</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Csc⁻¹(−2) = −π/6')">📋</button>
+    </div>
+</div>
+
+<div class="box">
+    <h2>Key Points</h2>
+
+    <div class="key">
+        • Inverse trigonometric functions are not reciprocals.
+        <b>Sin⁻¹x ≠ 1/Sin x</b>.
+    </div>
+
+    <div class="key">
+        • The principal interval makes the original function one-to-one.
+    </div>
+
+    <div class="key">
+        • Domain and range are interchanged for a function and its inverse.
+    </div>
+
+    <div class="key">
+        • The graph of an inverse function is reflected in <b>y = x</b>.
+    </div>
+
+    <div class="key">
+        • Sin⁻¹x and Cos⁻¹x require x ∈ <b>[−1,1]</b>.
+    </div>
+
+    <div class="key">
+        • Tan⁻¹x and Cot⁻¹x accept every real number.
+    </div>
+
+    <div class="key">
+        • Sec⁻¹x and Csc⁻¹x require
+        <b>x ∈ (−∞,−1] ∪ [1,∞)</b>.
+    </div>
+
+    <div class="key">
+        • Always check the principal range when finding an inverse trigonometric value.
+    </div>
+</div>
+
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+
+</body>
+</html>
