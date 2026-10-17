@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FBISE Class 10 Mathematics - Chapter 3</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fce4ec;
+            color: #222;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .subtitle {
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 15px auto;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            background: white;
+            margin: 15px 20px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px #f3d1dc;
+        }
+
+        h2 {
+            color: #ad1457;
+            margin-top: 0;
+        }
+
+        .formula {
+            background: #fff7fa;
+            border: 1px solid #f8bbd0;
+            border-radius: 10px;
+            padding: 13px;
+            margin: 10px 0;
+            line-height: 1.8;
+            position: relative;
+            padding-right: 55px;
+        }
+
+        .formula strong {
+            color: #ad1457;
+        }
+
+        .copy-btn {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 9px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 3 - Matrices and Determinants</h1>
+    <h4>Formulas Hub</h4>
+</header>
+
+<a href="class10.html" class="back-button">← Back to Chapters</a>
+
+
+<!-- IMPORTANT FORMULAS -->
+
+<div class="box">
+
+<h2>Important Formulas</h2>
+
+<div class="formula">
+<strong>Order of Matrix:</strong> Order = Number of rows × Number of columns
+<button class="copy-btn" onclick="copyFormula(this,'Order = Number of rows × Number of columns')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Transpose:</strong> If A is m × n, then Aᵀ is n × m
+<button class="copy-btn" onclick="copyFormula(this,'If A is m × n, then Aᵀ is n × m')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Transpose Property:</strong> (Aᵀ)ᵀ = A
+<button class="copy-btn" onclick="copyFormula(this,'(Aᵀ)ᵀ = A')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Symmetric Matrix:</strong> A = Aᵀ
+<button class="copy-btn" onclick="copyFormula(this,'A = Aᵀ')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Skew-Symmetric Matrix:</strong> A = −Aᵀ
+<button class="copy-btn" onclick="copyFormula(this,'A = −Aᵀ')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Additive Identity:</strong> A + O = O + A = A
+<button class="copy-btn" onclick="copyFormula(this,'A + O = O + A = A')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Additive Inverse:</strong> A + (−A) = O
+<button class="copy-btn" onclick="copyFormula(this,'A + (−A) = O')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Commutative Law of Addition:</strong> A + B = B + A
+<button class="copy-btn" onclick="copyFormula(this,'A + B = B + A')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Associative Law of Addition:</strong> (A + B) + C = A + (B + C)
+<button class="copy-btn" onclick="copyFormula(this,'(A + B) + C = A + (B + C)')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Scalar Multiplication:</strong> k(A + B) = kA + kB
+<button class="copy-btn" onclick="copyFormula(this,'k(A + B) = kA + kB')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Scalar Property:</strong> (h + k)A = hA + kA
+<button class="copy-btn" onclick="copyFormula(this,'(h + k)A = hA + kA')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Scalar Property:</strong> (hk)A = h(kA)
+<button class="copy-btn" onclick="copyFormula(this,'(hk)A = h(kA)')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Matrix Multiplication Condition:</strong> Columns of A = Rows of B
+<button class="copy-btn" onclick="copyFormula(this,'Columns of A = Rows of B')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Order of Product:</strong> If A is m × n and B is n × p, then AB is m × p
+<button class="copy-btn" onclick="copyFormula(this,'If A is m × n and B is n × p, then AB is m × p')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Associative Law of Multiplication:</strong> (AB)C = A(BC)
+<button class="copy-btn" onclick="copyFormula(this,'(AB)C = A(BC)')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Distributive Law:</strong> A(B + C) = AB + AC
+<button class="copy-btn" onclick="copyFormula(this,'A(B + C) = AB + AC')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Distributive Law:</strong> A(B − C) = AB − AC
+<button class="copy-btn" onclick="copyFormula(this,'A(B − C) = AB − AC')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Right Distributive Law:</strong> (A + B)C = AC + BC
+<button class="copy-btn" onclick="copyFormula(this,'(A + B)C = AC + BC')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Identity Matrix:</strong> AI = IA = A
+<button class="copy-btn" onclick="copyFormula(this,'AI = IA = A')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Zero Matrix:</strong> AO = OA = O
+<button class="copy-btn" onclick="copyFormula(this,'AO = OA = O')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Determinant of 2 × 2 Matrix:</strong> |A| = ad − bc
+<button class="copy-btn" onclick="copyFormula(this,'|A| = ad − bc')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Singular Matrix:</strong> |A| = 0
+<button class="copy-btn" onclick="copyFormula(this,'|A| = 0')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Non-Singular Matrix:</strong> |A| ≠ 0
+<button class="copy-btn" onclick="copyFormula(this,'|A| ≠ 0')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Adjoint:</strong> adj A = [ d  −b ; −c  a ]
+<button class="copy-btn" onclick="copyFormula(this,'adj A = [ d  −b ; −c  a ]')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Inverse of Matrix:</strong> A⁻¹ = (1/|A|) adj A
+<button class="copy-btn" onclick="copyFormula(this,'A⁻¹ = (1/|A|) adj A')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Inverse Property:</strong> A⁻¹A = AA⁻¹ = I
+<button class="copy-btn" onclick="copyFormula(this,'A⁻¹A = AA⁻¹ = I')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Inverse Property:</strong> (A⁻¹)⁻¹ = A
+<button class="copy-btn" onclick="copyFormula(this,'(A⁻¹)⁻¹ = A')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Determinant Product:</strong> |AB| = |A||B|
+<button class="copy-btn" onclick="copyFormula(this,'|AB| = |A||B|')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Inverse of Product:</strong> (AB)⁻¹ = B⁻¹A⁻¹
+<button class="copy-btn" onclick="copyFormula(this,'(AB)⁻¹ = B⁻¹A⁻¹')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Matrix Equation:</strong> AX = B
+<button class="copy-btn" onclick="copyFormula(this,'AX = B')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Inverse Method:</strong> X = A⁻¹B
+<button class="copy-btn" onclick="copyFormula(this,'X = A⁻¹B')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Cramer's Rule:</strong> x = Dₓ / D
+<button class="copy-btn" onclick="copyFormula(this,'x = Dₓ / D')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Cramer's Rule:</strong> y = Dᵧ / D
+<button class="copy-btn" onclick="copyFormula(this,'y = Dᵧ / D')">📋</button>
+</div>
+
+</div>
+
+
+<!-- DEFINITIONS -->
+
+<div class="box">
+
+<h2>Definitions</h2>
+
+<ul>
+
+<li>
+<strong>Matrix:</strong>
+A rectangular arrangement of numbers in rows and columns.
+</li>
+
+<li>
+<strong>Element / Entry:</strong>
+Each number in a matrix is called an element or entry.
+</li>
+
+<li>
+<strong>Order of Matrix:</strong>
+The number of rows and columns of a matrix, written as m × n.
+</li>
+
+<li>
+<strong>Row Matrix:</strong>
+A matrix having only one row.
+</li>
+
+<li>
+<strong>Column Matrix:</strong>
+A matrix having only one column.
+</li>
+
+<li>
+<strong>Rectangular Matrix:</strong>
+A matrix in which the number of rows is not equal to the number of columns.
+</li>
+
+<li>
+<strong>Square Matrix:</strong>
+A matrix in which the number of rows is equal to the number of columns.
+</li>
+
+<li>
+<strong>Null / Zero Matrix:</strong>
+A matrix in which all elements are zero.
+</li>
+
+<li>
+<strong>Diagonal Matrix:</strong>
+A square matrix in which all elements except the principal diagonal elements are zero.
+</li>
+
+<li>
+<strong>Scalar Matrix:</strong>
+A diagonal matrix in which all principal diagonal elements are equal and non-zero.
+</li>
+
+<li>
+<strong>Identity Matrix:</strong>
+A scalar matrix in which all principal diagonal elements are 1.
+</li>
+
+<li>
+<strong>Transpose:</strong>
+A matrix obtained by changing rows into columns and columns into rows.
+</li>
+
+<li>
+<strong>Symmetric Matrix:</strong>
+A square matrix for which A = Aᵀ.
+</li>
+
+<li>
+<strong>Skew-Symmetric Matrix:</strong>
+A square matrix for which A = −Aᵀ.
+</li>
+
+<li>
+<strong>Determinant:</strong>
+A number associated with a square matrix.
+</li>
+
+<li>
+<strong>Singular Matrix:</strong>
+A square matrix whose determinant is zero.
+</li>
+
+<li>
+<strong>Non-Singular Matrix:</strong>
+A square matrix whose determinant is non-zero.
+</li>
+
+<li>
+<strong>Adjoint:</strong>
+The matrix obtained by interchanging principal diagonal elements and changing the signs of secondary diagonal elements.
+</li>
+
+<li>
+<strong>Inverse Matrix:</strong>
+A matrix A⁻¹ such that A⁻¹A = AA⁻¹ = I.
+</li>
+
+<li>
+<strong>Invertible Matrix:</strong>
+A matrix whose inverse exists.
+</li>
+
+<li>
+<strong>Cramer's Rule:</strong>
+A method for solving simultaneous linear equations using determinants.
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- KEY POINTS -->
+
+<div class="box">
+
+<h2>Key Points</h2>
+
+<ul>
+
+<li>Order of a matrix is written as rows × columns.</li>
+
+<li>Two matrices can be added or subtracted only if they have the same order.</li>
+
+<li>Matrix multiplication is possible when columns of the first matrix equal rows of the second matrix.</li>
+
+<li>The order of AB is determined by the outer dimensions.</li>
+
+<li>Matrix multiplication is generally not commutative: AB ≠ BA.</li>
+
+<li>Every symmetric matrix is square.</li>
+
+<li>Every diagonal matrix is square.</li>
+
+<li>The identity matrix is always square.</li>
+
+<li>Only square matrices have determinants.</li>
+
+<li>A determinant is a number, not a matrix.</li>
+
+<li>If |A| = 0, the matrix is singular.</li>
+
+<li>If |A| ≠ 0, the matrix is non-singular.</li>
+
+<li>The inverse of a matrix exists only when |A| ≠ 0.</li>
+
+<li>The inverse of a matrix, if it exists, is unique.</li>
+
+<li>A⁻¹A = AA⁻¹ = I.</li>
+
+<li>In (AB)⁻¹ = B⁻¹A⁻¹, the order is reversed.</li>
+
+<li>For Cramer's Rule, D must not be zero.</li>
+
+<li>In Cramer's Rule, Dₓ replaces the first column and Dᵧ replaces the second column.</li>
+
+<li>For AX = B, the inverse method gives X = A⁻¹B.</li>
+
+<li>For conformable matrices, multiplication by the identity matrix leaves the matrix unchanged.</li>
+
+</ul>
+
+</div>
+
+
+<!-- IMPORTANT THINGS -->
+
+<div class="box">
+
+<h2> Most Important Things</h2>
+
+<div class="formula">
+<strong>Matrix Multiplication:</strong> Columns of first matrix = Rows of second matrix
+<button class="copy-btn" onclick="copyFormula(this,'Columns of first matrix = Rows of second matrix')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Determinant:</strong> |A| = ad − bc
+<button class="copy-btn" onclick="copyFormula(this,'|A| = ad − bc')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Inverse Exists:</strong> |A| ≠ 0
+<button class="copy-btn" onclick="copyFormula(this,'|A| ≠ 0')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Inverse Formula:</strong> A⁻¹ = (1/|A|) adj A
+<button class="copy-btn" onclick="copyFormula(this,'A⁻¹ = (1/|A|) adj A')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Matrix Equation:</strong> X = A⁻¹B
+<button class="copy-btn" onclick="copyFormula(this,'X = A⁻¹B')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Cramer's Rule:</strong> x = Dₓ/D , y = Dᵧ/D
+<button class="copy-btn" onclick="copyFormula(this,'x = Dₓ/D , y = Dᵧ/D')">📋</button>
+</div>
+
+</div>
+
+
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+
+
+</body>
+</html>

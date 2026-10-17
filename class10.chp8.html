@@ -1,0 +1,664 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class 10 Chapter 8 - Application of Trigonometry</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #222;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 15px auto 20px;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            width: 90%;
+            max-width: 850px;
+            margin: 15px auto;
+            padding: 20px;
+            border: 2px solid #f8bbd0;
+            border-radius: 15px;
+            box-sizing: border-box;
+            background: #fff;
+        }
+
+        h2 {
+            color: #ad1457;
+            border-bottom: 2px solid #f8bbd0;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #ad1457;
+            margin-top: 25px;
+        }
+
+        .formula {
+            background: #fff0f5;
+            padding: 12px;
+            margin: 5px 0;
+            border-radius: 10px;
+            position: relative;
+            padding-right: 60px;
+            box-sizing: border-box;
+        }
+
+        .copy-btn {
+            float: right;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 8px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .key {
+            line-height: 1.7;
+        }
+
+        .note {
+            background: #fce4ec;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        ul {
+            line-height: 1.7;
+        }
+
+        .math {
+            font-family: "Times New Roman", serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 8 — Application of Trigonometry</h1>
+    <h4>Formula Hub</h4>
+</header>
+
+<a href="class10.html" class="back-button">← Back to Chapters</a>
+
+
+<!-- ================= FORMULAS ================= -->
+
+<div class="box">
+    <h2>FORMULAS</h2>
+
+    <h3>Basic Trigonometric Ratios</h3>
+
+    <div class="formula math">
+        sin θ = Perpendicular / Hypotenuse = a/c
+        <button class="copy-btn" onclick="copyFormula(this, 'sin θ = a/c')">📋</button>
+    </div>
+
+    <div class="formula math">
+        cos θ = Base / Hypotenuse = b/c
+        <button class="copy-btn" onclick="copyFormula(this, 'cos θ = b/c')">📋</button>
+    </div>
+
+    <div class="formula math">
+        tan θ = Perpendicular / Base = a/b
+        <button class="copy-btn" onclick="copyFormula(this, 'tan θ = a/b')">📋</button>
+    </div>
+
+    <div class="formula math">
+        cosec θ = 1/sin θ = c/a
+        <button class="copy-btn" onclick="copyFormula(this, 'cosec θ = c/a')">📋</button>
+    </div>
+
+    <div class="formula math">
+        sec θ = 1/cos θ = c/b
+        <button class="copy-btn" onclick="copyFormula(this, 'sec θ = c/b')">📋</button>
+    </div>
+
+    <div class="formula math">
+        cot θ = 1/tan θ = b/a
+        <button class="copy-btn" onclick="copyFormula(this, 'cot θ = b/a')">📋</button>
+    </div>
+
+
+    <h3>Unit Circle</h3>
+
+    <div class="formula math">
+        cos θ = x
+        <button class="copy-btn" onclick="copyFormula(this, 'cos θ = x')">📋</button>
+    </div>
+
+    <div class="formula math">
+        sin θ = y
+        <button class="copy-btn" onclick="copyFormula(this, 'sin θ = y')">📋</button>
+    </div>
+
+    <div class="formula math">
+        tan θ = y/x
+        <button class="copy-btn" onclick="copyFormula(this, 'tan θ = y/x')">📋</button>
+    </div>
+
+    <div class="formula math">
+        cot θ = x/y
+        <button class="copy-btn" onclick="copyFormula(this, 'cot θ = x/y')">📋</button>
+    </div>
+
+    <div class="formula math">
+        sec θ = 1/x
+        <button class="copy-btn" onclick="copyFormula(this, 'sec θ = 1/x')">📋</button>
+    </div>
+
+    <div class="formula math">
+        cosec θ = 1/y
+        <button class="copy-btn" onclick="copyFormula(this, 'cosec θ = 1/y')">📋</button>
+    </div>
+
+
+    <h3>Angles Between 90° and 180°</h3>
+
+    <div class="formula math">
+        cos(180° − θ) = −cos θ
+        <button class="copy-btn" onclick="copyFormula(this, 'cos(180° − θ) = −cos θ')">📋</button>
+    </div>
+
+    <div class="formula math">
+        sin(180° − θ) = sin θ
+        <button class="copy-btn" onclick="copyFormula(this, 'sin(180° − θ) = sin θ')">📋</button>
+    </div>
+
+    <div class="formula math">
+        tan(180° − θ) = −tan θ
+        <button class="copy-btn" onclick="copyFormula(this, 'tan(180° − θ) = −tan θ')">📋</button>
+    </div>
+
+    <div class="formula math">
+        cot(180° − θ) = −cot θ
+        <button class="copy-btn" onclick="copyFormula(this, 'cot(180° − θ) = −cot θ')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>sec(180° − θ) = −sec θ</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'sec(180° − θ) = −sec θ')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>cosec(180° − θ) = cosec θ</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'cosec(180° − θ) = cosec θ')">📋</button>
+    </div>
+
+
+    <h3>Right Triangle</h3>
+
+    <div class="formula math">
+        <b>a² + b² = c²</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'a² + b² = c²')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>α + β = 90°</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'α + β = 90°')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>tan β = b/a</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'tan β = b/a')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>b = a tan β</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'b = a tan β')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>c = √(a² + b²)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'c = √(a² + b²)')">📋</button>
+    </div>
+
+
+    <h3>Elevation and Depression</h3>
+
+    <div class="formula math">
+        <b>tan θ = h/x</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'tan θ = h/x')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>x = h/tan θ</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'x = h/tan θ')">📋</button>
+    </div>
+
+
+    <h3>Law of Cosines</h3>
+
+    <div class="formula math">
+        <b>a² = b² + c² − 2bc cos α</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'a² = b² + c² − 2bc cos α')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>b² = a² + c² − 2ac cos β</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'b² = a² + c² − 2ac cos β')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>c² = a² + b² − 2ab cos γ</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'c² = a² + b² − 2ab cos γ')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>cos α = (b² + c² − a²)/(2bc)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'cos α = (b² + c² − a²)/(2bc)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>cos β = (a² + c² − b²)/(2ac)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'cos β = (a² + c² − b²)/(2ac)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>cos γ = (a² + b² − c²)/(2ab)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'cos γ = (a² + b² − c²)/(2ab)')">📋</button>
+    </div>
+
+
+    <h3>Law of Sines</h3>
+
+    <div class="formula math">
+        <b>a/sin α = b/sin β = c/sin γ</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'a/sin α = b/sin β = c/sin γ')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>sin α/a = sin β/b = sin γ/c</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'sin α/a = sin β/b = sin γ/c')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>α + β + γ = 180°</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'α + β + γ = 180°')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>h = b sin α</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'h = b sin α')">📋</button>
+    </div>
+
+
+    <h3>Law of Tangents</h3>
+
+    <div class="formula math">
+        <b>(a+b)/(a−b) = tan[(α+β)/2] / tan[(α−β)/2]</b>
+        <button class="copy-btn" onclick="copyFormula(this, '(a+b)/(a−b) = tan[(α+β)/2] / tan[(α−β)/2]')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>(b+c)/(b−c) = tan[(β+γ)/2] / tan[(β−γ)/2]</b>
+        <button class="copy-btn" onclick="copyFormula(this, '(b+c)/(b−c) = tan[(β+γ)/2] / tan[(β−γ)/2]')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>(c+a)/(c−a) = tan[(γ+α)/2] / tan[(γ−α)/2]</b>
+        <button class="copy-btn" onclick="copyFormula(this, '(c+a)/(c−a) = tan[(γ+α)/2] / tan[(γ−α)/2]')">📋</button>
+    </div>
+
+
+    <h3>Half-Angle Formulas</h3>
+
+    <div class="formula math">
+        <b>S = (a+b+c)/2</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'S = (a+b+c)/2')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>cos(α/2) = √[S(S−a)/(bc)]</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'cos(α/2) = √[S(S−a)/(bc)]')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>cos(β/2) = √[S(S−b)/(ac)]</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'cos(β/2) = √[S(S−b)/(ac)]')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>cos(γ/2) = √[S(S−c)/(ab)]</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'cos(γ/2) = √[S(S−c)/(ab)]')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>sin(α/2) = √[(S−b)(S−c)/(bc)]</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'sin(α/2) = √[(S−b)(S−c)/(bc)]')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>sin(β/2) = √[(S−a)(S−c)/(ac)]</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'sin(β/2) = √[(S−a)(S−c)/(ac)]')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>sin(γ/2) = √[(S−a)(S−b)/(ab)]</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'sin(γ/2) = √[(S−a)(S−b)/(ab)]')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>tan(α/2) = √[(S−b)(S−c)/(S(S−a))]</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'tan(α/2) = √[(S−b)(S−c)/(S(S−a))]')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>tan(β/2) = √[(S−a)(S−c)/(S(S−b))]</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'tan(β/2) = √[(S−a)(S−c)/(S(S−b))]')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>tan(γ/2) = √[(S−a)(S−b)/(S(S−c))]</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'tan(γ/2) = √[(S−a)(S−b)/(S(S−c))]')">📋</button>
+    </div>
+
+
+    <h3>Area of Triangle</h3>
+
+    <div class="formula math">
+        <b>Δ = 1/2 × base × height</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Δ = 1/2 × base × height')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Δ = 1/2 bc sin α</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Δ = 1/2 bc sin α')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Δ = 1/2 ac sin β</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Δ = 1/2 ac sin β')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Δ = 1/2 ab sin γ</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Δ = 1/2 ab sin γ')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Δ = 1/2 a²(sin β sin γ / sin α)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Δ = 1/2 a²(sin β sin γ / sin α)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Δ = 1/2 b²(sin α sin γ / sin β)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Δ = 1/2 b²(sin α sin γ / sin β)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Δ = 1/2 c²(sin α sin β / sin γ)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Δ = 1/2 c²(sin α sin β / sin γ)')">📋</button>
+    </div>
+
+
+    <h3>Heron's Formula</h3>
+
+    <div class="formula math">
+        <b>S = (a+b+c)/2</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'S = (a+b+c)/2')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Δ = √[S(S−a)(S−b)(S−c)]</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Δ = √[S(S−a)(S−b)(S−c)]')">📋</button>
+    </div>
+
+
+    <h3>Circumradius</h3>
+
+    <div class="formula math">
+        <b>R = a/(2 sin α)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'R = a/(2 sin α)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>R = b/(2 sin β)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'R = b/(2 sin β)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>R = c/(2 sin γ)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'R = c/(2 sin γ)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>R = abc/(4Δ)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'R = abc/(4Δ)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Diameter = 2R</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Diameter = 2R')">📋</button>
+    </div>
+
+
+    <h3>Inradius</h3>
+
+    <div class="formula math">
+        <b>r = Δ/S</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'r = Δ/S')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Δ = rS</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Δ = rS')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Δ = 1/2 r(a+b+c)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Δ = 1/2 r(a+b+c)')">📋</button>
+    </div>
+</div>
+
+
+<!-- ================= CONCEPTS ================= -->
+
+<div class="box">
+    <h2>CONCEPTS</h2>
+
+    <h3>Quadrant Signs</h3>
+
+    <div class="note">
+        <b>Quadrant I:</b> All ratios are positive.
+        <br><b>Quadrant II:</b> Sine and cosec are positive.
+        <br><b>Quadrant III:</b> Tangent and cot are positive.
+        <br><b>Quadrant IV:</b> Cosine and sec are positive.
+    </div>
+
+    <h3>Reference Angle</h3>
+
+    <div class="note">
+        The trigonometric ratio has the same absolute value as its reference angle. Its sign is determined by the quadrant.
+    </div>
+
+    <h3>Law Selection</h3>
+
+    <div class="note">
+        <b>Law of Cosines:</b> Mainly used for SAS and SSS cases.
+    </div>
+
+    <div class="note">
+        <b>Law of Sines:</b> Mainly used for ASA, AAS and appropriate SSA cases.
+    </div>
+
+    <div class="note">
+        <b>Law of Tangents:</b> Used for solving oblique triangles in situations similar to the Law of Cosines.
+    </div>
+
+    <h3>Ambiguous Case</h3>
+
+    <div class="note">
+        In the SSA case, there may be zero, one or two possible triangles. The number of solutions depends on the given side, angle and height.
+    </div>
+
+    <h3>Area Selection</h3>
+
+    <div class="note">
+        Use <b>1/2 ab sin γ</b> when two sides and their included angle are known.
+    </div>
+
+    <div class="note">
+        Use the <b>AAS/ASA area formula</b> when two angles and one side are known.
+    </div>
+
+    <div class="note">
+        Use <b>Heron's Formula</b> when all three sides are known.
+    </div>
+
+    <h3>Important Relationship</h3>
+
+    <div class="note">
+        Pythagoras' Theorem is a special case of the Law of Cosines when the included angle is 90°.
+    </div>
+</div>
+
+
+<!-- ================= DEFINITIONS ================= -->
+
+<div class="box">
+    <h2>DEFINITIONS</h2>
+
+    <div class="note">
+        <b>Quadrantal Angle:</b> An angle whose terminal ray coincides with an axis in standard position.
+    </div>
+
+    <div class="note">
+        <b>Coterminal Angles:</b> Angles having the same terminal ray in standard position.
+    </div>
+
+    <div class="note">
+        <b>Trigonometric Ratio:</b> The ratio between any two sides of a right-angled triangle.
+    </div>
+
+    <div class="note">
+        <b>Oblique Triangle:</b> A triangle that is not a right triangle. It may be acute-angled or obtuse-angled.
+    </div>
+
+    <div class="note">
+        <b>Angle of Elevation:</b> The angle between the horizontal line and the line of sight when an object is viewed upward.
+    </div>
+
+    <div class="note">
+        <b>Angle of Depression:</b> The angle between the horizontal line and the line of sight when an object is viewed downward.
+    </div>
+
+    <div class="note">
+        <b>Circumcircle:</b> A circle passing through all vertices of a triangle.
+    </div>
+
+    <div class="note">
+        <b>Circumcentre:</b> The point of intersection of the perpendicular bisectors of the sides of a triangle.
+    </div>
+
+    <div class="note">
+        <b>Circumradius:</b> The radius of the circumcircle, denoted by R.
+    </div>
+
+    <div class="note">
+        <b>Incircle:</b> A circle drawn inside a triangle and touching all three sides.
+    </div>
+
+    <div class="note">
+        <b>Incentre:</b> The point of intersection of the angle bisectors of a triangle.
+    </div>
+
+    <div class="note">
+        <b>Inradius:</b> The radius of the incircle, denoted by r.
+    </div>
+
+    <div class="note">
+        <b>Escribed Circle:</b> A circle touching one side of a triangle externally and the extensions of its other two sides.
+    </div>
+
+    <div class="note">
+        <b>E-centre:</b> The intersection of one internal angle bisector and the external angle bisectors of the remaining two angles.
+    </div>
+
+    <div class="note">
+        <b>Heron's Formula:</b> A formula used to find the area of a triangle when all three sides are known.
+    </div>
+</div>
+
+
+<!-- ================= KEY POINTS ================= -->
+
+<div class="box">
+    <h2>KEY POINTS</h2>
+
+    <ul class="key">
+        <li>For every triangle, <b>α + β + γ = 180°</b>.</li>
+
+        <li><b>ASTC</b> is used to determine the signs of trigonometric ratios in different quadrants.</li>
+
+        <li>For an angle in the second quadrant, the reference angle is <b>180° − θ</b>.</li>
+
+        <li>Use the <b>Law of Cosines</b> for SAS and SSS situations.</li>
+
+        <li>Use the <b>Law of Sines</b> for ASA, AAS and suitable SSA situations.</li>
+
+        <li>In the SSA ambiguous case, there can be <b>0, 1 or 2 triangles</b>.</li>
+
+        <li><b>S = (a+b+c)/2</b> is the semiperimeter.</li>
+
+        <li><b>Heron's Formula</b> is used when three sides are given.</li>
+
+        <li>The area formula <b>Δ = 1/2 ab sin γ</b> requires two sides and their included angle.</li>
+
+        <li><b>R = abc/(4Δ)</b> gives the circumradius.</li>
+
+        <li><b>r = Δ/S</b> gives the inradius.</li>
+
+        <li>The angle of depression equals the corresponding angle of elevation.</li>
+
+        <li>Pythagoras' Theorem is a special case of the Law of Cosines.</li>
+    </ul>
+</div>
+
+
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+
+</body>
+</html>

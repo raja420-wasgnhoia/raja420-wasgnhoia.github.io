@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic Statistics - Formula Hub</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+header {
+    background: #f8bbd0;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+h1 {
+    color: #ad1457;
+    margin: 0;
+    font-size: 25px;
+}
+
+h4 {
+    color: #ad1457;
+    margin-bottom: 0;
+}
+
+.back {
+    display: block;
+    width: fit-content;
+    margin: 15px auto 20px;
+    padding: 8px 16px;
+    background: #fff0f5;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.box {
+    width: 90%;
+    max-width: 850px;
+    margin: 15px auto;
+    padding: 20px;
+    border: 2px solid #f8bbd0;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+h2 {
+    color: #ad1457;
+    border-bottom: 2px solid #f8bbd0;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #ad1457;
+    margin-top: 25px;
+}
+
+.formula {
+    background: #fff0f5;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    position: relative;
+    padding-right: 55px;
+    box-sizing: border-box;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.copy-btn {
+    float: right;
+    background: white;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    padding: 5px 8px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: -43px;
+}
+
+.key {
+    line-height: 1.7;
+}
+
+.note {
+    background: #fce4ec;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 10px 0;
+    line-height: 1.7;
+}
+
+ul {
+    line-height: 1.7;
+}
+
+.math {
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 12 — Basic Statistics</h1>
+    <h5>Formula Hub</h5>
+</header>
+
+<a class="back" href="class10.html">← Back to Chapters</a>
+
+<!-- FORMULAS -->
+<div class="box">
+<h2>1. FORMULAS</h2>
+
+<h3>Frequency Distribution</h3>
+
+<div class="formula math">
+<b>Cumulative Frequency:</b> c.f. = f₁ + f₂ + ... + fₙ
+<button class="copy-btn" onclick="copyFormula(this, 'c.f. = f₁ + f₂ + ... + fₙ')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Class Boundary:</b> (Upper limit + Next lower limit) ÷ 2
+<button class="copy-btn" onclick="copyFormula(this, '(Upper limit + Next lower limit) / 2')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Class Frequency:</b> f = Current c.f. − Previous c.f.
+<button class="copy-btn" onclick="copyFormula(this, 'f = Current c.f. - Previous c.f.')">📋</button>
+</div>
+
+<h3>Quartiles, Deciles and Percentiles</h3>
+
+<div class="formula math">
+<b>First Quartile:</b> Q₁ = N/4 th value
+<button class="copy-btn" onclick="copyFormula(this, 'Q₁ = N/4 th value')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Second Quartile:</b> Q₂ = N/2 th value = Median
+<button class="copy-btn" onclick="copyFormula(this, 'Q₂ = N/2 th value = Median')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Third Quartile:</b> Q₃ = 3N/4 th value
+<button class="copy-btn" onclick="copyFormula(this, 'Q₃ = 3N/4 th value')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Decile:</b> Dₖ = kN/10 th value
+<button class="copy-btn" onclick="copyFormula(this, 'Dₖ = kN/10 th value')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Percentile:</b> Pₖ = kN/100 th value
+<button class="copy-btn" onclick="copyFormula(this, 'Pₖ = kN/100 th value')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Interquartile Range:</b> IQR = Q₃ − Q₁
+<button class="copy-btn" onclick="copyFormula(this, 'IQR = Q₃ - Q₁')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Lower Outlier Fence:</b> Q₁ − 1.5(IQR)
+<button class="copy-btn" onclick="copyFormula(this, 'Q₁ - 1.5(IQR)')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Upper Outlier Fence:</b> Q₃ + 1.5(IQR)
+<button class="copy-btn" onclick="copyFormula(this, 'Q₃ + 1.5(IQR)')">📋</button>
+</div>
+
+<h3>Range, Mean, Variance and Standard Deviation</h3>
+
+<div class="formula math">
+<b>Range:</b> R = Maximum − Minimum
+<button class="copy-btn" onclick="copyFormula(this, 'R = Maximum - Minimum')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Mean for Grouped Data:</b> x̄ = Σfx / Σf
+<button class="copy-btn" onclick="copyFormula(this, 'x̄ = Σfx / Σf')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Variance:</b> S² = Σf(x − x̄)² / Σf
+<button class="copy-btn" onclick="copyFormula(this, 'S² = Σf(x - x̄)² / Σf')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Direct Variance Formula:</b><br>
+S² = Σfx² / Σf − (Σfx / Σf)²
+<button class="copy-btn" onclick="copyFormula(this, 'S² = Σfx² / Σf - (Σfx / Σf)²')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Standard Deviation:</b> S = √[Σf(x − x̄)² / Σf]
+<button class="copy-btn" onclick="copyFormula(this, 'S = √[Σf(x - x̄)² / Σf]')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Coefficient of Variation:</b> CV = (SD / Mean) × 100%
+<button class="copy-btn" onclick="copyFormula(this, 'CV = (SD / Mean) × 100%')">📋</button>
+</div>
+
+<h3>Correlation and Line of Best Fit</h3>
+
+<div class="formula math">
+<b>Line of Best Fit:</b> y = mx + c
+<button class="copy-btn" onclick="copyFormula(this, 'y = mx + c')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Correlation Coefficient:</b><br>
+r = Σ[(xᵢ − x̄)(yᵢ − ȳ)] / √[Σ(xᵢ − x̄)² × Σ(yᵢ − ȳ)²]
+<button class="copy-btn" onclick="copyFormula(this, 'r = Σ[(xᵢ - x̄)(yᵢ - ȳ)] / √[Σ(xᵢ - x̄)² × Σ(yᵢ - ȳ)²]')">📋</button>
+</div>
+
+<h3>Probability</h3>
+
+<div class="formula math">
+<b>Theoretical Probability:</b><br>
+P(A) = Favorable outcomes / Total equally likely outcomes
+<button class="copy-btn" onclick="copyFormula(this, 'P(A) = Favorable outcomes / Total equally likely outcomes')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Experimental Probability:</b><br>
+P(A) = Number of times event occurs / Total trials
+<button class="copy-btn" onclick="copyFormula(this, 'P(A) = Number of times event occurs / Total trials')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Complement Rule:</b> P(A′) = 1 − P(A)
+<button class="copy-btn" onclick="copyFormula(this, 'P(A′) = 1 - P(A)')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Addition Rule (Mutually Exclusive):</b><br>
+P(A ∪ B) = P(A) + P(B)
+<button class="copy-btn" onclick="copyFormula(this, 'P(A ∪ B) = P(A) + P(B)')">📋</button>
+</div>
+
+<div class="formula math">
+<b>General Addition Rule:</b><br>
+P(A ∪ B) = P(A) + P(B) − P(A ∩ B)
+<button class="copy-btn" onclick="copyFormula(this, 'P(A ∪ B) = P(A) + P(B) - P(A ∩ B)')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Independent Events:</b> P(A ∩ B) = P(A) × P(B)
+<button class="copy-btn" onclick="copyFormula(this, 'P(A ∩ B) = P(A) × P(B)')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Dependent Events:</b> P(A ∩ B) = P(A) × P(B|A)
+<button class="copy-btn" onclick="copyFormula(this, 'P(A ∩ B) = P(A) × P(B|A)')">📋</button>
+</div>
+
+<div class="formula math">
+<b>Conditional Probability:</b><br>
+P(A|B) = P(A ∩ B) / P(B), where P(B) &gt; 0
+<button class="copy-btn" onclick="copyFormula(this, 'P(A|B) = P(A ∩ B) / P(B), where P(B) > 0')">📋</button>
+</div>
+
+</div>
+
+<!-- CONCEPTS -->
+<div class="box">
+<h2>2. CONCEPTS</h2>
+
+<h3>Frequency Tables and Graphs</h3>
+<ul>
+<li><b>Frequency Polygon:</b> Plot class midpoints against frequencies and join the points with straight lines.</li>
+<li><b>Cumulative Frequency Polygon:</b> Plot upper class boundaries against cumulative frequencies and join the points with straight lines.</li>
+<li><b>Ogive:</b> Draw a smooth cumulative frequency curve using class boundaries and cumulative frequencies.</li>
+<li>To estimate quartiles from an ogive, locate N/4, N/2 and 3N/4 on the cumulative-frequency axis, then read the corresponding values on the horizontal axis.</li>
+</ul>
+
+<h3>Box-and-Whisker Plot</h3>
+<ul>
+<li>The box extends from Q₁ to Q₃.</li>
+<li>The line inside the box represents the median (Q₂).</li>
+<li>Whiskers extend towards the minimum and maximum non-outlier values.</li>
+<li>Values outside the outlier fences may be plotted separately.</li>
+</ul>
+
+<h3>Scatter Diagram and Correlation</h3>
+<ul>
+<li><b>Positive Correlation:</b> As x increases, y tends to increase.</li>
+<li><b>Negative Correlation:</b> As x increases, y tends to decrease.</li>
+<li><b>No Correlation:</b> No clear relationship appears between the variables.</li>
+<li>A line of best fit shows the general trend of paired data.</li>
+<li>Points closer to a straight-line pattern generally indicate stronger linear correlation.</li>
+<li>Predictions outside the observed data range may be unreliable.</li>
+</ul>
+
+<h3>Comparing Data Sets</h3>
+<ul>
+<li>Calculate the mean and standard deviation for each data set.</li>
+<li>Compare means to understand central tendency.</li>
+<li>Compare standard deviations to understand spread.</li>
+<li>Use coefficient of variation to compare relative spread when appropriate.</li>
+</ul>
+
+<h3>Probability Diagrams</h3>
+<ul>
+<li><b>Possibility Diagram:</b> Lists or displays all possible combined outcomes.</li>
+<li><b>Tree Diagram:</b> Shows sequential events using branches and final outcomes.</li>
+<li><b>Sample Space:</b> All possible outcomes of an experiment.</li>
+<li><b>Venn Diagram:</b> Shows relationships between events, including intersections and unions.</li>
+<li>For a tree diagram, multiply the probabilities along a path to find the probability of that sequence.</li>
+</ul>
+</div>
+
+<!-- DEFINITIONS -->
+<div class="box">
+<h2>3. DEFINITIONS</h2>
+
+<h3>Statistical Terms</h3>
+
+<div class="note">
+<b>Frequency Distribution:</b> An arrangement of data showing how often each value or class occurs.
+</div>
+
+<div class="note">
+<b>Cumulative Frequency:</b> The running total of frequencies up to a specified class.
+</div>
+
+<div class="note">
+<b>Quartiles:</b> Values that divide ordered data into four parts.
+</div>
+
+<div class="note">
+<b>Deciles:</b> Values that divide ordered data into ten parts.
+</div>
+
+<div class="note">
+<b>Percentiles:</b> Values that divide ordered data into one hundred parts.
+</div>
+
+<div class="note">
+<b>Interquartile Range (IQR):</b> The difference between the third and first quartiles, representing the spread of the middle 50% of the data.
+</div>
+
+<div class="note">
+<b>Range:</b> The difference between the maximum and minimum values in a data set.
+</div>
+
+<div class="note">
+<b>Variance:</b> A measure of how far data values spread around their mean, based on squared deviations.
+</div>
+
+<div class="note">
+<b>Standard Deviation:</b> A measure of data spread around the mean, expressed in the same units as the data.
+</div>
+
+<div class="note">
+<b>Coefficient of Variation:</b> A percentage measure of relative dispersion, calculated by dividing standard deviation by mean and multiplying by 100.
+</div>
+
+<div class="note">
+<b>Scatter Diagram:</b> A graph that displays paired numerical observations as points.
+</div>
+
+<div class="note">
+<b>Correlation:</b> The direction and strength of association between two variables.
+</div>
+
+<div class="note">
+<b>Line of Best Fit:</b> A straight line that represents the overall trend of points in a scatter diagram.
+</div>
+
+<h3>Probability Terms</h3>
+
+<div class="note">
+<b>Experiment:</b> A process or action that produces an outcome.
+</div>
+
+<div class="note">
+<b>Outcome:</b> A particular result of an experiment.
+</div>
+
+<div class="note">
+<b>Sample Space:</b> The set of all possible outcomes of an experiment.
+</div>
+
+<div class="note">
+<b>Event:</b> One or more outcomes of an experiment.
+</div>
+
+<div class="note">
+<b>Possibility Diagram:</b> A diagram that represents all possible outcomes of an experiment or combined events.
+</div>
+
+<div class="note">
+<b>Tree Diagram:</b> A diagram that shows the possible outcomes of sequential events using branches.
+</div>
+
+<div class="note">
+<b>Independent Events:</b> Events in which the occurrence of one does not affect the probability of the other.
+</div>
+
+<div class="note">
+<b>Dependent Events:</b> Events in which the occurrence of one affects the probability of the other.
+</div>
+
+<div class="note">
+<b>Mutually Exclusive Events:</b> Events that cannot occur at the same time.
+</div>
+
+<div class="note">
+<b>Conditional Probability:</b> The probability of an event occurring when another event is already known to have occurred.
+</div>
+
+<div class="note">
+<b>Complement of an Event:</b> The event that the original event does not occur.
+</div>
+</div>
+
+<!-- KEY POINTS -->
+<div class="box">
+<h2>4. KEY POINTS</h2>
+
+<ul class="key">
+<li>N represents the total number of observations or total frequency.</li>
+<li>Q₁ = P₂₅, Q₂ = P₅₀ = Median, and Q₃ = P₇₅.</li>
+<li>D₁ = P₁₀, D₅ = P₅₀ = Q₂, and D₉ = P₉₀.</li>
+<li>The interquartile range represents the middle 50% of the data.</li>
+<li>Common outlier limits are Q₁ − 1.5(IQR) and Q₃ + 1.5(IQR).</li>
+<li>A smaller standard deviation indicates less absolute spread around the mean.</li>
+<li>A smaller coefficient of variation generally indicates greater consistency when comparing suitable data sets.</li>
+<li>The correlation coefficient r lies between −1 and +1.</li>
+<li>A positive r indicates positive linear association; a negative r indicates negative linear association.</li>
+<li>A correlation close to zero indicates weak or no linear association, not necessarily no relationship of any kind.</li>
+<li>Probability lies between 0 and 1, inclusive.</li>
+<li>P(S) = 1 for the complete sample space.</li>
+<li>P(∅) = 0 for an impossible event.</li>
+<li>The probability of an event and its complement adds up to 1.</li>
+<li>For mutually exclusive events, add their probabilities to find the probability that either occurs.</li>
+<li>For independent events, multiply their probabilities to find the probability that both occur.</li>
+<li>For dependent events, use conditional probability in the multiplication rule.</li>
+<li>When a card is replaced before the next draw, the draws are independent under the same deck conditions.</li>
+<li>When a card is not replaced, the second draw's probability may change.</li>
+<li>In a tree diagram, multiply probabilities along a path. Add probabilities for mutually exclusive paths that lead to the required event.</li>
+</ul>
+
+<div class="note">
+<b>Remember:</b> Frequency graphs help describe distributions, while scatter diagrams help examine relationships between paired variables.
+</div>
+</div>
+
+<script>
+function copyFormula(button, formula) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(formula).then(function() {
+            button.textContent = "✓";
+            setTimeout(function() {
+                button.textContent = "copied";
+            }, 1500);
+        }).catch(function() {
+            fallbackCopy(button, formula);
+        });
+    } else {
+        fallbackCopy(button, formula);
+    }
+}
+
+function fallbackCopy(button, formula) {
+    var textArea = document.createElement("textarea");
+    textArea.value = formula;
+    textArea.style.position = "fixed";
+    textArea.style.opacity = "0";
+    document.body.appendChild(textArea);
+    textArea.select();
+
+    try {
+        document.execCommand("copy");
+        button.textContent = "✓";
+    } catch (error) {
+        button.textContent = "!";
+    }
+
+    document.body.removeChild(textArea);
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+
+</body>
+</html>

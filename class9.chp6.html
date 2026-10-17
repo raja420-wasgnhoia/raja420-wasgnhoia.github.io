@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 06 - Formula Hub</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #222;
+}
+
+header {
+  background: #f8bbd0;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #ad1457;
+}
+
+.box {
+  width: 90%;
+  margin: 15px auto;
+  padding: 15px;
+  border: 2px solid #f8bbd0;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.formula {
+  background: #fff0f5;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  position: relative;
+  padding-right: 85px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background: white;
+  color: #ad1457;
+  border: 1px solid #f8bbd0;
+  border-radius: 8px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+
+.back-button {
+    display: block;
+    width: fit-content;
+    margin: 15px auto 20px;
+    padding: 8px 16px;
+    background: #fff0f5;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.note {
+  line-height: 1.8;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>Unit 06 - Trigonometry & Bearing</h2>
+  <p><b>Formula Hub</b></p>
+</header>
+<a class="back-button" href="class9.html">← Back to Chapters</a>
+
+<div class="box">
+<h2>1. FORMULAS</h2>
+
+<h3>Angle Measurement</h3>
+<div class="formula">1° = 60′; 1′ = 60″; 1° = 3600″</div>
+<div class="formula">1′ = 1/60°; 1″ = 1/60′ = 1/3600°</div>
+<div class="formula">360° = 2π radians</div>
+<div class="formula">180° = π radians</div>
+<div class="formula">Radians to degrees: θ° = θ × 180/π</div>
+<div class="formula">Degrees to radians: θ radians = θ° × π/180</div>
+<div class="formula">1 radian ≈ 57.2958°</div>
+
+<h3>Arc Length and Sector Area</h3>
+<div class="formula">Arc length: l = rθ, where θ is in radians</div>
+<div class="formula">Area of sector: A = ½r²θ, where θ is in radians</div>
+<div class="formula">l/(2πr) = θ/(2π) = A/(πr²)</div>
+
+<h3>Co-terminal Angles</h3>
+<div class="formula">θ + 360°n, where n ∈ ℤ</div>
+<div class="formula">In radians: θ + 2πn, where n ∈ ℤ</div>
+
+<h3>Basic Trigonometric Ratios</h3>
+<div class="formula">sin θ = Perpendicular / Hypotenuse = a/c</div>
+<div class="formula">cos θ = Base / Hypotenuse = b/c</div>
+<div class="formula">tan θ = Perpendicular / Base = a/b</div>
+<div class="formula">cosec θ = 1/sin θ = c/a</div>
+<div class="formula">sec θ = 1/cos θ = c/b</div>
+<div class="formula">cot θ = 1/tan θ = cos θ/sin θ = b/a</div>
+
+<h3>Unit Circle</h3>
+<div class="formula">x² + y² = 1</div>
+<div class="formula">Coordinates: P = (cos θ, sin θ)</div>
+<div class="formula">sin θ = y; cos θ = x; tan θ = y/x</div>
+
+<h3>Standard Angles</h3>
+<div class="formula">
+30°: sin = 1/2; cos = √3/2; tan = 1/√3;
+cosec = 2; sec = 2/√3; cot = √3
+</div>
+<div class="formula">
+45°: sin = √2/2; cos = √2/2; tan = 1;
+cosec = √2; sec = √2; cot = 1
+</div>
+<div class="formula">
+60°: sin = √3/2; cos = 1/2; tan = √3;
+cosec = 2/√3; sec = 2; cot = 1/√3
+</div>
+
+<h3>Signs of Ratios: ASTC Rule</h3>
+<div class="formula">Quadrant I: All six ratios are positive.</div>
+<div class="formula">Quadrant II: sin θ and cosec θ are positive.</div>
+<div class="formula">Quadrant III: tan θ and cot θ are positive.</div>
+<div class="formula">Quadrant IV: cos θ and sec θ are positive.</div>
+
+<h3>Quadrantal Angles</h3>
+<div class="formula">
+0°: sin = 0; cos = 1; tan = 0; sec = 1;
+cosec = Undefined; cot = Undefined
+</div>
+<div class="formula">
+90°: sin = 1; cos = 0; tan = Undefined;
+sec = Undefined; cosec = 1; cot = 0
+</div>
+<div class="formula">
+180°: sin = 0; cos = −1; tan = 0; sec = −1;
+cosec = Undefined; cot = Undefined
+</div>
+<div class="formula">
+270°: sin = −1; cos = 0; tan = Undefined;
+sec = Undefined; cosec = −1; cot = 0
+</div>
+<div class="formula">
+360°: sin = 0; cos = 1; tan = 0; sec = 1;
+cosec = Undefined; cot = Undefined
+</div>
+
+<h3>Finding Other Ratios</h3>
+<div class="formula">sin²θ + cos²θ = 1</div>
+<div class="formula">tan θ = sin θ/cos θ</div>
+<div class="formula">cot θ = cos θ/sin θ</div>
+<div class="formula">sec θ = 1/cos θ</div>
+<div class="formula">cosec θ = 1/sin θ</div>
+<div class="formula">cot θ = 1/tan θ</div>
+<div class="formula">Hypotenuse² = Perpendicular² + Base²</div>
+
+<h3>Quotient Identities</h3>
+<div class="formula">tan θ = sin θ/cos θ</div>
+<div class="formula">cot θ = cos θ/sin θ</div>
+
+<h3>Pythagorean Identities</h3>
+<div class="formula">sin²θ + cos²θ = 1</div>
+<div class="formula">sec²θ − tan²θ = 1</div>
+<div class="formula">cosec²θ − cot²θ = 1</div>
+<div class="formula">1 + tan²θ = sec²θ</div>
+<div class="formula">1 + cot²θ = cosec²θ</div>
+<div class="formula">1 − sin²θ = cos²θ</div>
+<div class="formula">1 − cos²θ = sin²θ</div>
+<div class="formula">1/(sec θ − tan θ) = sec θ + tan θ</div>
+
+<h3>Solving Right Triangles</h3>
+<div class="formula">∠A + ∠B + ∠C = 180°</div>
+<div class="formula">If ∠C = 90°, then ∠A + ∠B = 90°</div>
+<div class="formula">c² = a² + b²</div>
+<div class="formula">sin θ = Perpendicular/Hypotenuse</div>
+<div class="formula">cos θ = Base/Hypotenuse</div>
+<div class="formula">tan θ = Perpendicular/Base</div>
+
+<h3>Angle of Elevation and Depression</h3>
+<div class="formula">tan θ = Vertical height / Horizontal distance</div>
+<div class="formula">sin θ = Opposite side / Hypotenuse</div>
+<div class="formula">cos θ = Adjacent side / Hypotenuse</div>
+
+<h3>Bearings</h3>
+<div class="formula">Bearings are measured clockwise from north.</div>
+<div class="formula">Bearings are written using three digits, e.g. 070°, 128°, 230°.</div>
+<div class="formula">Reverse bearing = Forward bearing ± 180°, adjusted to 000°–359°.</div>
+<div class="formula">For a right triangle: AC = √(AB² + BC²)</div>
+</div>
+
+<div class="box">
+<h2>2. CONCEPTS</h2>
+
+<h3>Angle Measurement</h3>
+<p class="note">
+Positive angles are measured anticlockwise and negative angles clockwise.
+An angle in standard position has its vertex at the origin and its initial
+arm along the positive x-axis.
+</p>
+
+<h3>Arc Length and Sector</h3>
+<p class="note">
+Arc length is the length of a part of a circle's circumference.
+A sector is the region bounded by an arc and two radii.
+</p>
+
+<h3>Co-terminal Angles</h3>
+<p class="note">
+Co-terminal angles have the same initial and terminal arms.
+They can be found by adding or subtracting multiples of 360°.
+</p>
+
+<h3>Unit Circle</h3>
+<p class="note">
+The unit circle has radius 1 and centre at the origin.
+A point at angle θ has coordinates (cos θ, sin θ).
+</p>
+
+<h3>Quadrantal Angles</h3>
+<p class="note">
+A quadrantal angle has its terminal arm on a coordinate axis.
+Its measure is a multiple of 90° or π/2 radians.
+</p>
+
+<h3>Trigonometric Identities</h3>
+<p class="note">
+Identities are equations involving trigonometric ratios that hold wherever
+both sides are defined. Quotient identities relate tangent and cotangent
+to sine and cosine. Pythagorean identities follow from the Pythagorean theorem.
+</p>
+
+<h3>Solving Right Triangles</h3>
+<p class="note">
+Solving a right triangle means finding its unknown sides and angles using
+the angle sum, Pythagorean theorem and trigonometric ratios.
+</p>
+
+<h3>Angle of Depression</h3>
+<p class="note">
+The angle of depression is measured from the observer's horizontal line
+down to the line of sight toward an object below it.
+</p>
+
+<h3>Bearings</h3>
+<p class="note">
+A bearing describes direction as a clockwise angle from north and is
+normally written as a three-digit number.
+</p>
+</div>
+
+<div class="box">
+<h2>3. DEFINITIONS</h2>
+
+<p class="note"><b>Angle:</b> Two rays with a common endpoint.</p>
+<p class="note"><b>Standard position:</b> An angle whose vertex is at the origin and whose initial arm lies along the positive x-axis.</p>
+<p class="note"><b>Radian:</b> The central angle subtended by an arc whose length equals the radius.</p>
+<p class="note"><b>Sector:</b> A region of a circle bounded by an arc and two radii.</p>
+<p class="note"><b>Co-terminal angles:</b> Angles in standard position with the same terminal ray.</p>
+<p class="note"><b>Quadrantal angle:</b> An angle whose terminal ray lies on a coordinate axis.</p>
+<p class="note"><b>Unit circle:</b> A circle of radius 1 centred at the origin, with equation x² + y² = 1.</p>
+<p class="note"><b>Trigonometric ratios:</b> Ratios relating the sides of a right triangle to an angle.</p>
+<p class="note"><b>Trigonometric identity:</b> An equality involving trigonometric expressions that is true wherever both sides are defined.</p>
+<p class="note"><b>Angle of depression:</b> The angle between the observer's horizontal line and the line of sight to an object below it.</p>
+<p class="note"><b>Bearing:</b> The clockwise angle measured from due north to a direction, usually written as a three-digit number.</p>
+</div>
+
+<div class="box">
+<h2>4. KEY POINTS</h2>
+<ul class="note">
+<li>360° = 2π radians and 180° = π radians.</li>
+<li>Use radians in l = rθ and A = ½r²θ.</li>
+<li>Co-terminal angles differ by multiples of 360°.</li>
+<li>On the unit circle, x = cos θ and y = sin θ.</li>
+<li>ASTC: All, Sine, Tangent, Cosine show which ratios are positive in quadrants I–IV.</li>
+<li>A ratio with zero in its denominator is undefined, not infinity.</li>
+<li>The two acute angles of a right triangle add up to 90°.</li>
+<li>When proving identities, simplify one side until it matches the other side.</li>
+<li>Angles of elevation and depression are measured from a horizontal line.</li>
+<li>Bearings are measured clockwise from north and written with three digits.</li>
+<li>The reverse bearing differs by 180°, adjusted to 000°–359°.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>5. APPLICATION</h2>
+<ul class="note">
+<li><b>Angle measurement:</b> Converting between degrees and radians.</li>
+<li><b>Arc length and sector area:</b> Finding curved lengths and sector areas.</li>
+<li><b>Trigonometric ratios:</b> Finding unknown sides and angles of right triangles.</li>
+<li><b>Elevation and depression:</b> Estimating heights and distances involving buildings, ladders, aircraft and objects below an observer.</li>
+<li><b>Bearings:</b> Describing directions and planning routes for ships, aircraft and journeys.</li>
+</ul>
+</div>
+
+
+<script>
+function showCopySequence(button) {
+  button.innerText = "✓";
+
+  setTimeout(() => {
+    button.innerText = "Copied";
+
+    setTimeout(() => {
+      button.innerText = "📋";
+    }, 1500);
+
+  }, 1500);
+}
+
+function fallbackCopy(text, button) {
+  const area = document.createElement("textarea");
+  area.value = text;
+  area.style.position = "fixed";
+  area.style.opacity = "0";
+  document.body.appendChild(area);
+  area.select();
+
+  try {
+    const successful = document.execCommand("copy");
+
+    if (successful) {
+      showCopySequence(button);
+    } else {
+      button.innerText = "Copy failed";
+      setTimeout(() => button.innerText = "📋", 1500);
+    }
+  } catch (error) {
+    button.innerText = "Copy failed";
+    setTimeout(() => button.innerText = "📋", 1500);
+  }
+
+  document.body.removeChild(area);
+}
+
+function copyFormula(button) {
+  const formula = button.parentElement.cloneNode(true);
+  formula.querySelector(".copy-btn").remove();
+  const text = formula.innerText.trim();
+
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text)
+      .then(() => showCopySequence(button))
+      .catch(() => fallbackCopy(text, button));
+  } else {
+    fallbackCopy(text, button);
+  }
+}
+
+document.querySelectorAll(".formula").forEach((item) => {
+  const button = document.createElement("button");
+  button.className = "copy-btn";
+  button.type = "button";
+  button.innerText = "📋";
+  button.setAttribute("aria-label", "Copy formula");
+  button.addEventListener("click", () => copyFormula(button));
+  item.appendChild(button);
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>FBISE Class 10 Mathematics - Chapter 2</title>
+
+   <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #222;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 15px auto 20px;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            width: 90%;
+            max-width: 850px;
+            margin: 15px auto;
+            padding: 20px;
+            border: 2px solid #f8bbd0;
+            border-radius: 15px;
+            box-sizing: border-box;
+            background: #fff;
+        }
+
+        h2 {
+            color: #ad1457;
+            border-bottom: 2px solid #f8bbd0;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #ad1457;
+            margin-top: 25px;
+        }
+
+        .formula {
+            background: #fff0f5;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            position: relative;
+            padding-right: 55px;
+            box-sizing: border-box;
+        }
+
+        .copy-btn {
+            float: right;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 9px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .key {
+            line-height: 1.7;
+        }
+
+        .note {
+            background: #fce4ec;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        ul {
+            line-height: 1.7;
+        }
+
+        .math {
+            font-family: "Times New Roman", serif;
+            font-size: 18px;
+        }
+    </style>
+
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.innerText = "✓";
+
+    setTimeout(function() {
+        button.innerText = "copied";
+    }, 1000);
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 4 - Linear & Quadratic Inequalities</h1>
+    <h4>Formulas Hub</h4>
+</header>
+
+<a href="class10.html" class="back-button">← Back To Chapters</a>
+
+
+<!-- FORMULAS -->
+
+<div class="box">
+
+<h2>Important Formulas</h2>
+
+<div class="formula">
+<strong>1. Trichotomy Property</strong><br>
+For any two real numbers a and b, exactly one of the following is true:<br>
+a &lt; b, &nbsp; a &gt; b, &nbsp; a = b
+<button class="copy-btn" onclick="copyFormula(this, 'a < b, a > b, a = b')">📋</button>
+</div>
+
+<div class="formula">
+<strong>2. Addition Property of Inequality</strong><br>
+If a &gt; b, then a + c &gt; b + c.<br>
+If a &lt; b, then a + c &lt; b + c.
+<button class="copy-btn" onclick="copyFormula(this, 'If a > b, then a + c > b + c. If a < b, then a + c < b + c.')">📋</button>
+</div>
+
+<div class="formula">
+<strong>3. Subtraction Property of Inequality</strong><br>
+If a &gt; b, then a − c &gt; b − c.<br>
+If a &lt; b, then a − c &lt; b − c.
+<button class="copy-btn" onclick="copyFormula(this, 'If a > b, then a − c > b − c. If a < b, then a − c < b − c.')">📋</button>
+</div>
+
+<div class="formula">
+<strong>4. Multiplication Property</strong><br>
+If c &gt; 0 and a &lt; b, then ac &lt; bc.<br>
+If c &lt; 0 and a &lt; b, then ac &gt; bc.
+<button class="copy-btn" onclick="copyFormula(this, 'If c > 0 and a < b, then ac < bc. If c < 0 and a < b, then ac > bc.')">📋</button>
+</div>
+
+<div class="formula">
+<strong>5. Division Property</strong><br>
+If c &gt; 0, the inequality sign remains unchanged.<br>
+If c &lt; 0, the inequality sign is reversed.
+<button class="copy-btn" onclick="copyFormula(this, 'If c > 0, the inequality sign remains unchanged. If c < 0, the inequality sign is reversed.')">📋</button>
+</div>
+
+<div class="formula">
+<strong>6. Graph Symbols</strong><br>
+&lt; or &gt; → Open circle<br>
+≤ or ≥ → Closed circle
+<button class="copy-btn" onclick="copyFormula(this, '< or > → Open circle; ≤ or ≥ → Closed circle')">📋</button>
+</div>
+
+<div class="formula">
+<strong>7. Boundary Line</strong><br>
+For y = mx + c, the line y = mx + c is the boundary line.
+<button class="copy-btn" onclick="copyFormula(this, 'y = mx + c')">📋</button>
+</div>
+
+<div class="formula">
+<strong>8. Boundary Line Rule</strong><br>
+≤ or ≥ → Solid line<br>
+&lt; or &gt; → Dashed line
+<button class="copy-btn" onclick="copyFormula(this, '≤ or ≥ → Solid line; < or > → Dashed line')">📋</button>
+</div>
+
+<div class="formula">
+<strong>9. Quadratic Inequality</strong><br>
+ax² + bx + c &gt; 0<br>
+ax² + bx + c &lt; 0<br>
+ax² + bx + c ≥ 0<br>
+ax² + bx + c ≤ 0
+<button class="copy-btn" onclick="copyFormula(this, 'ax² + bx + c > 0; ax² + bx + c < 0; ax² + bx + c ≥ 0; ax² + bx + c ≤ 0')">📋</button>
+</div>
+
+<div class="formula">
+<strong>10. Absolute Value</strong><br>
+|x| = x, when x ≥ 0<br>
+|x| = −x, when x &lt; 0
+<button class="copy-btn" onclick="copyFormula(this, '|x| = x, when x ≥ 0; |x| = −x, when x < 0')">📋</button>
+</div>
+
+<div class="formula">
+<strong>11. Absolute Value Property</strong><br>
+|x| ≥ 0
+<button class="copy-btn" onclick="copyFormula(this, '|x| ≥ 0')">📋</button>
+</div>
+
+<div class="formula">
+<strong>12. Absolute Value Equation</strong><br>
+|x| = a → x = a or x = −a, for a ≥ 0
+<button class="copy-btn" onclick="copyFormula(this, '|x| = a → x = a or x = −a, for a ≥ 0')">📋</button>
+</div>
+
+<div class="formula">
+<strong>13. Negative Absolute Value</strong><br>
+|x| = a, where a &lt; 0 → No solution
+<button class="copy-btn" onclick="copyFormula(this, '|x| = a, where a < 0 → No solution')">📋</button>
+</div>
+
+<div class="formula">
+<strong>14. Absolute Inequality</strong><br>
+|x| &lt; a → −a &lt; x &lt; a
+<button class="copy-btn" onclick="copyFormula(this, '|x| < a → −a < x < a')">📋</button>
+</div>
+
+<div class="formula">
+<strong>15. Absolute Inequality</strong><br>
+|x| ≤ a → −a ≤ x ≤ a
+<button class="copy-btn" onclick="copyFormula(this, '|x| ≤ a → −a ≤ x ≤ a')">📋</button>
+</div>
+
+<div class="formula">
+<strong>16. Absolute Inequality</strong><br>
+|x| &gt; a → x &lt; −a or x &gt; a
+<button class="copy-btn" onclick="copyFormula(this, '|x| > a → x < −a or x > a')">📋</button>
+</div>
+
+<div class="formula">
+<strong>17. Absolute Inequality</strong><br>
+|x| ≥ a → x ≤ −a or x ≥ a
+<button class="copy-btn" onclick="copyFormula(this, '|x| ≥ a → x ≤ −a or x ≥ a')">📋</button>
+</div>
+
+</div>
+
+
+<!-- DEFINITIONS -->
+
+<div class="box">
+
+<h2>Definitions</h2>
+
+    <div class="key">
+<p>
+    <b>Linear Inequality:</b>
+An inequality involving a first-degree expression in one or more variable</p>
+
+<p>
+    <b> Quadratic Inequality:</b>
+An inequality involving a second-degree expression.</p>
+
+
+
+<p><b>Linear Inequality in Two Variables:</b>
+An inequality obtained by replacing the equality sign in a linear equation with &lt;, &gt;, ≤ or ≥
+</p>
+
+        <p><b>
+Solution of an Inequality:</b>
+An ordered pair (x, y) that makes the inequality a true statement.
+</p>
+
+
+<p><b>Boundary Line:</b>
+The line that divides the plane into two regions while graphing an inequality.
+</p>
+<p>
+<b>Feasible Region:</b>
+The region containing all points that satisfy the given inequalities.
+
+</p>
+
+<p>
+<b>Absolute Value:</b>
+The absolute value of a number is its distance from zero on the number line.
+</p>
+
+<p><b>System of Linear Inequalities:</b>
+Two or more linear inequalities involving the same variables.
+</p>
+    </div>
+</div>
+
+
+<!-- KEY POINTS -->
+
+<div class="box">
+
+<h2>Key Points</h2>
+    <ul>
+
+<li><b> Inequality Sign:</b>
+When multiplying or dividing an inequality by a negative number, reverse the inequality sign.
+</li>
+
+<li><b> Open Circle:</b>
+Used for &lt; and &gt; because the endpoint is not included.
+</li>
+
+
+<li><b> Closed Circle:</b>
+Used for ≤ and ≥ because the endpoint is included.
+</li>
+        
+<li> Quadratic Inequalities:</b>
+Critical points divide the number line into intervals. Test one point from each interval to determine the solution.
+
+</li>
+
+    <li>
+<b> Two-Variable Inequalities:</b>
+First draw the boundary line, then use a test point to determine the region to shade.
+    </li>
+
+<li>
+<b> Absolute Value:</b>
+Absolute value represents distance from zero and is always non-negative.
+
+</li>
+
+<li>
+<b> Absolute Inequalities:</b>
+Less-than inequalities give the interval between two values.<br>
+Greater-than inequalities give the regions outside two values.
+</li>
+
+<li>
+<b>System of Inequalities:</b>
+The solution of a system is the intersection of the solution regions of all inequalities.
+
+</li>
+
+<li>
+<b>Test Point:</b>
+If the test point satisfies the inequality, shade the region containing that point. Otherwise, shade the opposite region
+    
+</li>
+
+</div>
+
+
+<!-- MOST IMPORTANT THINGS -->
+
+<div class="box">
+
+<h2>Most Important Things</h2>
+    <ul>
+  
+        <li> Negative multiplication or division → Reverse the inequality sign.</li>
+
+
+  
+        <li><strong></strong> ≤ or ≥ → Closed Circle + Solid Line.</li>
+  
+        <li><strong></strong> &lt; or &gt; → Open Circle + Dashed Line.</li>
+
+
+
+        <li><strong></strong> |x| ≤ a → −a ≤ x ≤ a.</li>
+
+
+        <li><strong> </strong>|x| ≥ a → x ≤ −a or x ≥ a.</li>
+
+
+
+        <li><strong></strong> |x| ≥ 0 always.</li>
+
+
+
+        <li><strong> </strong>Two-variable inequality → Boundary Line + Test Point + Shading.</li>
+
+
+
+        <li><strong></strong>System of inequalities → Intersection of solution regions.</li>
+
+
+
+        <li><strong> </strong>Quadratic inequality → Critical Points + Intervals + Test Points.</li>
+    </ul>
+
+</div>
+
+</body>
+</html>

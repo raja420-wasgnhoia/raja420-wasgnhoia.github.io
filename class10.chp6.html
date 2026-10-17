@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class 10 Chapter 6 - Functions and Graphs</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #222;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 15px auto 20px;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            width: 90%;
+            max-width: 850px;
+            margin: 15px auto;
+            padding: 20px;
+            border: 2px solid #f8bbd0;
+            border-radius: 15px;
+            box-sizing: border-box;
+            background: #fff;
+        }
+
+        h2 {
+            color: #ad1457;
+            border-bottom: 2px solid #f8bbd0;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #ad1457;
+            margin-top: 25px;
+        }
+
+        .formula {
+            background: #fff0f5;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            position: relative;
+            padding-right: 55px;
+            box-sizing: border-box;
+        }
+
+        .copy-btn {
+            float: right;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 9px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .key {
+            line-height: 1.7;
+        }
+
+        .note {
+            background: #fce4ec;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        ul {
+            line-height: 1.7;
+        }
+
+        .math {
+            font-family: "Times New Roman", serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 6 — Functions and Graphs</h1>
+    <h4>Formula Hub</h4>
+</header>
+
+<a href="class10.html" class="back-button">← Back to Chapters</a>
+
+
+<!-- FORMULAS -->
+
+<div class="box">
+    <h2>Important Formulas</h2>
+
+    <h3>1. Cartesian Product</h3>
+
+    <div class="formula math">
+        A × B = {(x, y) | x ∈ A and y ∈ B}
+        <button class="copy-btn" onclick="copyFormula(this, 'A × B = {(x, y) | x ∈ A and y ∈ B}')">📋</button>
+    </div>
+
+    <div class="formula math">
+        If n(A) = p and n(B) = q, then n(A × B) = pq
+        <button class="copy-btn" onclick="copyFormula(this, 'If n(A) = p and n(B) = q, then n(A × B) = pq')">📋</button>
+    </div>
+
+    <div class="formula math">
+        Number of subsets of A × B = 2<sup>pq</sup>
+        <button class="copy-btn" onclick="copyFormula(this, 'Number of subsets of A × B = 2^(pq)')">📋</button>
+    </div>
+
+
+    <h3>2. Function Notation</h3>
+
+    <div class="formula math">
+        f : A → B
+        <button class="copy-btn" onclick="copyFormula(this, 'f : A → B')">📋</button>
+    </div>
+
+    <div class="formula math">
+        y = f(x)
+        <button class="copy-btn" onclick="copyFormula(this, 'y = f(x)')">📋</button>
+    </div>
+
+
+    <h3>3. Function Operations</h3>
+
+    <div class="formula math">
+        (f + g)(x) = f(x) + g(x)
+        <button class="copy-btn" onclick="copyFormula(this, '(f + g)(x) = f(x) + g(x)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        (f − g)(x) = f(x) − g(x)
+        <button class="copy-btn" onclick="copyFormula(this, '(f − g)(x) = f(x) − g(x)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        (f × g)(x) = f(x) × g(x)
+        <button class="copy-btn" onclick="copyFormula(this, '(f × g)(x) = f(x) × g(x)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        (f ÷ g)(x) = f(x) ÷ g(x), where g(x) ≠ 0
+        <button class="copy-btn" onclick="copyFormula(this, '(f ÷ g)(x) = f(x) ÷ g(x), where g(x) ≠ 0')">📋</button>
+    </div>
+
+
+    <h3>4. Composition of Functions</h3>
+
+    <div class="formula math">
+        (f ∘ g)(x) = f(g(x))
+        <button class="copy-btn" onclick="copyFormula(this, '(f ∘ g)(x) = f(g(x))')">📋</button>
+    </div>
+
+    <div class="formula math">
+        (g ∘ f)(x) = g(f(x))
+        <button class="copy-btn" onclick="copyFormula(this, '(g ∘ f)(x) = g(f(x))')">📋</button>
+    </div>
+
+    <div class="formula math">
+        f(f(x)) = f<sup>2</sup>(x)
+        <button class="copy-btn" onclick="copyFormula(this, 'f(f(x)) = f^2(x)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        f(f<sup>2</sup>(x)) = f<sup>3</sup>(x)
+        <button class="copy-btn" onclick="copyFormula(this, 'f(f^2(x)) = f^3(x)')">📋</button>
+    </div>
+
+
+    <h3>5. Inverse Function</h3>
+
+    <div class="formula math">
+        f : X → Y &nbsp;&nbsp; ⇒ &nbsp;&nbsp; f<sup>−1</sup> : Y → X
+        <button class="copy-btn" onclick="copyFormula(this, 'f : X → Y ⇒ f^−1 : Y → X')">📋</button>
+    </div>
+
+    <div class="formula math">
+        y = f(x) &nbsp;&nbsp; ⇒ &nbsp;&nbsp; x = f<sup>−1</sup>(y)
+        <button class="copy-btn" onclick="copyFormula(this, 'y = f(x) ⇒ x = f^−1(y)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        f(f<sup>−1</sup>(x)) = f<sup>−1</sup>(f(x)) = x
+        <button class="copy-btn" onclick="copyFormula(this, 'f(f^−1(x)) = f^−1(f(x)) = x')">📋</button>
+    </div>
+
+    <div class="formula math">
+        (f<sup>−1</sup>)<sup>−1</sup> = f
+        <button class="copy-btn" onclick="copyFormula(this, '(f^−1)^−1 = f')">📋</button>
+    </div>
+
+
+    <h3>6. Constant Function</h3>
+
+    <div class="formula math">
+        y = f(x) = a = ax<sup>0</sup>
+        <button class="copy-btn" onclick="copyFormula(this, 'y = f(x) = a = ax^0')">📋</button>
+    </div>
+
+
+    <h3>7. Linear Function</h3>
+
+    <div class="formula math">
+        y = f(x) = ax + b, &nbsp; a ≠ 0
+        <button class="copy-btn" onclick="copyFormula(this, 'y = f(x) = ax + b, a ≠ 0')">📋</button>
+    </div>
+
+
+    <h3>8. Identity Function</h3>
+
+    <div class="formula math">
+        y = f(x) = x
+        <button class="copy-btn" onclick="copyFormula(this, 'y = f(x) = x')">📋</button>
+    </div>
+
+
+    <h3>9. Absolute Value Function</h3>
+
+    <div class="formula math">
+        |x| = { x, if x ≥ 0 ; −x, if x &lt; 0 }
+        <button class="copy-btn" onclick="copyFormula(this, '|x| = x if x ≥ 0; −x if x &lt; 0')">📋</button>
+    </div>
+
+    <div class="formula math">
+        f(x) = |x|
+        <button class="copy-btn" onclick="copyFormula(this, 'f(x) = |x|')">📋</button>
+    </div>
+
+
+    <h3>10. Linear Graphs of y = nx</h3>
+
+    <div class="formula math">
+        y = nx
+        <button class="copy-btn" onclick="copyFormula(this, 'y = nx')">📋</button>
+    </div>
+
+    <div class="formula math">
+        Slope = n
+        <button class="copy-btn" onclick="copyFormula(this, 'Slope = n')">📋</button>
+    </div>
+
+
+    <h3>11. Quadratic Function</h3>
+
+    <div class="formula math">
+        f(x) = ax<sup>2</sup> + bx + c, &nbsp; a ≠ 0
+        <button class="copy-btn" onclick="copyFormula(this, 'f(x) = ax^2 + bx + c, a ≠ 0')">📋</button>
+    </div>
+
+    <div class="formula math">
+        y = a(x − h)<sup>2</sup> + k
+        <button class="copy-btn" onclick="copyFormula(this, 'y = a(x − h)^2 + k')">📋</button>
+    </div>
+
+    <div class="formula math">
+        h = −b / 2a
+        <button class="copy-btn" onclick="copyFormula(this, 'h = −b / 2a')">📋</button>
+    </div>
+
+    <div class="formula math">
+        k = c − b<sup>2</sup> / 4a
+        <button class="copy-btn" onclick="copyFormula(this, 'k = c − b^2 / 4a')">📋</button>
+    </div>
+
+    <div class="formula math">
+        Vertex = (h, k)
+        <button class="copy-btn" onclick="copyFormula(this, 'Vertex = (h, k)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        Axis of symmetry: x = h
+        <button class="copy-btn" onclick="copyFormula(this, 'Axis of symmetry: x = h')">📋</button>
+    </div>
+
+
+    <h3>12. Cubic Function</h3>
+
+    <div class="formula math">
+        f(x) = ax<sup>3</sup> + bx<sup>2</sup> + cx + d, &nbsp; a ≠ 0
+        <button class="copy-btn" onclick="copyFormula(this, 'f(x) = ax^3 + bx^2 + cx + d, a ≠ 0')">📋</button>
+    </div>
+
+
+    <h3>13. Square Root Function</h3>
+
+    <div class="formula math">
+        f(x) = √x, &nbsp; x ≥ 0
+        <button class="copy-btn" onclick="copyFormula(this, 'f(x) = √x, x ≥ 0')">📋</button>
+    </div>
+
+
+    <h3>14. Reciprocal Function</h3>
+
+    <div class="formula math">
+        f(x) = k / x, &nbsp; x ≠ 0, k ≠ 0
+        <button class="copy-btn" onclick="copyFormula(this, 'f(x) = k / x, x ≠ 0, k ≠ 0')">📋</button>
+    </div>
+
+    <div class="formula math">
+        f(x) = 1 / x
+        <button class="copy-btn" onclick="copyFormula(this, 'f(x) = 1 / x')">📋</button>
+    </div>
+
+
+    <h3>15. Exponential Function</h3>
+
+    <div class="formula math">
+        f(x) = a<sup>x</sup>, &nbsp; a &gt; 0, a ≠ 1
+        <button class="copy-btn" onclick="copyFormula(this, 'f(x) = a^x, a > 0, a ≠ 1')">📋</button>
+    </div>
+
+
+    <h3>16. Power Function</h3>
+
+    <div class="formula math">
+        y = x<sup>n</sup>
+        <button class="copy-btn" onclick="copyFormula(this, 'y = x^n')">📋</button>
+    </div>
+
+    <div class="formula math">
+        x<sup>0</sup> = 1
+        <button class="copy-btn" onclick="copyFormula(this, 'x^0 = 1')">📋</button>
+    </div>
+
+    <div class="formula math">
+        x<sup>−1</sup> = 1/x
+        <button class="copy-btn" onclick="copyFormula(this, 'x^−1 = 1/x')">📋</button>
+    </div>
+
+    <div class="formula math">
+        x<sup>−2</sup> = 1/x<sup>2</sup>
+        <button class="copy-btn" onclick="copyFormula(this, 'x^−2 = 1/x^2')">📋</button>
+    </div>
+
+
+    <h3>17. Gradient</h3>
+
+    <div class="formula math">
+        Gradient = Change in y / Change in x
+        <button class="copy-btn" onclick="copyFormula(this, 'Gradient = Change in y / Change in x')">📋</button>
+    </div>
+
+    <div class="formula math">
+        Gradient = (y<sub>2</sub> − y<sub>1</sub>) / (x<sub>2</sub> − x<sub>1</sub>)
+        <button class="copy-btn" onclick="copyFormula(this, 'Gradient = (y2 − y1) / (x2 − x1)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        Slope = Rise / Run
+        <button class="copy-btn" onclick="copyFormula(this, 'Slope = Rise / Run')">📋</button>
+    </div>
+
+</div>
+
+
+<!-- DEFINITIONS -->
+
+<div class="box">
+    <h2>Definitions</h2>
+
+    <h3>Cartesian Product</h3>
+    <div class="note">
+        The Cartesian product of two sets A and B is the set of all ordered pairs (x, y) where x belongs to A and y belongs to B.
+    </div>
+
+    <h3>Relation</h3>
+    <div class="note">
+        A relation from A to B is any subset of the Cartesian product A × B.
+    </div>
+
+    <h3>Function</h3>
+    <div class="note">
+        A function f: A → B maps each element of A to a unique element of B.
+    </div>
+
+    <h3>Domain</h3>
+    <div class="note">
+        The domain of a function is the set of first elements of its ordered pairs.
+    </div>
+
+    <h3>Range</h3>
+    <div class="note">
+        The range of a function is the set of second elements or images of its ordered pairs.
+    </div>
+
+    <h3>Codomain</h3>
+    <div class="note">
+        In f: A → B, the set B is called the codomain of the function.
+    </div>
+
+    <h3>Image</h3>
+    <div class="note">
+        The second element corresponding to a preimage is called its image.
+    </div>
+
+    <h3>Preimage</h3>
+    <div class="note">
+        The first element corresponding to an image is called its preimage.
+    </div>
+
+    <h3>Into Function</h3>
+    <div class="note">
+        A function is called into if at least one element of the codomain is not an image. Thus, Range(f) is a proper subset of B.
+    </div>
+
+    <h3>Onto Function</h3>
+    <div class="note">
+        A function is called onto or surjective if every element of the codomain is the image of at least one element of the domain.
+    </div>
+
+    <h3>One-to-One Function</h3>
+    <div class="note">
+        A function is one-to-one if distinct elements of the domain have distinct images.
+    </div>
+
+    <h3>Injective Function</h3>
+    <div class="note">
+        A function that is both into and one-to-one is called an injective function.
+    </div>
+
+    <h3>Bijective Function</h3>
+    <div class="note">
+        A function that is both onto and one-to-one is called a bijective function.
+    </div>
+
+    <h3>Function Evaluation</h3>
+    <div class="note">
+        Function evaluation is the process of finding the dependent value by substituting a specific value of the independent variable.
+    </div>
+
+    <h3>Inverse Function</h3>
+    <div class="note">
+        The inverse of a function reverses the effect of the original function. An inverse function exists when the function is bijective.
+    </div>
+
+    <h3>Constant Function</h3>
+    <div class="note">
+        A polynomial function of degree zero is called a constant function.
+    </div>
+
+    <h3>Linear Function</h3>
+    <div class="note">
+        A polynomial function of degree one is called a linear function.
+    </div>
+
+    <h3>Identity Function</h3>
+    <div class="note">
+        A function in which every input has the same output is called an identity function.
+    </div>
+
+    <h3>Absolute Value Function</h3>
+    <div class="note">
+        The function f(x) = |x| is called the absolute value or modulus function.
+    </div>
+
+    <h3>Quadratic Function</h3>
+    <div class="note">
+        A polynomial function of degree two is called a quadratic function.
+    </div>
+
+    <h3>Cubic Function</h3>
+    <div class="note">
+        A polynomial function of degree three is called a cubic function.
+    </div>
+
+    <h3>Square Root Function</h3>
+    <div class="note">
+        The function f(x) = √x, where x ≥ 0, is called a square root function.
+    </div>
+
+    <h3>Reciprocal Function</h3>
+    <div class="note">
+        A function of the form f(x) = k/x, where x ≠ 0 and k ≠ 0, is called a reciprocal function.
+    </div>
+
+    <h3>Exponential Function</h3>
+    <div class="note">
+        A function of the form f(x) = aˣ, where a > 0 and a ≠ 1, is called an exponential function.
+    </div>
+
+    <h3>Gradient of a Curve</h3>
+    <div class="note">
+        The gradient of a curve at a given point is the slope of the tangent line drawn to the curve at that point.
+    </div>
+
+    <h3>Tangent</h3>
+    <div class="note">
+        A tangent to a curve is a line that touches the curve at a given point externally. The slope of the tangent gives the gradient of the curve at that point.
+    </div>
+
+</div>
+
+
+<!-- GRAPH FACTS -->
+
+<div class="box">
+    <h2>Graph Facts</h2>
+
+    <ul class="key">
+        <li>A vertical line intersects the graph of a function at most once. This is called the vertical line test.</li>
+
+        <li>The graph of y = 0 is the x-axis.</li>
+
+        <li>The graph of a constant function is a horizontal straight line.</li>
+
+        <li>The graph of a linear function is a straight line.</li>
+
+        <li>The graph of y = x passes through the origin and bisects the first and third quadrants.</li>
+
+        <li>The graph of y = |x| is V-shaped with vertex at the origin.</li>
+
+        <li>The domain of y = |x| is all real numbers and its range is all non-negative real numbers.</li>
+
+        <li>Graphs of y = nx pass through the origin.</li>
+
+        <li>For n > 0, y = nx lies through the first and third quadrants.</li>
+
+        <li>For n < 0, y = nx lies through the second and fourth quadrants.</li>
+
+        <li>The graph of a quadratic function is a parabola.</li>
+
+        <li>If a > 0 in y = ax² + bx + c, the parabola opens upward and its vertex gives the minimum value.</li>
+
+        <li>If a < 0, the parabola opens downward and its vertex gives the maximum value.</li>
+
+        <li>The axis of symmetry of a quadratic graph is x = h.</li>
+
+        <li>The graph of y = x³ is symmetric about the origin and passes through the origin.</li>
+
+        <li>The domain and range of a cubic function are all real numbers.</li>
+
+        <li>The graph of y = √x lies in the first quadrant and increases as x increases.</li>
+
+        <li>The domain and range of y = √x are the non-negative real numbers.</li>
+
+        <li>The reciprocal graph y = 1/x has two branches in the first and third quadrants.</li>
+
+        <li>The graph y = 1/x is undefined at x = 0.</li>
+
+        <li>The graph y = 1/x never touches the x-axis or y-axis.</li>
+
+        <li>The domain and range of y = 1/x are all real numbers except zero.</li>
+
+        <li>The exponential graph y = 2ˣ has y-intercept 1 and horizontal asymptote y = 0.</li>
+
+        <li>The graphs of y = xⁿ for positive and negative integer n pass through (1, 1) when defined for x > 0.</li>
+
+        <li>The intersection points of a linear and quadratic graph give the graphical solutions of the simultaneous equations.</li>
+
+        <li>A positive gradient means the tangent rises from left to right.</li>
+
+        <li>A negative gradient means the tangent falls from left to right.</li>
+
+        <li>The slope of a vertical line is undefined.</li>
+    </ul>
+
+</div>
+
+
+<!-- MOST IMPORTANT -->
+
+<div class="box">
+    <h2>Most Important Things</h2>
+
+    <ul class="key">
+        <li>Every function is a relation, but every relation is not necessarily a function.</li>
+
+        <li>For a relation to be a function from A to B, its domain must be A and no first element can be repeated.</li>
+
+        <li>In an onto function, Range = Codomain.</li>
+
+        <li>In an into function, Range is a proper subset of the Codomain.</li>
+
+        <li>A one-to-one function has no repeated second elements.</li>
+
+        <li>An injective function is into and one-to-one.</li>
+
+        <li>A bijective function is onto and one-to-one.</li>
+
+        <li>An inverse function exists for a bijective function.</li>
+
+        <li>Domain of f = Range of f⁻¹.</li>
+
+        <li>Range of f = Domain of f⁻¹.</li>
+
+        <li>For addition and subtraction of functions, perform the operation on their corresponding function values.</li>
+
+        <li>For division of functions, the denominator function must not be zero.</li>
+
+        <li>In composition, the output of the inner function becomes the input of the outer function.</li>
+
+        <li>For a quadratic function, the sign of a determines whether the parabola opens upward or downward.</li>
+
+        <li>The vertex of a parabola is its turning point.</li>
+
+        <li>The x-intercept is found by putting y = 0.</li>
+
+        <li>The y-intercept is found by putting x = 0.</li>
+
+        <li>The absolute value of a number represents its distance from zero.</li>
+
+        <li>The reciprocal of zero is undefined.</li>
+
+        <li>For reciprocal functions, the denominator cannot be zero.</li>
+
+        <li>The gradient of a curve is determined using the tangent at the required point.</li>
+
+        <li>Gradient = rise/run = change in y/change in x.</li>
+
+        <li>Real-life functions and graphs can represent distance, time, population, finance, temperature, supply, demand and many other quantities.</li>
+    </ul>
+
+</div>
+
+
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+
+</body>
+</html>

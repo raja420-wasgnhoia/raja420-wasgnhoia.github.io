@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 3 - Sets and Relations</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #222;
+}
+header {
+    background: #f8bbd0;
+    padding: 25px 15px;
+    text-align: center;
+}
+h1, h2, h3 {
+    color: #ad1457;
+}
+.box {
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px;
+    border: 2px solid #f8bbd0;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.formula {
+    background: #fff0f5;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    position: relative;
+    padding-right: 60px;
+    line-height: 1.8;
+}
+.copy-btn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background: white;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    border-radius: 8px;
+    padding: 5px 8px;
+}
+.back-button {
+    display: block;
+    width: fit-content;
+    margin: 15px auto 20px;
+    padding: 8px 16px;
+    background: #fff0f5;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<h1>Chapter 3 — Sets and Relations</h1>
+<h4>Formula Hub</h4>
+</header>
+
+<a class="back-button" href="class9.html">← Back to Chapters</a>
+<div class="box">
+<h2>1. FORMULAS</h2>
+
+<h3>Union of Sets</h3>
+<div class="formula">
+A ∪ B = {x | x ∈ A or x ∈ B}
+<button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<h3>Intersection of Sets</h3>
+<div class="formula">
+A ∩ B = {x | x ∈ A and x ∈ B}
+<button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<h3>Difference of Sets</h3>
+<div class="formula">
+A − B = {x | x ∈ A and x ∉ B}
+<button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<h3>Complement of a Set</h3>
+<div class="formula">
+A′ = U − A
+<button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+</div>
+
+<div class="box">
+<h2>2. CONCEPTS</h2>
+<p><b>Union:</b> Elements belonging to either set or both sets.</p>
+<p><b>Intersection:</b> Elements common to both sets.</p>
+<p><b>Difference:</b> Elements in A that are not in B.</p>
+<p><b>Complement:</b> Elements of the universal set that are not in A.</p>
+</div>
+
+<div class="box">
+<h2>3. DEFINITIONS</h2>
+<p><b>Set:</b> A well-defined collection of distinct objects.</p>
+<p><b>Subset:</b> A set whose every element belongs to another set.</p>
+<p><b>Universal Set:</b> A set containing all elements under consideration.</p>
+<p><b>Venn Diagram:</b> A diagram used to represent sets and their relationships.</p>
+</div>
+
+<div class="box">
+<h2>4. KEY POINTS</h2>
+<ul>
+<li>A ∪ B represents union.</li>
+<li>A ∩ B represents intersection.</li>
+<li>A′ represents complement.</li>
+<li>Disjoint sets have no common elements.</li>
+<li>The order of an ordered pair matters.</li>
+</ul>
+</div>
+
+
+<script>
+function copyFormula(button) {
+    var card = button.parentElement.cloneNode(true);
+    var copyButton = card.querySelector(".copy-btn");
+    if (copyButton) copyButton.remove();
+
+    var text = (card.innerText || card.textContent).trim();
+
+    function success() {
+        button.textContent = "✓";
+        setTimeout(function() {
+            button.textContent = "Copied";
+        }, 1000);
+        setTimeout(function() {
+            button.textContent = "📋";
+        }, 2200);
+    }
+
+    function fallback() {
+        var area = document.createElement("textarea");
+        area.value = text;
+        document.body.appendChild(area);
+        area.select();
+        area.setSelectionRange(0, area.value.length);
+
+        var copied = false;
+        try {
+            copied = document.execCommand("copy");
+        } catch (e) {}
+
+        area.remove();
+
+        if (copied) {
+            success();
+        } else {
+            window.prompt("Formula ko select karke copy karein:", text);
+        }
+    }
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(success).catch(fallback);
+    } else {
+        fallback();
+    }
+}
+</script>
+
+</body>
+</html>

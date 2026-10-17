@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 02 - Logarithms | Formula Hub</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+
+header {
+    background: #f8bbd0;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ad1457;
+    margin: 0;
+    font-size: 25px;
+}
+
+header h4 {
+    margin: 8px 0 0;
+    color: #333;
+}
+
+.back-button {
+    display: block;
+    width: fit-content;
+    margin: 15px auto 20px;
+    padding: 8px 16px;
+    background: #fff0f5;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.box {
+    width: 90%;
+    max-width: 850px;
+    margin: 15px auto;
+    padding: 20px;
+    border: 2px solid #f8bbd0;
+    border-radius: 15px;
+    background: #fff;
+}
+
+h2 {
+    color: #ad1457;
+    border-bottom: 2px solid #f8bbd0;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #ad1457;
+    margin-top: 25px;
+}
+
+.formula {
+    background: #fff0f5;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    position: relative;
+    padding-right: 65px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.math {
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #fff;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    padding: 5px 8px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.key {
+    line-height: 1.9;
+}
+
+.note {
+    background: #fce4ec;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+ul {
+    line-height: 1.9;
+    padding-left: 22px;
+}
+
+footer {
+    text-align: center;
+    color: #ad1457;
+    padding: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 94%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Unit 02 - Logarithms</h1>
+    <h4>Formula Hub</h4>
+</header>
+
+<a href="class9.html" class="back-button">← Back to Chapters</a>
+
+<!-- FORMULAS -->
+<div class="box">
+<h2>1. FORMULAS</h2>
+
+<h3>A. Scientific Notation</h3>
+
+<div class="formula">
+    <span class="math">N = a × 10<sup>n</sup></span><br>
+    Where <span class="math">1 ≤ a &lt; 10</span> and
+    <span class="math">n ∈ Z</span>.
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    Decimal moves left → Positive exponent.<br>
+    Decimal moves right → Negative exponent.
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<h3>B. Logarithmic and Exponential Forms</h3>
+
+<div class="formula">
+    <span class="math">y = log<sub>b</sub>x ⇔ b<sup>y</sup> = x</span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    <span class="math">log<sub>b</sub>1 = 0</span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    <span class="math">log<sub>b</sub>b = 1</span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    <span class="math">log<sub>b</sub>(b<sup>x</sup>) = x</span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    If <span class="math">log<sub>b</sub>x = log<sub>b</sub>y</span>,
+    then <span class="math">x = y</span>.
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<h3>C. Common and Natural Logarithms</h3>
+
+<div class="formula">
+    <span class="math">log x = log<sub>10</sub>x</span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    <span class="math">ln x = log<sub>e</sub>x</span>,
+    where <span class="math">e ≈ 2.71828</span>.
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    <span class="math">log(10<sup>n</sup>) = n</span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    <span class="math">ln(e<sup>n</sup>) = n</span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    <span class="math">Logarithm = Characteristic + Mantissa</span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<h3>D. Product Law</h3>
+
+<div class="formula">
+    <span class="math">log<sub>b</sub>(mn) =
+    log<sub>b</sub>m + log<sub>b</sub>n</span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<h3>E. Quotient Law</h3>
+
+<div class="formula">
+    <span class="math">log<sub>b</sub>(m/n) =
+    log<sub>b</sub>m − log<sub>b</sub>n</span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<h3>F. Power Law</h3>
+
+<div class="formula">
+    <span class="math">log<sub>b</sub>(m<sup>n</sup>) =
+    n log<sub>b</sub>m</span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    <span class="math">log<sub>b</sub>√m =
+    ½ log<sub>b</sub>m</span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    <span class="math">log<sub>b</sub>∛m =
+    ⅓ log<sub>b</sub>m</span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<h3>G. Change of Base Law</h3>
+
+<div class="formula">
+    <span class="math">
+    log<sub>a</sub>m =
+    log<sub>b</sub>m × log<sub>a</sub>b
+    </span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    <span class="math">
+    log<sub>b</sub>m =
+    log<sub>a</sub>m / log<sub>a</sub>b
+    </span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    <span class="math">
+    log<sub>b</sub>m =
+    log m / log b
+    </span>
+    <br>
+    For common logarithms, base 10 is used.
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<h3>H. Important Logarithmic Results</h3>
+
+<div class="formula">
+    <span class="math">
+    log<sub>b</sub>a × log<sub>a</sub>b = 1
+    </span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    <span class="math">
+    log<sub>c</sub>a = 1 / log<sub>a</sub>c
+    </span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    <span class="math">
+    log<sub>b</sub>a × log<sub>c</sub>b =
+    log<sub>c</sub>a
+    </span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    <span class="math">
+    log<sub>b</sub>a × log<sub>c</sub>b ×
+    log<sub>a</sub>c = 1
+    </span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<h3>I. Richter Scale</h3>
+
+<div class="formula">
+    <span class="math">M = log(I/I<sub>0</sub>)</span>
+    <br>
+    <span class="math">I/I<sub>0</sub> = 10<sup>M</sup></span>
+    <br>
+    Here, <span class="math">I</span> is the intensity and
+    <span class="math">I<sub>0</sub></span> is a reference intensity.
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    <span class="math">
+    I<sub>2</sub>/I<sub>1</sub> = 10<sup>M<sub>2</sub>−M<sub>1</sub></sup>
+    </span>
+    <br>
+    For comparing intensities using the Richter formula.
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<h3>J. Number of Digits</h3>
+
+<div class="formula">
+    <span class="math">
+    Number of digits in N = ⌊log<sub>10</sub>N⌋ + 1
+    </span>
+    <br>
+    For a positive integer <span class="math">N</span>.
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    <span class="math">
+    Number of digits = Characteristic + 1
+    </span>
+    <br>
+    For a positive whole number using common logarithms.
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+
+<div class="formula">
+    <span class="math">log(N<sup>k</sup>) = k log N</span>
+    <button class="copy-btn" onclick="copyFormula(this)">📋</button>
+</div>
+</div>
+
+<!-- CONCEPTS -->
+<div class="box">
+<h2>2. CONCEPTS</h2>
+
+<h3>Scientific Notation</h3>
+<ul>
+    <li>A number is written as a decimal factor multiplied by a power of 10.</li>
+    <li>The decimal factor must be at least 1 and less than 10.</li>
+    <li>Scientific notation makes very large and very small numbers easier to write.</li>
+</ul>
+
+<h3>Converting Logarithms</h3>
+<div class="note">
+    <b>Example 1:</b>
+    <span class="math">log<sub>5</sub>625 = 4</span>
+    means <span class="math">5<sup>4</sup> = 625</span>.
+</div>
+
+<div class="note">
+    <b>Example 2:</b>
+    <span class="math">log<sub>2</sub>x = 4</span>
+    means <span class="math">x = 2<sup>4</sup> = 16</span>.
+</div>
+
+<h3>Characteristic and Mantissa</h3>
+<ul>
+    <li>Characteristic is the integral part of a common logarithm.</li>
+    <li>Mantissa is the non-negative fractional part of the common logarithm.</li>
+    <li>Logarithm tables are used to find mantissas and antilogarithms.</li>
+    <li>The characteristic helps determine the decimal point in the final number.</li>
+</ul>
+
+<div class="note">
+    <b>Example:</b>
+    <span class="math">log 156.3 ≈ 2.1939</span>
+    <br>
+    Characteristic = 2; mantissa ≈ 0.1939.
+</div>
+
+<div class="note">
+    <b>Negative characteristic:</b>
+    <span class="math">−2 + 0.0899 = −1.9101</span>
+    <br>
+    In logarithm tables, a negative characteristic is written using a bar:
+    <span class="math">2̅.0899</span>, which means
+    <span class="math">−2 + 0.0899</span>.
+</div>
+
+<h3>Antilogarithm</h3>
+<ul>
+    <li>If <span class="math">log x = y</span>, then <span class="math">x = antilog y</span>.</li>
+    <li>Use the mantissa to look up the antilogarithm in the table.</li>
+    <li>Use the characteristic to place the decimal point.</li>
+</ul>
+
+<div class="note">
+    <b>Example:</b>
+    <span class="math">antilog 2 = 10<sup>2</sup> = 100</span>.
+</div>
+
+<h3>Expanding Logarithmic Expressions</h3>
+<div class="note">
+    <b>Example:</b>
+    <span class="math">log(5p²q½ / (4√s t³))</span>
+    <br><br>
+    <span class="math">
+    = log 5 + 2 log p + ½ log q
+    − log 4 − ½ log s − 3 log t
+    </span>
+</div>
+
+<h3>Combining Logarithmic Expressions</h3>
+<div class="note">
+    <b>Example:</b>
+    <span class="math">2 log x + 3 log y</span>
+    <br><br>
+    <span class="math">= log x² + log y³</span>
+    <br>
+    <span class="math">= log(x²y³)</span>
+</div>
+
+<h3>Using Logarithms in Calculations</h3>
+<ul>
+    <li>Convert products into sums of logarithms.</li>
+    <li>Convert quotients into differences of logarithms.</li>
+    <li>Convert powers into multiplication by the exponent.</li>
+    <li>Take the antilogarithm to obtain the final numerical result.</li>
+</ul>
+</div>
+
+<!-- DEFINITIONS -->
+<div class="box">
+<h2>3. DEFINITIONS</h2>
+
+<h3>1. Logarithm</h3>
+<div class="note">
+    If <span class="math">b<sup>y</sup> = x</span>, where
+    <span class="math">b &gt; 0</span>,
+    <span class="math">b ≠ 1</span> and
+    <span class="math">x &gt; 0</span>, then
+    <span class="math">y = log<sub>b</sub>x</span> is called
+    the logarithm of x to base b.
+</div>
+
+<h3>2. Common Logarithm</h3>
+<div class="note">
+    A logarithm with base 10 is called a common logarithm.
+    It is written as <span class="math">log x</span>.
+</div>
+
+<h3>3. Natural Logarithm</h3>
+<div class="note">
+    A logarithm with base <span class="math">e</span> is called a
+    natural logarithm. It is written as <span class="math">ln x</span>.
+</div>
+
+<h3>4. Characteristic</h3>
+<div class="note">
+    The integral part of a common logarithm is called its characteristic.
+</div>
+
+<h3>5. Mantissa</h3>
+<div class="note">
+    The non-negative fractional part of a common logarithm is called its mantissa.
+</div>
+
+<h3>6. Antilogarithm</h3>
+<div class="note">
+    If <span class="math">log x = y</span>, then x is called the
+    antilogarithm of y.
+</div>
+
+<h3>7. Product Law</h3>
+<div class="note">
+    The logarithm of a product is equal to the sum of the logarithms
+    of its factors, provided all logarithms are defined.
+</div>
+
+<h3>8. Quotient Law</h3>
+<div class="note">
+    The logarithm of a quotient is equal to the logarithm of the
+    numerator minus the logarithm of the denominator.
+</div>
+
+<h3>9. Power Law</h3>
+<div class="note">
+    The logarithm of a power is equal to the exponent multiplied by
+    the logarithm of the base of that power.
+</div>
+
+<h3>10. Change of Base Law</h3>
+<div class="note">
+    The change of base law allows a logarithm to be expressed using
+    another valid base.
+</div>
+
+<h3>11. Richter Scale</h3>
+<div class="note">
+    The Richter scale is a logarithmic scale used to express the
+    magnitude of an earthquake.
+</div>
+</div>
+
+<!-- KEY POINTS -->
+<div class="box">
+<h2>4. KEY POINTS</h2>
+
+<ul class="key">
+    <li>The base of a logarithm must be positive and not equal to 1.</li>
+    <li>The argument of a real logarithm must be positive.</li>
+    <li><span class="math">log<sub>b</sub>0</span> and
+        <span class="math">log<sub>b</sub>(−x)</span> are undefined
+        for real logarithms when <span class="math">x ≥ 0</span>.</li>
+    <li><span class="math">log<sub>1</sub>2</span> is undefined because the base cannot be 1.</li>
+    <li><span class="math">log<sub>b</sub>1 = 0</span> and
+        <span class="math">log<sub>b</sub>b = 1</span>.</li>
+    <li>Common logarithms have base 10; natural logarithms have base e.</li>
+    <li>For <span class="math">1 ≤ x &lt; 10</span>,
+        <span class="math">0 ≤ log x &lt; 1</span>.</li>
+    <li>For a positive whole number, the number of digits equals the characteristic plus 1.</li>
+    <li>The mantissa of a common logarithm is non-negative and less than 1.</li>
+    <li>A barred characteristic is negative, while the mantissa remains non-negative.</li>
+    <li>Product law applies to multiplication, not addition or subtraction inside the logarithm.</li>
+    <li><span class="math">log(m+n) ≠ log m + log n</span> in general.</li>
+    <li><span class="math">log(m−n) ≠ log m − log n</span> in general.</li>
+    <li>For the power law, <span class="math">log<sub>b</sub>(m<sup>n</sup>) = n log<sub>b</sub>m</span>.</li>
+    <li>For change of base, the denominator must be defined and non-zero.</li>
+    <li>When comparing earthquake magnitudes, a difference of 1 on the Richter scale corresponds to a factor of 10 in the intensity ratio used in the formula.</li>
+</ul>
+
+<div class="note">
+    <b>Remember:</b> Logarithms are exponents. Keep the base and argument conditions in mind before applying any logarithmic law.
+</div>
+</div>
+
+
+
+<script>
+function copyFormula(button, formula) {
+    var textArea = document.createElement("textarea");
+    textArea.value = formula;
+
+    document.body.appendChild(textArea);
+    textArea.select();
+    textArea.setSelectionRange(0, 99999);
+
+    try {
+        document.execCommand("copy");
+        button.textContent = "✓";
+    } catch (err) {
+        button.textContent = "❌";
+    }
+
+    document.body.removeChild(textArea);
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+</body>
+</html>

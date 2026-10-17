@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class 10 Chapter 10 - Tangent to a Circle</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #222;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 15px auto 20px;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            width: 90%;
+            max-width: 850px;
+            margin: 15px auto;
+            padding: 20px;
+            border: 2px solid #f8bbd0;
+            border-radius: 15px;
+            box-sizing: border-box;
+            background: #fff;
+        }
+
+        h2 {
+            color: #ad1457;
+            border-bottom: 2px solid #f8bbd0;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #ad1457;
+            margin-top: 25px;
+        }
+
+        .formula {
+            background: #fff0f5;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            position: relative;
+            padding-right: 55px;
+            box-sizing: border-box;
+            line-height: 1.6;
+        }
+
+        .copy-btn {
+            float: right;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 8px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .key {
+            line-height: 1.7;
+        }
+
+        .note {
+            background: #fce4ec;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 10px 0;
+            line-height: 1.7;
+        }
+
+        ul {
+            line-height: 1.7;
+        }
+
+        .math {
+            font-family: "Times New Roman", serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 10 — Tangent to a Circle</h1>
+    <h4>Formula Hub</h4>
+</header>
+
+<a href="class10.html" class="back-button">← Back to Chapters</a>
+
+
+<!-- ================= FORMULAS ================= -->
+
+<div class="box">
+    <h2>FORMULAS</h2>
+
+    <h3>Tangent and Radius</h3>
+
+    <div class="formula math">
+        <b>OT ⟂ PT</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'OT ⟂ PT')">📋</button>
+    </div>
+
+    <div class="note">
+        The radius OT is perpendicular to the tangent PT at the point of contact T.
+    </div>
+
+    <div class="formula math">
+        <b>l² = d² − r²</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'l² = d² − r²')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>l = √(d² − r²)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'l = √(d² − r²)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>d² = l² + r²</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'd² = l² + r²')">📋</button>
+    </div>
+
+    <div class="note">
+        Here, l = tangent length, d = distance from the centre to the external point, and r = radius.
+    </div>
+
+    <h3>Equal Tangents</h3>
+
+    <div class="formula math">
+        <b>PA = PB</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'PA = PB')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>∠BAO = ∠CAO</b>
+        <button class="copy-btn" onclick="copyFormula(this, '∠BAO = ∠CAO')">📋</button>
+    </div>
+
+    <div class="note">
+        Tangents drawn from the same external point are equal. The line joining that point to the centre bisects the angle between the tangents.
+    </div>
+
+    <h3>Touching Circles</h3>
+
+    <div class="formula math">
+        <b>d = R + r</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'd = R + r')">📋</button>
+    </div>
+
+    <div class="note">
+        Distance between centres of externally touching circles.
+    </div>
+
+    <div class="formula math">
+        <b>d = R − r</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'd = R − r')">📋</button>
+    </div>
+
+    <div class="note">
+        Distance between centres of internally touching circles, where R is the larger radius.
+    </div>
+
+    <div class="formula math">
+        <b>d = 2r</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'd = 2r')">📋</button>
+    </div>
+
+    <div class="note">
+        Distance between centres of congruent circles touching externally.
+    </div>
+
+    <div class="formula math">
+        <b>d = 0</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'd = 0')">📋</button>
+    </div>
+
+    <div class="note">
+        Distance between centres of congruent circles touching internally.
+    </div>
+
+    <h3>Angles in a Circle</h3>
+
+    <div class="formula math">
+        <b>Central Angle = 2 × Inscribed Angle</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Central Angle = 2 × Inscribed Angle')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Inscribed Angle = ½ × Central Angle</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Inscribed Angle = ½ × Central Angle')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>∠AOB = 2∠ACB</b>
+        <button class="copy-btn" onclick="copyFormula(this, '∠AOB = 2∠ACB')">📋</button>
+    </div>
+
+    <div class="note">
+        These formulas apply when the central angle and inscribed angle subtend the same minor arc, with the inscribed angle's vertex on the remaining circumference.
+    </div>
+
+    <div class="formula math">
+        <b>Angle in a Semicircle = 90°</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Angle in a Semicircle = 90°')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Angles in the Same Segment are Equal</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Angles in the Same Segment are Equal')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Angle between Tangent and Chord = Angle in Alternate Segment</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Angle between Tangent and Chord = Angle in Alternate Segment')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Angle in Major Segment &lt; 90°</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Angle in Major Segment < 90°')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Angle in Minor Segment &gt; 90°</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Angle in Minor Segment > 90°')">📋</button>
+    </div>
+
+    <h3>Cyclic Quadrilateral</h3>
+
+    <div class="formula math">
+        <b>∠A + ∠C = 180°</b>
+        <button class="copy-btn" onclick="copyFormula(this, '∠A + ∠C = 180°')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>∠B + ∠D = 180°</b>
+        <button class="copy-btn" onclick="copyFormula(this, '∠B + ∠D = 180°')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Sum of Angles of a Triangle = 180°</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Sum of Angles of a Triangle = 180°')">📋</button>
+    </div>
+</div>
+
+
+<!-- ================= CONCEPTS ================= -->
+
+<div class="box">
+    <h2>CONCEPTS</h2>
+
+    <h3>Tangent Theorems</h3>
+
+    <div class="note">
+        <b>Theorem 10.1:</b> If a line is drawn perpendicular to a radius at its outer endpoint, the line is tangent to the circle.
+    </div>
+
+    <div class="note">
+        <b>Theorem 10.2:</b> The tangent to a circle is perpendicular to the radius drawn to the point of contact.
+    </div>
+
+    <div class="note">
+        <b>Theorem 10.3:</b> Two tangents drawn to a circle from the same external point are equal in length.
+    </div>
+
+    <div class="note">
+        <b>Theorem 10.4:</b> If two circles touch externally, the distance between their centres equals the sum of their radii.
+    </div>
+
+    <div class="note">
+        <b>Theorem 10.5:</b> If two circles touch internally, the distance between their centres equals the difference of their radii.
+    </div>
+
+    <div class="note">
+        <b>Theorem 10.6 — Alternate Segment Theorem:</b> The angle between a tangent and a chord through the point of contact equals the angle subtended by that chord in the alternate segment.
+    </div>
+
+    <h3>Angles in Segments</h3>
+
+    <div class="note">
+        <b>Theorem 10.7:</b> The angle subtended by a minor arc at the centre is double the angle subtended by the same arc at a point on the remaining circumference.
+    </div>
+
+    <div class="note">
+        <b>Theorem 10.8:</b> Any two angles in the same segment of a circle are equal.
+    </div>
+
+    <div class="note">
+        <b>Theorem 10.9:</b> The angle in a semicircle is a right angle.
+    </div>
+
+    <div class="note">
+        <b>Corollary:</b> If an arc subtends a right angle at a point on the remaining circumference, that arc is a semicircle.
+    </div>
+
+    <div class="note">
+        <b>Theorem 10.10:</b> The angle in a segment greater than a semicircle is less than a right angle.
+    </div>
+
+    <div class="note">
+        <b>Theorem 10.11:</b> The angle in a segment less than a semicircle is greater than a right angle.
+    </div>
+
+    <h3>Cyclic Quadrilateral</h3>
+
+    <div class="note">
+        <b>Theorem 10.12:</b> The opposite angles of a quadrilateral inscribed in a circle are supplementary.
+    </div>
+
+    <div class="note">
+        A cyclic trapezium is isosceles.
+    </div>
+
+    <div class="note">
+        A perpendicular drawn from the centre to a tangent at its point of contact passes through the centre and the point of contact.
+    </div>
+
+    <div class="note">
+        A line perpendicular to a diameter at either endpoint is a tangent to the circle at that endpoint.
+    </div>
+
+    <div class="note">
+        Tangents at the endpoints of a diameter are parallel.
+    </div>
+</div>
+
+
+<!-- ================= DEFINITIONS ================= -->
+
+<div class="box">
+    <h2>DEFINITIONS</h2>
+
+    <div class="note">
+        <b>Tangent:</b> A line that touches a circle at exactly one point.
+    </div>
+
+    <div class="note">
+        <b>Point of Contact:</b> The point at which a tangent touches a circle.
+    </div>
+
+    <div class="note">
+        <b>Radius:</b> A line segment joining the centre of a circle to a point on its circumference.
+    </div>
+
+    <div class="note">
+        <b>External Point:</b> A point lying outside a circle.
+    </div>
+
+    <div class="note">
+        <b>Segment of a Circle:</b> Either of the two regions into which a chord divides the circular region.
+    </div>
+
+    <div class="note">
+        <b>Minor Segment:</b> The smaller region bounded by a chord and its minor arc.
+    </div>
+
+    <div class="note">
+        <b>Major Segment:</b> The larger region bounded by a chord and its major arc.
+    </div>
+
+    <div class="note">
+        <b>Angle in a Segment:</b> An angle whose vertex lies on the circumference and whose arms pass through the endpoints of a chord.
+    </div>
+
+    <div class="note">
+        <b>Inscribed Angle:</b> An angle formed by two chords with its vertex on the circumference of a circle.
+    </div>
+
+    <div class="note">
+        <b>Cyclic Quadrilateral:</b> A quadrilateral whose four vertices lie on the circumference of the same circle.
+    </div>
+
+    <div class="note">
+        <b>Concyclic Points:</b> Points that lie on the circumference of the same circle.
+    </div>
+
+    <div class="note">
+        <b>Supplementary Angles:</b> Two angles whose sum is 180°.
+    </div>
+
+    <div class="note">
+        <b>Alternate Segment:</b> The segment opposite the angle formed between a tangent and a chord at the point of contact.
+    </div>
+
+    <div class="note">
+        <b>Externally Touching Circles:</b> Two circles that touch at one point externally.
+    </div>
+
+    <div class="note">
+        <b>Internally Touching Circles:</b> Two circles that touch at one point, with one circle inside the other.
+    </div>
+</div>
+
+
+<!-- ================= KEY POINTS ================= -->
+
+<div class="box">
+    <h2>KEY POINTS</h2>
+
+    <ul class="key">
+        <li>A tangent touches a circle at exactly one point.</li>
+
+        <li>The radius drawn to the point of contact is perpendicular to the tangent.</li>
+
+        <li>A line perpendicular to the radius at its outer endpoint is a tangent.</li>
+
+        <li>Two tangents from the same external point are equal in length.</li>
+
+        <li>The line joining the centre to an external point bisects the angle between the two tangents.</li>
+
+        <li>For externally touching circles, d = R + r.</li>
+
+        <li>For internally touching circles, d = R − r, where R is the larger radius.</li>
+
+        <li>Congruent circles touching externally have centre distance equal to their diameter.</li>
+
+        <li>Congruent circles touching internally have coincident centres.</li>
+
+        <li>The angle between a tangent and a chord equals the angle in the alternate segment.</li>
+
+        <li>The angle subtended by a minor arc at the centre is twice the corresponding inscribed angle.</li>
+
+        <li>Any two angles in the same segment are equal.</li>
+
+        <li>The angle in a semicircle is 90°.</li>
+
+        <li>An arc that subtends a right angle at the circumference is a semicircle.</li>
+
+        <li>The angle in the major segment is acute, that is, less than 90°.</li>
+
+        <li>The angle in the minor segment is obtuse, that is, greater than 90°.</li>
+
+        <li>Opposite angles of a cyclic quadrilateral add up to 180°.</li>
+
+        <li>A cyclic trapezium is isosceles.</li>
+
+        <li>For tangent length, use l = √(d² − r²), where d is greater than r.</li>
+
+        <li>In a cyclic quadrilateral, ∠A + ∠C = 180° and ∠B + ∠D = 180°.</li>
+    </ul>
+
+    <h3>Symbols</h3>
+
+    <div class="note">
+        <b>r</b> = radius of a circle
+        <br>
+        <b>R</b> = larger radius when comparing two circles
+        <br>
+        <b>d</b> = distance between centres or distance from centre to external point, as specified
+        <br>
+        <b>l</b> = tangent length
+    </div>
+</div>
+
+
+<script>
+function copyFormula(button, formula) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(formula).then(function() {
+            button.textContent = "✓";
+
+            setTimeout(function() {
+                button.textContent = "copied";
+            }, 1500);
+        }).catch(function() {
+            fallbackCopy(button, formula);
+        });
+    } else {
+        fallbackCopy(button, formula);
+    }
+}
+
+function fallbackCopy(button, formula) {
+    var textArea = document.createElement("textarea");
+    textArea.value = formula;
+    textArea.style.position = "fixed";
+    textArea.style.opacity = "0";
+    document.body.appendChild(textArea);
+    textArea.select();
+
+    try {
+        document.execCommand("copy");
+        button.textContent = "✓";
+    } catch (error) {
+        button.textContent = "copied";
+    }
+
+    document.body.removeChild(textArea);
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+
+</body>
+</html>

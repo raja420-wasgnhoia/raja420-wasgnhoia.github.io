@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class 10 Chapter 1 -  Complex Numbers</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #222;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 15px auto 20px;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            width: 90%;
+            max-width: 850px;
+            margin: 15px auto;
+            padding: 20px;
+            border: 2px solid #f8bbd0;
+            border-radius: 15px;
+            box-sizing: border-box;
+            background: #fff;
+        }
+
+        h2 {
+            color: #ad1457;
+            border-bottom: 2px solid #f8bbd0;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #ad1457;
+            margin-top: 25px;
+        }
+
+        .formula {
+            background: #fff0f5;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            position: relative;
+            padding-right: 55px;
+            box-sizing: border-box;
+        }
+
+        .copy-btn {
+            float: right;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 9px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .key {
+            line-height: 1.7;
+        }
+
+        .note {
+            background: #fce4ec;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        ul {
+            line-height: 1.7;
+        }
+
+        .math {
+            font-family: "Times New Roman", serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 1 —  Complex Numbers</h1>
+  <h4>Formula Hub</h4>
+</header>
+<a href="class10.html" class="back-button">← Back to Chapters</a>
+
+
+<!-- IMPORTANT FORMULAS -->
+
+<div class="box">
+    <h2>Important Formulas</h2>
+
+    <h3>1. Imaginary Unit</h3>
+
+    <div class="formula">
+        x² + 1 = 0 ⇒ x² = −1 ⇒ x = ±√(−1) = ±i
+        <button class="copy-btn" onclick="copyFormula(this, 'x² + 1 = 0 ⇒ x² = −1 ⇒ x = ±√(−1) = ±i')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>i</b> = √(−1), &nbsp; <b>i²</b> = −1
+        <button class="copy-btn" onclick="copyFormula(this, 'i = √(−1), i² = −1')">📋</button>
+    </div>
+
+    <div class="formula">
+        √(−x) = i√x, &nbsp; x &gt; 0
+        <button class="copy-btn" onclick="copyFormula(this, '√(−x) = i√x, x > 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        Pure imaginary number: bi, where b ≠ 0
+        <button class="copy-btn" onclick="copyFormula(this, 'Pure imaginary number: bi, where b ≠ 0')">📋</button>
+    </div>
+
+
+    <h3>2. Complex Number</h3>
+
+    <div class="formula">
+        <b>z</b> = a + bi, where a,b ∈ R
+        <button class="copy-btn" onclick="copyFormula(this, 'z = a + bi, where a,b ∈ R')">📋</button>
+    </div>
+
+    <div class="formula">
+        Real part = a, &nbsp; Imaginary part = b
+        <button class="copy-btn" onclick="copyFormula(this, 'Real part = a, Imaginary part = b')">📋</button>
+    </div>
+
+
+    <h3>3. Addition and Subtraction</h3>
+
+    <div class="formula">
+        (a + bi) + (c + di) = (a + c) + (b + d)i
+        <button class="copy-btn" onclick="copyFormula(this, '(a + bi) + (c + di) = (a + c) + (b + d)i')">📋</button>
+    </div>
+
+    <div class="formula">
+        (a + bi) − (c + di) = (a − c) + (b − d)i
+        <button class="copy-btn" onclick="copyFormula(this, '(a + bi) − (c + di) = (a − c) + (b − d)i')">📋</button>
+    </div>
+
+
+    <h3>4. Multiplication</h3>
+
+    <div class="formula">
+        (a + bi)(c + di) = (ac − bd) + (ad + bc)i
+        <button class="copy-btn" onclick="copyFormula(this, '(a + bi)(c + di) = (ac − bd) + (ad + bc)i')">📋</button>
+    </div>
+
+
+    <h3>5. Powers of i</h3>
+
+    <div class="formula">
+        <b>i¹</b> = i
+        <button class="copy-btn" onclick="copyFormula(this, 'i¹ = i')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>i²</b> = −1
+        <button class="copy-btn" onclick="copyFormula(this, 'i² = −1')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>i³</b> = −i
+        <button class="copy-btn" onclick="copyFormula(this, 'i³ = −i')">📋</button>
+    </div>
+
+    <div class="formula">
+        <b>i⁴</b> = 1
+        <button class="copy-btn" onclick="copyFormula(this, 'i⁴ = 1')">📋</button>
+    </div>
+
+    <div class="formula">
+        i, −1, −i, 1 → repeat in cycle
+        <button class="copy-btn" onclick="copyFormula(this, 'i, −1, −i, 1 → repeat in cycle')">📋</button>
+    </div>
+
+
+    <h3>6. Conjugate</h3>
+
+    <div class="formula">
+        If <b>z</b> = a + bi, then <b>z̄</b> = a − bi
+        <button class="copy-btn" onclick="copyFormula(this, 'If z = a + bi, then z̄ = a − bi')">📋</button>
+    </div>
+
+
+    <h3>7. Division of Complex Numbers</h3>
+
+    <div class="formula">
+        z₁/z₂ = (x₁ + iy₁)/(x₂ + iy₂)
+        <button class="copy-btn" onclick="copyFormula(this, 'z₁/z₂ = (x₁ + iy₁)/(x₂ + iy₂)')">📋</button>
+    </div>
+
+    <div class="formula">
+        z₁/z₂ = [(x₁ + iy₁)(x₂ − iy₂)] / [(x₂ + iy₂)(x₂ − iy₂)]
+        <button class="copy-btn" onclick="copyFormula(this, 'z₁/z₂ = [(x₁ + iy₁)(x₂ − iy₂)] / [(x₂ + iy₂)(x₂ − iy₂)]')">📋</button>
+    </div>
+
+
+    <h3>8. Additive Inverse</h3>
+
+    <div class="formula">
+        If z = a + bi, then −z = −a − bi
+        <button class="copy-btn" onclick="copyFormula(this, 'If z = a + bi, then −z = −a − bi')">📋</button>
+    </div>
+
+
+    <h3>9. Multiplicative Inverse</h3>
+
+    <div class="formula">
+        Multiplicative inverse of a + bi = 1/(a + bi)
+        <button class="copy-btn" onclick="copyFormula(this, 'Multiplicative inverse of a + bi = 1/(a + bi)')">📋</button>
+    </div>
+
+    <div class="formula">
+        1/(a + bi) = (a − bi)/(a² + b²)
+        <button class="copy-btn" onclick="copyFormula(this, '1/(a + bi) = (a − bi)/(a² + b²)')">📋</button>
+    </div>
+
+
+    <h3>10. Properties of Conjugate</h3>
+
+    <div class="formula">
+        z z̄ = |z|²
+        <button class="copy-btn" onclick="copyFormula(this, 'z z̄ = |z|²')">📋</button>
+    </div>
+
+    <div class="formula">
+        overline(z₁z₂) = z̄₁ z̄₂
+        <button class="copy-btn" onclick="copyFormula(this, 'overline(z₁z₂) = z̄₁ z̄₂')">📋</button>
+    </div>
+
+    <div class="formula">
+        overline(z₁/z₂) = z̄₁/z̄₂
+        <button class="copy-btn" onclick="copyFormula(this, 'overline(z₁/z₂) = z̄₁/z̄₂')">📋</button>
+    </div>
+
+
+    <h3>11. Modulus / Absolute Value</h3>
+
+    <div class="formula">
+        If z = a + bi, then |z| = √(a² + b²)
+        <button class="copy-btn" onclick="copyFormula(this, 'If z = a + bi, then |z| = √(a² + b²)')">📋</button>
+    </div>
+
+    <div class="formula">
+        |z| = |−z| = |z̄|
+        <button class="copy-btn" onclick="copyFormula(this, '|z| = |−z| = |z̄|')">📋</button>
+    </div>
+
+    <div class="formula">
+        z z̄ = |z|²
+        <button class="copy-btn" onclick="copyFormula(this, 'z z̄ = |z|²')">📋</button>
+    </div>
+
+
+    <h3>12. Geometrical Addition</h3>
+
+    <div class="formula">
+        z₁ + z₂ is represented by the diagonal of the parallelogram formed by z₁ and z₂.
+        <button class="copy-btn" onclick="copyFormula(this, 'z₁ + z₂ is represented by the diagonal of the parallelogram formed by z₁ and z₂.')">📋</button>
+    </div>
+
+
+    <h3>13. Complex Equations</h3>
+
+    <div class="formula">
+        pz + qw = r
+        <button class="copy-btn" onclick="copyFormula(this, 'pz + qw = r')">📋</button>
+    </div>
+
+    <div class="formula">
+        p₁z + q₁w = r₁
+        <br>
+        p₂z + q₂w = r₂
+        <button class="copy-btn" onclick="copyFormula(this, 'p₁z + q₁w = r₁; p₂z + q₂w = r₂')">📋</button>
+    </div>
+
+
+    <h3>14. Important Factorization</h3>
+
+    <div class="formula">
+        z² + 9 = (z − 3i)(z + 3i)
+        <button class="copy-btn" onclick="copyFormula(this, 'z² + 9 = (z − 3i)(z + 3i)')">📋</button>
+    </div>
+
+    <div class="formula">
+        3z² + 5 = (√3z − i√5)(√3z + i√5)
+        <button class="copy-btn" onclick="copyFormula(this, '3z² + 5 = (√3z − i√5)(√3z + i√5)')">📋</button>
+    </div>
+
+
+    <h3>15. Electrical Impedance</h3>
+
+    <div class="formula">
+        E = IZ
+        <button class="copy-btn" onclick="copyFormula(this, 'E = IZ')">📋</button>
+    </div>
+
+    <div class="formula">
+        Z = E/I
+        <button class="copy-btn" onclick="copyFormula(this, 'Z = E/I')">📋</button>
+    </div>
+
+</div>
+
+
+<!-- DEFINITIONS -->
+
+<div class="box">
+    <h2>Definitions</h2>
+
+    <div class="key">
+        <p><b>Imaginary Unit:</b> The imaginary unit i is defined by i = √(−1), so i² = −1.</p>
+
+        <p><b>Imaginary Number:</b> A number having a non-zero imaginary part, written in the form a + bi where b ≠ 0.</p>
+
+        <p><b>Pure Imaginary Number:</b> A complex number of the form bi where b ≠ 0.</p>
+
+        <p><b>Complex Number:</b> A number of the form a + bi where a and b are real numbers.</p>
+
+        <p><b>Conjugate:</b> The conjugate of a + bi is a − bi. The real part remains the same and the sign of the imaginary part changes.</p>
+
+        <p><b>Modulus:</b> The modulus of z = a + bi is |z| = √(a² + b²), representing the distance of z from the origin in the complex plane.</p>
+
+        <p><b>Complex Plane:</b> The plane in which the real part is represented on the horizontal axis and the imaginary part on the vertical axis.</p>
+
+        <p><b>Argand Diagram:</b> A graphical representation of complex numbers on the complex plane.</p>
+
+        <p><b>Additive Inverse:</b> For z = a + bi, the additive inverse is −z = −a − bi, and z + (−z) = 0.</p>
+
+        <p><b>Multiplicative Inverse:</b> The multiplicative inverse of a non-zero complex number z is 1/z, such that z(1/z) = 1.</p>
+
+        <p><b>Impedance:</b> In an AC electrical circuit, impedance is represented by the complex number Z and satisfies E = IZ.</p>
+    </div>
+</div>
+
+
+<!-- KEY POINTS -->
+
+<div class="box">
+    <h2>Key Points</h2>
+
+    <ul>
+        <li>i² = −1 and the powers of i repeat after every four powers.</li>
+
+        <li>Every real number is also a complex number because a real number can be written as a + 0i.</li>
+
+        <li>A complex number has the form a + bi.</li>
+
+        <li>If a = 0 and b ≠ 0, the number is pure imaginary.</li>
+
+        <li>If b = 0, the complex number is real.</li>
+
+        <li>For addition and subtraction, combine real parts with real parts and imaginary parts with imaginary parts.</li>
+
+        <li>For multiplication, use i² = −1.</li>
+
+        <li>To divide complex numbers, multiply numerator and denominator by the conjugate of the denominator.</li>
+
+        <li>The conjugate changes only the sign of the imaginary part.</li>
+
+        <li>z z̄ is always a real number and equals |z|².</li>
+
+        <li>The modulus |z| represents the distance of z from the origin.</li>
+
+        <li>Real numbers lie on the horizontal axis of the complex plane.</li>
+
+        <li>Pure imaginary numbers lie on the vertical axis of the complex plane.</li>
+
+        <li>Complex numbers are used in electronics, electromagnetism, engineering and control systems.</li>
+    </ul>
+</div>
+
+
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class 10 Chapter 5 - Algebraic Fractions</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #222;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 15px auto 20px;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            width: 90%;
+            max-width: 850px;
+            margin: 15px auto;
+            padding: 20px;
+            border: 2px solid #f8bbd0;
+            border-radius: 15px;
+            box-sizing: border-box;
+            background: #fff;
+        }
+
+        h2 {
+            color: #ad1457;
+            border-bottom: 2px solid #f8bbd0;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #ad1457;
+            margin-top: 25px;
+        }
+
+        .formula {
+            background: #fff0f5;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            position: relative;
+            padding-right: 55px;
+            box-sizing: border-box;
+        }
+
+        .copy-btn {
+            float: right;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 9px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .key {
+            line-height: 1.7;
+        }
+
+        .note {
+            background: #fce4ec;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        ul {
+            line-height: 1.7;
+        }
+
+        .math {
+            font-family: "Times New Roman", serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 5 — Algebraic Fractions</h1>
+    <h4>Formula Hub</h4>
+</header>
+
+<a href="class10.html" class="back-button">← Back to Chapters</a>
+
+
+<!-- IMPORTANT FORMULAS -->
+
+<div class="box">
+    <h2>Important Formulas</h2>
+
+
+    <h3>1. Algebraic Fraction</h3>
+
+    <div class="formula">
+        P / Q, where Q ≠ 0
+        <button class="copy-btn" onclick="copyFormula(this, 'P / Q, where Q ≠ 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        Examples of rational algebraic expressions: 1/x, x/10, x/(x−5), x/(y+6), 5x/(x+1)
+        <button class="copy-btn" onclick="copyFormula(this, 'Examples of rational algebraic expressions: 1/x, x/10, x/(x−5), x/(y+6), 5x/(x+1)')">📋</button>
+    </div>
+
+
+    <h3>2. Simplest Form</h3>
+
+    <div class="formula">
+        Simplest form = Divide numerator and denominator by their greatest common factor (GCF).
+        <button class="copy-btn" onclick="copyFormula(this, 'Simplest form = Divide numerator and denominator by their greatest common factor (GCF).')">📋</button>
+    </div>
+
+    <div class="formula">
+        Common non-zero factors can be cancelled from the numerator and denominator.
+        <button class="copy-btn" onclick="copyFormula(this, 'Common non-zero factors can be cancelled from the numerator and denominator.')">📋</button>
+    </div>
+
+
+    <h3>3. Addition of Algebraic Fractions</h3>
+
+    <div class="formula">
+        a/b + c/d = (ad + bc) / bd, &nbsp; b ≠ 0, d ≠ 0
+        <button class="copy-btn" onclick="copyFormula(this, 'a/b + c/d = (ad + bc) / bd, b ≠ 0, d ≠ 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        For unlike denominators, first find the LCM and then add the fractions.
+        <button class="copy-btn" onclick="copyFormula(this, 'For unlike denominators, first find the LCM and then add the fractions.')">📋</button>
+    </div>
+
+
+    <h3>4. Subtraction of Algebraic Fractions</h3>
+
+    <div class="formula">
+        a/b − c/d = (ad − bc) / bd, &nbsp; b ≠ 0, d ≠ 0
+        <button class="copy-btn" onclick="copyFormula(this, 'a/b − c/d = (ad − bc) / bd, b ≠ 0, d ≠ 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        Subtraction: Change the signs of the second expression and then follow the addition procedure.
+        <button class="copy-btn" onclick="copyFormula(this, 'Subtraction: Change the signs of the second expression and then follow the addition procedure.')">📋</button>
+    </div>
+
+
+    <h3>5. Multiplication of Algebraic Fractions</h3>
+
+    <div class="formula">
+        (a/b)(c/d) = ac/bd, &nbsp; b ≠ 0, d ≠ 0
+        <button class="copy-btn" onclick="copyFormula(this, '(a/b)(c/d) = ac/bd, b ≠ 0, d ≠ 0')">📋</button>
+    </div>
+
+    <div class="formula">
+        Factorize first and cancel common non-zero factors before multiplying.
+        <button class="copy-btn" onclick="copyFormula(this, 'Factorize first and cancel common non-zero factors before multiplying.')">📋</button>
+    </div>
+
+
+    <h3>6. Division of Algebraic Fractions</h3>
+
+    <div class="formula">
+        a/b ÷ c/d = a/b × d/c = ad/bc
+        <button class="copy-btn" onclick="copyFormula(this, 'a/b ÷ c/d = a/b × d/c = ad/bc')">📋</button>
+    </div>
+
+    <div class="formula">
+        Division of a fraction = Multiplication by the reciprocal of the divisor.
+        <button class="copy-btn" onclick="copyFormula(this, 'Division of a fraction = Multiplication by the reciprocal of the divisor.')">📋</button>
+    </div>
+
+
+    <h3>7. BODMAS Rule</h3>
+
+    <div class="formula">
+        BODMAS = Brackets → Orders → Division → Multiplication → Addition → Subtraction
+        <button class="copy-btn" onclick="copyFormula(this, 'BODMAS = Brackets → Orders → Division → Multiplication → Addition → Subtraction')">📋</button>
+    </div>
+
+    <div class="formula">
+        In complex algebraic expressions, operations are performed according to the BODMAS rule.
+        <button class="copy-btn" onclick="copyFormula(this, 'In complex algebraic expressions, operations are performed according to the BODMAS rule.')">📋</button>
+    </div>
+
+
+    <h3>8. Important Factorization Rules</h3>
+
+    <div class="formula">
+        a² − b² = (a + b)(a − b)
+        <button class="copy-btn" onclick="copyFormula(this, 'a² − b² = (a + b)(a − b)')">📋</button>
+    </div>
+
+    <div class="formula">
+        a³ − b³ = (a − b)(a² + ab + b²)
+        <button class="copy-btn" onclick="copyFormula(this, 'a³ − b³ = (a − b)(a² + ab + b²)')">📋</button>
+    </div>
+
+    <div class="formula">
+        a³ + b³ = (a + b)(a² − ab + b²)
+        <button class="copy-btn" onclick="copyFormula(this, 'a³ + b³ = (a + b)(a² − ab + b²)')">📋</button>
+    </div>
+
+    <div class="formula">
+        a⁴ − b⁴ = (a² − b²)(a² + b²)
+        <button class="copy-btn" onclick="copyFormula(this, 'a⁴ − b⁴ = (a² − b²)(a² + b²)')">📋</button>
+    </div>
+
+
+    <h3>9. Rational Equation</h3>
+
+    <div class="formula">
+        Multiply the whole equation by the LCD (Least Common Denominator) to remove fractions.
+        <button class="copy-btn" onclick="copyFormula(this, 'Multiply the whole equation by the LCD (Least Common Denominator) to remove fractions.')">📋</button>
+    </div>
+
+    <div class="formula">
+        LCD = Least Common Denominator of all fractions in the equation.
+        <button class="copy-btn" onclick="copyFormula(this, 'LCD = Least Common Denominator of all fractions in the equation.')">📋</button>
+    </div>
+
+
+    <h3>10. Extraneous Solution</h3>
+
+    <div class="formula">
+        If a solution makes any original denominator equal to zero, it must be excluded.
+        <button class="copy-btn" onclick="copyFormula(this, 'If a solution makes any original denominator equal to zero, it must be excluded.')">📋</button>
+    </div>
+
+    <div class="formula">
+        Original denominator ≠ 0
+        <button class="copy-btn" onclick="copyFormula(this, 'Original denominator ≠ 0')">📋</button>
+    </div>
+
+
+    <h3>11. Speed, Distance and Time</h3>
+
+    <div class="formula">
+        S = V × T
+        <button class="copy-btn" onclick="copyFormula(this, 'S = V × T')">📋</button>
+    </div>
+
+    <div class="formula">
+        T = S / V
+        <button class="copy-btn" onclick="copyFormula(this, 'T = S / V')">📋</button>
+    </div>
+
+    <div class="formula">
+        V = S / T
+        <button class="copy-btn" onclick="copyFormula(this, 'V = S / T')">📋</button>
+    </div>
+
+    <div class="formula">
+        Equal time condition: S₁/V₁ = S₂/V₂
+        <button class="copy-btn" onclick="copyFormula(this, 'Equal time condition: S₁/V₁ = S₂/V₂')">📋</button>
+    </div>
+
+</div>
+
+
+<!-- DEFINITIONS -->
+
+<div class="box">
+    <h2>Definitions</h2>
+
+    <div class="key">
+
+        <p>
+            <b>Algebraic Expression:</b>
+            An expression in which variables, constants, and arithmetic operations are combined using addition, subtraction, multiplication, or division.
+        </p>
+
+        <p>
+            <b>Polynomial:</b>
+            An algebraic expression in which the exponents of the variables are non-negative integers.
+        </p>
+
+        <p>
+            <b>Monomial:</b>
+            A polynomial containing one term.
+        </p>
+
+        <p>
+            <b>Binomial:</b>
+            A polynomial containing two terms.
+        </p>
+
+        <p>
+            <b>Trinomial:</b>
+            A polynomial containing three terms.
+        </p>
+
+        <p>
+            <b>Zero Polynomial:</b>
+            A polynomial whose all coefficients are zero. It has no defined degree.
+        </p>
+
+        <p>
+            <b>Constant Polynomial:</b>
+            A non-zero polynomial of degree zero.
+        </p>
+
+        <p>
+            <b>Linear Polynomial:</b>
+            A polynomial of degree one.
+        </p>
+
+        <p>
+            <b>Quadratic Polynomial:</b>
+            A polynomial of degree two.
+        </p>
+
+        <p>
+            <b>Cubic Polynomial:</b>
+            A polynomial of degree three.
+        </p>
+
+        <p>
+            <b>Leading Coefficient:</b>
+            The coefficient of the first term when a polynomial is written in descending order of degree.
+        </p>
+
+        <p>
+            <b>Degree of a Polynomial:</b>
+            The highest exponent of the variable in a polynomial. For a polynomial in several variables, its degree is the highest total degree of its terms.
+        </p>
+
+        <p>
+            <b>Rational Expression:</b>
+            An expression that can be written in the form P(x)/Q(x), where P(x) and Q(x) are polynomials and Q(x) is not the zero polynomial.
+        </p>
+
+        <p>
+            <b>Algebraic Fraction:</b>
+            If P and Q are algebraic expressions, then P/Q is called an algebraic fraction, where Q ≠ 0.
+        </p>
+
+        <p>
+            <b>Irrational Expression:</b>
+            An algebraic expression that cannot be expressed as the ratio of two polynomials with a non-zero polynomial denominator.
+        </p>
+
+        <p>
+            <b>Substitution:</b>
+            The process of replacing variables in an algebraic expression by given values.
+        </p>
+
+        <p>
+            <b>Evaluation:</b>
+            The process of obtaining a numerical value of an algebraic expression after substitution.
+        </p>
+
+        <p>
+            <b>Rational Equation:</b>
+            An equation containing one or more rational expressions.
+        </p>
+
+        <p>
+            <b>LCD:</b>
+            Least Common Denominator, the smallest common denominator of the fractions in an equation or expression.
+        </p>
+
+        <p>
+            <b>Extraneous Solution:</b>
+            A value obtained during the solving process that does not satisfy the original equation, usually because it makes an original denominator zero.
+        </p>
+
+        <p>
+            <b>Reciprocal:</b>
+            The reciprocal of a non-zero number or expression is obtained by interchanging its numerator and denominator.
+        </p>
+
+    </div>
+</div>
+
+
+<!-- KEY POINTS -->
+
+<div class="box">
+    <h2>Key Points</h2>
+
+    <ul>
+
+        <li>An algebraic fraction has an algebraic expression in the numerator and denominator.</li>
+
+        <li>The denominator of an algebraic fraction can never be zero.</li>
+
+        <li>To simplify an algebraic fraction, factorize the numerator and denominator completely first.</li>
+
+        <li>Cancel only common non-zero factors, not separate terms.</li>
+
+        <li>For addition and subtraction, use a common denominator or LCM.</li>
+
+        <li>In subtraction, the signs of the second expression change when removing brackets.</li>
+
+        <li>For multiplication, multiply numerators together and denominators together.</li>
+
+        <li>Factorization before multiplication can make cancellation easier.</li>
+
+        <li>For division, multiply by the reciprocal of the second fraction.</li>
+
+        <li>BODMAS must be followed when simplifying complex algebraic expressions.</li>
+
+        <li>Important factorization identities should be used to simplify algebraic fractions.</li>
+
+        <li>To solve a rational equation, multiply every term by the LCD.</li>
+
+        <li>After solving a rational equation, check every solution in the original equation.</li>
+
+        <li>If a value makes an original denominator zero, it is an extraneous solution and must be rejected.</li>
+
+        <li>In word problems involving speed, distance and time, use S = V × T.</li>
+
+        <li>For equal travel time, set the corresponding time expressions equal to each other.</li>
+
+        <li>Restrictions from the original denominators must be kept even after simplification.</li>
+
+    </ul>
+</div>
+
+
+<!-- MOST IMPORTANT THINGS -->
+
+<div class="box">
+    <h2>Most Important Things</h2>
+
+    <div class="note">
+        <b>1. Addition:</b> Find a common denominator, combine the numerators, and simplify.
+    </div>
+
+    <div class="note">
+        <b>2. Subtraction:</b> Find a common denominator, change the signs of the second expression, combine, and simplify.
+    </div>
+
+    <div class="note">
+        <b>3. Multiplication:</b> Factorize, cancel common factors, and multiply.
+    </div>
+
+    <div class="note">
+        <b>4. Division:</b> Change division into multiplication by the reciprocal.
+    </div>
+
+    <div class="note">
+        <b>5. Rational Equations:</b> Find the LCD and multiply the complete equation by the LCD.
+    </div>
+
+    <div class="note">
+        <b>6. Final Check:</b> Always check the obtained values in the original equation and reject values that make a denominator zero.
+    </div>
+
+    <div class="note">
+        <b>7. Word Problems:</b> Define the unknown variable first, form the rational equation, solve it, and verify the answer.
+    </div>
+
+</div>
+
+
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+
+
+</body>
+</html>

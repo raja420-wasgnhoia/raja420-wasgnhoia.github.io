@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class 10 Chapter 9 - Chord and Arcs of a Circle</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #222;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 15px auto 20px;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            width: 90%;
+            max-width: 850px;
+            margin: 15px auto;
+            padding: 20px;
+            border: 2px solid #f8bbd0;
+            border-radius: 15px;
+            box-sizing: border-box;
+            background: #fff;
+        }
+
+        h2 {
+            color: #ad1457;
+            border-bottom: 2px solid #f8bbd0;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #ad1457;
+            margin-top: 25px;
+        }
+
+        .formula {
+            background: #fff0f5;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            position: relative;
+            padding-right: 55px;
+            box-sizing: border-box;
+            line-height: 1.6;
+        }
+
+        .copy-btn {
+            float: right;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 8px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .key {
+            line-height: 1.7;
+        }
+
+        .note {
+            background: #fce4ec;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 10px 0;
+            line-height: 1.7;
+        }
+
+        ul {
+            line-height: 1.7;
+        }
+
+        .math {
+            font-family: "Times New Roman", serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 9 — Chord and Arcs of a Circle</h1>
+    <h4>Formula Hub</h4>
+</header>
+
+<a href="class10.html" class="back-button">← Back to Chapters</a>
+
+
+<!-- ================= FORMULAS ================= -->
+
+<div class="box">
+    <h2>FORMULAS</h2>
+
+    <h3>Right Triangle and Chord</h3>
+
+    <div class="formula math">
+      <b> r² = d² + (c/2)²</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'r² = d² + (c/2)²')">📋</button>
+    </div>
+
+    <div class="formula math">
+      <b>c = 2√(r² − d²)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'c = 2√(r² − d²)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>d = √(r² − (c/2)²)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'd = √(r² − (c/2)²)')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>r = c/2? No: r = √[d² + (c/2)²]</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'r = √[d² + (c/2)²]')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>OA = OB = OC = OD     
+        </b>
+        <button class="copy-btn" onclick="copyFormula(this, 'OA = OB = OC = OD')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Radius = Diameter / 2</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Radius = Diameter / 2')">📋</button>
+    </div>
+
+    <h3>Circle Through Three Non-Collinear Points</h3>
+
+    <div class="formula math">
+        <b>R = a/√3</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'R = a/√3')">📋</button>
+    </div>
+
+    <div class="note">
+        For an equilateral triangle of side a, the circumradius is R = a/√3.
+    </div>
+
+    <h3>Central Angles and Arcs</h3>
+
+    <div class="formula math">
+        <b>Angle in a full circle = 360°</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Angle in a full circle = 360°')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Angle in a semicircle = 180°</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Angle in a semicircle = 180°')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Angles of a triangle = 180°</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Angles of a triangle = 180°')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Equal arcs ⇔ Equal corresponding chords</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Equal arcs ⇔ Equal corresponding chords')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>Equal chords ⇔ Equal central angles</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'Equal chords ⇔ Equal central angles')">📋</button>
+    </div>
+
+    <h3>Arc Length</h3>
+
+    <div class="formula math">
+        <b>l = (θ/360°) × 2πr</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'l = (θ/360°) × 2πr')">📋</button>
+    </div>
+
+    <h3>Chord Length</h3>
+
+    <div class="formula math">
+        <b>c = 2√(r² − d²)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'c = 2√(r² − d²)')">📋</button>
+    </div>
+
+    <h3>Perimeter of a Semicircle</h3>
+
+    <div class="formula math">
+        <b>P = 2r + πr</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'P = 2r + πr')">📋</button>
+    </div>
+
+    <h3>Perimeter of a Segment</h3>
+
+    <div class="formula math">
+        <b>P = Arc Length + Chord Length</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'P = Arc Length + Chord Length')">📋</button>
+    </div>
+
+    <div class="formula math">
+        <b>P = (θ/360°) × 2πr + 2√(r² − d²)</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'P = (θ/360°) × 2πr + 2√(r² − d²)')">📋</button>
+    </div>
+
+    <h3>Area of a Sector</h3>
+
+    <div class="formula math">
+        <b>A = (θ/360°) × πr²</b>
+        <button class="copy-btn" onclick="copyFormula(this, 'A = (θ/360°) × πr²')">📋</button>
+    </div>
+</div>
+
+
+<!-- ================= CONCEPTS ================= -->
+
+<div class="box">
+    <h2>CONCEPTS</h2>
+
+    <h3>Chord Theorems</h3>
+
+    <div class="note">
+        <b>Theorem 9.1:</b> One and only one circle can pass through three non-collinear points.
+    </div>
+
+    <div class="note">
+        <b>Theorem 9.2:</b> A straight line drawn from the centre of a circle to bisect a chord is perpendicular to the chord.
+    </div>
+
+    <div class="note">
+        <b>Theorem 9.3:</b> A perpendicular drawn from the centre of a circle to a chord bisects the chord.
+    </div>
+
+    <div class="note">
+        <b>Theorem 9.4:</b> Two congruent chords of a circle are equidistant from the centre.
+    </div>
+
+    <div class="note">
+        <b>Theorem 9.5:</b> Two chords of a circle equidistant from the centre are congruent.
+    </div>
+
+    <h3>Arc Theorems</h3>
+
+    <div class="note">
+        <b>Theorem 9.6:</b> If two arcs of a circle, or of congruent circles, are congruent, their corresponding chords are equal.
+    </div>
+
+    <div class="note">
+        <b>Theorem 9.7:</b> If two chords of a circle, or of congruent circles, are equal, their corresponding arcs are congruent.
+    </div>
+
+    <div class="note">
+        <b>Theorem 9.8:</b> Equal chords of a circle, or of congruent circles, subtend equal angles at the centre.
+    </div>
+
+    <div class="note">
+        <b>Theorem 9.9:</b> If two chords subtend equal angles at the centre of a circle, or corresponding centres of congruent circles, the chords are equal.
+    </div>
+
+    <h3>Chord Distance Rules</h3>
+
+    <div class="note">
+        Equal chords of the same circle are equidistant from the centre.
+    </div>
+
+    <div class="note">
+        The longer chord is nearer to the centre, while the shorter chord is farther from the centre.
+    </div>
+
+    <div class="note">
+        A perpendicular from the centre to a chord bisects that chord.
+    </div>
+
+    <div class="note">
+        The perpendicular bisector of a chord passes through the centre of the circle.
+    </div>
+
+    <h3>Parallel Chords</h3>
+
+    <div class="note">
+        For parallel chords, perpendiculars drawn from the centre to the chords lie on the same straight line.
+    </div>
+
+    <div class="note">
+        If parallel chords lie on opposite sides of the centre, the distance between them is the sum of their distances from the centre.
+    </div>
+
+    <div class="note">
+        If parallel chords lie on the same side of the centre, the distance between them is the absolute difference between their distances from the centre.
+    </div>
+</div>
+
+
+<!-- ================= DEFINITIONS ================= -->
+
+<div class="box">
+    <h2>DEFINITIONS</h2>
+
+    <div class="note">
+        <b>Circle:</b> The set of all points in a plane that are at a fixed distance from a fixed point called the centre.
+    </div>
+
+    <div class="note">
+        <b>Circular Region:</b> The union of a circle and its interior.
+    </div>
+
+    <div class="note">
+        <b>Chord:</b> A line segment joining two points on a circle.
+    </div>
+
+    <div class="note">
+        <b>Arc of a Circle:</b> A part of the circumference of a circle.
+    </div>
+
+    <div class="note">
+        <b>Semicircle:</b> Each of the two equal arcs formed when a diameter divides a circle into two parts.
+    </div>
+
+    <div class="note">
+        <b>Minor Arc:</b> An arc smaller than a semicircle, with measure less than 180°.
+    </div>
+
+    <div class="note">
+        <b>Major Arc:</b> An arc greater than a semicircle, with measure greater than 180°.
+    </div>
+
+    <div class="note">
+        <b>Central Angle:</b> An angle whose vertex is at the centre of a circle and whose arms pass through the endpoints of an arc.
+    </div>
+
+    <div class="note">
+        <b>Congruent Arcs:</b> Arcs of the same circle, or of congruent circles, that have equal measures.
+    </div>
+
+    <div class="note">
+        <b>Congruent Chords:</b> Chords that have equal lengths.
+    </div>
+
+    <div class="note">
+        <b>Sector:</b> The region enclosed by two radii and the arc between them.
+    </div>
+
+    <div class="note">
+        <b>Segment of a Circle:</b> The region enclosed by a chord and its corresponding arc.
+    </div>
+
+    <div class="note">
+        <b>Arc Length:</b> The length measured along an arc of a circle.
+    </div>
+
+    <div class="note">
+        <b>Distance of a Chord from the Centre:</b> The perpendicular distance from the centre to the chord.
+    </div>
+</div>
+
+
+<!-- ================= KEY POINTS ================= -->
+
+<div class="box">
+    <h2>KEY POINTS</h2>
+
+    <ul class="key">
+        <li>One and only one circle passes through three non-collinear points.</li>
+
+        <li>A perpendicular from the centre to a chord bisects the chord.</li>
+
+        <li>A line from the centre to the midpoint of a chord is perpendicular to the chord.</li>
+
+        <li>Equal chords of the same circle are equidistant from the centre, and vice versa.</li>
+
+        <li>The longer chord is closer to the centre.</li>
+
+        <li>Equal arcs have equal corresponding chords.</li>
+
+        <li>Equal chords have equal corresponding arcs.</li>
+
+        <li>Equal chords subtend equal central angles.</li>
+
+        <li>Equal central angles subtend equal chords.</li>
+
+        <li>A minor arc is less than 180° and a major arc is greater than 180°.</li>
+
+        <li>A semicircle subtends a central angle of 180°.</li>
+
+        <li>The central angles around a point add up to 360°.</li>
+
+        <li>For a chord of length c at perpendicular distance d from the centre, c = 2√(r² − d²).</li>
+
+        <li>Arc length depends on the central angle and radius.</li>
+
+        <li>The perimeter of a segment includes both the arc length and chord length.</li>
+
+        <li>The perimeter of a semicircle includes the curved arc and the diameter.</li>
+
+        <li>Use degrees in the arc-length and sector-area formulas shown above.</li>
+    </ul>
+</div>
+
+
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+
+</body>
+</html>

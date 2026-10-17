@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 04 - Factorization and Algebraic Manipulation</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #222;
+}
+header {
+    background: #f8bbd0;
+    padding: 25px 15px;
+    text-align: center;
+}
+h1, h2, h3 {
+    color: #ad1457;
+}
+.box {
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px;
+    border: 2px solid #f8bbd0;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.formula {
+    background: #fff0f5;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    position: relative;
+    padding-right: 80px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+.copy-btn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background: white;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    border-radius: 8px;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+
+.back-button {
+    display: block;
+    width: fit-content;
+    margin: 15px auto 20px;
+    padding: 8px 16px;
+    background: #fff0f5;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<h2>Unit 04 — Factorization and Algebraic Manipulation</h2>
+<h4>Formula Hub</h4>
+</header>
+<a class="back-button" href="class9.html">← Back to Chapters</a>
+<div class="box">
+<h2>1. FORMULAS</h1>
+
+<h3>Basic Factorization Identities</h3>
+<div class="formula">ka + kb + kc = k(a + b + c)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">ac + ad + bc + bd = (a + b)(c + d)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">a² + 2ab + b² = (a + b)²<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">a² − 2ab + b² = (a − b)²<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">a² − b² = (a + b)(a − b)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">a² + 2ab + b² − c² = (a + b + c)(a + b − c)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">a² − 2ab + b² − c² = (a − b + c)(a − b − c)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">a⁴ + a²b² + b⁴ = (a² + ab + b²)(a² − ab + b²)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">a⁴ + 4b⁴ = (a² + 2b² + 2ab)(a² + 2b² − 2ab)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">a⁴ + 64b⁴ = (a² + 8b² + 4ab)(a² + 8b² − 4ab)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+
+<h3>Quadratic Factorization</h3>
+<div class="formula">x² + px + q = (x + m)(x + n), where m + n = p and mn = q<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">y² − 7y + 12 = (y − 3)(y − 4)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">m² − 2m − 15 = (m − 5)(m + 3)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">3x² + 22x − 16 = (3x − 2)(x + 8)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">(x² + 3x − 4)(x² + 3x + 5) + 8 = (x² + 3x + 4)(x² + 3x − 3)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+
+<h3>Perfect Cube Identities</h3>
+<div class="formula">a³ + 3a²b + 3ab² + b³ = (a + b)³<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">a³ − 3a²b + 3ab² − b³ = (a − b)³<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+
+<h3>Sum and Difference of Cubes</h3>
+<div class="formula">a³ + b³ = (a + b)(a² − ab + b²)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">a³ − b³ = (a − b)(a² + ab + b²)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">x³ + 27y³ = (x + 3y)(x² − 3xy + 9y²)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">x⁶ − y⁶ = (x + y)(x − y)(x² − xy + y²)(x² + xy + y²)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">8a³ − 125b³ − 2a + 5b = (2a − 5b)(4a² + 10ab + 25b² − 1)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+
+<h3>HCF (Highest Common Factor)</h3>
+<div class="formula">HCF(18ab³c, 30a²b²c³, 24b²c⁵) = 6b²c<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">HCF(2m² − 2mn, 4m⁴ − 4m²n², 2m³ − 4m²n + 2mn²) = 2m(m − n)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">HCF(ax² + 7ax + 12a, ax² − 5ax − 24a, 2ax² + 5ax − 3a) = a(x + 3)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+
+<h3>LCM (Least Common Multiple)</h3>
+<div class="formula">LCM(45x²y, 60x³y²z) = 180x³y²z<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">LCM(18a⁵b³c⁵, 60a⁶b⁶, 42a⁴b³) = 1260a⁶b⁶c⁵<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">LCM(x⁴y³ − x³y⁴, x³y − xy³) = x³y³(x − y)(x + y)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">LCM(2x² − 12xy + 16y², x² − 6xy + 8y², 3x² − 12y²) = 6(x − 4y)(x − 2y)(x + 2y)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">HCF × LCM = P × Q (for two expressions P and Q)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">LCM = (P × Q) ÷ HCF (for two expressions P and Q)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+
+<h3>Algebraic Fractions</h3>
+<div class="formula">(S/U) × (T/Q) = ST/UQ<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">(S/U) ÷ (T/Q) = SQ/UT<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">(r² − s²)/r ÷ (r − s)/s = s(r + s)/r<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+
+<h3>Square Roots and Perfect Squares</h3>
+<div class="formula">If P = Q², then Q and −Q are square roots of P; the principal square root √P is non-negative for P ≥ 0.<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">4a² + 12ab + 9b² = (2a + 3b)²<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">(2a + 1)(2a + 3)(2a + 5)(2a + 7) + 16 = (4a² + 16a + 11)²<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">x⁴ + 4x³ + 10x² + 10x + 5 + 2x + 4 = (x² + 2x + 3)²<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+
+<h3>Applications</h3>
+<div class="formula">x³ − y³ = (x − y)(x² + xy + y²)<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">x³ − 6x²y + 12xy² − 8y³ = (x − 2y)³<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">Surface area of a cube = 6(side)²<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+<div class="formula">Painting cost at Rs. 50 per m² = 300(x − 2y)² rupees, when cube side = (x − 2y) m<button class="copy-btn" onclick="copyFormula(this)">📋</button></div>
+</div>
+
+<div class="box">
+<h2>2. CONCEPTS</h2>
+<p><b>Factorization:</b> Expressing an algebraic expression as a product of its factors.</p>
+<p><b>Common factor:</b> A factor shared by every term of an expression.</p>
+<p><b>Quadratic factorization:</b> For x² + px + q, find two numbers whose sum is p and product is q.</p>
+<p><b>HCF of monomials:</b> Take the HCF of numerical coefficients and each common variable with its lowest power.</p>
+<p><b>HCF of compound expressions:</b> Factorize each expression completely, then take the common factors with their lowest powers.</p>
+<p><b>Division method for HCF:</b> Divide repeatedly; the last non-zero divisor gives the HCF, up to a non-zero constant factor.</p>
+<p><b>LCM of monomials:</b> Take the LCM of numerical coefficients and every variable with its highest power.</p>
+<p><b>LCM of compound expressions:</b> Factorize each expression and take every factor with its highest power.</p>
+<p><b>Algebraic fractions:</b> Fractions whose numerators and/or denominators contain algebraic expressions.</p>
+<p><b>Like fractions:</b> Fractions with the same denominator.</p>
+<p><b>Unlike fractions:</b> Fractions with different denominators.</p>
+<p><b>Combined operations:</b> Apply DMAS; perform division and multiplication before addition and subtraction, following the order from left to right when operations have equal priority.</p>
+<p><b>Square root:</b> A number or expression which, when squared, gives the original number or expression.</p>
+<p><b>Principal square root:</b> The non-negative square root of a non-negative number.</p>
+<p><b>Perfect square expression:</b> An expression that can be written as the square of another expression.</p>
+</div>
+
+<div class="box">
+<h2>3. DEFINITIONS</h2>
+<p><b>Factor:</b> An expression that divides another expression exactly.</p>
+<p><b>Factorization:</b> The process of expressing an algebraic expression as a product of factors.</p>
+<p><b>Highest Common Factor (HCF):</b> The greatest factor common to all given expressions.</p>
+<p><b>Least Common Multiple (LCM):</b> The least expression that is a multiple of all given expressions, subject to the usual constant-factor convention for polynomials.</p>
+<p><b>Algebraic fraction:</b> A fraction in which the numerator or denominator, or both, are algebraic expressions.</p>
+<p><b>Square root:</b> If Q² = P, then Q is a square root of P.</p>
+</div>
+
+<div class="box">
+<h2>4. KEY POINTS</h2>
+<ul>
+<li>Always look for a common factor before applying an identity.</li>
+<li>For x² + px + q, the two numbers must add to p and multiply to q.</li>
+<li>For HCF, use the lowest power of each common variable.</li>
+<li>For LCM, use the highest power of every variable or factor that appears.</li>
+<li>For algebraic fractions, factorize first and cancel only common factors, not separate terms.</li>
+<li>Before dividing by a fraction, multiply by its reciprocal.</li>
+<li>When adding or subtracting unlike fractions, use a common denominator, often the LCM.</li>
+<li>The principal square root is non-negative; the equation x² = P may have both positive and negative roots.</li>
+<li>To make a perfect square, compare the expression with the expansion of a square and identify the missing terms.</li>
+<li>For a cube with side (x − 2y), surface area is 6(x − 2y)².</li>
+</ul>
+</div>
+
+
+<script>
+function copyFormula(button) {
+    var card = button.parentElement.cloneNode(true);
+    var copyButton = card.querySelector(".copy-btn");
+    if (copyButton) copyButton.remove();
+
+    var text = (card.innerText || card.textContent).trim();
+
+    function success() {
+        button.textContent = "✓";
+        setTimeout(function() {
+            button.textContent = "Copied";
+        }, 1000);
+        setTimeout(function() {
+            button.textContent = "📋";
+        }, 2200);
+    }
+
+    function fallback() {
+        var area = document.createElement("textarea");
+        area.value = text;
+        area.style.position = "fixed";
+        area.style.left = "-9999px";
+        area.style.top = "0";
+        document.body.appendChild(area);
+        area.focus();
+        area.select();
+        area.setSelectionRange(0, area.value.length);
+
+        var copied = false;
+        try {
+            copied = document.execCommand("copy");
+        } catch (e) {}
+
+        area.remove();
+
+        if (copied) {
+            success();
+        } else {
+            button.textContent = "📋";
+            window.prompt("Formula ko select karke copy karein:", text);
+        }
+    }
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(success).catch(fallback);
+    } else {
+        fallback();
+    }
+}
+</script>
+
+</body>
+</html>

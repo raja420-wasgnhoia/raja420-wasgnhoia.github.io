@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class 10 Chapter 7 - Vectors in Plane</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #222;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 15px auto 20px;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            width: 90%;
+            max-width: 850px;
+            margin: 15px auto;
+            padding: 20px;
+            border: 2px solid #f8bbd0;
+            border-radius: 15px;
+            box-sizing: border-box;
+            background: #fff;
+        }
+
+        h2 {
+            color: #ad1457;
+            border-bottom: 2px solid #f8bbd0;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #ad1457;
+            margin-top: 25px;
+        }
+
+        .formula {
+            background: #fff0f5;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            position: relative;
+            padding-right: 55px;
+            box-sizing: border-box;
+        }
+
+        .copy-btn {
+            float: right;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 9px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .key {
+            line-height: 1.7;
+        }
+
+        .note {
+            background: #fce4ec;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        ul {
+            line-height: 1.7;
+        }
+
+        .math {
+            font-family: "Times New Roman", serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 7 — Vectors in Plane</h1>
+    <h4>Formula Hub</h4>
+</header>
+
+<a href="class10.html" class="back-button">← Back to Chapters</a>
+
+
+<!-- IMPORTANT FORMULAS -->
+
+<div class="box">
+    <h2>Important Formulas</h2>
+
+    <h3>1. Position Vector</h3>
+
+    <div class="formula">
+        <span class="math">If P(x,y), then r = x i + y j</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'r = x i + y j')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">AB = b − a</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'AB = b − a')">📋</button>
+    </div>
+
+
+    <h3>2. Vector in Component Form</h3>
+
+    <div class="formula">
+        <span class="math">u = [x,y]</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'u = [x,y]')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">−u = [−x,−y]</span>
+        <button class="copy-btn" onclick="copyFormula(this, '−u = [−x,−y]')">📋</button>
+    </div>
+
+
+    <h3>3. Magnitude of a Vector</h3>
+
+    <div class="formula">
+        <span class="math">|u| = √(x² + y²)</span>
+        <button class="copy-btn" onclick="copyFormula(this, '|u| = √(x² + y²)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">|u| = √[(x-component)² + (y-component)²]</span>
+        <button class="copy-btn" onclick="copyFormula(this, '|u| = √[(x-component)² + (y-component)²]')">📋</button>
+    </div>
+
+
+    <h3>4. Unit Vector</h3>
+
+    <div class="formula">
+        <span class="math">û = u / |u|</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'û = u / |u|')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">u = |u|û</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'u = |u|û')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">If u = x i + y j, then û = (x i + y j) / √(x² + y²)</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'û = (x i + y j) / √(x² + y²)')">📋</button>
+    </div>
+
+
+    <h3>5. Scalar Multiplication</h3>
+
+    <div class="formula">
+        <span class="math">λu = [λx, λy]</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'λu = [λx, λy]')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">|λu| = |λ||u|</span>
+        <button class="copy-btn" onclick="copyFormula(this, '|λu| = |λ||u|')">📋</button>
+    </div>
+
+
+    <h3>6. Translation by a Vector</h3>
+
+    <div class="formula">
+        <span class="math">Translation vector = [a,b] → (x,y) → (x+a,y+b)</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'Translation vector [a,b]: (x,y) → (x+a,y+b)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">Right movement → positive x; Left movement → negative x</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'Right movement = positive x; Left movement = negative x')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">Upward movement → positive y; Downward movement → negative y</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'Upward movement = positive y; Downward movement = negative y')">📋</button>
+    </div>
+
+
+    <h3>7. Equal Vectors</h3>
+
+    <div class="formula">
+        <span class="math">u = [x₁,y₁], v = [x₂,y₂] → u = v iff x₁ = x₂ and y₁ = y₂</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'u = v iff x₁ = x₂ and y₁ = y₂')">📋</button>
+    </div>
+
+
+    <h3>8. Parallel Vectors</h3>
+
+    <div class="formula">
+        <span class="math">u = λv</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'u = λv')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">x₁/x₂ = y₁/y₂ = λ</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'x₁/x₂ = y₁/y₂ = λ')">📋</button>
+    </div>
+
+
+    <h3>9. Addition of Vectors</h3>
+
+    <div class="formula">
+        <span class="math">u + v = (x₁+x₂)i + (y₁+y₂)j</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'u + v = (x₁+x₂)i + (y₁+y₂)j')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">[x₁,y₁] + [x₂,y₂] = [x₁+x₂,y₁+y₂]</span>
+        <button class="copy-btn" onclick="copyFormula(this, '[x₁,y₁] + [x₂,y₂] = [x₁+x₂,y₁+y₂]')">📋</button>
+    </div>
+
+
+    <h3>10. Subtraction of Vectors</h3>
+
+    <div class="formula">
+        <span class="math">u − v = u + (−v)</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'u − v = u + (−v)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">[x₁,y₁] − [x₂,y₂] = [x₁−x₂,y₁−y₂]</span>
+        <button class="copy-btn" onclick="copyFormula(this, '[x₁,y₁] − [x₂,y₂] = [x₁−x₂,y₁−y₂]')">📋</button>
+    </div>
+
+
+    <h3>11. Position Vector Between Two Points</h3>
+
+    <div class="formula">
+        <span class="math">PQ = (x₂−x₁)i + (y₂−y₁)j</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'PQ = (x₂−x₁)i + (y₂−y₁)j')">📋</button>
+    </div>
+
+
+    <h3>12. Rectangular Components</h3>
+
+    <div class="formula">
+        <span class="math">F = Fₓ i + Fᵧ j</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'F = Fₓ i + Fᵧ j')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">Fₓ = |F| cos θ</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'Fₓ = |F| cos θ')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">Fᵧ = |F| sin θ</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'Fᵧ = |F| sin θ')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">|F| = √(Fₓ² + Fᵧ²)</span>
+        <button class="copy-btn" onclick="copyFormula(this, '|F| = √(Fₓ² + Fᵧ²)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">θ = tan⁻¹(Fᵧ/Fₓ)</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'θ = tan⁻¹(Fᵧ/Fₓ)')">📋</button>
+    </div>
+
+
+    <h3>13. Ratio Formula</h3>
+
+    <div class="formula">
+        <span class="math">Internal division: r = (m b + n a) / (m+n)</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'r = (m b + n a) / (m+n)')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">External division: r = (n a − m b) / (n−m)</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'r = (n a − m b) / (n−m)')">📋</button>
+    </div>
+
+
+    <h3>14. Midpoint Formula</h3>
+
+    <div class="formula">
+        <span class="math">r = (a+b)/2</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'r = (a+b)/2')">📋</button>
+    </div>
+
+</div>
+
+
+<!-- DEFINITIONS -->
+
+<div class="box">
+    <h2>Definitions</h2>
+
+    <h3>Scalar</h3>
+    <p class="key">
+        A scalar is a physical quantity that has magnitude only and no direction.
+        Examples include mass, time, speed, density, work, distance, length, area and volume.
+    </p>
+
+    <h3>Vector</h3>
+    <p class="key">
+        A vector is a physical quantity that has both magnitude and direction.
+        Examples include displacement, momentum, force, velocity and acceleration.
+    </p>
+
+    <h3>Geometrical Representation of a Vector</h3>
+    <p class="key">
+        A vector is represented geometrically by a directed line segment.
+        Its length represents magnitude and its arrowhead represents direction.
+    </p>
+
+    <h3>Position Vector</h3>
+    <p class="key">
+        The position vector of a point P is the vector OP whose tail is at the origin
+        and whose head is at P.
+    </p>
+
+    <h3>Negative Vector</h3>
+    <p class="key">
+        The negative of a vector has the same magnitude but opposite direction.
+    </p>
+
+    <h3>Zero or Null Vector</h3>
+    <p class="key">
+        A zero vector has zero magnitude and no definite direction.
+        It is represented by 0 or [0,0].
+    </p>
+
+    <h3>Unit Vector</h3>
+    <p class="key">
+        A unit vector is a vector whose magnitude is 1 and whose direction is the
+        same as the given non-zero vector.
+    </p>
+
+    <h3>Translation by a Vector</h3>
+    <p class="key">
+        Translation by a vector moves a point or figure by a given vector without
+        changing its shape, size or orientation.
+    </p>
+
+    <h3>Parallel Vectors</h3>
+    <p class="key">
+        Two non-zero vectors are parallel if one vector is a scalar multiple of the other.
+        If the scalar is positive, they have the same direction. If it is negative,
+        they have opposite directions.
+    </p>
+
+    <h3>Anti-Parallel Vectors</h3>
+    <p class="key">
+        Parallel vectors having opposite directions are called anti-parallel vectors.
+    </p>
+
+    <h3>Equal Vectors</h3>
+    <p class="key">
+        Two vectors are equal if they have the same magnitude and direction.
+        Their positions do not have to be the same.
+    </p>
+
+    <h3>Head-to-Tail Rule</h3>
+    <p class="key">
+        To add two vectors, place the tail of the second vector at the head of the
+        first vector. The vector joining the tail of the first vector to the head
+        of the second vector is the resultant.
+    </p>
+
+    <h3>Triangle Law of Addition</h3>
+    <p class="key">
+        The head-to-tail method of adding two vectors is also called the triangle law
+        of vector addition.
+    </p>
+
+    <h3>Parallelogram Law of Addition</h3>
+    <p class="key">
+        If two vectors are represented by two adjacent sides of a parallelogram,
+        their resultant is represented by the diagonal drawn from their common tail.
+    </p>
+
+    <h3>Polygon Law of Addition</h3>
+    <p class="key">
+        The addition of any number of vectors by placing them head-to-tail is called
+        the polygon law of vector addition.
+    </p>
+
+    <h3>Rectangular Components</h3>
+    <p class="key">
+        The two perpendicular components of a vector along the x-axis and y-axis
+        are called its rectangular components.
+    </p>
+
+    <h3>Section Formula</h3>
+    <p class="key">
+        The section formula gives the position vector of a point that divides a
+        line segment internally or externally in a given ratio.
+    </p>
+
+    <h3>Midpoint</h3>
+    <p class="key">
+        A midpoint is a point that divides a line segment into two equal parts.
+    </p>
+</div>
+
+
+<!-- VECTOR LAWS -->
+
+<div class="box">
+    <h2>Vector Laws and Properties</h2>
+
+    <h3>Commutative Law</h3>
+
+    <div class="formula">
+        <span class="math">u + v = v + u</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'u + v = v + u')">📋</button>
+    </div>
+
+    <h3>Identity Property</h3>
+
+    <div class="formula">
+        <span class="math">a + 0 = 0 + a = a</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'a + 0 = 0 + a = a')">📋</button>
+    </div>
+
+    <h3>Additive Inverse</h3>
+
+    <div class="formula">
+        <span class="math">a + (−a) = (−a) + a = 0</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'a + (−a) = (−a) + a = 0')">📋</button>
+    </div>
+
+    <h3>Scalar Multiplication</h3>
+
+    <div class="formula">
+        <span class="math">λ(a+b) = λa + λb</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'λ(a+b) = λa + λb')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">λ(a−b) = λa − λb</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'λ(a−b) = λa − λb')">📋</button>
+    </div>
+</div>
+
+
+<!-- KEY POINTS -->
+
+<div class="box">
+    <h2>Key Points</h2>
+
+    <ul>
+        <li>A scalar has magnitude only, while a vector has magnitude and direction.</li>
+
+        <li>The length of a directed line segment represents the magnitude of a vector.</li>
+
+        <li>The arrowhead represents the direction of a vector.</li>
+
+        <li>The initial point of a vector is called its tail and the final point is called its head.</li>
+
+        <li>The position vector of P(x,y) is r = x i + y j.</li>
+
+        <li>The negative vector has the same magnitude but opposite direction.</li>
+
+        <li>The zero vector has magnitude zero and no definite direction.</li>
+
+        <li>A unit vector has magnitude 1.</li>
+
+        <li>For any non-zero vector, its unit vector is obtained by dividing the vector by its magnitude.</li>
+
+        <li>Equal vectors do not need to have the same position.</li>
+
+        <li>Equal vectors have equal corresponding components.</li>
+
+        <li>Equal vectors are also parallel.</li>
+
+        <li>If λ > 0 in u = λv, the vectors have the same direction.</li>
+
+        <li>If λ < 0 in u = λv, the vectors have opposite directions.</li>
+
+        <li>Vector addition is commutative.</li>
+
+        <li>Vector subtraction can be changed into addition by using the negative vector.</li>
+
+        <li>The x-component represents the horizontal part of a vector.</li>
+
+        <li>The y-component represents the vertical part of a vector.</li>
+
+        <li>When the tail of a vector is not at the origin, it is not a position vector.</li>
+
+        <li>Rectangular components are perpendicular to each other.</li>
+
+        <li>The horizontal component is found using cosine.</li>
+
+        <li>The vertical component is found using sine.</li>
+
+        <li>The internal ratio formula is used when a point lies between the two endpoints.</li>
+
+        <li>The midpoint formula is a special case of the internal ratio formula.</li>
+    </ul>
+</div>
+
+
+<!-- GEOMETRY APPLICATIONS -->
+
+<div class="box">
+    <h2>Applications to Geometry</h2>
+
+    <h3>Parallelogram</h3>
+
+    <div class="formula">
+        <span class="math">AB = DC</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'AB = DC')">📋</button>
+    </div>
+
+    <div class="formula">
+        <span class="math">AD = BC</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'AD = BC')">📋</button>
+    </div>
+
+    <div class="note">
+        If both pairs of opposite sides are equal and parallel, the quadrilateral is a parallelogram.
+    </div>
+
+    <h3>Midpoint of a Line Segment</h3>
+
+    <div class="formula">
+        <span class="math">M = (a+b)/2</span>
+        <button class="copy-btn" onclick="copyFormula(this, 'M = (a+b)/2')">📋</button>
+    </div>
+
+    <h3>Diagonals of a Parallelogram</h3>
+
+    <div class="note">
+        The diagonals of a parallelogram bisect each other.
+    </div>
+
+    <h3>Diagonals of a Rectangle</h3>
+
+    <div class="note">
+        The diagonals of a rectangle bisect each other.
+    </div>
+
+    <h3>Diagonals of a Square</h3>
+
+    <div class="note">
+        The diagonals of a square bisect each other.
+    </div>
+
+    <h3>Diagonals of a Rhombus</h3>
+
+    <div class="note">
+        The diagonals of a rhombus bisect each other.
+    </div>
+
+    <h3>Trapezium</h3>
+
+    <div class="note">
+        If one pair of opposite sides is parallel, the quadrilateral can be identified
+        as a trapezium, subject to the given vector conditions.
+    </div>
+</div>
+
+
+<!-- MOST IMPORTANT THINGS -->
+
+<div class="box">
+    <h2>Most Important Things to Remember</h2>
+
+    <div class="note">
+        <strong>Magnitude:</strong> |u| = √(x² + y²)
+    </div>
+
+    <div class="note">
+        <strong>Unit Vector:</strong> û = u / |u|
+    </div>
+
+    <div class="note">
+        <strong>Parallel Vectors:</strong> u = λv
+    </div>
+
+    <div class="note">
+        <strong>Addition:</strong> [x₁,y₁] + [x₂,y₂] = [x₁+x₂,y₁+y₂]
+    </div>
+
+    <div class="note">
+        <strong>Subtraction:</strong> [x₁,y₁] − [x₂,y₂] = [x₁−x₂,y₁−y₂]
+    </div>
+
+    <div class="note">
+        <strong>Position Vector:</strong> r = x i + y j
+    </div>
+
+    <div class="note">
+        <strong>Vector Between Two Points:</strong> PQ = (x₂−x₁)i + (y₂−y₁)j
+    </div>
+
+    <div class="note">
+        <strong>Rectangular Components:</strong> Fₓ = |F|cosθ, Fᵧ = |F|sinθ
+    </div>
+
+    <div class="note">
+        <strong>Resultant Magnitude:</strong> |F| = √(Fₓ² + Fᵧ²)
+    </div>
+
+    <div class="note">
+        <strong>Direction:</strong> θ = tan⁻¹(Fᵧ/Fₓ)
+    </div>
+
+    <div class="note">
+        <strong>Internal Ratio:</strong> r = (m b + n a)/(m+n)
+    </div>
+
+    <div class="note">
+        <strong>External Ratio:</strong> r = (n a − m b)/(n−m)
+    </div>
+
+    <div class="note">
+        <strong>Midpoint:</strong> r = (a+b)/2
+    </div>
+
+</div>
+
+
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FBISE Class 10 Mathematics - Chapter 2</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fce4ec;
+            color: #222;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .subtitle {
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 15px auto;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            background: white;
+            margin: 15px 20px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px #f3d1dc;
+        }
+
+        h2 {
+            color: #ad1457;
+            margin-top: 0;
+        }
+
+        .formula {
+            background: #fff7fa;
+            border: 1px solid #f8bbd0;
+            border-radius: 10px;
+            padding: 13px;
+            margin: 10px 0;
+            line-height: 1.8;
+            position: relative;
+            padding-right: 55px;
+        }
+
+        .formula strong {
+            color: #ad1457;
+        }
+
+        .copy-btn {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            padding: 5px 9px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 2 - Quadratic Equations</h1>
+  <h4>Formulas Hub</h4>
+</header>
+
+<a href="class10.html" class="back-button">← Back to Chapters</a>
+
+
+<!-- IMPORTANT FORMULAS -->
+
+<div class="box">
+
+<h2>Important Formulas</h2>
+
+<div class="formula">
+<strong>Quadratic Equation:</strong> ax² + bx + c = 0, a ≠ 0
+<button class="copy-btn" onclick="copyFormula(this,'ax² + bx + c = 0')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Zero Product Property:</strong> If ab = 0, then a = 0 or b = 0.
+<button class="copy-btn" onclick="copyFormula(this,'If ab = 0, then a = 0 or b = 0')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Quadratic Formula:</strong> x = (−b ± √(b² − 4ac)) / 2a
+<button class="copy-btn" onclick="copyFormula(this,'x = (−b ± √(b² − 4ac)) / 2a')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Discriminant:</strong> D = b² − 4ac
+<button class="copy-btn" onclick="copyFormula(this,'D = b² − 4ac')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Sum of Roots:</strong> S₁ + S₂ = −b/a
+<button class="copy-btn" onclick="copyFormula(this,'S₁ + S₂ = −b/a')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Product of Roots:</strong> S₁S₂ = c/a
+<button class="copy-btn" onclick="copyFormula(this,'S₁S₂ = c/a')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Equation from Given Roots:</strong>
+x² − (S₁ + S₂)x + S₁S₂ = 0
+<button class="copy-btn" onclick="copyFormula(this,'x² − (S₁ + S₂)x + S₁S₂ = 0')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Using Sum S and Product P:</strong>
+x² − Sx + P = 0
+<button class="copy-btn" onclick="copyFormula(this,'x² − Sx + P = 0')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Completing Square:</strong>
+x² + bx = (x + b/2)² − (b/2)²
+<button class="copy-btn" onclick="copyFormula(this,'x² + bx = (x + b/2)² − (b/2)²')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Difference of Squares:</strong>
+a² − b² = (a − b)(a + b)
+<button class="copy-btn" onclick="copyFormula(this,'a² − b² = (a − b)(a + b)')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Type 1 Substitution:</strong>
+x² = y, therefore x⁴ = y²
+<button class="copy-btn" onclick="copyFormula(this,'x² = y, therefore x⁴ = y²')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Type 2 Substitution:</strong>
+P(x) = y
+<button class="copy-btn" onclick="copyFormula(this,'P(x) = y')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Reciprocal Substitution:</strong>
+y = x + 1/x
+<button class="copy-btn" onclick="copyFormula(this,'y = x + 1/x')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Reciprocal Identity:</strong>
+x² + 1/x² = y² − 2
+<button class="copy-btn" onclick="copyFormula(this,'x² + 1/x² = y² − 2')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Exponential Substitution:</strong>
+kˣ = y
+<button class="copy-btn" onclick="copyFormula(this,'kˣ = y')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Volume of Cuboid:</strong>
+V = lwh
+<button class="copy-btn" onclick="copyFormula(this,'V = lwh')">📋</button>
+</div>
+
+</div>
+
+
+<!-- METHODS -->
+
+<div class="box">
+
+<h2>Methods of Solving Quadratic Equations</h2>
+
+<ul>
+    <li>Graphical Method</li>
+    <li>Factorization Method</li>
+    <li>Completing Square Method</li>
+    <li>Quadratic Formula Method</li>
+</ul>
+
+</div>
+
+
+<!-- NATURE OF ROOTS -->
+
+<div class="box">
+
+<h2>Nature of Roots</h2>
+
+<div class="formula">
+<strong>D &gt; 0:</strong> Two real and unequal roots.
+<button class="copy-btn" onclick="copyFormula(this,'D > 0: Two real and unequal roots')">📋</button>
+</div>
+
+<div class="formula">
+<strong>D = 0:</strong> Two real and equal roots.
+<button class="copy-btn" onclick="copyFormula(this,'D = 0: Two real and equal roots')">📋</button>
+</div>
+
+<div class="formula">
+<strong>D &lt; 0:</strong> Two imaginary/complex roots.
+<button class="copy-btn" onclick="copyFormula(this,'D < 0: Two imaginary or complex roots')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Positive perfect-square D:</strong>
+Real, rational and unequal roots.
+<button class="copy-btn" onclick="copyFormula(this,'Positive perfect-square D: Real rational unequal roots')">📋</button>
+</div>
+
+<div class="formula">
+<strong>Positive non-square D:</strong>
+Real, irrational and unequal roots.
+<button class="copy-btn" onclick="copyFormula(this,'Positive non-square D: Real irrational unequal roots')">📋</button>
+</div>
+
+</div>
+
+
+<!-- DEFINITIONS -->
+
+<div class="box">
+
+<h2>Definitions</h2>
+
+<ul>
+
+<li>
+<strong>Quadratic Equation:</strong>
+An equation of degree 2 in one variable, written as
+ax² + bx + c = 0, where a ≠ 0.
+</li>
+
+<li>
+<strong>Standard Form:</strong>
+A quadratic equation written with all terms on the left side and zero on the right side.
+</li>
+
+<li>
+<strong>Root:</strong>
+A value of the variable that makes the equation true.
+</li>
+
+<li>
+<strong>Discriminant:</strong>
+The expression b² − 4ac that determines the nature of the roots.
+</li>
+
+<li>
+<strong>Reciprocal Equation:</strong>
+An equation that remains unchanged when the variable is replaced by its reciprocal.
+</li>
+
+<li>
+<strong>Exponential Equation:</strong>
+An equation in which the variable occurs in an exponent, such as kˣ.
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- KEY POINTS -->
+
+<div class="box">
+
+<h2>Key Points</h2>
+
+<ul>
+
+<li>Always convert a quadratic equation into standard form before solving.</li>
+
+<li>In factorization, use the zero product property.</li>
+
+<li>While completing the square, add the same quantity to both sides.</li>
+
+<li>For ax² + bx + c = 0, identify a, b and c carefully.</li>
+
+<li>Negative or impossible physical dimensions are rejected.</li>
+
+<li>For x² = y substitution, solve for y first and then substitute back.</li>
+
+<li>For reciprocal equations, x ≠ 0.</li>
+
+<li>For exponential equations, kˣ is always positive when k &gt; 0.</li>
+
+<li>When roots are given, use:
+x² − (sum of roots)x + product of roots = 0.</li>
+
+<li>Roots 3 + 2i and 3 − 2i give:
+x² − 6x + 13 = 0.</li>
+
+</ul>
+
+</div>
+
+
+<script>
+function copyFormula(button, formula) {
+    navigator.clipboard.writeText(formula);
+
+    button.textContent = "✓";
+
+    setTimeout(function() {
+        button.textContent = "copied";
+    }, 1500);
+}
+</script>
+
+
+</body>
+</html>
