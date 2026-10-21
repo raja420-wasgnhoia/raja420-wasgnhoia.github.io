@@ -1,0 +1,578 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 - Unit 1: Real Numbers</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fce4ec;
+            color: #222;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 26px;
+        }
+
+        .subtitle {
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        h2, h3 {
+            color: #ad1457;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            max-width: 95%;
+            margin: 15px auto;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            width: 90%;
+            margin: 15px auto;
+            padding: 15px;
+            border: 2px solid #f8bbd0;
+            border-radius: 15px;
+            background: white;
+        }
+
+        .formula {
+            background: #fff0f5;
+            padding: 12px;
+            padding-right: 82px;
+            margin: 10px 0;
+            border-radius: 10px;
+            position: relative;
+            overflow-wrap: anywhere;
+            line-height: 1.8;
+        }
+
+        .copy-btn {
+            position: absolute;
+            right: 7px;
+            top: 7px;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 8px;
+            padding: 5px 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .section-title {
+            border-bottom: 2px solid #f8bbd0;
+            padding-bottom: 7px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 18px;
+            color: #ad1457;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .box {
+                width: 94%;
+                padding: 12px;
+            }
+
+            .formula {
+                padding: 12px;
+                padding-right: 75px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Chapter 1 - Real Numbers</h2>
+  <h5>Formula Hub</h5>
+    
+</header>
+
+<a href="class8.html" class="back-button">← Back to Chapters</a>
+
+<div class="box">
+    <h2 class="section-title">1. FORMULAS & NOTATION</h2>
+
+    <div class="formula">
+        <b>Rational Numbers:</b><br>
+        Q = {a/b : a, b ∈ Z, b ≠ 0}
+    </div>
+
+    <div class="formula">
+        <b>Real Numbers:</b><br>
+        R = Q ∪ Q′
+    </div>
+
+    <div class="formula">
+        <b>Disjoint Sets:</b><br>
+        Q ∩ Q′ = ∅
+    </div>
+
+    <div class="formula">
+        <b>Circle Relations:</b><br>
+        Circumference = 2πr<br>
+        Diameter = 2r<br>
+        Circumference / Diameter = π
+    </div>
+
+    <div class="formula">
+        <b>Right-Angled Triangle:</b><br>
+        OC = √(OA² + AC²)<br>
+        If OA = 1 and AC = 1:<br>
+        OC = √(1² + 1²) = √2
+    </div>
+
+    <div class="formula">
+        <b>Closure Property:</b><br>
+        a + b ∈ R<br>
+        a × b ∈ R
+    </div>
+
+    <div class="formula">
+        <b>Commutative Property:</b><br>
+        a + b = b + a<br>
+        ab = ba
+    </div>
+
+    <div class="formula">
+        <b>Associative Property:</b><br>
+        a + (b + c) = (a + b) + c<br>
+        a(bc) = (ab)c
+    </div>
+
+    <div class="formula">
+        <b>Identity Property:</b><br>
+        a + 0 = a<br>
+        a × 1 = a
+    </div>
+
+    <div class="formula">
+        <b>Inverse Property:</b><br>
+        a + (−a) = 0<br>
+        a × (1/a) = 1, where a ≠ 0
+    </div>
+
+    <div class="formula">
+        <b>Distributive Property:</b><br>
+        a(b + c) = ab + ac<br>
+        a(b − c) = ab − ac
+    </div>
+
+    <div class="formula">
+        <b>Equality Properties:</b><br>
+        Reflexive: x = x<br>
+        Symmetric: x = y ⇔ y = x<br>
+        Transitive: x = y and y = z ⇒ x = z
+    </div>
+
+    <div class="formula">
+        <b>Addition Property of Equality:</b><br>
+        If x = y, then x + z = y + z
+    </div>
+
+    <div class="formula">
+        <b>Multiplication Property of Equality:</b><br>
+        If x = y, then xz = yz
+    </div>
+
+    <div class="formula">
+        <b>Cancellation Properties:</b><br>
+        x + z = y + z ⇒ x = y<br>
+        xz = yz ⇒ x = y, where z ≠ 0
+    </div>
+
+    <div class="formula">
+        <b>Trichotomy Property:</b><br>
+        For real numbers x and y, exactly one holds:<br>
+        x &lt; y, x = y, or x &gt; y
+    </div>
+
+    <div class="formula">
+        <b>Transitive Inequality:</b><br>
+        If x &lt; y and y &lt; z, then x &lt; z
+    </div>
+
+    <div class="formula">
+        <b>Addition Property of Inequality:</b><br>
+        x &lt; y ⇒ x + z &lt; y + z<br>
+        x &gt; y ⇒ x + z &gt; y + z
+    </div>
+
+    <div class="formula">
+        <b>Multiplication Property of Inequality:</b><br>
+        If z &gt; 0, x &lt; y ⇒ xz &lt; yz<br>
+        If z &lt; 0, x &lt; y ⇒ xz &gt; yz
+    </div>
+
+    <div class="formula">
+        <b>Reciprocal Inequality:</b><br>
+        For non-zero x and y of the same sign:<br>
+        If 0 &lt; x &lt; y, then 1/x &gt; 1/y<br>
+        If x &lt; y &lt; 0, then 1/x &gt; 1/y
+    </div>
+
+    <div class="formula">
+        <b>Absolute Value:</b><br>
+        |x| = distance of x from zero<br>
+        Distance between a and b = |a − b|
+    </div>
+</div>
+
+<div class="box">
+    <h2 class="section-title">2. CONCEPTS</h2>
+
+    <h3>Number System</h3>
+    <div class="formula">
+        <b>Natural Numbers (N):</b><br>
+        1, 2, 3, 4, ...
+    </div>
+
+    <div class="formula">
+        <b>Whole Numbers (W):</b><br>
+        0, 1, 2, 3, 4, ...
+    </div>
+
+    <div class="formula">
+        <b>Integers (Z):</b><br>
+        ..., −3, −2, −1, 0, 1, 2, 3, ...
+    </div>
+
+    <div class="formula">
+        <b>Rational Numbers (Q):</b><br>
+        Numbers expressible as a/b, where a and b are integers and b ≠ 0.
+    </div>
+
+    <div class="formula">
+        <b>Irrational Numbers (Q′):</b><br>
+        Numbers whose decimal expansions are non-terminating and non-recurring.
+    </div>
+
+    <div class="formula">
+        <b>Real Numbers (R):</b><br>
+        All rational and irrational numbers together.
+    </div>
+
+    <h3>Decimal Representation</h3>
+
+    <div class="formula">
+        <b>Terminating Decimal:</b><br>
+        A decimal with a finite number of digits after the decimal point.
+    </div>
+
+    <div class="formula">
+        <b>Recurring Decimal:</b><br>
+        A decimal in which one digit or a group of digits repeats in the same order.
+    </div>
+
+    <div class="formula">
+        <b>Non-Terminating, Non-Recurring Decimal:</b><br>
+        A decimal that continues indefinitely without a repeating pattern.
+    </div>
+
+    <div class="formula">
+        <b>Decimal Representation Fact:</b><br>
+        Every rational number has a terminating or recurring decimal expansion.
+    </div>
+
+    <div class="formula">
+        <b>Real Number Set Relationship:</b><br>
+        Q and Q′ are disjoint and together form R.
+    </div>
+
+    <h3>Representation on Number Line</h3>
+
+    <div class="formula">
+        <b>Rational Numbers:</b><br>
+        Draw a straight line and mark zero. Mark equal unit intervals on both sides. Positive numbers lie to the right and negative numbers to the left. Divide an interval into equal parts to locate fractions.
+    </div>
+
+    <div class="formula">
+        <b>Irrational Numbers:</b><br>
+        Construct a right-angled triangle with perpendicular sides of one unit each. Its hypotenuse is √2. Using this length as a radius from zero, mark √2 on the number line.
+    </div>
+
+    <h3>Properties of Real Numbers</h3>
+
+    <div class="formula">
+        <b>Closure:</b><br>
+        The sum and product of real numbers are real numbers.
+    </div>
+
+    <div class="formula">
+        <b>Commutative:</b><br>
+        The order of numbers does not change their sum or product.
+    </div>
+
+    <div class="formula">
+        <b>Associative:</b><br>
+        Changing the grouping does not change the sum or product.
+    </div>
+
+    <div class="formula">
+        <b>Identity:</b><br>
+        Zero is the additive identity and one is the multiplicative identity.
+    </div>
+
+    <div class="formula">
+        <b>Inverse:</b><br>
+        The additive inverse of a is −a. The multiplicative inverse is 1/a for a ≠ 0.
+    </div>
+
+    <div class="formula">
+        <b>Distributive:</b><br>
+        Multiplication distributes over addition and subtraction.
+    </div>
+
+    <h3>Ordering and Inequalities</h3>
+
+    <div class="formula">
+        <b>Ordering:</b><br>
+        Real numbers can be compared using =, &lt; and &gt;.
+    </div>
+
+    <div class="formula">
+        <b>Multiplying an Inequality:</b><br>
+        Multiplication by a positive number preserves the inequality sign. Multiplication by a negative number reverses it.
+    </div>
+
+    <h3>Absolute Value</h3>
+
+    <div class="formula">
+        <b>Meaning:</b><br>
+        Absolute value is the distance of a number from zero on the number line.
+    </div>
+
+    <div class="formula">
+        <b>Important Properties:</b><br>
+        Absolute value is never negative. Opposite numbers have equal absolute values. The distance between two points is the absolute difference of their coordinates.
+    </div>
+</div>
+
+<div class="box">
+    <h2 class="section-title">3. DEFINITIONS</h2>
+
+    <div class="formula">
+        <b>Numbers:</b><br>
+        Numbers are a useful language for counting, measuring, identifying and performing calculations.
+    </div>
+
+    <div class="formula">
+        <b>Rational Number:</b><br>
+        A number expressible as a/b, where a and b are integers and b is not zero.
+    </div>
+
+    <div class="formula">
+        <b>Origin of the Word Rational:</b><br>
+        The word rational comes from ratio, referring to the ratio of two integers.
+    </div>
+
+    <div class="formula">
+        <b>Terminating Decimal Fraction:</b><br>
+        A decimal fraction having a finite number of digits in its decimal part.
+    </div>
+
+    <div class="formula">
+        <b>Recurring Decimal Fraction:</b><br>
+        A decimal fraction in which a digit or group of digits repeats in the same order.
+    </div>
+
+    <div class="formula">
+        <b>Irrational Number:</b><br>
+        A real number whose decimal expansion is non-terminating and non-recurring.
+    </div>
+
+    <div class="formula">
+        <b>Real Numbers:</b><br>
+        Numbers represented on the continuous number line, including rational and irrational numbers.
+    </div>
+
+    <div class="formula">
+        <b>Absolute Value / Modulus:</b><br>
+        The non-negative distance of a number from zero, represented by vertical bars |x|.
+    </div>
+
+    <div class="formula">
+        <b>Opposite Numbers:</b><br>
+        Two numbers with equal absolute values but opposite signs.
+    </div>
+
+    <div class="formula">
+        <b>Learning Outcomes:</b><br>
+        Recognize and classify real numbers, distinguish rational and irrational numbers, represent numbers on a number line, identify decimal types, use real-number properties, compare numbers and understand absolute value.
+    </div>
+</div>
+
+<div class="box">
+    <h2 class="section-title">4. KEY POINTS</h2>
+
+    <div class="formula">
+        Rational numbers can be written as a/b, where b ≠ 0.
+    </div>
+
+    <div class="formula">
+        Every integer is rational because it can be written as a fraction with denominator 1.
+    </div>
+
+    <div class="formula">
+        Terminating and recurring decimals are rational numbers.
+    </div>
+
+    <div class="formula">
+        Irrational decimals are non-terminating and non-recurring.
+    </div>
+
+    <div class="formula">
+        Real numbers consist of rational and irrational numbers: R = Q ∪ Q′.
+    </div>
+
+    <div class="formula">
+        Rational and irrational sets do not overlap: Q ∩ Q′ = ∅.
+    </div>
+
+    <div class="formula">
+        Zero is the additive identity. One is the multiplicative identity.
+    </div>
+
+    <div class="formula">
+        Zero has no multiplicative inverse.
+    </div>
+
+    <div class="formula">
+        The properties of closure, commutativity, associativity, identity, inverse and distributivity apply to real numbers where defined.
+    </div>
+
+    <div class="formula">
+        When multiplying an inequality by a negative number, reverse the inequality sign.
+    </div>
+
+    <div class="formula">
+        Absolute value represents distance, so it is always zero or positive.
+    </div>
+
+    <div class="formula">
+        The distance between two real numbers a and b is |a − b|.
+    </div>
+</div>
+
+<a href="class8.html" class="back-button">← Back to Chapters</a>
+
+<footer>
+    Class 8 Mathematics | Formula Hub
+</footer>
+
+<script>
+function showCopySequence(button) {
+    clearTimeout(button.copyTimer1);
+    clearTimeout(button.copyTimer2);
+
+    button.innerText = "✓";
+
+    button.copyTimer1 = setTimeout(() => {
+        button.innerText = "Copied";
+
+        button.copyTimer2 = setTimeout(() => {
+            button.innerText = "📋";
+        }, 1500);
+    }, 1500);
+}
+
+function fallbackCopy(text, button) {
+    const area = document.createElement("textarea");
+    area.value = text;
+    area.style.position = "fixed";
+    area.style.opacity = "0";
+
+    document.body.appendChild(area);
+    area.select();
+
+    try {
+        const successful = document.execCommand("copy");
+
+        if (successful) {
+            showCopySequence(button);
+        } else {
+            button.innerText = "Copy failed";
+            setTimeout(() => button.innerText = "📋", 1500);
+        }
+    } catch (error) {
+        button.innerText = "Copy failed";
+        setTimeout(() => button.innerText = "📋", 1500);
+    }
+
+    document.body.removeChild(area);
+}
+
+function copyFormula(button) {
+    const formula = button.parentElement.cloneNode(true);
+    const copyButton = formula.querySelector(".copy-btn");
+
+    if (copyButton) {
+        copyButton.remove();
+    }
+
+    const text = formula.innerText.trim();
+
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text)
+            .then(() => showCopySequence(button))
+            .catch(() => fallbackCopy(text, button));
+    } else {
+        fallbackCopy(text, button);
+    }
+}
+
+document.querySelectorAll(".formula").forEach((item) => {
+    const button = document.createElement("button");
+
+    button.className = "copy-btn";
+    button.type = "button";
+    button.innerText = "📋";
+    button.setAttribute("aria-label", "Copy formula");
+    button.addEventListener("click", () => copyFormula(button));
+
+    item.appendChild(button);
+});
+</script>
+
+</body>
+</html>
+

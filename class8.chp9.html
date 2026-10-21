@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 9 - Similar and Congruent Figures</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fce4ec;
+      color: #222;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #f8bbd0;
+      padding: 25px 15px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ad1457;
+      margin: 0;
+      font-size: 26px;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      font-size: 16px;
+    }
+
+    h2, h3 { color: #ad1457; }
+
+    .back-button {
+      display: block;
+      width: fit-content;
+      max-width: 95%;
+      margin: 15px auto;
+      padding: 8px 16px;
+      background: #fff0f5;
+      color: #ad1457;
+      border: 1px solid #f8bbd0;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .box {
+      width: 90%;
+      margin: 15px auto;
+      padding: 15px;
+      border: 2px solid #f8bbd0;
+      border-radius: 15px;
+      background: white;
+    }
+
+    .formula {
+      background: #fff0f5;
+      padding: 12px;
+      padding-right: 82px;
+      margin: 10px 0;
+      border-radius: 10px;
+      position: relative;
+      overflow-wrap: anywhere;
+      line-height: 1.8;
+    }
+
+    .copy-btn {
+      position: absolute;
+      right: 7px;
+      top: 7px;
+      background: white;
+      color: #ad1457;
+      border: 1px solid #f8bbd0;
+      border-radius: 8px;
+      padding: 5px 8px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #f8bbd0;
+      padding-bottom: 7px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      color: #ad1457;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 24px; }
+      .box { width: 94%; padding: 12px; }
+      .formula {
+        padding: 12px;
+        padding-right: 75px;
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>Chapter 9 - Geometry</h2>
+  <h5>Formula Hub</h5>
+</header>
+
+<a class="back-button" href="class8.html">← Back to Chapters</a>
+
+<!-- SECTION 1: FORMULAS & RULES -->
+<div class="box" id="formula-section">
+  <h2 class="section-title">FORMULAS &amp; RULES</h2>
+
+  <h3>1. Similar Figures</h3>
+
+  <div class="formula">
+    Similarity symbol: <strong>∼</strong><br>
+    If figures A and B are similar: <strong>A ∼ B</strong>
+  </div>
+
+  <div class="formula">
+    For similar figures:<br>
+    Corresponding angles are equal.<br>
+    Corresponding sides are proportional.
+  </div>
+
+  <div class="formula">
+    For similar triangles:<br>
+    <strong>∠A = ∠D, ∠B = ∠E, ∠C = ∠F</strong><br>
+    <strong>AB/DE = BC/EF = AC/DF</strong>
+  </div>
+
+  <h3>2. Congruent Figures</h3>
+
+  <div class="formula">
+    Congruence symbols: <strong>≅</strong> or <strong>≡</strong><br>
+    If figures A and B are congruent: <strong>A ≅ B</strong>
+  </div>
+
+  <div class="formula">
+    For congruent figures:<br>
+    Corresponding sides are equal and corresponding angles are equal.
+  </div>
+
+  <div class="formula">
+    All congruent figures are similar, but similar figures are not necessarily congruent.
+  </div>
+
+  <h3>3. Triangle Congruency Tests</h3>
+
+  <div class="formula">
+    <strong>SSS (Side-Side-Side)</strong><br>
+    If all three corresponding sides are equal, the triangles are congruent.
+  </div>
+
+  <div class="formula">
+    <strong>SAS (Side-Angle-Side)</strong><br>
+    If two corresponding sides and their included angle are equal, the triangles are congruent.
+  </div>
+
+  <div class="formula">
+    <strong>ASA (Angle-Side-Angle)</strong><br>
+    If two corresponding angles and their included side are equal, the triangles are congruent.
+  </div>
+
+  <div class="formula">
+    <strong>HS (Hypotenuse-Side)</strong><br>
+    For right-angled triangles, equal hypotenuses and one corresponding side establish congruence.
+  </div>
+
+  <div class="formula">
+    Corresponding sides:<br>
+    <strong>AB ↔ DE, BC ↔ EF, AC ↔ DF</strong>
+  </div>
+
+  <div class="formula">
+    Corresponding angles:<br>
+    <strong>∠A ↔ ∠D, ∠B ↔ ∠E, ∠C ↔ ∠F</strong>
+  </div>
+
+  <h3>4. Circle: Arc Length</h3>
+
+  <div class="formula">
+    Circumference of a circle:<br>
+    <strong>C = 2πr</strong>
+  </div>
+
+  <div class="formula">
+    Arc length:<br>
+    <strong>L = (x/360°) × 2πr</strong><br>
+    r = radius, x = central angle in degrees.
+  </div>
+
+  <h3>5. Sector of a Circle</h3>
+
+  <div class="formula">
+    Area of a circle:<br>
+    <strong>A = πr²</strong>
+  </div>
+
+  <div class="formula">
+    Area of a sector:<br>
+    <strong>A = (x/360°) × πr²</strong><br>
+    r = radius, x = central angle in degrees.
+  </div>
+
+  <div class="formula">
+    Minor sector: central angle <strong>&lt; 180°</strong><br>
+    Major sector: central angle <strong>&gt; 180°</strong><br>
+    Quadrant: central angle <strong>= 90°</strong>
+  </div>
+
+  <h3>6. Chords and Intersecting Chords</h3>
+
+  <div class="formula">
+    If two chords intersect inside a circle:<br>
+    <strong>PA × PB = PC × PD</strong>
+  </div>
+
+  <h3>7. Angles in a Semicircle</h3>
+
+  <div class="formula">
+    Angle subtended by a diameter at the circumference:<br>
+    <strong>∠APB = 90°</strong>
+  </div>
+
+  <div class="formula">
+    The angle in a semicircle is half the central angle standing on the same arc:<br>
+    <strong>Angle at circumference = ½ × central angle</strong>
+  </div>
+
+  <h3>8. Angles in the Same Segment</h3>
+
+  <div class="formula">
+    Angles standing on the same chord in the same segment are equal:<br>
+    <strong>∠P = ∠Q = ∠R</strong>
+  </div>
+</div>
+
+<!-- SECTION 2: CONCEPTS -->
+<div class="box">
+  <h2 class="section-title">CONCEPTS</h2>
+
+  <h3>1. Similar and Congruent Figures</h3>
+  <p>Similar figures have the same shape, but their sizes may differ. Congruent figures have the same shape and size.</p>
+  <p>Congruent figures may have different positions or orientations.</p>
+
+  <h3>2. Corresponding Parts</h3>
+  <p>Corresponding sides and angles are the matching parts of two figures. The order of vertices shows which parts correspond.</p>
+
+  <h3>3. Triangle Congruency</h3>
+  <p>SSS, SAS, ASA and HS are tests used to establish whether two triangles are congruent.</p>
+  <p>In SAS, the angle must be included between the two sides. In HS, both triangles must be right-angled.</p>
+
+  <h3>4. Parts of a Circle</h3>
+  <p>An arc is part of a circle's circumference. A diameter divides a circle into two semicircles.</p>
+  <p>A central angle has its vertex at the centre of the circle.</p>
+
+  <h3>5. Arc Length and Sector Area</h3>
+  <p>Arc length is the corresponding fraction of the circle's circumference. Sector area is the corresponding fraction of the circle's total area.</p>
+  <p>The fraction is determined by the central angle divided by 360°.</p>
+
+  <h3>6. Chords, Secants and Tangents</h3>
+  <p>A chord is a line segment with both endpoints on a circle. A secant is a line that intersects a circle at two points. A tangent touches a circle at exactly one point.</p>
+
+  <h3>7. Concentric Circles and Concyclic Points</h3>
+  <p>Concentric circles have the same centre but different radii. Concyclic points lie on the same circle.</p>
+
+  <h3>8. Circle Angle Properties</h3>
+  <p>An angle subtended by a diameter at the circumference is a right angle.</p>
+  <p>Angles standing on the same chord in the same segment are equal.</p>
+</div>
+
+<!-- SECTION 3: DEFINITIONS -->
+<div class="box">
+  <h2 class="section-title">DEFINITIONS</h2>
+
+  <h3>1. Similar Figures</h3>
+  <p>Figures having the same shape but not necessarily the same size are called similar figures.</p>
+
+  <h3>2. Congruent Figures</h3>
+  <p>Figures having the same shape and size are called congruent figures.</p>
+
+  <h3>3. Corresponding Sides</h3>
+  <p>Matching sides of two figures are called corresponding sides.</p>
+
+  <h3>4. Corresponding Angles</h3>
+  <p>Matching angles of two figures are called corresponding angles.</p>
+
+  <h3>5. Minor Arc</h3>
+  <p>The shorter arc joining two points on a circle is called the minor arc.</p>
+
+  <h3>6. Major Arc</h3>
+  <p>The longer arc joining two points on a circle is called the major arc.</p>
+
+  <h3>7. Semicircle</h3>
+  <p>Each half of a circle divided by a diameter is called a semicircle.</p>
+
+  <h3>8. Central Angle</h3>
+  <p>An angle subtended by an arc at the centre of a circle is called a central angle.</p>
+
+  <h3>9. Arc Length</h3>
+  <p>The distance measured along an arc of a circle is called arc length.</p>
+
+  <h3>10. Sector</h3>
+  <p>A region enclosed by two radii and an arc is called a sector.</p>
+
+  <h3>11. Minor Sector</h3>
+  <p>A sector smaller than half of the circular region is called a minor sector.</p>
+
+  <h3>12. Major Sector</h3>
+  <p>A sector larger than half of the circular region is called a major sector.</p>
+
+  <h3>13. Quadrant</h3>
+  <p>A sector with a central angle of 90° is called a quadrant.</p>
+
+  <h3>14. Segment of a Circle</h3>
+  <p>A region bounded by a chord and its corresponding arc is called a segment of a circle.</p>
+
+  <h3>15. Secant</h3>
+  <p>A line that intersects a circle at two points is called a secant.</p>
+
+  <h3>16. Chord</h3>
+  <p>A line segment whose endpoints lie on a circle is called a chord.</p>
+
+  <h3>17. Tangent</h3>
+  <p>A line that touches a circle at exactly one point is called a tangent.</p>
+
+  <h3>18. Point of Tangency</h3>
+  <p>The point where a tangent touches a circle is called the point of tangency.</p>
+
+  <h3>19. Concyclic Points</h3>
+  <p>Points that lie on the same circle are called concyclic points.</p>
+
+  <h3>20. Concentric Circles</h3>
+  <p>Two or more circles having the same centre are called concentric circles.</p>
+</div>
+
+<!-- SECTION 4: KEY POINTS -->
+<div class="box">
+  <h2 class="section-title">KEY POINTS</h2>
+
+  <ul>
+    <li>Similar figures have the same shape; their sizes may differ.</li>
+    <li>Congruent figures have the same shape and size.</li>
+    <li>All congruent figures are similar, but similar figures are not necessarily congruent.</li>
+    <li>Corresponding angles of similar figures are equal.</li>
+    <li>Corresponding sides of similar figures are proportional.</li>
+    <li>SSS, SAS, ASA and HS are triangle congruency tests.</li>
+    <li>HS applies only to right-angled triangles.</li>
+    <li>Congruent figures have equal corresponding sides, equal corresponding angles and equal areas.</li>
+    <li>A diameter divides a circle into two semicircles.</li>
+    <li>A minor arc is shorter than a major arc between the same endpoints.</li>
+    <li>Arc length uses the fraction x/360° of the circumference.</li>
+    <li>Sector area uses the fraction x/360° of the circle's area.</li>
+    <li>A quadrant is one-fourth of a circle.</li>
+    <li>A chord joins two points on a circle; a secant intersects the circle at two points.</li>
+    <li>A tangent touches a circle at exactly one point.</li>
+    <li>Intersecting chords satisfy PA × PB = PC × PD.</li>
+    <li>The angle subtended by a diameter at the circumference is 90°.</li>
+    <li>Angles in the same segment standing on the same chord are equal.</li>
+    <li>Concentric circles have the same centre; concyclic points lie on the same circle.</li>
+  </ul>
+</div>
+
+<a class="back-button" href="class8.html">← Back to Chapters</a>
+
+<footer>
+  Class 8 Mathematics | Formula Hub
+</footer>
+
+<script>
+const formulaSection = document.getElementById("formula-section");
+
+if (formulaSection) {
+  formulaSection.querySelectorAll(".formula").forEach((formula) => {
+    const button = document.createElement("button");
+
+    button.className = "copy-btn";
+    button.type = "button";
+    button.textContent = "📋";
+    button.setAttribute("aria-label", "Copy formula");
+
+    button.addEventListener("click", async () => {
+      const clone = formula.cloneNode(true);
+      const copyButton = clone.querySelector(".copy-btn");
+
+      if (copyButton) copyButton.remove();
+
+      const textToCopy = clone.innerText.trim();
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(textToCopy);
+        } else {
+          const textarea = document.createElement("textarea");
+          textarea.value = textToCopy;
+          textarea.style.position = "fixed";
+          textarea.style.opacity = "0";
+
+          document.body.appendChild(textarea);
+          textarea.select();
+
+          const copied = document.execCommand("copy");
+          textarea.remove();
+
+          if (!copied) throw new Error("Copy failed");
+        }
+
+        button.textContent = "✓";
+        button.disabled = true;
+
+        setTimeout(() => {
+          button.textContent = "Copied";
+
+          setTimeout(() => {
+            button.textContent = "📋";
+            button.disabled = false;
+          }, 1500);
+        }, 1500);
+
+      } catch (error) {
+        button.textContent = "Failed";
+
+        setTimeout(() => {
+          button.textContent = "📋";
+          button.disabled = false;
+        }, 1500);
+      }
+    });
+
+    formula.appendChild(button);
+  });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 13: Probability | Formula Hub</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fce4ec;
+  color: #222;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header {
+  background: #f8bbd0;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+h1 {
+  color: #ad1457;
+  margin: 0;
+  font-size: 26px;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+h2, h3 { color: #ad1457; }
+
+.back-button {
+  display: block;
+  width: fit-content;
+  max-width: 95%;
+  margin: 15px auto;
+  padding: 8px 16px;
+  background: #fff0f5;
+  color: #ad1457;
+  border: 1px solid #f8bbd0;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.box {
+  width: 90%;
+  margin: 15px auto;
+  padding: 15px;
+  border: 2px solid #f8bbd0;
+  border-radius: 15px;
+  background: white;
+}
+
+.formula {
+  background: #fff0f5;
+  padding: 12px;
+  padding-right: 82px;
+  margin: 10px 0;
+  border-radius: 10px;
+  position: relative;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  background: white;
+  color: #ad1457;
+  border: 1px solid #f8bbd0;
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.section-title {
+  border-bottom: 2px solid #f8bbd0;
+  padding-bottom: 7px;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  color: #ad1457;
+}
+
+@media(max-width:600px) {
+  h1 { font-size: 24px; }
+  .box { width: 94%; padding: 12px; }
+  .formula {
+    padding: 12px;
+    padding-right: 75px;
+    font-size: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>Chapter 13 - Probability</h2>
+  <h5>Formula Hub</h5>
+</header>
+
+<a class="back-button" href="class8.html">← Back to Chapters</a>
+
+<!-- SECTION 1: FORMULAS & RULES -->
+<div class="box" id="formula-section">
+  <h2 class="section-title">1. FORMULAS &amp; RULES</h2>
+
+  <h3>Sample Space and Outcomes</h3>
+
+  <div class="formula">
+    <strong>Sample Space:</strong><br>
+    S = Set of all possible outcomes
+  </div>
+
+  <div class="formula">
+    <strong>Number of Sample Points:</strong><br>
+    n(S) = Total number of possible outcomes
+  </div>
+
+  <div class="formula">
+    <strong>Two Coin Tosses:</strong><br>
+    S = {HH, HT, TH, TT}<br>
+    n(S) = 4
+  </div>
+
+  <div class="formula">
+    <strong>Three Coin Tosses:</strong><br>
+    n(S) = 2³ = 8
+  </div>
+
+  <div class="formula">
+    <strong>Two Dice:</strong><br>
+    n(S) = 6 × 6 = 36
+  </div>
+
+  <div class="formula">
+    <strong>One Die and One Coin:</strong><br>
+    n(S) = 6 × 2 = 12
+  </div>
+
+  <div class="formula">
+    <strong>Two Spinners with 3 Outcomes Each:</strong><br>
+    n(S) = 3 × 3 = 9
+  </div>
+
+  <div class="formula">
+    <strong>General Counting Rule:</strong><br>
+    Total outcomes = Product of the number of choices at each stage
+  </div>
+
+  <div class="formula">
+    <strong>Repeated Two-Outcome Trials:</strong><br>
+    Number of possible outcomes = 2ⁿ<br>
+    (When each trial has exactly 2 possible outcomes)
+  </div>
+
+  <h3>Probability</h3>
+
+  <div class="formula">
+    <strong>Probability of an Event:</strong><br>
+    P(E) = n(E) / n(S)
+  </div>
+
+  <div class="formula">
+    <strong>Favourable Outcomes:</strong><br>
+    P(E) = Number of favourable outcomes / Total number of equally likely outcomes
+  </div>
+
+  <div class="formula">
+    <strong>Probability Range:</strong><br>
+    0 ≤ P(E) ≤ 1
+  </div>
+
+  <div class="formula">
+    <strong>Impossible Event:</strong><br>
+    P(E) = 0
+  </div>
+
+  <div class="formula">
+    <strong>Sure or Certain Event:</strong><br>
+    P(E) = 1
+  </div>
+
+  <div class="formula">
+    <strong>Complementary Event:</strong><br>
+    P(E′) = 1 − P(E)
+  </div>
+
+  <div class="formula">
+    <strong>Complement Rule:</strong><br>
+    P(E) + P(E′) = 1
+  </div>
+
+  <div class="formula">
+    <strong>Experimental Probability:</strong><br>
+    P(E) = Number of times event occurs / Total number of trials
+  </div>
+
+  <div class="formula">
+    <strong>Theoretical Probability:</strong><br>
+    P(E) = Number of favourable outcomes / Total number of equally likely outcomes
+  </div>
+
+  <h3>Independent and Dependent Events</h3>
+
+  <div class="formula">
+    <strong>Independent Events:</strong><br>
+    P(A and B) = P(A) × P(B)
+  </div>
+
+  <div class="formula">
+    <strong>Three Independent Events:</strong><br>
+    P(A and B and C) = P(A) × P(B) × P(C)
+  </div>
+
+  <div class="formula">
+    <strong>Dependent Events:</strong><br>
+    P(A and B) = P(A) × P(B | A)
+  </div>
+
+  <div class="formula">
+    <strong>Mutually Exclusive Events:</strong><br>
+    A ∩ B = ∅
+  </div>
+
+  <div class="formula">
+    <strong>Mutually Exclusive Probability Rule:</strong><br>
+    P(A or B) = P(A) + P(B)
+  </div>
+
+  <div class="formula">
+    <strong>Exhaustive Events:</strong><br>
+    A ∪ B ∪ C ∪ ... = S
+  </div>
+
+  <div class="formula">
+    <strong>Event and Sample Space:</strong><br>
+    0 ≤ n(E) ≤ n(S)
+  </div>
+</div>
+
+<!-- SECTION 2: CONCEPTS -->
+<div class="box">
+  <h2 class="section-title">2. CONCEPTS</h2>
+
+  <h3>Representing Sample Space</h3>
+  <ul>
+    <li><strong>Listing Outcomes:</strong> Write all possible outcomes inside set brackets.</li>
+    <li><strong>Two-Dimensional Grid:</strong> Use a row and a column to show combinations of outcomes from two experiments.</li>
+    <li><strong>Tree Diagram:</strong> Use branches to show possible outcomes at each stage.</li>
+    <li>Each possible outcome must be included without unnecessary repetition.</li>
+    <li>For independent stages, multiply the number of choices at each stage to find the total number of outcomes.</li>
+  </ul>
+
+  <h3>Types of Events</h3>
+  <ul>
+    <li><strong>Simple Event:</strong> Contains one sample point.</li>
+    <li><strong>Compound Event:</strong> Contains more than one sample point.</li>
+    <li><strong>Equally Likely Events:</strong> Events with equal chances of occurring.</li>
+    <li><strong>Independent Events:</strong> The occurrence of one event does not change the probability of the other.</li>
+    <li><strong>Dependent Events:</strong> The occurrence of one event changes the probability of the other.</li>
+    <li><strong>Mutually Exclusive Events:</strong> Events that cannot occur together in the same trial.</li>
+    <li><strong>Exhaustive Events:</strong> Events whose combined outcomes cover the entire sample space.</li>
+    <li><strong>Complementary Event:</strong> The event that the original event does not occur.</li>
+  </ul>
+
+  <h3>With and Without Replacement</h3>
+  <ul>
+    <li><strong>With Replacement:</strong> The selected item is returned before the next selection. In ordinary random draws, this keeps the probabilities unchanged and makes successive draws independent.</li>
+    <li><strong>Without Replacement:</strong> The selected item is not returned. The probabilities for later draws may change, making the draws dependent.</li>
+  </ul>
+
+  <h3>Probability Types</h3>
+  <ul>
+    <li><strong>Experimental Probability:</strong> Based on the results of actual trials.</li>
+    <li><strong>Theoretical Probability:</strong> Based on possible outcomes under an assumed probability model.</li>
+    <li>Experimental probability may differ from theoretical probability, especially when the number of trials is small.</li>
+    <li>With many repeated trials, experimental probability may approach theoretical probability under suitable conditions.</li>
+  </ul>
+</div>
+
+<!-- SECTION 3: DEFINITIONS -->
+<div class="box">
+  <h2 class="section-title">3. DEFINITIONS</h2>
+
+  <p><strong>Probability:</strong> A numerical measure of the likelihood that an event will occur, ranging from 0 to 1, or 0% to 100%.</p>
+
+  <p><strong>Experiment:</strong> An action or process that produces one or more well-defined outcomes.</p>
+
+  <p><strong>Trial:</strong> A single performance or repetition of an experiment.</p>
+
+  <p><strong>Outcome:</strong> The result of a single trial in an experiment.</p>
+
+  <p><strong>Random Experiment:</strong> An experiment repeated under similar conditions that may produce different outcomes.</p>
+
+  <p><strong>Sample Space:</strong> The set of all possible outcomes of a random experiment, usually denoted by S.</p>
+
+  <p><strong>Sample Point:</strong> An individual outcome belonging to the sample space.</p>
+
+  <p><strong>Event:</strong> A set of outcomes of a random experiment whose probability is being considered.</p>
+
+  <p><strong>Simple Event:</strong> An event containing exactly one sample point.</p>
+
+  <p><strong>Compound Event:</strong> An event containing more than one sample point.</p>
+
+  <p><strong>Equally Likely Events:</strong> Events that have equal probabilities of occurring.</p>
+
+  <p><strong>Independent Events:</strong> Events in which the occurrence of one does not affect the probability of the other.</p>
+
+  <p><strong>Dependent Events:</strong> Events in which the occurrence of one affects the probability of the other.</p>
+
+  <p><strong>Mutually Exclusive Events:</strong> Events that have no common outcomes and cannot occur together in the same trial.</p>
+
+  <p><strong>Exhaustive Events:</strong> A collection of events whose union is the entire sample space.</p>
+
+  <p><strong>Complementary Event:</strong> The event consisting of all outcomes in which the original event does not occur.</p>
+
+  <p><strong>Experimental Probability:</strong> Probability calculated from the observed results of repeated trials.</p>
+
+  <p><strong>Theoretical Probability:</strong> Probability calculated from the possible equally likely outcomes of an experiment.</p>
+</div>
+
+<!-- SECTION 4: KEY POINTS -->
+<div class="box">
+  <h2 class="section-title">4. KEY POINTS</h2>
+
+  <ul>
+    <li>Probability can be written as a fraction, decimal or percentage.</li>
+    <li>Probability always lies between 0 and 1, inclusive.</li>
+    <li>A probability of 0 means impossible; a probability of 1 means certain.</li>
+    <li>A probability of 1/2 represents a 50:50 chance.</li>
+    <li>The sample space contains every possible outcome of an experiment.</li>
+    <li>The number of favourable outcomes cannot exceed the total number of outcomes.</li>
+    <li>For equally likely outcomes, divide the number of favourable outcomes by the total number of possible outcomes.</li>
+    <li>When a coin is tossed n times, the number of possible sequences is 2ⁿ.</li>
+    <li>When two dice are rolled, there are 36 ordered outcomes.</li>
+    <li>Mutually exclusive events have no common outcome: A ∩ B = ∅.</li>
+    <li>Mutually exclusive events are not necessarily exhaustive.</li>
+    <li>If events are both mutually exclusive and exhaustive, their combined outcomes cover the whole sample space without overlap.</li>
+    <li>With replacement usually makes successive random draws independent; without replacement usually makes them dependent.</li>
+    <li>For independent events, multiply their probabilities to find the probability that all occur.</li>
+    <li>For dependent events, use the conditional probability after the first event.</li>
+    <li>The complement of E is written E′ or Eᶜ.</li>
+    <li>The probabilities of an event and its complement add up to 1.</li>
+    <li>Experimental probability depends on observed results; theoretical probability depends on the probability model.</li>
+    <li>A larger number of trials can make experimental probability closer to theoretical probability, but does not guarantee an exact match.</li>
+    <li>Probability is useful in weather forecasting, finance, statistics, computer science and decision-making.</li>
+  </ul>
+</div>
+
+<a class="back-button" href="class8.html">← Back to Chapters</a>
+
+<footer>
+  Class 8 Mathematics | Formula Hub
+</footer>
+
+<script>
+const formulaSection = document.getElementById("formula-section");
+
+if (formulaSection) {
+  formulaSection.querySelectorAll(".formula").forEach((formula) => {
+    const button = document.createElement("button");
+    button.className = "copy-btn";
+    button.type = "button";
+    button.textContent = "📋";
+    button.setAttribute("aria-label", "Copy formula");
+
+    button.addEventListener("click", async () => {
+      const clone = formula.cloneNode(true);
+      const copyButton = clone.querySelector(".copy-btn");
+
+      if (copyButton) copyButton.remove();
+
+      const textToCopy = clone.innerText.trim();
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(textToCopy);
+        } else {
+          const textarea = document.createElement("textarea");
+          textarea.value = textToCopy;
+          textarea.style.position = "fixed";
+          textarea.style.opacity = "0";
+          document.body.appendChild(textarea);
+          textarea.select();
+
+          const copied = document.execCommand("copy");
+          textarea.remove();
+
+          if (!copied) throw new Error("Copy failed");
+        }
+
+        button.textContent = "✓";
+        button.disabled = true;
+
+        setTimeout(() => {
+          button.textContent = "Copied";
+
+          setTimeout(() => {
+            button.textContent = "📋";
+            button.disabled = false;
+          }, 1500);
+        }, 1500);
+
+      } catch (error) {
+        button.textContent = "Failed";
+
+        setTimeout(() => {
+          button.textContent = "📋";
+          button.disabled = false;
+        }, 1500);
+      }
+    });
+
+    formula.appendChild(button);
+  });
+}
+</script>
+
+</body>
+</html>

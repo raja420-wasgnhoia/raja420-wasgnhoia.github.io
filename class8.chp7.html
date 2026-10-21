@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 7 - Linear Equation and Inequalities</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fce4ec;
+      color: #222;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #f8bbd0;
+      padding: 25px 15px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ad1457;
+      margin: 0;
+      font-size: 26px;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      font-size: 16px;
+    }
+
+    h2, h3 {
+      color: #ad1457;
+    }
+
+    .back-button {
+      display: block;
+      width: fit-content;
+      max-width: 95%;
+      margin: 15px auto;
+      padding: 8px 16px;
+      background: #fff0f5;
+      color: #ad1457;
+      border: 1px solid #f8bbd0;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .box {
+      width: 90%;
+      margin: 15px auto;
+      padding: 15px;
+      border: 2px solid #f8bbd0;
+      border-radius: 15px;
+      background: white;
+    }
+
+    .formula {
+      background: #fff0f5;
+      padding: 12px;
+      padding-right: 82px;
+      margin: 10px 0;
+      border-radius: 10px;
+      position: relative;
+      overflow-wrap: anywhere;
+      line-height: 1.8;
+    }
+
+    .copy-btn {
+      position: absolute;
+      right: 7px;
+      top: 7px;
+      background: white;
+      color: #ad1457;
+      border: 1px solid #f8bbd0;
+      border-radius: 8px;
+      padding: 5px 8px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #f8bbd0;
+      padding-bottom: 7px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      color: #ad1457;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 24px; }
+      .box { width: 94%; padding: 12px; }
+      .formula {
+        padding: 12px;
+        padding-right: 75px;
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>Chapter 7 - Linear Equation and Inequalities</h2>
+  <h5> Formula Hub</h5>
+</header>
+
+<a class="back-button" href="class8.html">← Back to Chapters</a>
+
+<!-- SECTION 1: FORMULAS & RULES -->
+<div class="box" id="formula-section">
+  <h2 class="section-title">FORMULAS &amp; RULES</h2>
+
+  <h3>1. Simultaneous Linear Equations</h3>
+
+  <div class="formula">
+    General form of two simultaneous linear equations:<br>
+    <strong>a₁x + b₁y = c₁</strong><br>
+    <strong>a₂x + b₂y = c₂</strong>
+  </div>
+
+  <div class="formula">
+    A solution is an ordered pair <strong>(x, y)</strong> that satisfies both equations.
+  </div>
+
+  <div class="formula">
+    Methods of solving simultaneous equations:<br>
+    1. Substitution method<br>
+    2. Elimination method<br>
+    3. Graphical method
+  </div>
+
+  <h3>2. Special Forms of Linear Equations</h3>
+
+  <div class="formula">
+    General form of a linear equation in two variables:<br>
+    <strong>ax + by = c</strong><br>
+    The coefficients a and b cannot both be zero.
+  </div>
+
+  <div class="formula">
+    Equation of a horizontal line:<br>
+    <strong>y = k</strong><br>
+    Its graph is parallel to the x-axis and passes through <strong>(0, k)</strong>.
+  </div>
+
+  <div class="formula">
+    Equation of a vertical line:<br>
+    <strong>x = k</strong><br>
+    Its graph is parallel to the y-axis and passes through <strong>(k, 0)</strong>.
+  </div>
+
+  <h3>3. Equations in Slope-Intercept Form</h3>
+
+  <div class="formula">
+    General form:<br>
+    <strong>y = mx + c</strong><br>
+    m = gradient (slope)<br>
+    c = y-intercept
+  </div>
+
+  <div class="formula">
+    Equation of the form <strong>y = mx</strong> passes through the origin <strong>(0, 0)</strong>.
+  </div>
+
+  <div class="formula">
+    The y-intercept is the point <strong>(0, c)</strong> on the y-axis.
+  </div>
+
+  <div class="formula">
+    If two lines have the same gradient but different y-intercepts, they are parallel.
+  </div>
+
+  <div class="formula">
+    If <strong>m &gt; 0</strong>, the line rises from left to right.<br>
+    If <strong>m &lt; 0</strong>, the line falls from left to right.
+  </div>
+
+  <h3>4. Graphical Solution of Simultaneous Equations</h3>
+
+  <div class="formula">
+    To solve a system graphically:<br>
+    1. Draw both equations on the same coordinate axes.<br>
+    2. Plot points for each equation.<br>
+    3. Draw the straight lines.<br>
+    4. Find their point of intersection.
+  </div>
+
+  <div class="formula">
+    **Intersecting lines:** Exactly one solution.
+  </div>
+
+  <div class="formula">
+    **Parallel lines:** No solution.
+  </div>
+
+  <div class="formula">
+    **Coincident lines (the same line):** Infinitely many solutions.
+  </div>
+
+  <h3>5. Intercepts</h3>
+
+  <div class="formula">
+    <strong>x-intercept:</strong> The x-coordinate of the point where a line intersects the x-axis.
+  </div>
+
+  <div class="formula">
+    <strong>y-intercept:</strong> The y-coordinate of the point where a line intersects the y-axis.
+  </div>
+
+  <h3>6. Inequality Symbols</h3>
+
+  <div class="formula">
+    <strong>&lt;</strong> means less than.<br>
+    <strong>&gt;</strong> means greater than.<br>
+    <strong>≤</strong> means less than or equal to.<br>
+    <strong>≥</strong> means greater than or equal to.
+  </div>
+
+  <h3>7. Rules for Solving Inequalities</h3>
+
+  <div class="formula">
+    Adding the same number to both sides does not change the inequality sign.
+  </div>
+
+  <div class="formula">
+    Subtracting the same number from both sides does not change the inequality sign.
+  </div>
+
+  <div class="formula">
+    Multiplying both sides by a positive number does not change the inequality sign.
+  </div>
+
+  <div class="formula">
+    Dividing both sides by a positive number does not change the inequality sign.
+  </div>
+
+  <div class="formula">
+    Multiplying both sides by a negative number reverses the inequality sign.
+  </div>
+
+  <div class="formula">
+    Dividing both sides by a negative number reverses the inequality sign.
+  </div>
+
+  <div class="formula">
+    If <strong>a &gt; b</strong> and <strong>c &gt; 0</strong>, then:<br>
+    <strong>ac &gt; bc</strong><br>
+    <strong>a/c &gt; b/c</strong>
+  </div>
+
+  <div class="formula">
+    If <strong>a &gt; b</strong> and <strong>c &lt; 0</strong>, then:<br>
+    <strong>ac &lt; bc</strong><br>
+    <strong>a/c &lt; b/c</strong>
+  </div>
+
+  <div class="formula">
+    When solving a multi-step inequality, perform the same valid operation on both sides and reverse the sign whenever multiplying or dividing by a negative number.
+  </div>
+</div>
+  
+<!-- SECTION 2: CONCEPTS -->
+<div class="box">
+  <h2 class="section-title">CONCEPTS</h2>
+
+  <h3>1. Linear Equations in Two Variables</h3>
+  <p>A linear equation in two variables has infinitely many ordered-pair solutions. Each solution is written as (x, y).</p>
+  <p>The graph of a linear equation is a straight line. Every solution corresponds to a point on the line, and every point on the line satisfies the equation.</p>
+  <p>Two distinct points are sufficient to draw a straight line.</p>
+
+  <h3>2. Gradient and Slope</h3>
+  <p>In the equation y = mx, the value of m represents the gradient or slope of the line.</p>
+  <p>A positive gradient makes the line rise from left to right, while a negative gradient makes it fall from left to right.</p>
+  <p>The graph of y = mx passes through the origin (0, 0).</p>
+
+  <h3>3. The Equation y = mx + c</h3>
+  <p>In y = mx + c, m represents the gradient and c represents the y-intercept.</p>
+  <p>The line cuts the y-axis at (0, c). If two lines have the same gradient but different y-intercepts, they are parallel.</p>
+
+  <h3>4. Horizontal and Vertical Lines</h3>
+  <p>A horizontal line has a constant y-coordinate and is parallel to the x-axis.</p>
+  <p>A vertical line has a constant x-coordinate and is parallel to the y-axis.</p>
+
+  <h3>5. Solving Simultaneous Equations Graphically</h3>
+  <p>Draw the graphs of both equations on the same coordinate axes. The point where the lines intersect is the common solution.</p>
+  <p>There are three possible cases:</p>
+  <ul>
+    <li><strong>One solution:</strong> The lines intersect at exactly one point.</li>
+    <li><strong>No solution:</strong> The lines are parallel and never intersect.</li>
+    <li><strong>Infinitely many solutions:</strong> Both equations represent the same line.</li>
+  </ul>
+
+  <h3>6. Equations and Inequalities</h3>
+  <p>An equation states that two expressions are equal. An inequality compares two expressions using symbols such as &lt;, &gt;, ≤ or ≥.</p>
+  <p>An equation may have one, several or infinitely many solutions, depending on the equation. An inequality usually describes a range or set of values that satisfy it.</p>
+
+  <h3>7. Number Line</h3>
+  <p>Numbers increase from left to right on a number line. A number on the right is greater than a number on the left.</p>
+  <p>The solution of an inequality can be represented on a number line to show the values that satisfy it.</p>
+
+  <h3>8. Solving Word Problems</h3>
+  <ol>
+    <li>Understand the question.</li>
+    <li>Identify the known and unknown quantities.</li>
+    <li>Assign variables to the unknown quantities.</li>
+    <li>Translate the information into equations or inequalities.</li>
+    <li>Solve and interpret the result in the context of the question.</li>
+  </ol>
+</div>
+
+<!-- SECTION 3: DEFINITIONS -->
+<div class="box">
+  <h2 class="section-title">DEFINITIONS</h2>
+
+  <h3>1. Simultaneous Linear Equations</h3>
+  <p>A pair of linear equations in two variables is called a system of simultaneous linear equations. A pair (x, y) that satisfies both equations is called a solution of the system.</p>
+
+  <h3>2. Solution of a Linear Equation</h3>
+  <p>A solution of a linear equation in two variables is an ordered pair (x, y) that makes the equation true.</p>
+
+  <h3>3. Open Sentence</h3>
+  <p>An open sentence is a mathematical statement containing a variable whose truth depends on the value assigned to that variable.</p>
+
+  <h3>4. Closed Sentence</h3>
+  <p>A closed sentence is a mathematical statement that has a definite truth value, either true or false.</p>
+
+  <h3>5. Algebraic Inequality</h3>
+  <p>An algebraic inequality is a mathematical statement that compares two expressions using one of the symbols &lt;, &gt;, ≤ or ≥.</p>
+
+  <h3>6. Equation</h3>
+  <p>An equation is a mathematical sentence formed by placing the equality symbol (=) between two expressions.</p>
+
+  <h3>7. Inequality</h3>
+  <p>An inequality is a mathematical sentence formed by placing an inequality symbol (&lt;, &gt;, ≤ or ≥) between two expressions.</p>
+
+  <h3>8. Gradient (Slope)</h3>
+  <p>The gradient or slope describes the steepness and direction of a straight line.</p>
+
+  <h3>9. x-intercept</h3>
+  <p>The x-intercept is the x-coordinate of the point where a line intersects the x-axis.</p>
+
+  <h3>10. y-intercept</h3>
+  <p>The y-intercept is the y-coordinate of the point where a line intersects the y-axis.</p>
+
+  <h3>11. Horizontal Line</h3>
+  <p>A horizontal line is a straight line parallel to the x-axis. Its equation has the form y = k, where k is a constant.</p>
+
+  <h3>12. Vertical Line</h3>
+  <p>A vertical line is a straight line parallel to the y-axis. Its equation has the form x = k, where k is a constant.</p>
+</div>
+
+<!-- SECTION 4: KEY POINTS -->
+<div class="box">
+  <h2 class="section-title">KEY POINTS</h2>
+
+  <ul>
+    <li>A linear equation in two variables has a straight-line graph.</li>
+    <li>Two distinct points are enough to draw a straight line.</li>
+    <li>The graph of y = mx passes through the origin (0, 0).</li>
+    <li>In y = mx + c, m is the gradient and c is the y-intercept.</li>
+    <li>The y-intercept point is (0, c).</li>
+    <li>Lines with the same gradient and different y-intercepts are parallel.</li>
+    <li>A horizontal line has the form y = k and is parallel to the x-axis.</li>
+    <li>A vertical line has the form x = k and is parallel to the y-axis.</li>
+    <li>The graphical solution of simultaneous equations is the point of intersection of their lines.</li>
+    <li>Intersecting lines have one solution, parallel lines have no solution, and coincident lines have infinitely many solutions.</li>
+    <li>The x-intercept is associated with the x-axis, while the y-intercept is associated with the y-axis.</li>
+    <li>Numbers increase from left to right on a number line.</li>
+    <li>An inequality represents values that satisfy a comparison between expressions.</li>
+    <li>Adding or subtracting the same number on both sides does not change the inequality sign.</li>
+    <li>Multiplying or dividing both sides by a positive number does not change the inequality sign.</li>
+    <li>Multiplying or dividing both sides by a negative number reverses the inequality sign.</li>
+    <li>After solving an inequality, check that the result satisfies the original statement.</li>
+    <li>Word problems can be solved by identifying unknowns and translating the given information into equations or inequalities.</li>
+  </ul>
+</div>
+
+<a class="back-button" href="class8.html">← Back to Chapters</a>
+
+<footer>
+  Class 8 Mathematics | Formula Hub
+</footer>
+
+<script>
+const formulaSection = document.getElementById("formula-section");
+
+if (formulaSection) {
+  formulaSection.querySelectorAll(".formula").forEach((formula) => {
+    const button = document.createElement("button");
+    button.className = "copy-btn";
+    button.type = "button";
+    button.textContent = "📋";
+    button.setAttribute("aria-label", "Copy formula");
+
+    button.addEventListener("click", async () => {
+      const clone = formula.cloneNode(true);
+      const copyButton = clone.querySelector(".copy-btn");
+
+      if (copyButton) copyButton.remove();
+
+      const textToCopy = clone.innerText.trim();
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(textToCopy);
+        } else {
+          const textarea = document.createElement("textarea");
+          textarea.value = textToCopy;
+          textarea.style.position = "fixed";
+          textarea.style.opacity = "0";
+          document.body.appendChild(textarea);
+          textarea.select();
+
+          const copied = document.execCommand("copy");
+          textarea.remove();
+
+          if (!copied) throw new Error("Copy failed");
+        }
+
+        button.textContent = "✓";
+        button.disabled = true;
+
+        setTimeout(() => {
+          button.textContent = "Copied";
+
+          setTimeout(() => {
+            button.textContent = "📋";
+            button.disabled = false;
+          }, 1500);
+        }, 1500);
+
+      } catch (error) {
+        button.textContent = "Failed";
+
+        setTimeout(() => {
+          button.textContent = "📋";
+          button.disabled = false;
+        }, 1500);
+      }
+    });
+
+    formula.appendChild(button);
+  });
+}
+</script>
+
+</body>
+</html>
+

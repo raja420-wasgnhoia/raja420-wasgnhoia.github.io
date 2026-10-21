@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 12: Data Handling | Formula Hub</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fce4ec;
+  color: #222;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header {
+  background: #f8bbd0;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+h1 {
+  color: #ad1457;
+  margin: 0;
+  font-size: 26px;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+h2, h3 { color: #ad1457; }
+
+.back-button {
+  display: block;
+  width: fit-content;
+  max-width: 95%;
+  margin: 15px auto;
+  padding: 8px 16px;
+  background: #fff0f5;
+  color: #ad1457;
+  border: 1px solid #f8bbd0;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.box {
+  width: 90%;
+  margin: 15px auto;
+  padding: 15px;
+  border: 2px solid #f8bbd0;
+  border-radius: 15px;
+  background: white;
+}
+
+.formula {
+  background: #fff0f5;
+  padding: 12px;
+  padding-right: 82px;
+  margin: 10px 0;
+  border-radius: 10px;
+  position: relative;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  background: white;
+  color: #ad1457;
+  border: 1px solid #f8bbd0;
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.section-title {
+  border-bottom: 2px solid #f8bbd0;
+  padding-bottom: 7px;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  color: #ad1457;
+}
+
+@media(max-width:600px) {
+  h1 { font-size: 24px; }
+  .box { width: 94%; padding: 12px; }
+  .formula {
+    padding: 12px;
+    padding-right: 75px;
+    font-size: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>Chapter 12 - Data Handling</h2>
+  <h5> Formula Hub</h5>
+</header>
+
+<a class="back-button" href="class8.html">← Back to Chapters</a>
+
+<!-- SECTION 1: FORMULAS & RULES -->
+<div class="box" id="formula-section">
+  <h2 class="section-title">1. FORMULAS &amp; RULES</h2>
+
+  <h3>Basic Data and Frequency</h3>
+
+  <div class="formula">
+    <strong>Range:</strong><br>
+    R = Maximum value − Minimum value
+  </div>
+
+  <div class="formula">
+    <strong>Class Interval Size:</strong><br>
+    h = Difference between consecutive lower class limits
+  </div>
+
+  <div class="formula">
+    <strong>Class Mark / Midpoint:</strong><br>
+    x = (Lower class limit + Upper class limit) / 2
+  </div>
+
+  <div class="formula">
+    <strong>Class Boundaries for Integer Data:</strong><br>
+    Lower boundary = Lower limit − 0.5<br>
+    Upper boundary = Upper limit + 0.5
+  </div>
+
+  <div class="formula">
+    <strong>Approximate Class Interval:</strong><br>
+    h = Range / Number of classes
+  </div>
+
+  <div class="formula">
+    <strong>Frequency Rule:</strong><br>
+    Sum of all frequencies = Total number of observations
+  </div>
+
+  <div class="formula">
+    <strong>Mean:</strong><br>
+    x̄ = Σx / n
+  </div>
+
+  <h3>Measures of Dispersion</h3>
+
+  <div class="formula">
+    <strong>Range:</strong><br>
+    R = x<sub>max</sub> − x<sub>min</sub>
+  </div>
+
+  <div class="formula">
+    <strong>Variance:</strong><br>
+    S² = Σ(x − x̄)² / n
+  </div>
+
+  <div class="formula">
+    <strong>Shortcut Formula for Variance:</strong><br>
+    S² = (Σx² / n) − (Σx / n)²
+  </div>
+
+  <div class="formula">
+    <strong>Standard Deviation:</strong><br>
+    S = √[Σ(x − x̄)² / n]
+  </div>
+
+  <div class="formula">
+    <strong>Shortcut Formula for Standard Deviation:</strong><br>
+    S = √[(Σx² / n) − (Σx / n)²]
+  </div>
+
+  <h3>Properties of Variance</h3>
+
+  <div class="formula">
+    <strong>Non-negative:</strong><br>
+    S² ≥ 0
+  </div>
+
+  <div class="formula">
+    <strong>Constant Data:</strong><br>
+    If all values are equal, S² = 0
+  </div>
+
+  <div class="formula">
+    <strong>Change of Origin:</strong><br>
+    Var(x ± c) = Var(x)
+  </div>
+
+  <div class="formula">
+    <strong>Change of Scale:</strong><br>
+    Var(cx) = c² Var(x)<br>
+    Var(x/c) = Var(x) / c², c ≠ 0
+  </div>
+
+  <h3>Properties of Standard Deviation</h3>
+
+  <div class="formula">
+    <strong>Non-negative:</strong><br>
+    S ≥ 0
+  </div>
+
+  <div class="formula">
+    <strong>Constant Data:</strong><br>
+    If all values are equal, S = 0
+  </div>
+
+  <div class="formula">
+    <strong>Change of Origin:</strong><br>
+    SD(x ± c) = SD(x)
+  </div>
+
+  <div class="formula">
+    <strong>Change of Scale:</strong><br>
+    SD(cx) = |c| SD(x)<br>
+    SD(x/c) = SD(x) / |c|, c ≠ 0
+  </div>
+
+  <div class="formula">
+    <strong>Consistency Rule:</strong><br>
+    Lower standard deviation = Greater consistency
+  </div>
+</div>
+
+<!-- SECTION 2: CONCEPTS -->
+<div class="box">
+  <h2 class="section-title">2. CONCEPTS</h2>
+
+  <h3>Types of Data</h3>
+  <ul>
+    <li><strong>Discrete Data:</strong> Countable values obtained by counting.</li>
+    <li><strong>Continuous Data:</strong> Measurements that can take any value within a range.</li>
+    <li><strong>Ungrouped Data:</strong> Raw data listed individually.</li>
+    <li><strong>Grouped Data:</strong> Data arranged into classes with frequencies.</li>
+  </ul>
+
+  <h3>Frequency Distribution</h3>
+  <ul>
+    <li>Organizes data in a table with frequencies.</li>
+    <li>Common methods: tally marks and direct observation.</li>
+    <li>Usually, 5–15 classes are selected depending on the data.</li>
+    <li>Every fifth tally mark is drawn diagonally across the first four.</li>
+    <li>The sum of frequencies must equal the total observations.</li>
+    <li>The difference between consecutive class marks equals the class interval.</li>
+  </ul>
+
+  <h3>Graphs</h3>
+  <ul>
+    <li><strong>Line Graph:</strong> Points joined by straight line segments; useful for showing change over time.</li>
+    <li><strong>Histogram:</strong> Adjacent rectangles representing a continuous frequency distribution.</li>
+    <li><strong>Frequency Polygon:</strong> Class marks plotted against frequencies and joined by straight lines.</li>
+    <li><strong>Bar Graph:</strong> Compares separate categories using bars.</li>
+    <li><strong>Multiple Bar Graph:</strong> Compares two or more related sets of data.</li>
+    <li><strong>Pie Graph:</strong> Shows how categories contribute to a whole.</li>
+  </ul>
+
+  <h3>Measures of Dispersion</h3>
+  <ul>
+    <li>Dispersion describes how spread out the data values are.</li>
+    <li>Two datasets can have the same mean but different dispersions.</li>
+    <li>Range uses only the smallest and largest values.</li>
+    <li>Variance is the mean of squared deviations from the mean.</li>
+    <li>Squaring deviations prevents positive and negative deviations from cancelling.</li>
+    <li>Standard deviation is the positive square root of variance.</li>
+    <li>Standard deviation is expressed in the same unit as the original data.</li>
+  </ul>
+</div>
+
+<!-- SECTION 3: DEFINITIONS -->
+<div class="box">
+  <h2 class="section-title">3. DEFINITIONS</h2>
+
+  <p><strong>Data:</strong> A collection of numerical facts or information about objects or events.</p>
+
+  <p><strong>Discrete Data:</strong> Data consisting of separate, countable values obtained by counting.</p>
+
+  <p><strong>Continuous Data:</strong> Data obtained by measurement that can take any value within a given range.</p>
+
+  <p><strong>Frequency:</strong> The number of times a value occurs or the number of observations in a class.</p>
+
+  <p><strong>Frequency Distribution:</strong> A tabular arrangement of data showing the frequencies of values or classes.</p>
+
+  <p><strong>Grouped Frequency Distribution:</strong> A frequency distribution in which data is divided into classes and each class has a frequency.</p>
+
+  <p><strong>Class Limits:</strong> The lower and upper values that define a class interval.</p>
+
+  <p><strong>Class Boundaries:</strong> The values that separate consecutive classes without gaps.</p>
+
+  <p><strong>Class Interval:</strong> The size or width of a class in a frequency distribution.</p>
+
+  <p><strong>Class Mark:</strong> The midpoint of a class interval.</p>
+
+  <p><strong>Line Graph:</strong> A graph in which plotted data points are joined by straight line segments.</p>
+
+  <p><strong>Histogram:</strong> A graph of a continuous frequency distribution using adjacent rectangles.</p>
+
+  <p><strong>Frequency Polygon:</strong> A graph formed by plotting class marks against frequencies and joining the points with straight lines.</p>
+
+  <p><strong>Measure of Central Tendency:</strong> A single value that represents the centre of a dataset, such as the mean, median or mode.</p>
+
+  <p><strong>Measure of Dispersion:</strong> A statistical measure that describes the spread of values around a central value.</p>
+
+  <p><strong>Range:</strong> The difference between the maximum and minimum values in a dataset.</p>
+
+  <p><strong>Variance:</strong> The mean of the squared deviations of data values from their mean.</p>
+
+  <p><strong>Standard Deviation:</strong> The positive square root of variance, measuring the spread of data values around the mean.</p>
+
+  <p><strong>Consistency:</strong> The degree to which data values or performance results remain close together.</p>
+</div>
+
+<!-- SECTION 4: KEY POINTS -->
+<div class="box">
+  <h2 class="section-title">4. KEY POINTS</h2>
+
+  <ul>
+    <li>Discrete data is counted; continuous data is measured.</li>
+    <li>Grouped data is arranged into class intervals.</li>
+    <li>For integer classes, boundaries are commonly found by subtracting 0.5 from the lower limit and adding 0.5 to the upper limit.</li>
+    <li>Class marks are the midpoints of their class intervals.</li>
+    <li>Always label graph axes and provide a suitable title.</li>
+    <li>Histogram bars touch because the intervals represent continuous data.</li>
+    <li>A frequency polygon can be drawn over a histogram by joining the midpoints of the tops of the rectangles.</li>
+    <li>Zero-frequency classes are added at both ends when closing a frequency polygon.</li>
+    <li>Choose a graph according to the type of data and the comparison required.</li>
+    <li>Range is simple and quick but depends only on the extreme values.</li>
+    <li>Variance is always non-negative.</li>
+    <li>When all observations are equal, variance and standard deviation are both zero.</li>
+    <li>Adding or subtracting a constant from every value does not change variance or standard deviation.</li>
+    <li>Multiplying every value by a constant multiplies variance by the square of that constant.</li>
+    <li>Multiplying every value by a constant multiplies standard deviation by the absolute value of that constant.</li>
+    <li>Lower standard deviation indicates greater consistency; higher standard deviation indicates greater spread.</li>
+    <li>A higher mean indicates a higher average, not necessarily greater consistency.</li>
+  </ul>
+</div>
+
+<a class="back-button" href="class8.html">← Back to Chapters</a>
+
+<footer>
+  Class 8 Mathematics | Formula Hub
+</footer>
+
+<script>
+const formulaSection = document.getElementById("formula-section");
+
+if (formulaSection) {
+  formulaSection.querySelectorAll(".formula").forEach((formula) => {
+    const button = document.createElement("button");
+    button.className = "copy-btn";
+    button.type = "button";
+    button.textContent = "📋";
+    button.setAttribute("aria-label", "Copy formula");
+
+    button.addEventListener("click", async () => {
+      const clone = formula.cloneNode(true);
+      const copyButton = clone.querySelector(".copy-btn");
+
+      if (copyButton) copyButton.remove();
+
+      const textToCopy = clone.innerText.trim();
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(textToCopy);
+        } else {
+          const textarea = document.createElement("textarea");
+          textarea.value = textToCopy;
+          textarea.style.position = "fixed";
+          textarea.style.opacity = "0";
+          document.body.appendChild(textarea);
+          textarea.select();
+
+          const copied = document.execCommand("copy");
+          textarea.remove();
+
+          if (!copied) throw new Error("Copy failed");
+        }
+
+        button.textContent = "✓";
+        button.disabled = true;
+
+        setTimeout(() => {
+          button.textContent = "Copied";
+
+          setTimeout(() => {
+            button.textContent = "📋";
+            button.disabled = false;
+          }, 1500);
+        }, 1500);
+
+      } catch (error) {
+        button.textContent = "Failed";
+
+        setTimeout(() => {
+          button.textContent = "📋";
+          button.disabled = false;
+        }, 1500);
+      }
+    });
+
+    formula.appendChild(button);
+  });
+}
+</script>
+
+</body>
+</html>

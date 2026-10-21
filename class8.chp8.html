@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 8 - Transformations</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fce4ec;
+      color: #222;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #f8bbd0;
+      padding: 25px 15px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ad1457;
+      margin: 0;
+      font-size: 26px;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      font-size: 16px;
+    }
+
+    h2, h3 { color: #ad1457; }
+
+    .back-button {
+      display: block;
+      width: fit-content;
+      max-width: 95%;
+      margin: 15px auto;
+      padding: 8px 16px;
+      background: #fff0f5;
+      color: #ad1457;
+      border: 1px solid #f8bbd0;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .box {
+      width: 90%;
+      margin: 15px auto;
+      padding: 15px;
+      border: 2px solid #f8bbd0;
+      border-radius: 15px;
+      background: white;
+    }
+
+    .formula {
+      background: #fff0f5;
+      padding: 12px;
+      padding-right: 82px;
+      margin: 10px 0;
+      border-radius: 10px;
+      position: relative;
+      overflow-wrap: anywhere;
+      line-height: 1.8;
+    }
+
+    .copy-btn {
+      position: absolute;
+      right: 7px;
+      top: 7px;
+      background: white;
+      color: #ad1457;
+      border: 1px solid #f8bbd0;
+      border-radius: 8px;
+      padding: 5px 8px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #f8bbd0;
+      padding-bottom: 7px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      color: #ad1457;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 24px; }
+      .box { width: 94%; padding: 12px; }
+      .formula {
+        padding: 12px;
+        padding-right: 75px;
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>Chapter 8 - Transformations</h2>
+  <h5> Formula Hub</h5>
+</header>
+
+<a class="back-button" href="class8.html">← Back to Chapters</a>
+
+<!-- SECTION 1: FORMULAS & RULES -->
+<div class="box" id="formula-section">
+  <h2 class="section-title">FORMULAS &amp; RULES</h2>
+
+  <h3>1. Translation</h3>
+
+  <div class="formula">
+    Translation rule:<br>
+    <strong>(x, y) → (x + a, y + b)</strong><br>
+    Right/left movement changes x; up/down movement changes y.
+  </div>
+
+  <h3>2. Reflection</h3>
+
+  <div class="formula">
+    Reflection across the x-axis:<br>
+    <strong>(x, y) → (x, −y)</strong><br>
+    The y-coordinate changes sign.
+  </div>
+
+  <div class="formula">
+    Reflection across the y-axis:<br>
+    <strong>(x, y) → (−x, y)</strong><br>
+    The x-coordinate changes sign.
+  </div>
+
+  <h3>3. Rotation About the Origin</h3>
+
+  <div class="formula">
+    90° clockwise rotation:<br>
+    <strong>(x, y) → (y, −x)</strong>
+  </div>
+
+  <div class="formula">
+    90° anticlockwise rotation:<br>
+    <strong>(x, y) → (−y, x)</strong>
+  </div>
+
+  <div class="formula">
+    180° rotation, clockwise or anticlockwise:<br>
+    <strong>(x, y) → (−x, −y)</strong>
+  </div>
+
+  <div class="formula">
+    Quarter turn = <strong>90°</strong><br>
+    Half turn = <strong>180°</strong><br>
+    Full turn = <strong>360°</strong>
+  </div>
+
+  <h3>4. Dilation</h3>
+
+  <div class="formula">
+    Dilation about the origin:<br>
+    <strong>(x, y) → (kx, ky)</strong><br>
+    k = scale factor, <strong>k ≠ 0</strong>.
+  </div>
+
+  <div class="formula">
+    <strong>k &gt; 1</strong> → Enlargement<br>
+    <strong>0 &lt; k &lt; 1</strong> → Reduction
+  </div>
+
+  <div class="formula">
+    Distance of an image point from the centre of dilation:<br>
+    <strong>Image distance = k × original distance</strong>
+  </div>
+
+  <div class="formula">
+    If the centre of dilation is a vertex of the original figure, that centre remains fixed in the image.
+  </div>
+
+  <h3>5. Rigid and Non-Rigid Transformations</h3>
+
+  <div class="formula">
+    Rigid transformations:<br>
+    <strong>Translation, reflection and rotation</strong><br>
+    Side lengths, angles, perimeter and area remain unchanged. The image is congruent to the pre-image.
+  </div>
+
+  <div class="formula">
+    Non-rigid transformation:<br>
+    <strong>Dilation</strong><br>
+    The size changes, but the shape and angle measures remain the same. The image is similar to the pre-image.
+  </div>
+
+  <h3>6. Four Transformations: Quick Rules</h3>
+
+  <div class="formula">
+    <strong>Translation</strong> → Slide<br>
+    <strong>Reflection</strong> → Flip<br>
+    <strong>Rotation</strong> → Turn<br>
+    <strong>Dilation</strong> → Enlarge or reduce
+  </div>
+</div>
+  
+<!-- SECTION 2: CONCEPTS -->
+<div class="box">
+  <h2 class="section-title">CONCEPTS</h2>
+
+  <h3>1. The Four Transformations</h3>
+  <ul>
+    <li><strong>Translation:</strong> Moves a figure without turning or flipping it.</li>
+    <li><strong>Reflection:</strong> Flips a figure across a mirror line.</li>
+    <li><strong>Rotation:</strong> Turns a figure around a fixed point.</li>
+    <li><strong>Dilation:</strong> Changes the size of a figure while preserving its shape.</li>
+  </ul>
+
+  <h3>2. Pre-image and Image</h3>
+  <p>The pre-image is the original figure before a transformation. The image is the figure after the transformation.</p>
+
+  <h3>3. Reflection</h3>
+  <p>A reflection creates a mirror image across a line of reflection. The figure flips, but it does not slide or turn.</p>
+  <p>The line of reflection may be horizontal, vertical or diagonal.</p>
+
+  <h3>4. Rotation</h3>
+  <p>A rotation turns a figure around a fixed point called the centre of rotation.</p>
+  <p>A rotation is described by its centre, angle and direction: clockwise or anticlockwise.</p>
+
+  <h3>5. Dilation</h3>
+  <p>A dilation changes the size of a figure according to its scale factor.</p>
+  <p>The centre of dilation is the fixed reference point. The scale factor determines whether the image is enlarged or reduced.</p>
+  <p>The image and pre-image have the same shape and are similar.</p>
+
+  <h3>6. Rigid Transformations</h3>
+  <p>Translations, reflections and rotations are rigid transformations. They preserve lengths, angles, perimeter and area, so the image and pre-image are congruent.</p>
+
+  <h3>7. Non-Rigid Transformations</h3>
+  <p>Dilation is a non-rigid transformation. It changes lengths and area but preserves angle measures and shape, so the image and pre-image are similar.</p>
+</div>
+
+<!-- SECTION 3: DEFINITIONS -->
+<div class="box">
+  <h2 class="section-title">DEFINITIONS</h2>
+
+  <h3>1. Transformation</h3>
+  <p>A transformation changes an initial figure into a final image.</p>
+
+  <h3>2. Translation</h3>
+  <p>A translation is a transformation that slides a figure along a straight line.</p>
+
+  <h3>3. Reflection</h3>
+  <p>A reflection is a transformation that flips a figure across a line to produce its mirror image.</p>
+
+  <h3>4. Line of Reflection</h3>
+  <p>The line across which a figure is reflected is called the line of reflection or mirror line.</p>
+
+  <h3>5. Rotation</h3>
+  <p>A rotation is a transformation that turns a figure around a fixed point.</p>
+
+  <h3>6. Centre of Rotation</h3>
+  <p>The fixed point around which a figure rotates is called the centre of rotation.</p>
+
+  <h3>7. Angle of Rotation</h3>
+  <p>The amount a figure turns, measured in degrees, is called the angle of rotation.</p>
+
+  <h3>8. Dilation</h3>
+  <p>A dilation is a transformation that produces an image with the same shape but a different size.</p>
+
+  <h3>9. Centre of Dilation</h3>
+  <p>The fixed point from which the distances to image points are measured is called the centre of dilation.</p>
+
+  <h3>10. Scale Factor</h3>
+  <p>The number that determines the enlargement or reduction of a figure is called the scale factor.</p>
+
+  <h3>11. Enlargement</h3>
+  <p>An enlargement is a dilation that produces an image larger than the original figure.</p>
+
+  <h3>12. Reduction</h3>
+  <p>A reduction is a dilation that produces an image smaller than the original figure.</p>
+
+  <h3>13. Congruent Figures</h3>
+  <p>Figures that have the same shape and size are called congruent figures.</p>
+
+  <h3>14. Similar Figures</h3>
+  <p>Figures that have the same shape and equal corresponding angles, but may have different sizes, are called similar figures.</p>
+
+  <h3>15. Rigid Transformation</h3>
+  <p>A rigid transformation preserves lengths and angles, producing an image congruent to the pre-image.</p>
+
+  <h3>16. Non-Rigid Transformation</h3>
+  <p>A non-rigid transformation changes lengths or size while preserving the shape and angle measures in a dilation.</p>
+</div>
+
+
+<!-- SECTION 4: KEY POINTS -->
+<div class="box">
+  <h2 class="section-title">KEY POINTS</h2>
+
+  <ul>
+    <li>There are four basic transformations: translation, reflection, rotation and dilation.</li>
+    <li>Translation slides a figure; reflection flips it; rotation turns it; dilation changes its size.</li>
+    <li>Reflection across the x-axis changes the sign of y.</li>
+    <li>Reflection across the y-axis changes the sign of x.</li>
+    <li>A 90° clockwise rotation uses (x, y) → (y, −x).</li>
+    <li>A 90° anticlockwise rotation uses (x, y) → (−y, x).</li>
+    <li>A 180° rotation uses (x, y) → (−x, −y).</li>
+    <li>Rigid transformations are translation, reflection and rotation.</li>
+    <li>Rigid transformations preserve lengths, angles, perimeter and area.</li>
+    <li>Rigid transformations produce congruent figures.</li>
+    <li>Dilation is a non-rigid transformation and produces a similar figure.</li>
+    <li>A scale factor greater than 1 produces an enlargement.</li>
+    <li>A positive scale factor between 0 and 1 produces a reduction.</li>
+    <li>In dilation about the origin, multiply both coordinates by the scale factor.</li>
+    <li>The centre of dilation may be the origin or another fixed point.</li>
+    <li>Rotation requires a centre, an angle and a direction.</li>
+  </ul>
+</div>
+
+<a class="back-button" href="class8.html">← Back to Chapters</a>
+
+<footer>
+  Class 8 Mathematics | Formula Hub
+</footer>
+
+<script>
+const formulaSection = document.getElementById("formula-section");
+
+if (formulaSection) {
+  formulaSection.querySelectorAll(".formula").forEach((formula) => {
+    const button = document.createElement("button");
+
+    button.className = "copy-btn";
+    button.type = "button";
+    button.textContent = "📋";
+    button.setAttribute("aria-label", "Copy formula");
+
+    button.addEventListener("click", async () => {
+      const clone = formula.cloneNode(true);
+      const copyButton = clone.querySelector(".copy-btn");
+
+      if (copyButton) copyButton.remove();
+
+      const textToCopy = clone.innerText.trim();
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(textToCopy);
+        } else {
+          const textarea = document.createElement("textarea");
+          textarea.value = textToCopy;
+          textarea.style.position = "fixed";
+          textarea.style.opacity = "0";
+
+          document.body.appendChild(textarea);
+          textarea.select();
+
+          const copied = document.execCommand("copy");
+          textarea.remove();
+
+          if (!copied) throw new Error("Copy failed");
+        }
+
+        button.textContent = "✓";
+        button.disabled = true;
+
+        setTimeout(() => {
+          button.textContent = "Copied";
+
+          setTimeout(() => {
+            button.textContent = "📋";
+            button.disabled = false;
+          }, 1500);
+        }, 1500);
+
+      } catch (error) {
+        button.textContent = "Failed";
+
+        setTimeout(() => {
+          button.textContent = "📋";
+          button.disabled = false;
+        }, 1500);
+      }
+    });
+
+    formula.appendChild(button);
+  });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,624 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 8 Mathematics - Unit 6: Algebra and Sequence</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fce4ec;
+  color: #222;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header {
+  background: #f8bbd0;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+h1 {
+  color: #ad1457;
+  margin: 0;
+  font-size: 26px;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+h2, h3 {
+  color: #ad1457;
+}
+
+.back-button {
+  display: block;
+  width: fit-content;
+  max-width: 95%;
+  margin: 15px auto;
+  padding: 8px 16px;
+  background: #fff0f5;
+  color: #ad1457;
+  border: 1px solid #f8bbd0;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.box {
+  width: 90%;
+  margin: 15px auto;
+  padding: 15px;
+  border: 2px solid #f8bbd0;
+  border-radius: 15px;
+  background: white;
+}
+
+.formula {
+  background: #fff0f5;
+  padding: 12px;
+  padding-right: 82px;
+  margin: 10px 0;
+  border-radius: 10px;
+  position: relative;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  background: white;
+  color: #ad1457;
+  border: 1px solid #f8bbd0;
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.copy-btn:disabled {
+  cursor: default;
+  opacity: 0.85;
+}
+
+.section-title {
+  border-bottom: 2px solid #f8bbd0;
+  padding-bottom: 7px;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  color: #ad1457;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .box {
+    width: 94%;
+    padding: 12px;
+  }
+
+  .formula {
+    padding: 12px;
+    padding-right: 75px;
+    font-size: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Chapter 6 - Algebra and Sequence</h1>
+  <h5>Formula Hub</h5>
+</header>
+
+<a class="back-button" href="class8.html">← Back to Chapters</a>
+
+<div class="box" id="formula-section">
+  <h2 class="section-title">FORMULAS &amp; RULES</h2>
+
+  <div class="formula">
+    <strong>Polynomial Addition:</strong>
+    Add like terms by combining their coefficients.
+  </div>
+
+  <div class="formula">
+    <strong>Polynomial Subtraction:</strong>
+    Change the signs of all terms in the subtracted polynomial, then combine like terms.
+  </div>
+
+  <div class="formula">
+    <strong>Polynomial Multiplication:</strong>
+    a(b + c) = ab + ac
+  </div>
+
+  <div class="formula">
+    <strong>Product Law of Exponents:</strong>
+    x<sup>m</sup> × x<sup>n</sup> = x<sup>m+n</sup>
+  </div>
+
+  <div class="formula">
+    <strong>Power of a Product:</strong>
+    (xy)<sup>n</sup> = x<sup>n</sup>y<sup>n</sup>
+  </div>
+
+  <div class="formula">
+    <strong>Quotient Law of Exponents:</strong>
+    x<sup>m</sup> ÷ x<sup>n</sup> = x<sup>m−n</sup>, where x ≠ 0 and m &gt; n.
+  </div>
+
+  <div class="formula">
+    <strong>Quotient of Equal Powers:</strong>
+    x<sup>n</sup> ÷ y<sup>n</sup> = (x/y)<sup>n</sup>, where y ≠ 0.
+  </div>
+
+  <div class="formula">
+    <strong>Power Law:</strong>
+    (x<sup>n</sup>)<sup>m</sup> = x<sup>nm</sup>
+  </div>
+
+  <div class="formula">
+    <strong>Zero Exponent Law:</strong>
+    x<sup>0</sup> = 1, where x ≠ 0.
+  </div>
+
+  <div class="formula">
+    <strong>Negative Exponent Law:</strong>
+    x<sup>−n</sup> = 1/x<sup>n</sup>, where x ≠ 0.
+  </div>
+
+  <div class="formula">
+    <strong>Negative Base with Odd Exponent:</strong>
+    (−x)<sup>n</sup> is negative when n is odd.
+  </div>
+
+  <div class="formula">
+    <strong>Negative Base with Even Exponent:</strong>
+    (−x)<sup>n</sup> is positive when n is even.
+  </div>
+
+  <div class="formula">
+    <strong>Dividend Formula:</strong>
+    Dividend = Divisor × Quotient + Remainder
+  </div>
+
+  <div class="formula">
+    <strong>Polynomial Division:</strong>
+    Dividend ÷ Divisor gives a Quotient and a Remainder.
+  </div>
+
+  <div class="formula">
+    <strong>Square of a Sum:</strong>
+    (a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup>
+  </div>
+
+  <div class="formula">
+    <strong>Square of a Difference:</strong>
+    (a − b)<sup>2</sup> = a<sup>2</sup> − 2ab + b<sup>2</sup>
+  </div>
+
+  <div class="formula">
+    <strong>Sum and Difference:</strong>
+    (a + b)(a − b) = a<sup>2</sup> − b<sup>2</sup>
+  </div>
+
+  <div class="formula">
+    <strong>Cube of a Sum:</strong>
+    (a + b)<sup>3</sup> = a<sup>3</sup> + 3ab(a + b) + b<sup>3</sup>
+  </div>
+
+  <div class="formula">
+    <strong>Cube of a Difference:</strong>
+    (a − b)<sup>3</sup> = a<sup>3</sup> − 3ab(a − b) − b<sup>3</sup>
+  </div>
+
+  <div class="formula">
+    <strong>Perfect Square Trinomial:</strong>
+    a<sup>2</sup> + 2ab + b<sup>2</sup> = (a + b)<sup>2</sup>
+  </div>
+
+  <div class="formula">
+    <strong>Perfect Square Trinomial:</strong>
+    a<sup>2</sup> − 2ab + b<sup>2</sup> = (a − b)<sup>2</sup>
+  </div>
+
+  <div class="formula">
+    <strong>Difference of Squares:</strong>
+    a<sup>2</sup> − b<sup>2</sup> = (a + b)(a − b)
+  </div>
+
+  <div class="formula">
+    <strong>Factorization Identity:</strong>
+    a<sup>2</sup> + 2ab + b<sup>2</sup> − c<sup>2</sup> = (a + b + c)(a + b − c)
+  </div>
+
+  <div class="formula">
+    <strong>Factorization Identity:</strong>
+    a<sup>2</sup> − 2ab + b<sup>2</sup> − c<sup>2</sup> = (a − b + c)(a − b − c)
+  </div>
+
+  <div class="formula">
+    <strong>Difference of Fourth Powers:</strong>
+    a<sup>4</sup> − b<sup>4</sup> = (a<sup>2</sup> + b<sup>2</sup>)(a + b)(a − b)
+  </div>
+</div>
+  
+<div class="box">
+  <h2 class="section-title">CONCEPTS</h2>
+
+  <div class="formula">
+    <strong>Algebraic Expressions:</strong>
+    Expressions combine numbers, variables and mathematical operations.
+  </div>
+
+  <div class="formula">
+    <strong>Polynomials:</strong>
+    Polynomials are formed from one or more monomial terms.
+  </div>
+
+  <div class="formula">
+    <strong>Types by Number of Terms:</strong>
+    Monomial has one term, binomial has two terms, trinomial has three terms, and a polynomial may have several terms.
+  </div>
+
+  <div class="formula">
+    <strong>Types by Degree:</strong>
+    Constant polynomials have degree 0, linear degree 1, quadratic degree 2 and cubic degree 3.
+  </div>
+
+  <div class="formula">
+    <strong>Degree of a Monomial:</strong>
+    Add the exponents of all its variables.
+  </div>
+
+  <div class="formula">
+    <strong>Degree of a Polynomial:</strong>
+    The greatest degree among its non-zero terms.
+  </div>
+
+  <div class="formula">
+    <strong>FOIL Method:</strong>
+    A method for multiplying two binomials: First, Outer, Inner and Last.
+  </div>
+
+  <div class="formula">
+    <strong>Laws of Exponents:</strong>
+    These laws simplify multiplication, division and powers of expressions.
+  </div>
+
+  <div class="formula">
+    <strong>Zero Exponent:</strong>
+    Any non-zero number raised to the power zero equals one.
+  </div>
+
+  <div class="formula">
+    <strong>Negative Exponent:</strong>
+    A negative exponent indicates the reciprocal of the corresponding positive power.
+  </div>
+
+  <div class="formula">
+    <strong>Polynomial Division:</strong>
+    A polynomial can be divided by a monomial or another polynomial using suitable division methods.
+  </div>
+
+  <div class="formula">
+    <strong>Long Division:</strong>
+    Repeatedly divide the leading terms, multiply, subtract and continue until the remainder has lower degree than the divisor.
+  </div>
+
+  <div class="formula">
+    <strong>Perfect Square Trinomial:</strong>
+    A trinomial that can be written as the square of a binomial.
+  </div>
+
+  <div class="formula">
+    <strong>Sum and Difference Pattern:</strong>
+    The product of two binomials with the same terms but opposite signs gives a difference of squares.
+  </div>
+
+  <div class="formula">
+    <strong>Factorization:</strong>
+    Expressing a polynomial as a product of its factors.
+  </div>
+
+  <div class="formula">
+    <strong>Arithmetic Sequence:</strong>
+    A sequence in which the difference between consecutive terms is constant.
+  </div>
+
+  <div class="formula">
+    <strong>Geometric Sequence:</strong>
+    A sequence in which the ratio between consecutive terms is constant.
+  </div>
+</div>
+
+<div class="box">
+  <h2 class="section-title">DEFINITIONS</h2>
+
+  <div class="formula">
+    <strong>Algebraic Expression:</strong>
+    A combination of variables, numbers and operation signs.
+  </div>
+
+  <div class="formula">
+    <strong>Monomial:</strong>
+    A number, a variable or a product of numbers and variables with non-negative integer exponents.
+  </div>
+
+  <div class="formula">
+    <strong>Polynomial:</strong>
+    A monomial or a sum of monomials.
+  </div>
+
+  <div class="formula">
+    <strong>Term:</strong>
+    Each part of an algebraic expression separated by addition or subtraction signs.
+  </div>
+
+  <div class="formula">
+    <strong>Binomial:</strong>
+    A polynomial consisting of two terms.
+  </div>
+
+  <div class="formula">
+    <strong>Trinomial:</strong>
+    A polynomial consisting of three terms.
+  </div>
+
+  <div class="formula">
+    <strong>Degree of a Monomial:</strong>
+    The sum of the exponents of its variables.
+  </div>
+
+  <div class="formula">
+    <strong>Degree of a Polynomial:</strong>
+    The highest degree of its non-zero terms.
+  </div>
+
+  <div class="formula">
+    <strong>Constant Polynomial:</strong>
+    A non-zero polynomial of degree zero.
+  </div>
+
+  <div class="formula">
+    <strong>Linear Polynomial:</strong>
+    A polynomial of degree one.
+  </div>
+
+  <div class="formula">
+    <strong>Quadratic Polynomial:</strong>
+    A polynomial of degree two.
+  </div>
+
+  <div class="formula">
+    <strong>Cubic Polynomial:</strong>
+    A polynomial of degree three.
+  </div>
+
+  <div class="formula">
+    <strong>Dividend:</strong>
+    The expression being divided.
+  </div>
+
+  <div class="formula">
+    <strong>Divisor:</strong>
+    The expression by which the dividend is divided.
+  </div>
+
+  <div class="formula">
+    <strong>Quotient:</strong>
+    The result obtained by dividing the dividend by the divisor.
+  </div>
+
+  <div class="formula">
+    <strong>Remainder:</strong>
+    The amount left after division.
+  </div>
+
+  <div class="formula">
+    <strong>Factor:</strong>
+    An expression that divides another expression exactly, leaving zero remainder.
+  </div>
+
+  <div class="formula">
+    <strong>Exponent:</strong>
+    The number that indicates how many times a base is used as a factor.
+  </div>
+
+  <div class="formula">
+    <strong>Factorization:</strong>
+    The process of expressing an algebraic expression as a product of factors.
+  </div>
+
+  <div class="formula">
+    <strong>Identity:</strong>
+    An equality that remains true for every permitted value of its variables.
+  </div>
+</div>
+  
+<div class="box">
+  <h2 class="section-title">KEY POINTS</h2>
+
+  <div class="formula">
+    Like terms have the same variables raised to the same powers. Only their coefficients are combined.
+  </div>
+
+  <div class="formula">
+    When subtracting a polynomial, change the sign of every term in the polynomial being subtracted.
+  </div>
+
+  <div class="formula">
+    In polynomial multiplication, use the distributive property and combine like terms.
+  </div>
+
+  <div class="formula">
+    A polynomial's degree is determined by its highest-degree non-zero term.
+  </div>
+
+  <div class="formula">
+    When multiplying powers with the same base, add the exponents.
+  </div>
+
+  <div class="formula">
+    When dividing powers with the same non-zero base, subtract the exponents.
+  </div>
+
+  <div class="formula">
+    When raising a power to another power, multiply the exponents.
+  </div>
+
+  <div class="formula">
+    A power of a product applies to every factor inside the parentheses.
+  </div>
+
+  <div class="formula">
+    A zero exponent gives one only when the base is non-zero.
+  </div>
+
+  <div class="formula">
+    A negative exponent can be changed to a positive exponent by taking the reciprocal.
+  </div>
+
+  <div class="formula">
+    A negative base raised to an odd integer power gives a negative result; an even integer power gives a positive result.
+  </div>
+
+  <div class="formula">
+    In polynomial division, Dividend = Divisor × Quotient + Remainder.
+  </div>
+
+  <div class="formula">
+    When the remainder is zero, the divisor is a factor of the dividend.
+  </div>
+
+  <div class="formula">
+    In long division, arrange polynomial terms in descending order of degree and include missing powers with zero coefficients when necessary.
+  </div>
+
+  <div class="formula">
+    During subtraction in long division, change the signs of all terms in the product being subtracted.
+  </div>
+
+  <div class="formula">
+    The remainder must have a lower degree than the divisor, unless the remainder is zero.
+  </div>
+
+  <div class="formula">
+    Perfect-square identities are useful for expanding and factorizing algebraic expressions.
+  </div>
+
+  <div class="formula">
+    The difference of two squares can be factorized into the product of a sum and a difference.
+  </div>
+
+  <div class="formula">
+    For expressions of the form a² ± 2ab + b² − c², first identify the perfect-square trinomial, then use the difference-of-squares identity.
+  </div>
+
+  <div class="formula">
+    The FOIL method stands for First, Outer, Inner and Last.
+  </div>
+
+  <div class="formula">
+    An arithmetic sequence has a constant difference; a geometric sequence has a constant ratio.
+  </div>
+</div>
+
+<a class="back-button" href="class8.html">← Back to Chapters</a>
+
+<footer>
+  Class 8 Mathematics | Formula Hub
+</footer>
+
+<script>
+const formulaSection = document.getElementById("formula-section");
+
+if (formulaSection) {
+  formulaSection.querySelectorAll(".formula").forEach((formula) => {
+    const button = document.createElement("button");
+
+    button.className = "copy-btn";
+    button.type = "button";
+    button.textContent = "📋";
+    button.setAttribute("aria-label", "Copy formula");
+
+    button.addEventListener("click", async () => {
+      const clone = formula.cloneNode(true);
+      const copyButton = clone.querySelector(".copy-btn");
+
+      if (copyButton) {
+        copyButton.remove();
+      }
+
+      const textToCopy = clone.innerText.trim();
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(textToCopy);
+        } else {
+          const textarea = document.createElement("textarea");
+          textarea.value = textToCopy;
+          textarea.style.position = "fixed";
+          textarea.style.opacity = "0";
+          document.body.appendChild(textarea);
+          textarea.select();
+
+          const copied = document.execCommand("copy");
+          textarea.remove();
+
+          if (!copied) {
+            throw new Error("Copy failed");
+          }
+        }
+
+        button.textContent = "✓";
+        button.disabled = true;
+
+        setTimeout(() => {
+          button.textContent = "Copied";
+
+          setTimeout(() => {
+            button.textContent = "📋";
+            button.disabled = false;
+          }, 1500);
+        }, 1500);
+
+      } catch (error) {
+        button.textContent = "Failed";
+
+        setTimeout(() => {
+          button.textContent = "📋";
+          button.disabled = false;
+        }, 1500);
+      }
+    });
+
+    formula.appendChild(button);
+  });
+}
+</script>
+
+</body>
+</html>
+
+
+
