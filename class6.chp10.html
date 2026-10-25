@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 6 - Chapter 10: Data Handling and Probability</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fce4ec;
+    font-family: Arial, sans-serif;
+    color: #222;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background: #f8bbd0;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+h1 {
+    color: #ad1457;
+    font-size: 26px;
+    margin: 0;
+}
+
+.box {
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px;
+    border: 2px solid #f8bbd0;
+    border-radius: 15px;
+    background: white;
+}
+
+.section-title {
+    color: #ad1457;
+    border-bottom: 2px solid #f8bbd0;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+.formula {
+    background: #fff0f5;
+    padding: 12px 52px 12px 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    position: relative;
+    overflow-wrap: anywhere;
+    line-height: 1.8;
+}
+
+.copy-btn {
+    background: white;
+    border: 1px solid #f8bbd0;
+    color: #ad1457;
+    border-radius: 7px;
+    padding: 4px 7px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.concept {
+    background: #fff0f5;
+    border-left: 4px solid #f8bbd0;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.back-btn {
+    display: inline-block;
+    background: #fff0f5;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    padding: 7px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    color: #ad1457;
+    padding: 18px;
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 94%;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .formula {
+        padding: 12px 48px 12px 12px;
+        font-size: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 10 - Data Handling and Probability </h1>
+    <h5> Formula Hub</h5>
+</header>
+
+
+<div style="text-align:center">
+    <a href="class6.html" class="back-btn">← Back to Chapters</a>
+</div>
+
+<!-- FORMULAS & RULES -->
+<div class="box" id="formula-section">
+<h2 class="section-title">FORMULAS &amp; RULES</h2>
+
+<h3>1. Mean</h3>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Mean = <b>Sum of all values ÷ Number of values</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Mean = <b>Σx ÷ n</b><br>Σx = sum of the values, n = number of values.</div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Example: 129, 125, 123, 129, 124, 129, 123<br>Sum = 882, number of values = 7<br>Mean = 882 ÷ 7 = <b>126 cm</b></div>
+
+<h3>2. Median</h3>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>First arrange the data in <b>ascending order</b>.</div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>If n is odd:<br>Median position = <b>(n + 1) ÷ 2</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>If n is even:<br>Median = <b>(Middle value 1 + Middle value 2) ÷ 2</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Example: 123, 123, 124, 125, 129, 129, 129<br>n = 7<br>Median position = (7 + 1) ÷ 2 = 4th value<br>Median = <b>125 cm</b></div>
+
+<h3>3. Mode</h3>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Mode = <b>The value that occurs most frequently</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Example: 2, 3, 5, 5, 8, 8, 8, 15, 10<br>8 occurs three times, more than any other value.<br>Mode = <b>8</b></div>
+
+<h3>4. Percentage</h3>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Percentage = <b>(Original value ÷ Total value) × 100%</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Refrigerator items = 20<br>Fruits: (8 ÷ 20) × 100 = <b>40%</b><br>Meat: (3 ÷ 20) × 100 = <b>15%</b><br>Chicken: (4 ÷ 20) × 100 = <b>20%</b><br>Eggs: (5 ÷ 20) × 100 = <b>25%</b></div>
+
+<h3>5. Pie Graph / Sector Diagram</h3>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Angle of sector = <b>(Component value ÷ Total value) × 360°</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Total angle of a complete pie graph = <b>360°</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Percentage represented by a sector = <b>(Sector angle ÷ 360°) × 100%</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Family expenditure values: 50, 30, 20, 15, 35<br>Total = 50 + 30 + 20 + 15 + 35 = <b>150</b><br>A: (50 ÷ 150) × 360° = <b>120°</b><br>B: (30 ÷ 150) × 360° = <b>72°</b><br>C: (20 ÷ 150) × 360° = <b>48°</b><br>D: (15 ÷ 150) × 360° = <b>36°</b><br>E: (35 ÷ 150) × 360° = <b>84°</b></div>
+
+<h3>6. Probability</h3>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Theoretical probability = <b>Number of favourable outcomes ÷ Total number of equally likely outcomes</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>P(E) = <b>n(E) ÷ n(S)</b><br>n(E) = number of favourable outcomes<br>n(S) = total number of equally likely outcomes</div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Probability of an impossible event = <b>0</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Probability of a certain event = <b>1</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>For any event E: <b>0 ≤ P(E) ≤ 1</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Experimental probability = <b>Number of times an event occurs ÷ Total number of trials</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Example: A fair coin is tossed once.<br>P(Head) = 1 ÷ 2 = <b>1/2</b><br>P(Tail) = 1 ÷ 2 = <b>1/2</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Example: A fair die is rolled once.<br>P(rolling a 4) = 1 ÷ 6 = <b>1/6</b><br>P(rolling an even number) = 3 ÷ 6 = <b>1/2</b></div>
+
+<h3>7. Multiple Bar Graphs</h3>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>A multiple bar graph uses <b>two or more bars for each category</b> to compare related data sets.</div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Vertical multiple bar graph: Categories are shown on the <b>horizontal axis</b>, and values on the <b>vertical axis</b>.</div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Horizontal multiple bar graph: Categories are shown on the <b>vertical axis</b>, and values on the <b>horizontal axis</b>.</div>
+
+</div>
+
+<!-- CONCEPTS -->
+<div class="box">
+<h2 class="section-title">CONCEPTS</h2>
+
+<div class="concept">
+<b>1. Data and Collection</b><br>
+Data is information collected through surveys, questions, measurements or observations. A survey is a way of collecting information by asking questions or observing events.
+</div>
+
+<div class="concept">
+<b>2. Raw, Organized, Ungrouped and Grouped Data</b><br>
+Raw data is collected in its original form. Organized data is arranged in a systematic order, such as ascending order. Ungrouped data lists individual observations, while grouped data organizes observations into groups or categories.
+</div>
+
+<div class="concept">
+<b>3. Discrete Data</b><br>
+Discrete data consists of countable values, usually whole numbers. Examples include the number of students in a class or the number of books on a shelf.
+</div>
+
+<div class="concept">
+<b>4. Continuous Data</b><br>
+Continuous data can take any value within a range, including decimals and fractions. Examples include height, age measured precisely, and temperature.
+</div>
+
+<div class="concept">
+<b>5. Mean</b><br>
+The mean is calculated by adding all values and dividing the sum by the number of values. It is affected by unusually large or small values.
+</div>
+
+<div class="concept">
+<b>6. Median</b><br>
+The median is the middle value after arranging the data in order. For an even number of observations, take the average of the two middle values.
+</div>
+
+<div class="concept">
+<b>7. Mode</b><br>
+The mode is the value that occurs most frequently. A data set may have one mode, more than one mode, or no mode if no value occurs more often than the others.
+</div>
+
+<div class="concept">
+<b>8. Multiple Bar Graph</b><br>
+A multiple bar graph compares two or more related data sets across the same categories. A key or legend identifies which bars represent each data set.
+</div>
+
+<div class="concept">
+<b>9. Pie Graph</b><br>
+A pie graph is a circular diagram divided into sectors. Each sector represents a part of the total, and the complete circle represents 100% or 360°.
+</div>
+
+<div class="concept">
+<b>10. Theoretical Probability</b><br>
+Theoretical probability is calculated from all possible equally likely outcomes. It does not require conducting an experiment.
+</div>
+
+<div class="concept">
+<b>11. Experimental Probability</b><br>
+Experimental probability is based on the results observed during actual trials or experiments. It may differ from theoretical probability, especially when the number of trials is small.
+</div>
+
+</div>
+
+<!-- DEFINITIONS -->
+<div class="box">
+<h2 class="section-title">DEFINITIONS</h2>
+
+<div class="concept">
+<b>Data:</b> Information collected through surveys, measurements, questions or observations.
+</div>
+
+<div class="concept">
+<b>Survey:</b> A method of collecting information by asking questions or observing events.
+</div>
+
+<div class="concept">
+<b>Raw Data:</b> Data recorded in its original, unprocessed form.
+</div>
+
+<div class="concept">
+<b>Organized Data:</b> Data arranged systematically, for example in ascending or descending order.
+</div>
+
+<div class="concept">
+<b>Ungrouped Data:</b> Data in which individual observations are listed separately.
+</div>
+
+<div class="concept">
+<b>Grouped Data:</b> Data organized into groups, classes or categories.
+</div>
+
+<div class="concept">
+<b>Discrete Data:</b> Countable data that usually consists of separate whole-number values.
+</div>
+
+<div class="concept">
+<b>Continuous Data:</b> Data that can take any value within a range, including fractions and decimals.
+</div>
+
+<div class="concept">
+<b>Mean:</b> The sum of all observations divided by the total number of observations.
+</div>
+
+<div class="concept">
+<b>Median:</b> The middle observation in an ordered data set, or the average of the two middle observations when the number of values is even.
+</div>
+
+<div class="concept">
+<b>Mode:</b> The value that occurs most frequently in a data set.
+</div>
+
+<div class="concept">
+<b>Multiple Bar Graph:</b> A graph that uses multiple bars in each category to compare related data sets.
+</div>
+
+<div class="concept">
+<b>Pie Graph:</b> A circular graph divided into sectors that represent portions of a whole.
+</div>
+
+<div class="concept">
+<b>Probability:</b> A measure of how likely an event is to occur.
+</div>
+
+<div class="concept">
+<b>Theoretical Probability:</b> The ratio of favourable equally likely outcomes to the total number of equally likely outcomes.
+</div>
+
+<div class="concept">
+<b>Experimental Probability:</b> The ratio of the number of times an event occurs to the total number of trials.
+</div>
+
+<div class="concept">
+<b>Outcome:</b> A possible result of an experiment.
+</div>
+
+<div class="concept">
+<b>Favourable Outcome:</b> An outcome that satisfies the event being considered.
+</div>
+
+<div class="concept">
+<b>Sample Space:</b> The set of all possible outcomes of an experiment.
+</div>
+
+</div>
+
+<!-- KEY POINTS -->
+<div class="box">
+<h2 class="section-title">KEY POINTS</h2>
+
+<div class="concept">
+<b>1.</b> Always arrange data in ascending order before finding the median.
+</div>
+
+<div class="concept">
+<b>2.</b> For an odd number of values, the median position is (n + 1) ÷ 2.
+</div>
+
+<div class="concept">
+<b>3.</b> For an even number of values, add the two middle values and divide by 2.
+</div>
+
+<div class="concept">
+<b>4.</b> The mean uses every value in the data set, while the median depends on the middle value or values.
+</div>
+
+<div class="concept">
+<b>5.</b> A data set can have more than one mode or no mode.
+</div>
+
+<div class="concept">
+<b>6.</b> Discrete data is countable; continuous data is measured.
+</div>
+
+<div class="concept">
+<b>7.</b> In a vertical bar graph, categories are on the horizontal axis. In a horizontal bar graph, categories are on the vertical axis.
+</div>
+
+<div class="concept">
+<b>8.</b> Use a key or legend to distinguish data sets in a multiple bar graph.
+</div>
+
+<div class="concept">
+<b>9.</b> The sum of all sector angles in a pie graph is always 360°.
+</div>
+
+<div class="concept">
+<b>10.</b> The sum of all percentages in a complete pie graph is 100%.
+</div>
+
+<div class="concept">
+<b>11.</b> Theoretical probability is based on possible outcomes; experimental probability is based on observed results.
+</div>
+
+<div class="concept">
+<b>12.</b> Probability is always between 0 and 1, inclusive.
+</div>
+
+<div class="concept">
+<b>13.</b> An impossible event has probability 0; a certain event has probability 1.
+</div>
+
+<div class="concept">
+<b>14.</b> In a fair coin toss, the probability of heads is 1/2. In a fair die roll, the probability of rolling any particular number is 1/6.
+</div>
+
+<div class="concept">
+<b>15.</b> Check that all pie-chart sector angles add up to 360°. A calculator can help, but it cannot rescue incorrect arithmetic.
+</div>
+
+</div>
+
+<div class="box" style="text-align:center;">
+    <a href="class6.html" class="back-btn">← Back to Chapters</a>
+</div>
+
+<footer>
+    FBISE Class 6 Mathematics | Formula Hub
+</footer>
+
+<script>
+function copyFormula(button) {
+    const formula = button.parentElement.cloneNode(true);
+    const copyButton = formula.querySelector(".copy-btn");
+
+    if (copyButton) {
+        copyButton.remove();
+    }
+
+    const text = formula.innerText.trim();
+
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(function() {
+            showCopied(button);
+        }).catch(function() {
+            fallbackCopy(text, button);
+        });
+    } else {
+        fallbackCopy(text, button);
+    }
+}
+
+function showCopied(button) {
+    button.textContent = "✓";
+    setTimeout(function() {
+        button.textContent = "📋";
+    }, 1200);
+}
+
+function fallbackCopy(text, button) {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.style.position = "fixed";
+    textarea.style.opacity = "0";
+    document.body.appendChild(textarea);
+    textarea.select();
+
+    try {
+        const successful = document.execCommand("copy");
+        if (successful) {
+            showCopied(button);
+        } else {
+            alert("Copy failed. Please select and copy the text manually.");
+        }
+    } catch (error) {
+        alert("Copy failed. Please select and copy the text manually.");
+    }
+
+    document.body.removeChild(textarea);
+}
+</script>
+
+</body>
+</html>

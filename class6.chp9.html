@@ -1,0 +1,589 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 6 - Chapter 9: Mensuration</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fce4ec;
+    font-family: Arial, sans-serif;
+    color: #222;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background: #f8bbd0;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+h1 {
+    color: #ad1457;
+    font-size: 26px;
+    margin: 0;
+}
+
+.box {
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px;
+    border: 2px solid #f8bbd0;
+    border-radius: 15px;
+    background: white;
+}
+
+.section-title {
+    color: #ad1457;
+    border-bottom: 2px solid #f8bbd0;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+.formula {
+    background: #fff0f5;
+    padding: 12px 52px 12px 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    position: relative;
+    overflow-wrap: anywhere;
+    line-height: 1.8;
+}
+
+.copy-btn {
+    background: white;
+    border: 1px solid #f8bbd0;
+    color: #ad1457;
+    border-radius: 7px;
+    padding: 4px 7px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.concept {
+    background: #fff0f5;
+    border-left: 4px solid #f8bbd0;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.back-btn {
+    display: inline-block;
+    background: #fff0f5;
+    color: #ad1457;
+    border: 1px solid #f8bbd0;
+    padding: 7px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    color: #ad1457;
+    padding: 18px;
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 94%;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .formula {
+        padding: 12px 48px 12px 12px;
+        font-size: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1> Chapter 9 - Mensuration</h1>
+    <h5>Formula Hub</h5>
+</header>
+    
+    
+<div style="text-align:center">
+    <a href="class6.html" class="back-btn">← Back to Chapters</a>
+</div>
+
+<!-- FORMULAS & RULES -->
+<div class="box" id="formula-section">
+<h2 class="section-title">FORMULAS &amp; RULES</h2>
+
+<h3>1. Perimeter</h3>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Perimeter</b> = Sum of the lengths of all sides of a closed figure</div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Perimeter of a square = <b>4 × side</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Perimeter of a rectangle = <b>2 × (length + width)</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Perimeter of a parallelogram = <b>2 × (a + b)</b>, where a and b are adjacent side lengths.</div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Perimeter of a scalene triangle = <b>a + b + c</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Perimeter of an isosceles triangle = <b>2a + b</b>, where a is an equal side and b is the base.</div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Perimeter of an equilateral triangle = <b>3 × side</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Perimeter of a trapezium = <b>a + b + c + d</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Distance travelled in n rounds = <b>Perimeter × n</b></div>
+
+<h3>2. Area of 2D Shapes</h3>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Area of a square = <b>side × side = side²</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Area of a rectangle = <b>length × width</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Length of a rectangle = <b>Area ÷ width</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Width of a rectangle = <b>Area ÷ length</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Area of a parallelogram = <b>base × altitude</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Altitude of a parallelogram = <b>Area ÷ base</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Area of a triangle = <b>½ × base × altitude</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Area of a trapezium = <b>½ × height × (sum of parallel sides)</b><br>Area = ½ × h × (a + b)</div>
+
+<h3>3. Paths, Lawns and Cost</h3>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Area of a path or lawn = <b>Outer area − Inner area</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Cost of covering a surface = <b>Area × Rate per square unit</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Cost of fencing or boundary strip = <b>Perimeter × Rate per unit length</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>If a path of width x surrounds a rectangle of length l and width w, then:<br>Outer length = <b>l + 2x</b><br>Outer width = <b>w + 2x</b></div>
+
+<h3>4. Three-Dimensional Solids</h3>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>A cuboid has <b>6 faces, 12 edges and 8 vertices.</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>A cube has <b>6 square faces, 12 edges and 8 vertices.</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>A sphere has <b>1 curved surface, no edges and no vertices.</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>A closed cylinder has <b>2 circular plane faces, 1 curved surface, 2 circular edges and no vertices.</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>A cone has <b>1 circular plane face, 1 curved surface, 1 circular edge and 1 vertex.</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>A hemisphere has <b>1 curved surface, 1 circular plane face and 1 circular edge.</b></div>
+
+<h3>5. Surface Area of Cuboid and Cube</h3>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Total surface area of a cuboid = <b>2(lw + wh + lh)</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Surface area of a cube = <b>6 × side² = 6a²</b></div>
+
+<h3>6. Volume of Cuboid and Cube</h3>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Volume of a cuboid = <b>length × width × height = lwh</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Volume of a cuboid = <b>Area of base × height</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Volume of a cube = <b>side × side × side = a³</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Width of a cuboid = <b>Volume ÷ (length × height)</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>Height of a cuboid = <b>Volume ÷ (length × width)</b></div>
+
+<h3>7. Unit Conversions</h3>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>1 m = <b>100 cm</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>1 m² = <b>10,000 cm²</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>1 m³ = <b>1,000,000 cm³</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>1 dm³ = <b>1 litre</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>1 litre = <b>1000 ml = 1000 cm³</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button>1 m ≈ <b>3.28 feet</b></div>
+
+<h3>8. Important Solved Examples</h3>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Square:</b> Side = 5 cm<br>Perimeter = 4 × 5 = <b>20 cm</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Rectangle:</b> Length = 7 cm, width = 4.5 cm<br>Perimeter = 2(7 + 4.5) = <b>23 cm</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Square area:</b> Perimeter = 40 m<br>Side = 40 ÷ 4 = 10 m<br>Area = 10² = <b>100 m²</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Rectangle area:</b> Perimeter = 23 cm, length = 4.5 cm<br>Width = (23 ÷ 2) − 4.5 = 7 cm<br>Area = 4.5 × 7 = <b>31.5 cm²</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>House and lawn:</b> House = 15 × 30 = 450 m²<br>Total area = 20 × 40 = 800 m²<br>Lawn area = 800 − 450 = <b>350 m²</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Square plot and street:</b> Plot area = 14 × 14 = 196 m²<br>Street area = 14 × 3 = 42 m²<br>Remaining area = 196 − 42 = <b>154 m²</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>External path:</b> Inner lawn = 46 × 31 = 1426 m²<br>Outer dimensions = 50 m × 35 m<br>Outer area = 1750 m²<br>Path area = 1750 − 1426 = 324 m²<br>Cost = 324 × Rs 100 = <b>Rs 32,400</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Hockey ground:</b> Length = 100 m, width = 50 m<br>Area = 100 × 50 = 5000 m²<br>Perimeter = 2(100 + 50) = 300 m<br>Turf cost = 5000 × Rs 100 = <b>Rs 500,000</b><br>Boundary strip cost = 300 × Rs 50 = <b>Rs 15,000</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Athlete's distance:</b> Square side = 200 m<br>Perimeter = 4 × 200 = 800 m<br>Distance in 10 rounds = 800 × 10 = 8000 m = <b>8 km</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Garden dimensions:</b> Perimeter = 25 m, length exceeds width by 7.5 m<br>Length + width = 25 ÷ 2 = 12.5 m<br>Width = (12.5 − 7.5) ÷ 2 = 2.5 m<br>Length = 2.5 + 7.5 = <b>10 m</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Parallelogram:</b> Base = 5.4 cm, altitude = 2 cm<br>Area = 5.4 × 2 = <b>10.8 cm²</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Rhombus:</b> Area = 72 m², height = 6 m<br>Base = 72 ÷ 6 = 12 m<br>Perimeter = 4 × 12 = <b>48 m</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Triangle:</b> Base = 3 cm, altitude = 2.4 cm<br>Area = ½ × 3 × 2.4 = <b>3.6 cm²</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Equilateral triangle:</b> Perimeter = 21 cm<br>Side = 21 ÷ 3 = <b>7 cm</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Triangle lawn:</b> Base = 10 m, altitude = 6 m<br>Area = ½ × 10 × 6 = <b>30 m²</b><br>Cost = 30 × rate per m²</div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Trapezium:</b> Parallel sides = 8 cm and 5 cm, height = 4 cm<br>Area = ½ × 4 × (8 + 5) = <b>26 cm²</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Trapezium:</b> Parallel sides = 20 cm and 12 cm, height = 10 cm<br>Area = ½ × 10 × (20 + 12) = <b>160 cm²</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Trapezium height:</b> Area = 400 m², parallel sides = 30 m and 50 m<br>400 = ½ × h × (30 + 50)<br>400 = 40h<br>Height = <b>10 m</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Advertising board:</b> Height = 4 m, parallel sides = 6 m and 8 m<br>Area = ½ × 4 × (6 + 8) = 28 m²<br>Cost = 28 × Rs 10 = <b>Rs 280</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Surface area of cuboid:</b> l = 8 m, w = 5 m, h = 3 m<br>SA = 2(lw + wh + lh)<br>= 2(40 + 15 + 24)<br>= <b>158 m²</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Surface area of cube:</b> Side = 6 cm<br>SA = 6 × 6² = 6 × 36 = <b>216 cm²</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Volume of cuboid:</b> l = 5 cm, w = 3 cm, h = 2 cm<br>V = 5 × 3 × 2 = <b>30 cm³</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Volume of cuboid:</b> l = 15 cm, w = 10 cm, h = 4 cm<br>V = 15 × 10 × 4 = <b>600 cm³</b></div>
+
+<div class="formula"><button class="copy-btn" onclick="copyFormula(this)">📋</button><b>Find width:</b> Volume = 2500 m³, length = 25 m, height = 5 m<br>25 × w × 5 = 2500<br>125w = 2500<br>w = 2500 ÷ 125 = <b>20 m</b></div>
+
+</div>
+
+<!-- CONCEPTS -->
+<div class="box">
+<h2 class="section-title">CONCEPTS</h2>
+
+<div class="concept">
+<b>1. Two-Dimensional Figures (2D)</b><br>
+These figures have length and width. They have area but no volume. Examples include squares, rectangles and triangles.
+</div>
+
+<div class="concept">
+<b>2. Three-Dimensional Figures (3D)</b><br>
+These solids have length, width and height. They occupy space and have volume. Examples include cubes, cuboids, spheres, cylinders and cones. A 3D solid can be represented by a drawing on a flat surface, but the drawing is not the solid itself.
+</div>
+
+<div class="concept">
+<b>3. Perimeter</b><br>
+Perimeter is the total distance around a closed figure. It is measured in linear units such as mm, cm, m and km.
+</div>
+
+<div class="concept">
+<b>4. Area</b><br>
+Area measures the surface covered by a 2D shape. It is measured in square units such as cm² and m².
+</div>
+
+<div class="concept">
+<b>5. Paths Around Shapes</b><br>
+To find the area of a path around a lawn or building, subtract the inner area from the outer area. For a path outside a rectangle, add twice the path width to both the length and width.
+</div>
+
+<div class="concept">
+<b>6. Parallelogram Properties</b><br>
+Opposite sides are parallel and equal. Its diagonals bisect each other, and each diagonal divides it into two equal-area triangles. A square, rectangle and rhombus are special types of parallelograms.
+</div>
+
+<div class="concept">
+<b>7. Base and Altitude</b><br>
+The base is the side chosen for measuring area. The altitude is the perpendicular distance to the opposite side or its extension. The altitude is not necessarily the same as a sloping side.
+</div>
+
+<div class="concept">
+<b>8. Triangle Area</b><br>
+A triangle has half the area of a parallelogram with the same base and altitude. Therefore, its area is half the product of its base and perpendicular altitude.
+</div>
+
+<div class="concept">
+<b>9. Trapezium</b><br>
+A trapezium is a quadrilateral with one pair of parallel sides. Its area is half the product of the height and the sum of the parallel sides.
+</div>
+
+<div class="concept">
+<b>10. Cuboid</b><br>
+A cuboid is a solid bounded by six rectangular faces. Examples include a brick, matchbox and book.
+</div>
+
+<div class="concept">
+<b>11. Cube</b><br>
+A cube is a cuboid whose length, width and height are equal. All six faces are squares. A dice is a common example.
+</div>
+
+<div class="concept">
+<b>12. Sphere and Hemisphere</b><br>
+A sphere is a round solid whose surface points are equally distant from its centre. Examples include a ball and a globe. A hemisphere is half of a sphere.
+</div>
+
+<div class="concept">
+<b>13. Cylinder</b><br>
+A closed cylinder has two circular plane faces and one curved surface. Examples include oil drums and tins.
+</div>
+
+<div class="concept">
+<b>14. Cone</b><br>
+A cone has one circular plane face, one curved surface and one vertex. An ice-cream cone is a familiar example.
+</div>
+
+<div class="concept">
+<b>15. Surface Area</b><br>
+Surface area is the sum of the areas of all the outer faces or surfaces of a solid. The net of a cuboid contains six rectangular faces.
+</div>
+
+<div class="concept">
+<b>16. Volume</b><br>
+Volume measures the amount of space occupied by a 3D solid. It is measured in cubic units such as cm³, dm³ and m³.
+</div>
+
+<div class="concept">
+<b>17. Perimeter After Dividing a Shape</b><br>
+When a rectangle is divided into two pieces, the new interior boundary is counted in the perimeter of both pieces. Therefore, the sum of the perimeters of the pieces can be greater than the original perimeter.
+</div>
+</div>
+
+<!-- DEFINITIONS -->
+<div class="box">
+<h2 class="section-title">DEFINITIONS</h2>
+
+<div class="concept">
+<b>Mensuration:</b> The branch of mathematics concerned with measuring lengths, perimeters, areas, surface areas and volumes.
+</div>
+
+<div class="concept">
+<b>Perimeter:</b> The sum of the lengths of all sides of a closed plane figure.
+</div>
+
+<div class="concept">
+<b>Area:</b> The measure of the surface covered by a two-dimensional figure.
+</div>
+
+<div class="concept">
+<b>Altitude:</b> The perpendicular distance between a base and the opposite side or vertex of a shape.
+</div>
+
+<div class="concept">
+<b>Parallelogram:</b> A quadrilateral in which both pairs of opposite sides are parallel.
+</div>
+
+<div class="concept">
+<b>Diagonal:</b> A line segment joining two non-adjacent vertices of a polygon.
+</div>
+
+<div class="concept">
+<b>Trapezium:</b> A quadrilateral with one pair of parallel sides.
+</div>
+
+<div class="concept">
+<b>Solid:</b> A three-dimensional figure that has length, width and height.
+</div>
+
+<div class="concept">
+<b>Cuboid:</b> A solid bounded by six rectangular plane faces.
+</div>
+
+<div class="concept">
+<b>Cube:</b> A cuboid whose length, width and height are equal.
+</div>
+
+<div class="concept">
+<b>Sphere:</b> A solid whose surface points are all at the same distance from a fixed point called the centre.
+</div>
+
+<div class="concept">
+<b>Hemisphere:</b> Half of a sphere, bounded by a curved surface and a circular plane face.
+</div>
+
+<div class="concept">
+<b>Cylinder:</b> A solid with two parallel circular plane faces joined by a curved surface.
+</div>
+
+<div class="concept">
+<b>Cone:</b> A solid with a circular base and a curved surface that meets at a single vertex.
+</div>
+
+<div class="concept">
+<b>Surface Area:</b> The total area of the outer surfaces of a solid.
+</div>
+
+<div class="concept">
+<b>Volume:</b> The amount of space occupied by a three-dimensional solid.
+</div>
+
+<div class="concept">
+<b>Dimensions:</b> The length, width and height of a cuboid.
+</div>
+
+<div class="concept">
+<b>Vertex:</b> A corner point of a solid or plane figure.
+</div>
+
+<div class="concept">
+<b>Edge:</b> The line segment where two faces of a solid meet.
+</div>
+
+<div class="concept">
+<b>Face:</b> A flat surface forming part of the boundary of a solid.
+</div>
+</div>
+
+<!-- KEY POINTS -->
+<div class="box">
+<h2 class="section-title">KEY POINTS</h2>
+
+<div class="concept">
+<b>1.</b> Perimeter uses linear units, while area uses square units and volume uses cubic units.
+</div>
+
+<div class="concept">
+<b>2.</b> Always use the same units before adding, subtracting or comparing measurements.
+</div>
+
+<div class="concept">
+<b>3.</b> The area of a path around a shape is found by subtracting the inner area from the outer area.
+</div>
+
+<div class="concept">
+<b>4.</b> Cost of flooring, painting or covering a surface is usually calculated using area × rate per square unit.
+</div>
+
+<div class="concept">
+<b>5.</b> Cost of fencing is calculated using perimeter × rate per unit length.
+</div>
+
+<div class="concept">
+<b>6.</b> In a parallelogram, use the perpendicular altitude, not the sloping side, when calculating area.
+</div>
+
+<div class="concept">
+<b>7.</b> For a trapezium, add the two parallel sides before multiplying by half the height.
+</div>
+
+<div class="concept">
+<b>8.</b> A cuboid has 6 faces, 12 edges and 8 vertices. A cube has the same counts.
+</div>
+
+<div class="concept">
+<b>9.</b> Surface area is measured in square units, for example cm² or m².
+</div>
+
+<div class="concept">
+<b>10.</b> Volume is measured in cubic units, for example cm³ or m³.
+</div>
+
+<div class="concept">
+<b>11.</b> The total surface area of a cuboid is the sum of the areas of its six rectangular faces.
+</div>
+
+<div class="concept">
+<b>12.</b> A cube has six equal square faces, so its surface area is six times the area of one face.
+</div>
+
+<div class="concept">
+<b>13.</b> One cubic centimetre is the volume of a cube measuring 1 cm on each side.
+</div>
+
+<div class="concept">
+<b>14.</b> One cubic decimetre equals one litre, and one litre equals 1000 cm³.
+</div>
+
+<div class="concept">
+<b>15.</b> Write the correct unit with every final answer. For example, area = 25 cm² and volume = 25 cm³.
+</div>
+
+<div class="concept">
+<b>16.</b> When a problem gives the volume, length and height of a cuboid, its width can be found by dividing the volume by length × height.
+</div>
+
+<div class="concept">
+<b>17.</b> Remember: cube surface area = 6a², while cube volume = a³. Similar-looking formulas, completely different jobs.
+</div>
+</div>
+
+<div class="box" style="text-align:center;">
+    <a href="class6.html" class="back-btn">← Back to Chapters</a>
+</div>
+
+<footer>
+    FBISE Class 6 Mathematics | Formula Hub
+</footer>
+
+<script>
+function copyFormula(button) {
+    const formula = button.parentElement.cloneNode(true);
+    const copyButton = formula.querySelector(".copy-btn");
+
+    if (copyButton) {
+        copyButton.remove();
+    }
+
+    const text = formula.innerText.trim();
+
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(function() {
+            showCopied(button);
+        }).catch(function() {
+            fallbackCopy(text, button);
+        });
+    } else {
+        fallbackCopy(text, button);
+    }
+}
+
+function showCopied(button) {
+    button.textContent = "✓";
+    setTimeout(function() {
+        button.textContent = "📋";
+    }, 1200);
+}
+
+function fallbackCopy(text, button) {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.style.position = "fixed";
+    textarea.style.opacity = "0";
+    document.body.appendChild(textarea);
+    textarea.select();
+
+    try {
+        const successful = document.execCommand("copy");
+        if (successful) {
+            showCopied(button);
+        } else {
+            button.textContent = "📋";
+            alert("Copy failed. Please select and copy the text manually.");
+        }
+    } catch (error) {
+        alert("Copy failed. Please select and copy the text manually.");
+    }
+
+    document.body.removeChild(textarea);
+}
+</script>
+
+</body>
+</html>

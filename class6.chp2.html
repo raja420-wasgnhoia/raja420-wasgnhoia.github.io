@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 6 - Unit 02 Integers</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fce4ec;
+            color: #222;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 26px;
+        }
+
+        .subtitle {
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        h2, h3 {
+            color: #ad1457;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            max-width: 95%;
+            margin: 15px auto;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            width: 90%;
+            margin: 15px auto;
+            padding: 15px;
+            border: 2px solid #f8bbd0;
+            border-radius: 15px;
+            background: white;
+        }
+
+        .formula {
+            background: #fff0f5;
+            padding: 12px;
+            padding-right: 82px;
+            margin: 10px 0;
+            border-radius: 10px;
+            position: relative;
+            overflow-wrap: anywhere;
+            line-height: 1.8;
+        }
+
+        .copy-btn {
+            position: absolute;
+            right: 7px;
+            top: 7px;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 8px;
+            padding: 5px 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .section-title {
+            border-bottom: 2px solid #f8bbd0;
+            padding-bottom: 7px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 18px;
+            color: #ad1457;
+        }
+
+        @media(max-width:600px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .box {
+                width: 94%;
+                padding: 12px;
+            }
+
+            .formula {
+                padding: 12px;
+                padding-right: 75px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 2 - Integers</h1>
+    <h5> Formula Hub</h5>
+</header>
+
+<a href="class6.html" class="back-button">← Back to Chapters</a>
+
+<div class="box" id="formula-section">
+    <h2 class="section-title">FORMULAS & RULES</h2>
+
+    <h3>1. Natural and Whole Numbers</h3>
+
+    <div class="formula">Natural numbers = 1, 2, 3, 4, ...</div>
+    <div class="formula">Whole numbers = 0, 1, 2, 3, 4, ...</div>
+    <div class="formula">Numerals = Symbols 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 used to construct numbers.</div>
+
+    <h3>2. Integers and Number Line</h3>
+
+    <div class="formula">Integers = ..., −4, −3, −2, −1, 0, 1, 2, 3, 4, ...</div>
+    <div class="formula">Positive integers: a &gt; 0</div>
+    <div class="formula">Negative integers: a &lt; 0</div>
+    <div class="formula">Zero is neither positive nor negative.</div>
+    <div class="formula">On a number line, negative integers are left of zero and positive integers are right of zero.</div>
+    <div class="formula">Numbers increase from left to right on a number line.</div>
+    <div class="formula">Every positive integer is greater than every negative integer.</div>
+
+    <h3>3. Absolute Value</h3>
+
+    <div class="formula">Absolute value = Distance of an integer from zero.</div>
+    <div class="formula">Symbol: |a|</div>
+    <div class="formula">|−a| = |a|</div>
+    <div class="formula">|0| = 0</div>
+    <div class="formula">Absolute value is always non-negative.</div>
+
+    <h3>4. Addition of Integers</h3>
+
+    <div class="formula">Same signs: Add absolute values and keep the common sign.</div>
+    <div class="formula">(+a) + (+b) = +(a + b)</div>
+    <div class="formula">(−a) + (−b) = −(a + b)</div>
+    <div class="formula">Opposite signs: Subtract the smaller absolute value from the larger absolute value.</div>
+    <div class="formula">For opposite signs, the result takes the sign of the integer with the greater absolute value.</div>
+
+    <h3>5. Subtraction of Integers</h3>
+
+    <div class="formula">Subtracting an integer = Adding its opposite.</div>
+    <div class="formula">a − (−b) = a + b</div>
+    <div class="formula">a − (+b) = a − b</div>
+    <div class="formula">(−a) − b = −(a + b)</div>
+
+    <h3>6. Multiplication of Integers</h3>
+
+    <div class="formula">Multiply the absolute values of the integers.</div>
+    <div class="formula">Same signs: Product is positive.</div>
+    <div class="formula">(+) × (+) = +</div>
+    <div class="formula">(−) × (−) = +</div>
+    <div class="formula">Opposite signs: Product is negative.</div>
+    <div class="formula">(+) × (−) = −</div>
+    <div class="formula">(−) × (+) = −</div>
+    <div class="formula">Any integer × 0 = 0</div>
+    <div class="formula">Even number of negative factors = positive product; odd number = negative product.</div>
+
+    <h3>7. Division of Integers</h3>
+
+    <div class="formula">Divide the absolute values of the integers.</div>
+    <div class="formula">Same signs: Quotient is positive.</div>
+    <div class="formula">(+) ÷ (+) = +</div>
+    <div class="formula">(−) ÷ (−) = +</div>
+    <div class="formula">Opposite signs: Quotient is negative.</div>
+    <div class="formula">(+) ÷ (−) = −</div>
+    <div class="formula">(−) ÷ (+) = −</div>
+    <div class="formula">Division by zero is undefined.</div>
+
+    <h3>8. Commutative Property</h3>
+
+    <div class="formula">a + b = b + a</div>
+    <div class="formula">a × b = b × a</div>
+    <div class="formula">a − b ≠ b − a (in general)</div>
+    <div class="formula">Division is not commutative.</div>
+
+    <h3>9. Associative Property</h3>
+
+    <div class="formula">(a + b) + c = a + (b + c)</div>
+    <div class="formula">(a × b) × c = a × (b × c)</div>
+    <div class="formula">Subtraction and division are not associative.</div>
+
+    <h3>10. Identity Properties</h3>
+
+    <div class="formula">Additive identity = 0</div>
+    <div class="formula">a + 0 = 0 + a = a</div>
+    <div class="formula">Multiplicative identity = 1</div>
+    <div class="formula">a × 1 = 1 × a = a</div>
+
+    <h3>11. Distributive Laws</h3>
+
+    <div class="formula">a × (b + c) = (a × b) + (a × c)</div>
+    <div class="formula">a × (b − c) = (a × b) − (a × c)</div>
+
+    <h3>12. BODMAS Rule</h3>
+
+    <div class="formula">B = Brackets</div>
+    <div class="formula">O = Orders (powers and roots)</div>
+    <div class="formula">D = Division</div>
+    <div class="formula">M = Multiplication</div>
+    <div class="formula">A = Addition</div>
+    <div class="formula">S = Subtraction</div>
+    <div class="formula">Division and multiplication have equal priority; perform from left to right.</div>
+    <div class="formula">Addition and subtraction have equal priority; perform from left to right.</div>
+    <div class="formula">When brackets are nested, solve the innermost brackets first.</div>
+</div>
+
+<div class="box">
+    <h2 class="section-title">CONCEPTS</h2>
+
+    <h3>1. Natural and Whole Numbers</h3>
+    <p>Natural numbers are counting numbers starting from 1. Whole numbers include zero as well as all natural numbers.</p>
+    <p>Zero is the only whole number that is not a natural number under this definition.</p>
+    <p>Numerals are symbols used to write numbers.</p>
+
+    <h3>2. Integers</h3>
+    <p>Integers include negative whole numbers, zero, and positive whole numbers.</p>
+    <p>They are used to represent situations such as temperature, height, depth, gain and loss.</p>
+    <p>Positive integers are greater than zero, while negative integers are less than zero.</p>
+
+    <h3>3. Number Line</h3>
+    <p>Positive integers lie to the right of zero and negative integers lie to the left.</p>
+    <p>Moving right means the numbers increase; moving left means they decrease.</p>
+    <p>Positive integers are commonly written without a plus sign.</p>
+
+    <h3>4. Absolute Value</h3>
+    <p>Absolute value measures an integer's distance from zero, regardless of its sign.</p>
+
+    <h3>5. Integer Operations</h3>
+    <p>For addition with the same signs, add the absolute values and keep the sign.</p>
+    <p>For addition with opposite signs, subtract the smaller absolute value from the larger and keep the sign of the integer with the larger absolute value.</p>
+    <p>For subtraction, add the opposite of the integer being subtracted.</p>
+    <p>For multiplication and division, use absolute values to calculate the numerical part, then determine the sign using the sign rules.</p>
+
+    <h3>6. Properties of Integers</h3>
+    <p>Addition and multiplication are commutative and associative.</p>
+    <p>Subtraction and division are generally neither commutative nor associative.</p>
+    <p>Zero is the additive identity, and one is the multiplicative identity.</p>
+
+    <h3>7. Distributive Law</h3>
+    <p>Multiplication distributes over both addition and subtraction inside brackets.</p>
+
+    <h3>8. BODMAS</h3>
+    <p>BODMAS helps determine the order in which operations are performed. Brackets come first, followed by orders, division and multiplication, then addition and subtraction.</p>
+</div>
+
+<div class="box">
+    <h2 class="section-title">DEFINITIONS</h2>
+
+    <p><b>Natural Numbers:</b> Counting numbers starting from 1.</p>
+
+    <p><b>Whole Numbers:</b> Zero and all natural numbers.</p>
+
+    <p><b>Numerals:</b> Symbols used to represent or write numbers.</p>
+
+    <p><b>Integers:</b> Negative whole numbers, zero and positive whole numbers.</p>
+
+    <p><b>Positive Integer:</b> An integer greater than zero.</p>
+
+    <p><b>Negative Integer:</b> An integer less than zero.</p>
+
+    <p><b>Absolute Value:</b> The distance of an integer from zero on the number line.</p>
+
+    <p><b>Like Integers:</b> Integers with the same signs.</p>
+
+    <p><b>Unlike Integers:</b> Integers with opposite signs.</p>
+
+    <p><b>Commutative Property:</b> A property in which changing the order of numbers does not change the result.</p>
+
+    <p><b>Associative Property:</b> A property in which changing the grouping of numbers does not change the result.</p>
+
+    <p><b>Additive Identity:</b> Zero, because adding zero does not change a number.</p>
+
+    <p><b>Multiplicative Identity:</b> One, because multiplying a number by one does not change it.</p>
+
+    <p><b>Distributive Law:</b> The property by which multiplication is distributed over addition or subtraction.</p>
+
+    <p><b>BODMAS:</b> A rule used to determine the order of operations in a mathematical expression.</p>
+</div>
+
+<div class="box">
+    <h2 class="section-title">KEY POINTS</h2>
+
+    <ul>
+        <li>Zero is neither positive nor negative.</li>
+        <li>Every positive integer is greater than every negative integer.</li>
+        <li>Absolute value is always non-negative.</li>
+        <li>When adding integers with opposite signs, subtract their absolute values.</li>
+        <li>Subtracting an integer means adding its opposite.</li>
+        <li>Same signs give a positive product or quotient; opposite signs give a negative product or quotient.</li>
+        <li>Any integer multiplied by zero equals zero.</li>
+        <li>Division by zero is undefined.</li>
+        <li>Addition and multiplication are commutative and associative.</li>
+        <li>Subtraction and division are generally neither commutative nor associative.</li>
+        <li>Zero is the additive identity; one is the multiplicative identity.</li>
+        <li>Multiplication distributes over addition and subtraction.</li>
+        <li>Follow BODMAS for the order of operations.</li>
+        <li>Multiplication and division share priority and are calculated from left to right.</li>
+        <li>Addition and subtraction share priority and are calculated from left to right.</li>
+    </ul>
+</div>
+
+<a href="class6.html" class="back-button">← Back to Chapters</a>
+
+<footer>
+    FBISE Class 6 Mathematics | Formula Hub
+</footer>
+
+<script>
+    document.querySelectorAll('#formula-section .formula').forEach(function(item) {
+        const button = document.createElement('button');
+        button.className = 'copy-btn';
+        button.textContent = '📋 ';
+
+        button.addEventListener('click', function() {
+            const textToCopy = item.innerText.replace('📋 ', '').trim();
+
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(textToCopy).then(function() {
+                    button.textContent = '✓ Copied';
+                    setTimeout(function() {
+                        button.textContent = '📋 ';
+                    }, 1500);
+                }).catch(function() {
+                    fallbackCopy(textToCopy, button);
+                });
+            } else {
+                fallbackCopy(textToCopy, button);
+            }
+        });
+
+        item.appendChild(button);
+    });
+
+    function fallbackCopy(text, button) {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+
+        try {
+            document.execCommand('copy');
+            button.textContent = '✓ Copied';
+        } catch (error) {
+            button.textContent = 'Copy failed';
+        }
+
+        document.body.removeChild(textarea);
+
+        setTimeout(function() {
+            button.textContent = '📋 ';
+        }, 1500);
+    }
+</script>
+
+</body>
+</html>

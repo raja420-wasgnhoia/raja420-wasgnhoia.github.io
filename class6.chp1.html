@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 6 - Unit 01 Factors and Multiples</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fce4ec;
+            color: #222;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #f8bbd0;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ad1457;
+            margin: 0;
+            font-size: 26px;
+        }
+
+        .subtitle {
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        h2, h3 {
+            color: #ad1457;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            max-width: 95%;
+            margin: 15px auto;
+            padding: 8px 16px;
+            background: #fff0f5;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .box {
+            width: 90%;
+            margin: 15px auto;
+            padding: 15px;
+            border: 2px solid #f8bbd0;
+            border-radius: 15px;
+            background: white;
+        }
+
+        .formula {
+            background: #fff0f5;
+            padding: 12px;
+            padding-right: 82px;
+            margin: 10px 0;
+            border-radius: 10px;
+            position: relative;
+            overflow-wrap: anywhere;
+            line-height: 1.8;
+        }
+
+        .copy-btn {
+            position: absolute;
+            right: 7px;
+            top: 7px;
+            background: white;
+            color: #ad1457;
+            border: 1px solid #f8bbd0;
+            border-radius: 8px;
+            padding: 5px 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .section-title {
+            border-bottom: 2px solid #f8bbd0;
+            padding-bottom: 7px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 18px;
+            color: #ad1457;
+        }
+
+        @media(max-width:600px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .box {
+                width: 94%;
+                padding: 12px;
+            }
+
+            .formula {
+                padding: 12px;
+                padding-right: 75px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 1 - Factors and Multiples</h1>
+    <h5>Formula Hub</h5>
+</header>
+
+<a href="class6.html" class="back-button">← Back to Chapters</a>
+
+<div class="box" id="formula-section">
+    <h2 class="section-title">FORMULAS & RULES</h2>
+
+    <h3>1. Divisibility Rules</h3>
+
+    <div class="formula">Divisible by 2: Last digit is 0, 2, 4, 6 or 8.</div>
+    <div class="formula">Divisible by 3: Sum of digits is divisible by 3.</div>
+    <div class="formula">Divisible by 4: Last two digits form a number divisible by 4.</div>
+    <div class="formula">Divisible by 5: Last digit is 0 or 5.</div>
+    <div class="formula">Divisible by 6: Number is divisible by both 2 and 3.</div>
+    <div class="formula">Divisible by 8: Last three digits form a number divisible by 8.</div>
+    <div class="formula">Divisible by 9: Sum of digits is divisible by 9.</div>
+    <div class="formula">Divisible by 10: Last digit is 0.</div>
+    <div class="formula">Divisible by 11: Difference between the sums of alternate digits is 0 or a multiple of 11.</div>
+
+    <h3>2. Prime Factorization</h3>
+
+    <div class="formula">Prime factorization: Expressing a composite number as a product of prime factors.</div>
+    <div class="formula">Index notation: 2 × 2 × 3 × 3 = 2² × 3²</div>
+    <div class="formula">Methods: Factor Tree and Division Method.</div>
+
+    <h3>3. HCF (Highest Common Factor)</h3>
+
+    <div class="formula">HCF = Highest Common Factor</div>
+    <div class="formula">HCF is also called GCD (Greatest Common Divisor).</div>
+    <div class="formula">Prime Factorization Method: HCF = Product of common prime factors, using the smallest powers.</div>
+    <div class="formula">Division Method: Repeatedly divide; the last non-zero divisor is the HCF.</div>
+    <div class="formula">Use HCF to find the greatest number that exactly divides given numbers.</div>
+
+    <h3>4. LCM (Least Common Multiple)</h3>
+
+    <div class="formula">LCM = Least Common Multiple</div>
+    <div class="formula">Prime Factorization Method: LCM = Product of all prime factors, using the greatest power of each.</div>
+    <div class="formula">Division Method: LCM = Product of all divisors × product of remaining numbers.</div>
+    <div class="formula">Use LCM to find the smallest common multiple, shortest equal length, or when events happen together again.</div>
+
+    <h3>5. Relation Between HCF and LCM</h3>
+
+    <div class="formula">First Number × Second Number = HCF × LCM</div>
+    <div class="formula">LCM = (Product of the two numbers) ÷ HCF</div>
+    <div class="formula">HCF = (Product of the two numbers) ÷ LCM</div>
+    <div class="formula">Second Number = (HCF × LCM) ÷ First Number</div>
+</div>
+
+<div class="box">
+    <h2 class="section-title">CONCEPTS</h2>
+
+    <h3>1. Factors</h3>
+    <p>A factor divides a given number exactly without leaving a remainder.</p>
+    <p>Every number is a factor of itself, and 1 is a factor of every whole number.</p>
+    <p>A positive factor is never greater than the number itself.</p>
+    <p>When listing factor pairs in order, stop when the pairs begin to repeat.</p>
+
+    <h3>2. Multiples</h3>
+    <p>A multiple is the product of a number and a counting number.</p>
+    <p>A number is a factor of each of its multiples.</p>
+    <p>Positive multiples of a number are equal to or greater than that number and continue infinitely.</p>
+
+    <h3>3. Relationship Between Factors and Multiples</h3>
+    <p>If a divides b exactly, then a is a factor of b, and b is a multiple of a.</p>
+
+    <h3>4. Prime Factorization</h3>
+    <p>A composite number can be expressed as a product of prime factors.</p>
+    <p>Repeated prime factors can be written using powers (index notation).</p>
+
+    <h3>5. HCF and LCM</h3>
+    <p>Common factors are factors shared by two or more numbers.</p>
+    <p>HCF is the greatest factor common to the given numbers.</p>
+    <p>LCM is the smallest positive multiple common to the given numbers.</p>
+</div>
+
+<div class="box">
+    <h2 class="section-title">DEFINITIONS</h2>
+
+    <p><b>Factor:</b> A number that divides another number exactly without a remainder.</p>
+
+    <p><b>Multiple:</b> A number obtained by multiplying a given number by a counting number.</p>
+
+    <p><b>Prime Number:</b> A number greater than 1 that has exactly two positive factors: 1 and itself.</p>
+
+    <p><b>Composite Number:</b> A number greater than 1 that has more than two positive factors.</p>
+
+    <p><b>Prime Factors:</b> Prime numbers that divide a given number exactly.</p>
+
+    <p><b>Prime Factorization:</b> Expressing a composite number as a product of prime numbers.</p>
+
+    <p><b>Co-prime Numbers:</b> Two numbers whose HCF is 1.</p>
+
+    <p><b>Common Factors:</b> Factors shared by two or more numbers.</p>
+
+    <p><b>HCF:</b> The greatest factor common to two or more numbers.</p>
+
+    <p><b>GCD:</b> Greatest Common Divisor; another name for HCF.</p>
+
+    <p><b>LCM:</b> The smallest positive number that is a multiple of two or more given numbers.</p>
+</div>
+
+<div class="box">
+    <h2 class="section-title">KEY POINTS</h2>
+
+    <ul>
+        <li>Factors of a positive whole number are finite, while its positive multiples are infinite.</li>
+        <li>Every number is a factor of itself, and 1 is a factor of every whole number.</li>
+        <li>A number is divisible by 6 only when it is divisible by both 2 and 3.</li>
+        <li>Test for divisibility by 7 is not included in these notes.</li>
+        <li>The product of two prime numbers greater than 1 is composite.</li>
+        <li>The sum of two prime numbers may be prime or composite.</li>
+        <li>Example of co-primes: 10 and 17, because their HCF is 1.</li>
+        <li>For HCF by prime factorization, use the common prime factors with the smallest powers.</li>
+        <li>For LCM by prime factorization, use every prime factor with the greatest power.</li>
+        <li>HCF is useful for greatest equal grouping or exact division.</li>
+        <li>LCM is useful for finding when repeating events happen together again.</li>
+        <li>For two positive integers: First Number × Second Number = HCF × LCM.</li>
+    </ul>
+</div>
+
+<a href="class6.html" class="back-button">← Back to Chapters</a>
+
+<footer>
+    FBISE Class 6 Mathematics | Formula Hub
+</footer>
+
+<script>
+    document.querySelectorAll('#formula-section .formula').forEach(function(item) {
+        const button = document.createElement('button');
+        button.className = 'copy-btn';
+        button.textContent = '📋 ';
+
+        button.addEventListener('click', function() {
+            const textToCopy = item.innerText.replace('📋 ', '').trim();
+
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(textToCopy).then(function() {
+                    button.textContent = '✓ Copied';
+                    setTimeout(function() {
+                        button.textContent = '📋 ';
+                    }, 1500);
+                }).catch(function() {
+                    fallbackCopy(textToCopy, button);
+                });
+            } else {
+                fallbackCopy(textToCopy, button);
+            }
+        });
+
+        item.appendChild(button);
+    });
+
+    function fallbackCopy(text, button) {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+
+        try {
+            document.execCommand('copy');
+            button.textContent = '✓ Copied';
+        } catch (error) {
+            button.textContent = 'Copy failed';
+        }
+
+        document.body.removeChild(textarea);
+
+        setTimeout(function() {
+            button.textContent = '📋 ';
+        }, 1500);
+    }
+</script>
+
+</body>
+</html>
