@@ -1,0 +1,520 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 7 - Unit 4 Financial Arithmetic</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fce4ec;
+  color: #222;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header {
+  background: #f8bbd0;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+h1 {
+  color: #ad1457;
+  margin: 0;
+  font-size: 26px;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+h2, h3 {
+  color: #ad1457;
+}
+
+.back-button {
+  display: block;
+  width: fit-content;
+  max-width: 95%;
+  margin: 15px auto;
+  padding: 8px 16px;
+  background: #fff0f5;
+  color: #ad1457;
+  border: 1px solid #f8bbd0;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.box {
+  width: 90%;
+  margin: 15px auto;
+  padding: 15px;
+  border: 2px solid #f8bbd0;
+  border-radius: 15px;
+  background: white;
+}
+
+.formula {
+  background: #fff0f5;
+  padding: 12px;
+  padding-right: 82px;
+  margin: 10px 0;
+  border-radius: 10px;
+  position: relative;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  background: white;
+  color: #ad1457;
+  border: 1px solid #f8bbd0;
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.section-title {
+  border-bottom: 2px solid #f8bbd0;
+  padding-bottom: 7px;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  color: #ad1457;
+}
+
+@media(max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .box {
+    width: 94%;
+    padding: 12px;
+  }
+
+  .formula {
+    padding: 12px;
+    padding-right: 75px;
+    font-size: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Chapter 4 - Financial Arithmetic</h1>
+  <div class="subtitle">
+    <h4>Formula Hub</h4>
+  </div>
+</header>
+
+<a href="class7.html" class="back-button">← Back to Chapters</a>
+
+<!-- SECTION 1: FORMULAS & RULES -->
+<div class="box" id="formula-section">
+  <h2 class="section-title">FORMULAS &amp; RULES</h2>
+
+  <h3>1. Cost Price, Selling Price, Profit and Loss</h3>
+
+  <div class="formula">
+    <b>Cost Price (C.P.)</b> = Price at which an article is purchased.
+  </div>
+
+  <div class="formula">
+    <b>Selling Price (S.P.)</b> = Price at which an article is sold.
+  </div>
+
+  <div class="formula">
+    If S.P. &gt; C.P., there is a <b>Profit</b>.
+  </div>
+
+  <div class="formula">
+    If C.P. &gt; S.P., there is a <b>Loss</b>.
+  </div>
+
+  <div class="formula">
+    <b>Profit</b> = S.P. − C.P.
+  </div>
+
+  <div class="formula">
+    <b>Loss</b> = C.P. − S.P.
+  </div>
+
+  <div class="formula">
+    <b>Profit %</b> = (Profit ÷ C.P.) × 100
+  </div>
+
+  <div class="formula">
+    <b>Loss %</b> = (Loss ÷ C.P.) × 100
+  </div>
+
+  <div class="formula">
+    Profit and loss percentages are calculated on <b>Cost Price</b>.
+  </div>
+
+  <h3>2. Discount</h3>
+
+  <div class="formula">
+    <b>Marked Price (M.P.)</b> = Price written or displayed on an article.
+  </div>
+
+  <div class="formula">
+    <b>Discount</b> = M.P. − S.P.
+  </div>
+
+  <div class="formula">
+    <b>Discount %</b> = (Discount ÷ M.P.) × 100
+  </div>
+
+  <div class="formula">
+    <b>S.P. after discount</b> = M.P. − Discount
+  </div>
+
+  <div class="formula">
+    Discount percentage is calculated on the <b>Marked Price</b>.
+  </div>
+
+  <h3>3. Property Tax</h3>
+
+  <div class="formula">
+    <b>Property Tax</b> = (Property Value × Tax Rate) ÷ 100
+  </div>
+
+  <div class="formula">
+    <b>Property Value</b> = (Property Tax × 100) ÷ Tax Rate
+  </div>
+
+  <h3>4. General Sales Tax (GST)</h3>
+
+  <div class="formula">
+    <b>GST Amount</b> = (Original Price × GST Rate) ÷ 100
+  </div>
+
+  <div class="formula">
+    <b>Price Including GST</b> = Original Price + GST Amount
+  </div>
+
+  <div class="formula">
+    <b>Price Including GST</b> = Original Price × (1 + Rate/100)
+  </div>
+
+  <div class="formula">
+    <b>Original Price</b> = (Price Including GST × 100) ÷ (100 + Rate)
+  </div>
+
+  <h3>5. Commission</h3>
+
+  <div class="formula">
+    <b>Commission</b> = (Base Amount × Commission Rate) ÷ 100
+  </div>
+
+  <div class="formula">
+    <b>Net Amount after Commission</b> = Base Amount − Commission
+  </div>
+
+  <div class="formula">
+    <b>Total Pay</b> = Salary + Commission
+  </div>
+
+  <h3>6. Value Added Tax (VAT)</h3>
+
+  <div class="formula">
+    <b>Input Tax</b> = Tax paid on purchases
+  </div>
+
+  <div class="formula">
+    <b>Output Tax</b> = Tax collected on sales
+  </div>
+
+  <div class="formula">
+    <b>VAT Payable</b> = Output Tax − Input Tax
+  </div>
+
+  <div class="formula">
+    <b>Tax Amount</b> = (Price × Tax Rate) ÷ 100
+  </div>
+
+  <div class="formula">
+    <b>Taxable Purchase Price</b> = Original Purchase Price + Input Tax
+  </div>
+
+  <h3>7. Zakat</h3>
+
+  <div class="formula">
+    <b>Rate of Zakat</b> = 2.5% = 1/40
+  </div>
+
+  <div class="formula">
+    <b>Zakat</b> = Total Eligible Amount × 2.5/100
+  </div>
+
+  <div class="formula">
+    <b>Total Eligible Amount</b> = Zakat × 100 ÷ 2.5
+  </div>
+
+  <div class="formula">
+    <b>Gold Nisab</b> = 7.5 tolas ≈ 87.4 grams
+  </div>
+
+  <div class="formula">
+    <b>Silver Nisab</b> = 52.5 tolas ≈ 612.32 grams
+  </div>
+
+  <div class="formula">
+    <b>1 Tola</b> ≈ 11.65 grams
+  </div>
+
+  <div class="formula">
+    Zakat is generally due on eligible wealth meeting Nisab and held for one complete lunar year, subject to applicable rules.
+  </div>
+
+  <h3>8. Ushr</h3>
+
+  <div class="formula">
+    <b>Ushr on Naturally Irrigated Crops</b> = Crop Produce × 10/100
+  </div>
+
+  <div class="formula">
+    <b>Ushr on Artificially Irrigated Crops</b> = Crop Produce × 5/100
+  </div>
+
+  <div class="formula">
+    <b>Natural Irrigation</b>: Rain, rivers, streams and natural water sources.
+  </div>
+
+  <div class="formula">
+    <b>Artificial Irrigation</b>: Wells and artificially supplied water.
+  </div>
+
+  <h3>9. Income Tax</h3>
+
+  <div class="formula">
+    <b>Annual Income</b> = Monthly Income × 12
+  </div>
+
+  <div class="formula">
+    <b>Net Income after Zakat</b> = Annual Income − Applicable Zakat
+  </div>
+
+  <div class="formula">
+    <b>Taxable Income</b> = Net Income − Applicable Rebate
+  </div>
+
+  <div class="formula">
+    <b>Income Tax</b> = Taxable Income × Tax Rate/100
+  </div>
+
+  <div class="formula">
+    <b>Tax after Reduction</b> = Calculated Tax − Tax Reduction
+  </div>
+
+  <div class="formula">
+    <b>Tax Reduction</b> = Calculated Tax × Reduction Rate/100
+  </div>
+
+  <div class="formula">
+    <b>Total Income</b> = Income from Property + Business Income + Salary + Other Income
+  </div>
+</div>
+
+<!-- SECTION 2: CONCEPTS -->
+<div class="box">
+  <h2 class="section-title">CONCEPTS</h2>
+
+  <h3>1. Profit and Loss</h3>
+  <p>Profit occurs when an article is sold for more than its cost price. Loss occurs when it is sold for less than its cost price.</p>
+
+  <h3>2. Discount</h3>
+  <p>Discount is the reduction offered on the marked price of an article. Its percentage is calculated using the marked price, not the selling price.</p>
+
+  <h3>3. Direct and Indirect Taxes</h3>
+  <p><b>Direct Tax:</b> A tax imposed directly on income or wealth, such as income tax.</p>
+  <p><b>Indirect Tax:</b> A tax imposed on goods, services or expenditure, such as sales tax.</p>
+
+  <h3>4. GST</h3>
+  <p>General Sales Tax is charged on certain goods and services. The amount depends on the applicable tax rate and the price of the item.</p>
+
+  <h3>5. Commission</h3>
+  <p>Commission is an amount calculated as a percentage of sales, property price or another agreed base amount.</p>
+
+  <h3>6. VAT</h3>
+  <p>Value Added Tax is collected at different stages of production and distribution. A business generally pays the difference between output tax and eligible input tax.</p>
+  <p>Sales tax, as described in the textbook comparison, is collected at the final point of purchase, while VAT is collected across multiple stages.</p>
+
+  <h3>7. Zakat</h3>
+  <p>Zakat is an obligatory form of giving in Islam. For eligible wealth, the commonly taught rate is 2.5%, subject to Nisab and other applicable conditions.</p>
+
+  <h3>8. Nisab</h3>
+  <p>Nisab is the minimum threshold of eligible wealth at which Zakat becomes due. The textbook gives gold and silver thresholds; the applicable calculation can depend on the relevant scholarly guidance.</p>
+
+  <h3>9. Lunar Year</h3>
+  <p>A lunar year is based on the cycles of the Moon and is shorter than a solar year.</p>
+
+  <h3>10. Ushr</h3>
+  <p>Ushr is Zakat on agricultural produce and is paid at harvest. The textbook gives a rate of 10% for natural irrigation and 5% for artificial irrigation.</p>
+
+  <h3>11. Income Tax</h3>
+  <p>Income tax is a direct tax imposed on personal income according to the applicable tax rules and thresholds.</p>
+
+  <h3>12. Rebate</h3>
+  <p>A rebate is an amount or allowance that reduces the income subject to tax under the rules used in the textbook.</p>
+
+  <h3>13. Financial Year</h3>
+  <p>The textbook describes a financial year running from 1 July to 30 June.</p>
+</div>
+
+<!-- SECTION 3: DEFINITIONS -->
+<div class="box">
+  <h2 class="section-title">DEFINITIONS</h2>
+
+  <p><b>Cost Price (C.P.):</b> The price at which an article is purchased.</p>
+
+  <p><b>Selling Price (S.P.):</b> The price at which an article is sold.</p>
+
+  <p><b>Profit:</b> The amount by which the selling price exceeds the cost price.</p>
+
+  <p><b>Loss:</b> The amount by which the cost price exceeds the selling price.</p>
+
+  <p><b>Marked Price:</b> The price written or displayed on an article.</p>
+
+  <p><b>Discount:</b> The reduction in the marked price of an article.</p>
+
+  <p><b>Property Tax:</b> A tax imposed on property according to applicable rules.</p>
+
+  <p><b>General Sales Tax (GST):</b> A tax charged on certain goods and services.</p>
+
+  <p><b>Commission:</b> Payment calculated as a percentage of a specified amount, such as sales.</p>
+
+  <p><b>Input Tax:</b> Tax paid by a business on its purchases.</p>
+
+  <p><b>Output Tax:</b> Tax charged or collected by a business on its sales.</p>
+
+  <p><b>Value Added Tax (VAT):</b> A tax on value added at stages of production and distribution.</p>
+
+  <p><b>Zakat:</b> A specific obligatory contribution from eligible wealth given to eligible recipients under Islamic rules.</p>
+
+  <p><b>Nisab:</b> The minimum threshold of wealth at which Zakat becomes due.</p>
+
+  <p><b>Ushr:</b> Zakat on agricultural produce, paid at harvest.</p>
+
+  <p><b>Income Tax:</b> A tax levied directly on personal income.</p>
+
+  <p><b>Rebate:</b> An allowance or amount that reduces taxable income or tax according to the applicable rules.</p>
+
+  <p><b>Lunar Year:</b> A year based on the cycles of the Moon.</p>
+</div>
+
+<!-- SECTION 4: KEY POINTS -->
+<div class="box">
+  <h2 class="section-title">KEY POINTS</h2>
+
+  <ul>
+    <li>Profit = S.P. − C.P.; Loss = C.P. − S.P.</li>
+    <li>Profit and loss percentages are calculated on cost price.</li>
+    <li>Discount percentage is calculated on marked price.</li>
+    <li>Tax amounts are calculated using the applicable rate and taxable base.</li>
+    <li>Property tax rates can vary according to the relevant rules and type of property.</li>
+    <li>GST rates may vary by goods, services and tax period. Do not assume one rate applies to everything.</li>
+    <li>VAT payable = Output Tax − Input Tax.</li>
+    <li>Sales tax and VAT are related but may be collected differently.</li>
+    <li>Zakat is commonly taught at 2.5% of eligible wealth, subject to Nisab and applicable conditions.</li>
+    <li>The textbook gives gold Nisab as approximately 87.4 grams and silver Nisab as approximately 612.32 grams.</li>
+    <li>Ushr is paid on agricultural produce at harvest.</li>
+    <li>The textbook gives Ushr as 10% for natural irrigation and 5% for artificial irrigation.</li>
+    <li>Annual income = Monthly income × 12.</li>
+    <li>Taxable income and tax reductions must be calculated according to the rules given in the question.</li>
+    <li>Tax rates, rebates and allowances in textbook examples may not represent current legal rates.</li>
+  </ul>
+</div>
+
+<a href="class7.html" class="back-button">← Back to Chapters</a>
+
+<footer>
+  FBISE Class 7 Mathematics | Formula Hub
+</footer>
+
+<script>
+const formulaSection = document.getElementById("formula-section");
+
+if (formulaSection) {
+  formulaSection.querySelectorAll(".formula").forEach((formula) => {
+    const button = document.createElement("button");
+    button.className = "copy-btn";
+    button.type = "button";
+    button.textContent = "📋";
+    button.setAttribute("aria-label", "Copy formula");
+
+    button.addEventListener("click", async () => {
+      const clone = formula.cloneNode(true);
+      const copyButton = clone.querySelector(".copy-btn");
+
+      if (copyButton) copyButton.remove();
+
+      const textToCopy = clone.innerText.trim();
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(textToCopy);
+        } else {
+          const textarea = document.createElement("textarea");
+          textarea.value = textToCopy;
+          textarea.style.position = "fixed";
+          textarea.style.opacity = "0";
+          document.body.appendChild(textarea);
+          textarea.select();
+
+          const copied = document.execCommand("copy");
+          textarea.remove();
+
+          if (!copied) throw new Error("Copy failed");
+        }
+
+        button.textContent = "✓";
+        button.disabled = true;
+
+        setTimeout(() => {
+          button.textContent = "Copied";
+
+          setTimeout(() => {
+            button.textContent = "📋";
+            button.disabled = false;
+          }, 1500);
+        }, 1500);
+
+      } catch (error) {
+        button.textContent = "Failed";
+
+        setTimeout(() => {
+          button.textContent = "📋";
+          button.disabled = false;
+        }, 1500);
+      }
+    });
+
+    formula.appendChild(button);
+  });
+}
+</script>
+
+</body>
+</html>

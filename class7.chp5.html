@@ -1,0 +1,604 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 7 - Chapter 5 Sets</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fce4ec;
+  color: #222;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header {
+  background: #f8bbd0;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+h1 {
+  color: #ad1457;
+  margin: 0;
+  font-size: 26px;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+h2, h3 {
+  color: #ad1457;
+}
+
+.back-button {
+  display: block;
+  width: fit-content;
+  max-width: 95%;
+  margin: 15px auto;
+  padding: 8px 16px;
+  background: #fff0f5;
+  color: #ad1457;
+  border: 1px solid #f8bbd0;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.box {
+  width: 90%;
+  margin: 15px auto;
+  padding: 15px;
+  border: 2px solid #f8bbd0;
+  border-radius: 15px;
+  background: white;
+}
+
+.formula {
+  background: #fff0f5;
+  padding: 12px;
+  padding-right: 82px;
+  margin: 10px 0;
+  border-radius: 10px;
+  position: relative;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  background: white;
+  color: #ad1457;
+  border: 1px solid #f8bbd0;
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.section-title {
+  border-bottom: 2px solid #f8bbd0;
+  padding-bottom: 7px;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  color: #ad1457;
+}
+
+@media(max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .box {
+    width: 94%;
+    padding: 12px;
+  }
+
+  .formula {
+    padding: 12px;
+    padding-right: 75px;
+    font-size: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Chapter 5 - Sets</h1>
+  <div class="subtitle">
+    <h4>Formula Hub</h4>
+  </div>
+</header>
+
+<a href="class7.html" class="back-button">← Back to Chapters</a>
+
+<!-- SECTION 1: FORMULAS & RULES -->
+<div class="box" id="formula-section">
+  <h2 class="section-title">FORMULAS &amp; RULES</h2>
+
+  <h3>1. Number of Subsets</h3>
+
+  <div class="formula">
+    <b>Number of subsets = 2<sup>n</sup></b>, where n is the number of elements.
+  </div>
+
+  <div class="formula">
+    <b>Number of proper subsets = 2<sup>n</sup> − 1</b>
+  </div>
+
+  <div class="formula">
+    For S = {a, b, c}: 2<sup>3</sup> = 8 subsets.
+  </div>
+
+  <div class="formula">
+    Proper subsets of {a, b, c}: ∅, {a}, {b}, {c}, {a,b}, {a,c}, {b,c}.
+  </div>
+
+  <h3>2. Subset Rules</h3>
+
+  <div class="formula">
+    A ⊆ A: Every set is a subset of itself.
+  </div>
+
+  <div class="formula">
+    ∅ ⊆ A: The empty set is a subset of every set.
+  </div>
+
+  <div class="formula">
+    A = B if A ⊆ B and B ⊆ A.
+  </div>
+
+  <h3>3. Equal and Equivalent Sets</h3>
+
+  <div class="formula">
+    <b>Equal sets:</b> A = B when both sets contain exactly the same elements.
+  </div>
+
+  <div class="formula">
+    <b>Equivalent sets:</b> n(A) = n(B).
+  </div>
+
+  <h3>4. Union and Intersection</h3>
+
+  <div class="formula">
+    <b>Union:</b> A ∪ B = all elements in A or B, without repetition.
+  </div>
+
+  <div class="formula">
+    <b>Intersection:</b> A ∩ B = common elements of A and B.
+  </div>
+
+  <div class="formula">
+    If A and B have no common elements, A ∩ B = ∅.
+  </div>
+
+  <h3>5. Difference of Sets</h3>
+
+  <div class="formula">
+    A − B = elements in A that are not in B.
+  </div>
+
+  <div class="formula">
+    In general, A − B ≠ B − A.
+  </div>
+
+  <h3>6. Complement of a Set</h3>
+
+  <div class="formula">
+    A′ = E − A
+  </div>
+
+  <div class="formula">
+    A′ contains the elements of universal set E that are not in A.
+  </div>
+
+  <h3>7. De Morgan's Laws</h3>
+
+  <div class="formula">
+    <b>(A ∪ B)′ = A′ ∩ B′</b>
+  </div>
+
+  <div class="formula">
+    <b>(A ∩ B)′ = A′ ∪ B′</b>
+  </div>
+
+  <h3>8. Disjoint Sets</h3>
+
+  <div class="formula">
+    A and B are disjoint if A ∩ B = ∅.
+  </div>
+
+  <h3>9. Overlapping Sets</h3>
+
+  <div class="formula">
+    Overlapping sets have at least one common element, and neither is a subset of the other.
+  </div>
+</div>
+
+<!-- SECTION 2: CONCEPTS -->
+<div class="box">
+  <h2 class="section-title">CONCEPTS</h2>
+
+  <h3>1. Important Number Sets</h3>
+
+  <div class="formula">
+    <b>N:</b> Natural numbers = {1, 2, 3, ...}
+  </div>
+
+  <div class="formula">
+    <b>W:</b> Whole numbers = {0, 1, 2, 3, ...}
+  </div>
+
+  <div class="formula">
+    <b>P:</b> Prime numbers = {2, 3, 5, 7, 11, ...}
+  </div>
+
+  <div class="formula">
+    <b>E:</b> Even integers = {0, ±2, ±4, ...}
+  </div>
+
+  <div class="formula">
+    <b>O:</b> Odd integers = {±1, ±3, ±5, ...}
+  </div>
+
+  <div class="formula">
+    <b>Z:</b> Integers = {0, ±1, ±2, ±3, ...}
+  </div>
+
+  <h3>2. Subset Examples</h3>
+
+  <div class="formula">
+    A = {a, b, c, d}, B = {d, b, a, c}.<br>
+    A = B, so A ⊆ B and B ⊆ A. The order of elements does not matter.
+  </div>
+
+  <div class="formula">
+    A = {1, 3, 6, 8, 9, 10}<br>
+    B = {6, 8, 10}<br>
+    C = {1, 3, 9, 11}<br>
+    B ⊆ A is true. C ⊆ A is false because 11 ∉ A.
+  </div>
+
+  <div class="formula">
+    ∅ ⊆ A, B ⊆ A and {1, 3, 9} ⊆ A.
+  </div>
+
+  <h3>3. Equal and Equivalent Examples</h3>
+
+  <div class="formula">
+    A = {1, 2, 3, 4}, B = {2, 4, 1, 3}.<br>
+    A and B are equal and equivalent.
+  </div>
+
+  <div class="formula">
+    A = {1, 2, 3, 4}, B = {e, f, g, h}.<br>
+    n(A) = n(B) = 4. They are equivalent but not equal.
+  </div>
+
+  <div class="formula">
+    Equal sets are always equivalent. Equivalent sets may or may not be equal.
+  </div>
+
+  <h3>4. Disjoint and Overlapping Examples</h3>
+
+  <div class="formula">
+    A = {1, 2, 3}, B = {4, 5}.<br>
+    A ∩ B = ∅, so they are disjoint.
+  </div>
+
+  <div class="formula">
+    A = {2, 3, 5, 7, 9}, B = {1, 3, 5, 7}.<br>
+    Common elements = {3, 5, 7}. Neither is a subset of the other, so they are overlapping.
+  </div>
+
+  <div class="formula">
+    C = {a, b, c}, D = {a, c, i, o, u}: overlapping sets.
+  </div>
+
+  <div class="formula">
+    X = {a, b, c}, Y = {5, 6, 7}: disjoint sets.
+  </div>
+
+  <h3>5. Union and Intersection Examples</h3>
+
+  <div class="formula">
+    E = {1, 2, 3, 4, 5, 6, 7, 8}<br>
+    A = {1, 2, 3, 4, 5}<br>
+    B = {2, 4, 6, 7, 8}<br>
+    A ∪ B = {1, 2, 3, 4, 5, 6, 7, 8}<br>
+    A ∩ B = {2, 4}
+  </div>
+
+  <div class="formula">
+    E = {1, 2, ..., 9}<br>
+    A = {2, 4, 6, 8}<br>
+    B = {3, 6, 9}<br>
+    A ∩ B = {6}, n(A ∩ B) = 1<br>
+    A ∪ B = {2, 3, 4, 6, 8, 9}, n(A ∪ B) = 6
+  </div>
+
+  <h3>6. Difference Examples</h3>
+
+  <div class="formula">
+    A = {2, 3, 4}, B = {4, 5, 6}.<br>
+    A − B = {2, 3}<br>
+    B − A = {5, 6}
+  </div>
+
+  <h3>7. Complement Examples</h3>
+
+  <div class="formula">
+    E = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}<br>
+    A = {1, 3, 5, 7, 9}<br>
+    A′ = {2, 4, 6, 8, 10}
+  </div>
+
+  <div class="formula">
+    E = {3, 5, 7, 9, 11, 13, 15}<br>
+    A = {3, 5, 7}, B = {7, 9, 11, 13}<br>
+    A′ = {9, 11, 13, 15}<br>
+    B′ = {3, 5, 15}
+  </div>
+
+  <div class="formula">
+    A ∪ B = {3, 5, 7, 9, 11, 13}<br>
+    (A ∪ B)′ = {15}<br>
+    A′ ∩ B′ = {15}
+  </div>
+
+  <div class="formula">
+    A ∩ B = {7}<br>
+    (A ∩ B)′ = {3, 5, 9, 11, 13, 15}<br>
+    A′ ∪ B′ = {3, 5, 9, 11, 13, 15}
+  </div>
+
+  <h3>8. Venn Diagrams</h3>
+
+  <div class="formula">
+    A Venn diagram represents sets as circles inside a rectangle representing the universal set. The common region shows the intersection.
+  </div>
+</div>
+
+<!-- SECTION 3: DEFINITIONS -->
+<div class="box">
+  <h2 class="section-title">DEFINITIONS</h2>
+
+  <p><b>1. Set:</b> A well-defined collection of distinct objects. These objects are called elements or members.</p>
+
+  <p><b>2. Representation of a Set:</b> A set is usually named with a capital letter, and its elements are written inside curly brackets { }.</p>
+
+  <p><b>3. Belongs To (∈):</b> Indicates that an element belongs to a set.</p>
+
+  <p><b>4. Does Not Belong To (∉):</b> Indicates that an element is not in a set.</p>
+
+  <p><b>5. Finite Set:</b> A set containing a limited number of elements.</p>
+
+  <p><b>6. Infinite Set:</b> A set containing an unlimited number of elements.</p>
+
+  <p><b>7. Empty or Null Set:</b> A set that contains no elements. Its symbols are ∅ or { }, and n(A) = 0.</p>
+
+  <p><b>8. Universal Set:</b> A set containing all the elements relevant to a particular discussion.</p>
+
+  <p><b>9. Subset:</b> B ⊆ A means every element of B is also an element of A.</p>
+
+  <p><b>10. Superset:</b> A ⊇ B means A contains every element of B.</p>
+
+  <p><b>11. Proper Subset:</b> A subset that is not equal to the original set.</p>
+
+  <p><b>12. Improper Subset:</b> A set is an improper subset of itself.</p>
+
+  <p><b>13. Equal Sets:</b> Sets containing exactly the same elements, regardless of order.</p>
+
+  <p><b>14. Equivalent Sets:</b> Sets having the same number of elements, even if their elements differ.</p>
+
+  <p><b>15. Disjoint Sets:</b> Sets that have no common elements.</p>
+
+  <p><b>16. Overlapping Sets:</b> Sets that share at least one element, while neither is a subset of the other.</p>
+
+  <p><b>17. Venn Diagram:</b> A diagram using circles inside a rectangle to represent sets and their relationships.</p>
+
+  <p><b>18. Union:</b> The set of all elements belonging to either of two sets, without repetition.</p>
+
+  <p><b>19. Intersection:</b> The set of elements common to both sets.</p>
+
+  <p><b>20. Difference of Sets:</b> A − B contains elements of A that are not in B.</p>
+
+  <p><b>21. Complement of a Set:</b> The elements of the universal set that are not in the given set.</p>
+
+  <p><b>22. Founder of Set Theory:</b> Georg Cantor (1845–1918), a German mathematician, is known as the founder of set theory.</p>
+</div>
+
+<!-- SECTION 4: KEY POINTS -->
+<div class="box">
+  <h2 class="section-title">KEY POINTS</h2>
+
+  <h3>1. Important Symbols</h3>
+
+  <div class="formula">
+    ∈ = belongs to<br>
+    ∉ = does not belong to<br>
+    ∅ or { } = empty set<br>
+    ⊆ = subset<br>
+    ⊂ = proper subset<br>
+    ⊇ = superset<br>
+    ⊈ = not a subset<br>
+    ∪ = union<br>
+    ∩ = intersection<br>
+    A′ = complement<br>
+    n(A) = number of elements in A<br>
+    E = universal set (in these notes)
+  </div>
+
+  <h3>2. Set Representation</h3>
+
+  <div class="formula">
+    A = {2, 4, 6, 8}: A is the set whose elements are 2, 4, 6 and 8.
+  </div>
+
+  <div class="formula">
+    4 ∈ A means 4 is an element of A.
+  </div>
+
+  <div class="formula">
+    3 ∉ A means 3 is not an element of A.
+  </div>
+
+  <h3>3. Language of Sets</h3>
+
+  <div class="formula">
+    Union of A and B = A ∪ B
+  </div>
+
+  <div class="formula">
+    Intersection of A and B = A ∩ B
+  </div>
+
+  <div class="formula">
+    Difference of A and B = A − B
+  </div>
+
+  <div class="formula">
+    Difference of B and A = B − A
+  </div>
+
+  <div class="formula">
+    Complement of A = A′
+  </div>
+
+  <div class="formula">
+    A is a proper subset of B = A ⊂ B
+  </div>
+
+  <div class="formula">
+    A and B are disjoint = A ∩ B = ∅
+  </div>
+
+  <h3>4. Quick Revision</h3>
+
+  <div class="formula">
+    The order of elements does not matter in a set.
+  </div>
+
+  <div class="formula">
+    The empty set is a subset of every set.
+  </div>
+
+  <div class="formula">
+    Every set is a subset of itself.
+  </div>
+
+  <div class="formula">
+    A set with n elements has 2<sup>n</sup> subsets.
+  </div>
+
+  <div class="formula">
+    Equal sets must be equivalent, but equivalent sets need not be equal.
+  </div>
+
+  <div class="formula">
+    Disjoint sets have no common elements.
+  </div>
+
+  <div class="formula">
+    Overlapping sets have common elements and neither is a subset of the other.
+  </div>
+
+  <div class="formula">
+    A − B and B − A are not necessarily equal.
+  </div>
+
+  <div class="formula">
+    Elements in E but not in A form the complement of A.
+  </div>
+
+  <div class="formula">
+    <b>De Morgan's Laws:</b><br>
+    (A ∪ B)′ = A′ ∩ B′<br>
+    (A ∩ B)′ = A′ ∪ B′
+  </div>
+
+  <div class="formula">
+    <b>Review MCQ:</b> Elements in E but not in A are called the complement of A.
+  </div>
+
+  <div class="formula">
+    <b>Review MCQ:</b> The null set ∅ is a subset of every set.
+  </div>
+</div>
+
+<a href="class7.html" class="back-button">← Back to Chapters</a>
+
+<footer>
+  FBISE Class 7 Mathematics | Formula Hub
+</footer>
+
+<script>
+document.querySelectorAll(".formula").forEach((formula) => {
+  const button = document.createElement("button");
+  button.className = "copy-btn";
+  button.type = "button";
+  button.textContent = "📋";
+  button.setAttribute("aria-label", "Copy formula");
+
+  button.addEventListener("click", async () => {
+    const clone = formula.cloneNode(true);
+    const copyButton = clone.querySelector(".copy-btn");
+
+    if (copyButton) copyButton.remove();
+
+    const textToCopy = clone.innerText.trim();
+
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(textToCopy);
+      } else {
+        const textarea = document.createElement("textarea");
+        textarea.value = textToCopy;
+        textarea.style.position = "fixed";
+        textarea.style.opacity = "0";
+        document.body.appendChild(textarea);
+        textarea.select();
+
+        const copied = document.execCommand("copy");
+        textarea.remove();
+
+        if (!copied) throw new Error("Copy failed");
+      }
+
+      button.textContent = "✓";
+      setTimeout(() => {
+        button.textContent = "📋";
+      }, 1500);
+
+    } catch (error) {
+      button.textContent = "Failed";
+      setTimeout(() => {
+        button.textContent = "📋";
+      }, 1500);
+    }
+  });
+
+  formula.appendChild(button);
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 7 Chapter 12 - Data Handling | Formula Hub</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fce4ec;
+  color: #222;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header {
+  background: #f8bbd0;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+h1 {
+  color: #ad1457;
+  margin: 0;
+  font-size: 26px;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+h2, h3 { color: #ad1457; }
+
+.back-button {
+  display: block;
+  width: fit-content;
+  max-width: 95%;
+  margin: 15px auto;
+  padding: 8px 16px;
+  background: #fff0f5;
+  color: #ad1457;
+  border: 1px solid #f8bbd0;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.box {
+  width: 90%;
+  margin: 15px auto;
+  padding: 15px;
+  border: 2px solid #f8bbd0;
+  border-radius: 15px;
+  background: white;
+}
+
+.formula {
+  background: #fff0f5;
+  padding: 12px;
+  padding-right: 82px;
+  margin: 10px 0;
+  border-radius: 10px;
+  position: relative;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  background: white;
+  color: #ad1457;
+  border: 1px solid #f8bbd0;
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.section-title {
+  border-bottom: 2px solid #f8bbd0;
+  padding-bottom: 7px;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  color: #ad1457;
+}
+
+@media(max-width:600px) {
+  h1 { font-size: 24px; }
+  .box { width: 94%; padding: 12px; }
+  .formula {
+    padding: 12px;
+    padding-right: 75px;
+    font-size: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Chapter 12 - Data Handling</h1>
+  <h4 class="subtitle">Formula Hub</h4>
+</header>
+
+<a href="class7.html" class="back-button">← Back to Chapters</a>
+
+<!-- FORMULAS AND RULES -->
+<div class="box" id="formula-section">
+<h2 class="section-title">FORMULAS &amp; RULES</h2>
+
+<h3>A. Frequency Distribution</h3>
+
+<div class="formula"><b>1. Frequency:</b><br>
+Frequency = Number of times an observation occurs in the data.</div>
+
+<div class="formula"><b>2. Total Frequency:</b><br>
+Total frequency = Sum of all class frequencies.<br>
+Σf = f₁ + f₂ + f₃ + ⋯</div>
+
+<div class="formula"><b>3. Class Interval Size:</b><br>
+h = Difference between two consecutive lower class limits, or two consecutive upper class limits.</div>
+
+<div class="formula"><b>4. Class Mid-value:</b><br>
+x = (Lower class limit + Upper class limit) / 2</div>
+
+<div class="formula"><b>5. Class Frequency:</b><br>
+Class frequency = Number of observations that fall within a class interval.</div>
+
+<h3>B. Mean of Ungrouped Data</h3>
+
+<div class="formula"><b>6. Arithmetic Mean:</b><br>
+x̄ = Sum of all observations / Number of observations</div>
+
+<div class="formula"><b>7. Mean Formula:</b><br>
+x̄ = (x₁ + x₂ + x₃ + ⋯ + xₙ) / n<br>
+x̄ = Σx / n</div>
+
+<div class="formula"><b>8. Summation Symbol:</b><br>
+Σx represents the sum of all observations, and n is the total number of observations.</div>
+
+<h3>C. Mean of Grouped Data</h3>
+
+<div class="formula"><b>9. Class Mid-value:</b><br>
+x = (Lower limit + Upper limit) / 2</div>
+
+<div class="formula"><b>10. Product of Frequency and Mid-value:</b><br>
+fx = f × x</div>
+
+<div class="formula"><b>11. Mean of Grouped Data:</b><br>
+x̄ = Σfx / Σf<br>
+Here, f is the class frequency and x is the class mid-value.</div>
+
+<h3>D. Median</h3>
+
+<div class="formula"><b>12. Median for Odd Number of Observations:</b><br>
+First arrange the data in ascending order.<br>
+Middle position = (n + 1) / 2<br>
+The observation in this position is the median.</div>
+
+<div class="formula"><b>13. Median for Even Number of Observations:</b><br>
+Median = (First middle value + Second middle value) / 2</div>
+
+<h3>E. Mode</h3>
+
+<div class="formula"><b>14. Mode:</b><br>
+Mode = The value that occurs most frequently in a data set.</div>
+
+<div class="formula"><b>15. Bimodal Data:</b><br>
+A data set is bimodal when two values share the highest frequency.</div>
+
+<h3>F. Percentages and Pie Graphs</h3>
+
+<div class="formula"><b>16. Percentage:</b><br>
+Percentage = (Part / Whole) × 100%</div>
+
+<div class="formula"><b>17. Find a Part from a Percentage:</b><br>
+Part = (Percentage / 100) × Total</div>
+
+<div class="formula"><b>18. Percentage of a Category:</b><br>
+Category percentage = (Category frequency / Total frequency) × 100%</div>
+
+<div class="formula"><b>19. Pie Graph Sector Angle:</b><br>
+Sector angle = (Category frequency / Total frequency) × 360°</div>
+
+<div class="formula"><b>20. Total Angle of a Pie Graph:</b><br>
+The sum of all sector angles is 360°.</div>
+
+<h3>G. Data and Units</h3>
+
+<div class="formula"><b>21. Range of Data:</b><br>
+Range = Highest value − Lowest value</div>
+
+<div class="formula"><b>22. Relative Frequency:</b><br>
+Relative frequency = Frequency / Total frequency</div>
+
+<div class="formula"><b>23. Frequency Percentage:</b><br>
+Frequency percentage = (f / Σf) × 100%</div>
+</div>
+
+<!-- CONCEPTS -->
+<div class="box">
+<h2 class="section-title">CONCEPTS</h2>
+
+<h3>1. Data Collection and Presentation</h3>
+
+<div class="formula">Data may be collected directly from relevant departments, through people and media, questionnaires, surveys, sampling, and digital or electronic sources.</div>
+
+<div class="formula">Data should be organized and presented clearly so that patterns, comparisons and trends can be understood.</div>
+
+<div class="formula">Common ways of presenting data include tables, pictograms, pie graphs, bar graphs, line graphs and histograms.</div>
+
+<h3>2. Types of Data</h3>
+
+<div class="formula"><b>Ungrouped Data:</b> Data recorded as individual observations without arranging them into classes.</div>
+
+<div class="formula"><b>Grouped Data:</b> Data organized into classes or intervals with their corresponding frequencies.</div>
+
+<div class="formula"><b>Raw Data:</b> Data in its original collected form before systematic organization.</div>
+
+<h3>3. Frequency Distribution</h3>
+
+<div class="formula">A frequency distribution organizes observations into classes and records how many observations fall into each class.</div>
+
+<div class="formula">A class interval has a lower class limit and an upper class limit. The number of classes depends on the data and the purpose of the analysis.</div>
+
+<div class="formula">Class intervals should cover the data without accidentally omitting observations or counting the same observation twice.</div>
+
+<h3>4. Measures of Central Tendency</h3>
+
+<div class="formula"><b>Mean:</b> The arithmetic average of all observations.</div>
+
+<div class="formula"><b>Median:</b> The middle value after arranging the observations in ascending or descending order.</div>
+
+<div class="formula"><b>Mode:</b> The value that occurs most often.</div>
+
+<div class="formula">The mean uses every observation, the median identifies the centre of ordered data, and the mode identifies the most frequent value.</div>
+
+<div class="formula">For grouped data, each class is represented by its mid-value when calculating an approximate mean.</div>
+
+<div class="formula">The mean calculated from grouped data is generally an approximation because the individual values within each class are not known.</div>
+
+<h3>5. Pie Graphs</h3>
+
+<div class="formula">A pie graph is a circle divided into sectors. Each sector represents a category's share of the whole.</div>
+
+<div class="formula">The size of a sector is proportional to its category's frequency or percentage. A larger sector represents a larger share.</div>
+
+<h3>6. Bar Graphs</h3>
+
+<div class="formula">A bar graph compares categories using bars of different heights or lengths. Bars are usually separated by spaces.</div>
+
+<div class="formula">The category labels are placed along one axis and the corresponding frequencies or values along the other axis.</div>
+
+<h3>7. Histograms</h3>
+
+<div class="formula">A histogram represents a frequency distribution using adjacent rectangles. There are no gaps between neighbouring bars for continuous class intervals.</div>
+
+<div class="formula">The horizontal axis shows class intervals or observations, while the vertical axis shows frequency.</div>
+
+<div class="formula">For equal-width classes, the heights of histogram bars can be compared directly with frequencies. More generally, bar area represents frequency.</div>
+
+<h3>8. Choosing a Diagram</h3>
+
+<div class="formula">Choose a graph according to the type of data and the purpose of the presentation. Pie graphs show proportions, bar graphs compare categories, and histograms display frequency distributions.</div>
+</div>
+
+<!-- DEFINITIONS -->
+<div class="box">
+<h2 class="section-title">DEFINITIONS</h2>
+
+<div class="formula"><b>Data:</b> Numerical information or facts collected through observations, measurements, surveys or other sources.</div>
+
+<div class="formula"><b>Statistics:</b> The study of collecting, organizing, presenting, analysing and interpreting data.</div>
+
+<div class="formula"><b>Climatology:</b> The study of climate in a particular area over a long period of time.</div>
+
+<div class="formula"><b>Observation:</b> A single recorded value or item in a data set.</div>
+
+<div class="formula"><b>Raw Data:</b> Data in its original form before systematic arrangement.</div>
+
+<div class="formula"><b>Ungrouped Data:</b> Data presented as individual observations rather than grouped into class intervals.</div>
+
+<div class="formula"><b>Grouped Data:</b> Data organized into classes or intervals with corresponding frequencies.</div>
+
+<div class="formula"><b>Frequency:</b> The number of times an observation occurs in a data set.</div>
+
+<div class="formula"><b>Frequency Distribution:</b> A tabular arrangement of data into classes with their respective frequencies.</div>
+
+<div class="formula"><b>Class Interval:</b> A range of values used to group observations in a frequency distribution.</div>
+
+<div class="formula"><b>Lower Class Limit:</b> The smallest stated value of a class interval.</div>
+
+<div class="formula"><b>Upper Class Limit:</b> The largest stated value of a class interval.</div>
+
+<div class="formula"><b>Class Width:</b> The width of a class interval, found from the difference between consecutive class limits when intervals have equal width.</div>
+
+<div class="formula"><b>Class Mid-value:</b> The average of the lower and upper class limits.</div>
+
+<div class="formula"><b>Mean:</b> The sum of all observations divided by the total number of observations.</div>
+
+<div class="formula"><b>Median:</b> The middle value of ordered data; for an even number of observations, it is the average of the two middle values.</div>
+
+<div class="formula"><b>Mode:</b> The value that occurs most frequently in a data set.</div>
+
+<div class="formula"><b>Bimodal Data:</b> Data with two values that share the highest frequency.</div>
+
+<div class="formula"><b>Pie Graph:</b> A circular diagram divided into sectors representing parts of a whole.</div>
+
+<div class="formula"><b>Bar Graph:</b> A diagram that uses separated rectangular bars to compare categories.</div>
+
+<div class="formula"><b>Histogram:</b> A graph that displays a frequency distribution using adjacent rectangles.</div>
+</div>
+
+<!-- KEY POINTS -->
+<div class="box">
+<h2 class="section-title">KEY POINTS</h2>
+
+<div class="formula">1. Always check the number of observations before calculating the mean or median.</div>
+
+<div class="formula">2. Arrange data in ascending order before finding the median.</div>
+
+<div class="formula">3. For an odd number of observations, the median is the single middle value.</div>
+
+<div class="formula">4. For an even number of observations, the median is the average of the two middle values.</div>
+
+<div class="formula">5. A data set can have one mode, more than one mode, or no single most frequent value.</div>
+
+<div class="formula">6. Mean of ungrouped data is calculated using all the individual observations.</div>
+
+<div class="formula">7. For grouped data, find each class mid-value first, then calculate fx.</div>
+
+<div class="formula">8. The grouped mean is calculated by dividing Σfx by Σf.</div>
+
+<div class="formula">9. The total frequency equals the total number of observations represented by the frequency table.</div>
+
+<div class="formula">10. The sum of all percentages in a complete data set is 100%.</div>
+
+<div class="formula">11. The sum of all pie graph sector angles is 360°.</div>
+
+<div class="formula">12. In a pie graph, the largest sector represents the largest share of the total.</div>
+
+<div class="formula">13. Bar graphs are useful for comparing separate categories.</div>
+
+<div class="formula">14. Histogram bars touch each other because they represent continuous intervals or adjoining classes.</div>
+
+<div class="formula">15. For equal-width histogram classes, bar height is proportional to frequency. For unequal widths, frequency density is used so that bar area represents frequency.</div>
+
+<div class="formula">16. The class interval size should be consistent when equal-width classes are required.</div>
+
+<div class="formula">17. A clear title, suitable scale, labelled axes and accurate data make graphs easier to interpret.</div>
+
+<div class="formula">18. Data handling helps people compare information, identify trends, plan budgets and make informed decisions.</div>
+</div>
+
+<a href="class7.html" class="back-button">← Back to Chapters</a>
+
+<footer>
+FBISE Class 7 Mathematics | Formula Hub
+</footer>
+
+<script>
+document.querySelectorAll("#formula-section .formula").forEach(function(item) {
+  const button = document.createElement("button");
+  button.className = "copy-btn";
+  button.type = "button";
+  button.textContent = "📋";
+  button.setAttribute("aria-label", "Copy formula");
+
+  button.addEventListener("click", async function() {
+    const clone = item.cloneNode(true);
+    const copyButton = clone.querySelector(".copy-btn");
+    if (copyButton) copyButton.remove();
+
+    const text = clone.innerText.trim();
+
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+      } else {
+        throw new Error("Clipboard unavailable");
+      }
+      button.textContent = "✓ Copied";
+    } catch (error) {
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+
+      try {
+        if (!document.execCommand("copy")) {
+          throw new Error("Copy failed");
+        }
+        button.textContent = "✓ Copied";
+      } catch (e) {
+        button.textContent = "Copy failed";
+      }
+
+      textarea.remove();
+    }
+
+    setTimeout(function() {
+      button.textContent = "📋";
+    }, 1500);
+  });
+
+  item.appendChild(button);
+});
+</script>
+
+</body>
+</html>

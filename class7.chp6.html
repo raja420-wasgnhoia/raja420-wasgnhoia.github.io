@@ -1,0 +1,695 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 7 - Chapter 6 Algebra</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fce4ec;
+  color: #222;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header {
+  background: #f8bbd0;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+h1 {
+  color: #ad1457;
+  margin: 0;
+  font-size: 26px;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+h2, h3 { color: #ad1457; }
+
+.back-button {
+  display: block;
+  width: fit-content;
+  max-width: 95%;
+  margin: 15px auto;
+  padding: 8px 16px;
+  background: #fff0f5;
+  color: #ad1457;
+  border: 1px solid #f8bbd0;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.box {
+  width: 90%;
+  margin: 15px auto;
+  padding: 15px;
+  border: 2px solid #f8bbd0;
+  border-radius: 15px;
+  background: white;
+}
+
+.formula {
+  background: #fff0f5;
+  padding: 12px;
+  padding-right: 82px;
+  margin: 10px 0;
+  border-radius: 10px;
+  position: relative;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  background: white;
+  color: #ad1457;
+  border: 1px solid #f8bbd0;
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.section-title {
+  border-bottom: 2px solid #f8bbd0;
+  padding-bottom: 7px;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  color: #ad1457;
+}
+
+@media(max-width:600px) {
+  h1 { font-size: 24px; }
+  .box { width: 94%; padding: 12px; }
+  .formula {
+    padding: 12px;
+    padding-right: 75px;
+    font-size: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Chapter 6 - Algebra</h1>
+  <div class="subtitle"><h4>Formula Hub</h4></div>
+</header>
+
+<a href="class7.html" class="back-button">← Back to Chapters</a>
+
+<!-- FORMULAS & RULES -->
+<div class="box" id="formula-section">
+<h2 class="section-title">FORMULAS &amp; RULES</h2>
+
+<h3>1. Four Basic Algebraic Identities</h3>
+
+<div class="formula"><b>(a + b)² = a² + 2ab + b²</b></div>
+<div class="formula"><b>(a − b)² = a² − 2ab + b²</b></div>
+<div class="formula"><b>(x + a)(x + b) = x² + (a + b)x + ab</b></div>
+<div class="formula"><b>(a + b)(a − b) = a² − b²</b></div>
+
+<h3>2. Identity Examples</h3>
+
+<div class="formula">(x + 2y)² = x² + 4xy + 4y²</div>
+<div class="formula">(2m + 5n)² = 4m² + 20mn + 25n²</div>
+<div class="formula">(x − 4)² = x² − 8x + 16</div>
+<div class="formula">(x + 1)(x + 2) = x² + 3x + 2</div>
+<div class="formula">(2x + 5)(2x − 6) = 4x² − 2x − 30</div>
+
+<h3>3. Mental Multiplication Using Identities</h3>
+
+<div class="formula">
+103 × 102 = (100 + 3)(100 + 2)<br>
+= 10000 + 500 + 6<br>
+= <b>10506</b>
+</div>
+
+<div class="formula">
+102 × 97 = (100 + 2)(100 − 3)<br>
+= 10000 − 100 − 6<br>
+= <b>9894</b>
+</div>
+
+<h3>4. Algebraic Expressions</h3>
+
+<div class="formula">4 cups of tea, 1 cup = z ml → Total = 4z ml</div>
+<div class="formula">Add 3x to 7y = 3x + 7y</div>
+<div class="formula">Subtract 7x from 12 = 12 − 7x</div>
+<div class="formula">Multiply y by 3z = 3yz</div>
+<div class="formula">Divide 4a by 9b = 4a/(9b)</div>
+<div class="formula">Subtract the product of 2x and 5y from the sum of a and b = a + b − 10xy</div>
+
+<h3>5. Degree of Monomials and Polynomials</h3>
+
+<div class="formula">12 → Degree 0, monomial</div>
+<div class="formula">4x → Degree 1</div>
+<div class="formula">7y² → Degree 2</div>
+<div class="formula">−15z⁶ → Degree 6</div>
+<div class="formula">Degree of a monomial = sum of the exponents of its variables.</div>
+<div class="formula">Degree of a polynomial = greatest degree among its terms.</div>
+
+<h3>6. Like-Term Rules</h3>
+
+<div class="formula">3x + 8x = (3 + 8)x = 11x</div>
+<div class="formula">(−5x) + (−8x) = −13x</div>
+<div class="formula">−5x + 8x = 3x</div>
+<div class="formula">5x − 8x = −3x</div>
+<div class="formula">3x² + 7x² = 10x²</div>
+
+<h3>7. Addition of Polynomials</h3>
+
+<div class="formula">
+(2x² + y² + 3z²) + (6x² − 3y² + 9z + 6)<br>
+= <b>8x² − 2y² + 3z² + 9z + 6</b>
+</div>
+
+<div class="formula">
+(4x² − 5xy − 6y²) + (11xy − 7x² + 10y²) + (6y² − 5x² + 10xy)<br>
+= <b>−8x² + 16xy + 10y²</b>
+</div>
+
+<h3>8. Perimeter and Area</h3>
+
+<div class="formula">Perimeter of a rectangle = sum of all sides.</div>
+
+<div class="formula">
+Sides: xy, x² + y, xy, x² + y<br>
+P = 2xy + 2(x² + y)<br>
+= <b>2x² + 2xy + 2y</b>
+</div>
+
+<div class="formula">
+Rectangle width = x, length = 2x + 3<br>
+Area = x(2x + 3) = <b>2x² + 3x</b>
+</div>
+
+<div class="formula">
+Area = 24a²b − 18ab²<br>
+= <b>6ab(4a − 3b)</b><br>
+The factors are 6ab and (4a − 3b).
+</div>
+
+<h3>9. Subtraction of Polynomials</h3>
+
+<div class="formula">
+(8x − 12) − (4x − 10)<br>
+= 8x − 12 − 4x + 10<br>
+= <b>4x − 2</b>
+</div>
+
+<div class="formula">
+(3x² − 9x − 6) − (4x² − 7x)<br>
+= <b>−x² − 2x − 6</b>
+</div>
+
+<div class="formula">
+(5a⁵ + 3a⁴ − 2a³ + 3a + 1) − (2a⁵ − 2a⁴ + 5a³ − 8)<br>
+= <b>3a⁵ + 5a⁴ − 7a³ + 3a + 9</b>
+</div>
+
+<h3>10. Multiplication of Polynomials</h3>
+
+<div class="formula">(+x)(+y) = +xy</div>
+<div class="formula">(−x)(−y) = +xy</div>
+<div class="formula">(+x)(−y) = −xy</div>
+<div class="formula">(−x)(+y) = −xy</div>
+<div class="formula"><b>aᵐ × aⁿ = aᵐ⁺ⁿ</b></div>
+
+<div class="formula">
+2x³(x³ + 3x² − 2x + 4)<br>
+= <b>2x⁶ + 6x⁵ − 4x⁴ + 8x³</b>
+</div>
+
+<div class="formula">
+(8x²y²z)(2xyz) = <b>16x³y³z²</b>
+</div>
+
+<div class="formula">
+a(b + c + d) = ab + ac + ad
+</div>
+
+<div class="formula">
+6xy(3x − 2y) = <b>18x²y − 12xy²</b>
+</div>
+
+<div class="formula">
+6x(8x³ − 3x² + x) = <b>48x⁴ − 18x³ + 6x²</b>
+</div>
+
+<div class="formula">
+(a + b)(c + d) = ac + ad + bc + bd
+</div>
+
+<div class="formula">
+(a + b)(c + d + e) = ac + ad + ae + bc + bd + be
+</div>
+
+<div class="formula">
+(x − 4)(3x + 2)<br>
+= 3x² + 2x − 12x − 8<br>
+= <b>3x² − 10x − 8</b>
+</div>
+
+<h3>11. Factorization</h3>
+
+<div class="formula">
+Factorization of a trinomial ax² + bx + c:<br>
+Write in descending powers, then split the middle term using two numbers whose product is a × c and whose sum is b.
+</div>
+
+<div class="formula">
+<b>Type 1: Middle +, Last +</b><br>
+6x² + 19x + 10<br>
+Product = 6 × 10 = 60; numbers = 4 and 15<br>
+= 6x² + 4x + 15x + 10<br>
+= 2x(3x + 2) + 5(3x + 2)<br>
+= <b>(3x + 2)(2x + 5)</b>
+</div>
+
+<div class="formula">
+<b>Type 2: Middle +, Last −</b><br>
+3x² + 22x − 16<br>
+Product = 3 × (−16) = −48; numbers = 24 and −2<br>
+= 3x² + 24x − 2x − 16<br>
+= 3x(x + 8) − 2(x + 8)<br>
+= <b>(x + 8)(3x − 2)</b>
+</div>
+
+<div class="formula">
+<b>Type 3: Middle −, Last +</b><br>
+3k² − 16k + 16<br>
+Product = 3 × 16 = 48; numbers = −4 and −12<br>
+= 3k² − 4k − 12k + 16<br>
+= k(3k − 4) − 4(3k − 4)<br>
+= <b>(3k − 4)(k − 4)</b>
+</div>
+
+<div class="formula">
+<b>Type 4: Middle −, Last −</b><br>
+x² − x − 12<br>
+Product = 1 × (−12) = −12; numbers = −4 and +3<br>
+= x² − 4x + 3x − 12<br>
+= x(x − 4) + 3(x − 4)<br>
+= <b>(x − 4)(x + 3)</b>
+</div>
+
+<h3>12. Sequences and Patterns</h3>
+
+<div class="formula">
+Arithmetic sequence: add or subtract the same constant each time.
+</div>
+
+<div class="formula">
+1, 3, 5, 7, ... → add 2 → Next: 9, 11, 13
+</div>
+
+<div class="formula">
+12, 17, 22, ... → add 5 → Next: 27, 32, 37
+</div>
+
+<div class="formula">
+50, 47, 44, 41, 38, ... → subtract 3 → Next: 35, 32, 29
+</div>
+
+<div class="formula">
+Geometric sequence: multiply the previous term by the same fixed number each time.
+</div>
+
+<div class="formula">
+1, 2, 4, ... → multiply by 2 → Next: 8, 16, 32
+</div>
+
+<div class="formula">
+Pentagon pattern:<br>
+1 pentagon = 5 lines<br>
+2 pentagons = 10 lines<br>
+3 pentagons = 15 lines<br>
+4 pentagons = 20 lines<br>
+Rule: L = 5P
+</div>
+
+<div class="formula">
+For 63 pentagons: L = 5 × 63 = <b>315 lines</b>
+</div>
+</div>
+
+<!-- CONCEPTS -->
+<div class="box">
+<h2 class="section-title">CONCEPTS</h2>
+
+<h3>1. Algebra</h3>
+<p>Algebra studies relationships among symbols and uses mathematical expressions to model relationships and changes. It helps solve everyday problems.</p>
+
+<h3>2. Variables, Constants and Coefficients</h3>
+
+<div class="formula">
+Qasim = y years; Furqan = (y + 3) years.
+</div>
+
+<div class="formula">
+Furqan = x years; Qasim = (x − 3) years.
+</div>
+
+<div class="formula">
+In 9y, 9 is the coefficient and y is the variable.
+</div>
+
+<div class="formula">
+x + y + 12: variables x, y; constant 12; implied coefficients are 1.
+</div>
+
+<div class="formula">
+x² + y + 5z: variables x, y, z; coefficients 1, 1, 5.
+</div>
+
+<div class="formula">
+7 + 3y = 15: variable y; constants 7 and 15; coefficient 3.
+</div>
+
+<h3>3. Terms and Expressions</h3>
+
+<div class="formula">
+In x + y, the terms are x and y.
+</div>
+
+<div class="formula">
+In x² − 3xz + yz, the terms are x², −3xz and yz.
+</div>
+
+<h3>4. Monomials and Polynomials</h3>
+
+<div class="formula">
+Monomial examples: 12, 4x, 7y², −15z⁶.
+</div>
+
+<div class="formula">
+Not monomials: 2 + y, y/x, 3/x³, x⁻².
+</div>
+
+<div class="formula">
+Polynomial examples:<br>
+8 is a constant polynomial of degree 0.<br>
+5x² + x − 6 is a degree 2 trinomial.
+</div>
+
+<div class="formula">
+6y⁴ − 7^? is unclear as written in the source notes. A variable raised to a non-whole-number or negative exponent makes an expression non-polynomial.
+</div>
+
+<div class="formula">
+7x²y³ + 4x²z is a degree 5 binomial because the first term has degree 2 + 3 = 5.
+</div>
+
+<div class="formula">
+p² + pq + 8 is a degree 2 trinomial.
+</div>
+
+<div class="formula">
+x² − x³ + 6x + 1/4 is a degree 3 polynomial with four terms.
+</div>
+
+<div class="formula">
+x² + y^(1/2) + 6 is not a polynomial because of the fractional exponent.
+</div>
+
+<div class="formula">
+9x²y + 6x²y³ · xy + x² + 4 is a polynomial of degree 5 with four terms as written.
+</div>
+
+<h3>5. Leading Coefficient</h3>
+
+<div class="formula">
+6x³ + x² − 7x + 13<br>
+Degree = 3; leading coefficient = 6; constant term = 13.
+</div>
+
+<div class="formula">
+18x − x³ + 3 = −x³ + 18x + 3<br>
+Degree = 3; leading coefficient = −1.
+</div>
+
+<h3>6. Addition and Subtraction</h3>
+
+<p><b>Horizontal method:</b> Group like terms in one line and simplify.</p>
+<p><b>Vertical method:</b> Arrange like terms in columns and add or subtract each column.</p>
+<p><b>Subtraction rule:</b> Change every sign in the polynomial being subtracted, then add like terms.</p>
+
+<h3>7. Multiplication</h3>
+
+<p>Multiply each term of one expression by every term of the other expression. Apply the sign rules and add exponents when multiplying powers with the same base.</p>
+
+<h3>8. Algebraic Identities</h3>
+
+<p>An algebraic identity is a relationship that remains true for all allowed values of its variables. It simplifies calculations without expanding every step from scratch.</p>
+
+<p><b>Identity I proof:</b> A square with side (a + b) has area (a + b)². Splitting it into parts gives a² + ab + ab + b², which equals a² + 2ab + b².</p>
+
+<p><b>Identity II proof:</b> Expanding (a − b)(a − b) gives a² − ab − ab + b² = a² − 2ab + b².</p>
+
+<p><b>Identity III proof:</b> Expand (x + a)(x + b) to get x² + xb + ax + ab = x² + (a + b)x + ab.</p>
+
+<p><b>Identity IV proof:</b> Expanding (a + b)(a − b) gives a² − ab + ab − b² = a² − b².</p>
+
+<h3>9. Factorization</h3>
+
+<p>Factorization writes an expression as a product of simpler factors. For a trinomial ax² + bx + c, split the middle term using factors of ac that add to b, then group and factor.</p>
+
+<h3>10. Number Sequences</h3>
+
+<p>A sequence is an ordered arrangement of numbers called terms. A rule determines how the terms are formed and helps predict the next term.</p>
+</div>
+
+<!-- DEFINITIONS -->
+<div class="box">
+<h2 class="section-title">DEFINITIONS</h2>
+
+<p><b>1. Algebra:</b> A branch of mathematics that uses symbols and variables to represent numbers and relationships.</p>
+
+<p><b>2. Variable:</b> A letter or symbol such as x, y or z that represents a number whose value may vary.</p>
+
+<p><b>3. Constant:</b> A fixed numerical value, such as 2, 6, 0 or −3.</p>
+
+<p><b>4. Coefficient:</b> The numerical factor multiplying a variable. In 9y, the coefficient is 9.</p>
+
+<p><b>5. Algebraic Expression:</b> An expression made using numbers, variables and operation signs, such as 3x − 3 or 7y + 9.</p>
+
+<p><b>6. Term:</b> A part of an algebraic expression separated by addition or subtraction signs.</p>
+
+<p><b>7. Monomial:</b> A constant, a variable, or a product of constants and variables with non-negative whole-number exponents.</p>
+
+<p><b>8. Degree of a Monomial:</b> The sum of the exponents of its variables.</p>
+
+<p><b>9. Polynomial:</b> A monomial or a sum of monomials with non-negative whole-number exponents.</p>
+
+<p><b>10. Degree of a Polynomial:</b> The greatest degree of its terms after simplification.</p>
+
+<p><b>11. Binomial:</b> A polynomial with two terms, such as 2x − 13.</p>
+
+<p><b>12. Trinomial:</b> A polynomial with three terms, such as x + 4y − 8.</p>
+
+<p><b>13. Leading Coefficient:</b> The coefficient of the highest-degree term when a polynomial is written in descending powers.</p>
+
+<p><b>14. Like Terms:</b> Terms containing the same variables raised to the same exponents.</p>
+
+<p><b>15. Unlike Terms:</b> Terms that do not have exactly the same variables and exponents.</p>
+
+<p><b>16. Algebraic Identity:</b> An equality that is true for all permitted values of its variables.</p>
+
+<p><b>17. Factorization:</b> Expressing a mathematical expression as a product of factors.</p>
+
+<p><b>18. Sequence:</b> An ordered arrangement of numbers called terms, formed according to a rule.</p>
+
+<p><b>19. Arithmetic Sequence:</b> A sequence in which a constant is added to or subtracted from each term to obtain the next term.</p>
+
+<p><b>20. Geometric Sequence:</b> A sequence in which each term is multiplied by the same fixed number to obtain the next term.</p>
+
+<p><b>21. Perimeter:</b> The total length of the boundary of a shape.</p>
+
+<p><b>22. Area:</b> The amount of surface enclosed by a two-dimensional shape.</p>
+
+<p><b>23. Father of Algebra:</b> Muhammad ibn Musa al-Khwarizmi, a ninth-century Muslim mathematician associated with the development of algebra. The word algebra comes from the title of his work, Kitab al-Jabr wal-Muqabala.</p>
+</div>
+
+<!-- KEY POINTS -->
+<div class="box">
+<h2 class="section-title">KEY POINTS</h2>
+
+<h3>1. Algebra Basics</h3>
+
+<div class="formula">
+Algebra is generalized arithmetic and uses letters to represent numbers.
+</div>
+
+<div class="formula">
+In 4z, the coefficient of z is 4.
+</div>
+
+<div class="formula">
+In x + y + 12, the implied coefficient of x and y is 1.
+</div>
+
+<h3>2. Polynomial Rules</h3>
+
+<div class="formula">
+A polynomial cannot have variables with negative or fractional exponents, or variables in denominators.
+</div>
+
+<div class="formula">
+A constant polynomial other than zero has degree 0.
+</div>
+
+<div class="formula">
+A polynomial's degree is the highest term degree after simplification.
+</div>
+
+<div class="formula">
+Like terms can be combined; unlike terms cannot be combined into a single term.
+</div>
+
+<h3>3. Addition and Subtraction</h3>
+
+<div class="formula">
+Combine like terms by adding or subtracting their coefficients.
+</div>
+
+<div class="formula">
+When subtracting brackets, change the sign of every term inside the second bracket.
+</div>
+
+<h3>4. Multiplication</h3>
+
+<div class="formula">
+Positive × positive = positive; negative × negative = positive.
+</div>
+
+<div class="formula">
+Positive × negative = negative; negative × positive = negative.
+</div>
+
+<div class="formula">
+When multiplying powers with the same base, add their exponents.
+</div>
+
+<h3>5. Identities to Memorize</h3>
+
+<div class="formula">(a + b)² = a² + 2ab + b²</div>
+<div class="formula">(a − b)² = a² − 2ab + b²</div>
+<div class="formula">(x + a)(x + b) = x² + (a + b)x + ab</div>
+<div class="formula">(a + b)(a − b) = a² − b²</div>
+
+<h3>6. Factorization Checklist</h3>
+
+<div class="formula">
+1. Arrange terms in descending powers.<br>
+2. Multiply the leading coefficient by the last term's coefficient.<br>
+3. Find two numbers whose product is ac and sum is b.<br>
+4. Split the middle term.<br>
+5. Group terms and factor out common factors.
+</div>
+
+<h3>7. Sequences</h3>
+
+<div class="formula">
+Arithmetic sequence: add or subtract the same number each time.
+</div>
+
+<div class="formula">
+Geometric sequence: multiply by the same number each time.
+</div>
+
+<div class="formula">
+Pentagon pattern: L = 5P. For P = 63, L = 315 lines.
+</div>
+
+<h3>8. Quick Revision</h3>
+
+<div class="formula">
+Monomial: one term.<br>
+Binomial: two terms.<br>
+Trinomial: three terms.
+</div>
+
+<div class="formula">
+Like terms have the same variable part and exponents.
+</div>
+
+<div class="formula">
+A sequence's rule helps predict its next term.
+</div>
+
+<div class="formula">
+Perimeter = sum of boundary sides.<br>
+Rectangle area = length × width.
+</div>
+</div>
+
+<a href="class7.html" class="back-button">← Back to Chapters</a>
+
+<footer>
+FBISE Class 7 Mathematics | Formula Hub
+</footer>
+
+<script>
+document.querySelectorAll("#formula-section .formula").forEach((formula) => {
+  const button = document.createElement("button");
+  button.className = "copy-btn";
+  button.type = "button";
+  button.textContent = "📋";
+  button.setAttribute("aria-label", "Copy formula");
+
+  button.addEventListener("click", async () => {
+    const clone = formula.cloneNode(true);
+    const copyButton = clone.querySelector(".copy-btn");
+    if (copyButton) copyButton.remove();
+
+    const textToCopy = clone.innerText.trim();
+
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(textToCopy);
+      } else {
+        const textarea = document.createElement("textarea");
+        textarea.value = textToCopy;
+        textarea.style.position = "fixed";
+        textarea.style.opacity = "0";
+        document.body.appendChild(textarea);
+        textarea.select();
+        const copied = document.execCommand("copy");
+        textarea.remove();
+        if (!copied) throw new Error("Copy failed");
+      }
+
+      button.textContent = "✓";
+      setTimeout(() => button.textContent = "📋", 1500);
+    } catch (error) {
+      button.textContent = "Failed";
+      setTimeout(() => button.textContent = "📋", 1500);
+    }
+  });
+
+  formula.appendChild(button);
+});
+</script>
+
+</body>
+</html>

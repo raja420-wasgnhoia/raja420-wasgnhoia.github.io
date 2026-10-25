@@ -1,0 +1,556 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 7 Unit 2 - Square and Square Roots</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fce4ec;
+  color: #222;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header {
+  background: #f8bbd0;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+h1 {
+  color: #ad1457;
+  margin: 0;
+  font-size: 26px;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+h2, h3 { color: #ad1457; }
+
+.back-button {
+  display: block;
+  width: fit-content;
+  max-width: 95%;
+  margin: 15px auto;
+  padding: 8px 16px;
+  background: #fff0f5;
+  color: #ad1457;
+  border: 1px solid #f8bbd0;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.box {
+  width: 90%;
+  margin: 15px auto;
+  padding: 15px;
+  border: 2px solid #f8bbd0;
+  border-radius: 15px;
+  background: white;
+}
+
+.formula {
+  background: #fff0f5;
+  padding: 12px;
+  padding-right: 82px;
+  margin: 10px 0;
+  border-radius: 10px;
+  position: relative;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  background: white;
+  color: #ad1457;
+  border: 1px solid #f8bbd0;
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.section-title {
+  border-bottom: 2px solid #f8bbd0;
+  padding-bottom: 7px;
+}
+
+.content-item {
+  background: #fff0f5;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  color: #ad1457;
+}
+
+@media(max-width:600px) {
+  h1 { font-size: 24px; }
+  .box { width: 94%; padding: 12px; }
+  .formula { padding: 12px; padding-right: 75px; font-size: 15px; }
+}
+</style>
+</head>
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    displayMath: [['\\[', '\\]']]
+  },
+  startup: {
+    typeset: true
+  }
+};
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<body>
+
+<header>
+  <h1>Chapter 2 - Square and Square root</h1>
+  <div class="subtitle">
+    <h4>Formula Hub</h4>
+  </div>
+</header>
+
+<a href="class7.html" class="back-button">← Back to Chapters</a>
+
+<!-- FORMULAS AND RULES -->
+<section class="box" id="formula-section">
+  <h2 class="section-title">FORMULAS &amp; RULES</h2>
+
+  <h3>1. Squares and Square Roots</h3>
+
+  <div class="formula">
+    <b>Square of a number:</b><br>
+    \(a^2=a\times a\)
+  </div>
+
+  <div class="formula">
+    <b>Square root:</b><br>
+    \(\sqrt{a^2}=a\), for \(a\geq0\)
+  </div>
+
+  <div class="formula">
+    <b>Square root of a perfect square:</b><br>
+    \(\sqrt{81}=9\)<br>
+    \(\sqrt{121}=11\)<br>
+    \(\sqrt{400}=20\)
+  </div>
+
+  <div class="formula">
+    <b>Positive and negative square roots:</b><br>
+    If \(x^2=a\), then \(x=\pm\sqrt{a}\), for \(a\geq0\).<br>
+    Principal square root: \(\sqrt{16}=4\)<br>
+    Solutions of \(x^2=16\): \(x=\pm4\)
+  </div>
+
+  <h3>2. Even and Odd Numbers</h3>
+
+  <div class="formula">
+    <b>Even number:</b> \(2n\)<br>
+    <b>Odd number:</b> \(2n+1\)<br>
+    Here, \(n\) is an integer.
+  </div>
+
+  <div class="formula">
+    <b>Addition rules:</b><br>
+    Even + Even = Even<br>
+    Odd + Odd = Even<br>
+    Even + Odd = Odd
+  </div>
+
+  <div class="formula">
+    <b>Multiplication rules:</b><br>
+    Even × Even = Even<br>
+    Odd × Odd = Odd<br>
+    Even × Odd = Even
+  </div>
+
+  <div class="formula">
+    <b>Squares of even and odd numbers:</b><br>
+    Even² = Even<br>
+    Odd² = Odd
+  </div>
+
+  <h3>3. Prime Factorization and Perfect Squares</h3>
+
+  <div class="formula">
+    <b>Prime factorization:</b><br>
+    Express a number as a product of prime factors.
+  </div>
+
+  <div class="formula">
+    <b>Square root by factorization:</b><br>
+    1. Find the prime factors.<br>
+    2. Group equal factors into pairs.<br>
+    3. Take one factor from each pair and multiply.
+  </div>
+
+  <div class="formula">
+    <b>Perfect square test:</b><br>
+    A number is a perfect square if every prime factor occurs in pairs, or equivalently, every prime factor has an even exponent.
+  </div>
+
+  <div class="formula">
+    <b>Square root by prime factorization:</b><br>
+    \(\sqrt{a^2b^2c^2}=abc\), for non-negative \(a,b,c\).
+  </div>
+
+  <div class="formula">
+    <b>Product of perfect squares:</b><br>
+    The product of two perfect squares is a perfect square.
+  </div>
+
+  <h3>4. Square Roots of Fractions</h3>
+
+  <div class="formula">
+    <b>Square of a fraction:</b><br>
+    \(\left(\frac{a}{b}\right)^2=\frac{a^2}{b^2}\), \(b\neq0\)
+  </div>
+
+  <div class="formula">
+    <b>Square root of a common fraction:</b><br>
+    \(\sqrt{\frac{a}{b}}=\frac{\sqrt a}{\sqrt b}\)<br>
+    For real principal square roots, \(a\geq0\) and \(b>0\).
+  </div>
+
+  <div class="formula">
+    <b>Steps for a mixed fraction:</b><br>
+    Convert the mixed fraction into an improper fraction before finding its square root.
+  </div>
+
+  <h3>5. Square Roots of Decimal Fractions</h3>
+
+  <div class="formula">
+    <b>Method:</b><br>
+    Convert the decimal fraction into a common fraction, find its square root, and convert the result into decimal form.
+  </div>
+
+  <div class="formula">
+    <b>Square root of a decimal:</b><br>
+    \(\sqrt{1.69}=1.3\)<br>
+    \(\sqrt{0.0144}=0.12\)
+  </div>
+
+  <h3>6. Square and Area Rules</h3>
+
+  <div class="formula">
+    <b>Area of a square:</b><br>
+    \(A=s^2\)
+  </div>
+
+  <div class="formula">
+    <b>Side of a square:</b><br>
+    \(s=\sqrt A\)
+  </div>
+
+  <div class="formula">
+    <b>Perimeter of a square:</b><br>
+    \(P=4s\)
+  </div>
+
+  <div class="formula">
+    <b>Rectangle area:</b><br>
+    \(A=l\times w\)
+  </div>
+
+  <div class="formula">
+    <b>Rectangle perimeter:</b><br>
+    \(P=2(l+w)\)
+  </div>
+
+  <h3>7. Important Square Root Properties</h3>
+
+  <div class="formula">
+    <b>Product property:</b><br>
+    \(\sqrt a\times\sqrt b=\sqrt{ab}\)<br>
+    For \(a,b\geq0\).
+  </div>
+
+  <div class="formula">
+    <b>Quotient property:</b><br>
+    \(\frac{\sqrt a}{\sqrt b}=\sqrt{\frac ab}\)<br>
+    For \(a\geq0\) and \(b>0\).
+  </div>
+
+  <div class="formula">
+    <b>Important warning:</b><br>
+    \(\sqrt{a+b}\neq\sqrt a+\sqrt b\) in general.
+  </div>
+</section>
+
+<!-- CONCEPTS -->
+<section class="box">
+  <h2 class="section-title">CONCEPTS</h2>
+
+  <div class="content-item">
+    <b>1. Square and Square Root</b><br>
+    Squaring means multiplying a number by itself. A square root is a number that, when squared, gives the original number.
+  </div>
+
+  <div class="content-item">
+    <b>2. Even and Odd Numbers</b><br>
+    Even numbers are divisible by 2 without a remainder. Odd numbers are not divisible by 2 without a remainder.
+  </div>
+
+  <div class="content-item">
+    <b>3. Prime Numbers</b><br>
+    A prime number has exactly two distinct positive factors: 1 and itself. The number 2 is the smallest prime number and the only even prime number.
+  </div>
+
+  <div class="content-item">
+    <b>4. Sieve Method</b><br>
+    The Sieve of Eratosthenes is a method for finding prime numbers by crossing out multiples of prime numbers, starting with 2.
+  </div>
+
+  <div class="content-item">
+    <b>5. Composite Numbers</b><br>
+    A composite number has more than two positive factors. Every natural number greater than 1 is either prime or composite.
+  </div>
+
+  <div class="content-item">
+    <b>6. Prime Factorization</b><br>
+    Prime factorization expresses a number as a product of prime numbers.
+  </div>
+
+  <div class="content-item">
+    <b>7. Perfect Squares</b><br>
+    A perfect square is a number whose principal square root is a whole number. In prime factorization, all prime exponents of a perfect square are even.
+  </div>
+
+  <div class="content-item">
+    <b>8. Square Root by Factorization</b><br>
+    Pair identical prime factors. Multiply one factor from each pair to find the positive square root.
+  </div>
+
+  <div class="content-item">
+    <b>9. Square Roots of Fractions</b><br>
+    Find the square roots of the numerator and denominator separately when both are suitable perfect squares. Convert mixed fractions into improper fractions first.
+  </div>
+
+  <div class="content-item">
+    <b>10. Square Roots of Decimals</b><br>
+    Convert a decimal fraction into a common fraction, simplify its square root, and express the result in decimal form.
+  </div>
+
+  <div class="content-item">
+    <b>11. Square Root and Area</b><br>
+    The side of a square can be found by taking the square root of its area. Its perimeter is four times the side length.
+  </div>
+
+  <div class="content-item">
+    <b>12. Square Root Properties</b><br>
+    Square roots can be combined using product and quotient properties under the appropriate conditions. They cannot generally be distributed over addition or subtraction.
+  </div>
+</section>
+
+<!-- DEFINITIONS -->
+<section class="box">
+  <h2 class="section-title">DEFINITIONS</h2>
+
+  <div class="content-item">
+    <b>1. Square:</b><br>
+    The square of a number is the product of the number multiplied by itself.
+  </div>
+
+  <div class="content-item">
+    <b>2. Square Root:</b><br>
+    A square root of a number is a number which, when squared, gives that number.
+  </div>
+
+  <div class="content-item">
+    <b>3. Even Number:</b><br>
+    An even number is an integer divisible by 2 without a remainder.
+  </div>
+
+  <div class="content-item">
+    <b>4. Odd Number:</b><br>
+    An odd number is an integer that is not divisible by 2 without a remainder.
+  </div>
+
+  <div class="content-item">
+    <b>5. Prime Number:</b><br>
+    A prime number is a natural number greater than 1 that has exactly two distinct positive factors, 1 and itself.
+  </div>
+
+  <div class="content-item">
+    <b>6. Composite Number:</b><br>
+    A composite number is a natural number greater than 1 that has more than two positive factors.
+  </div>
+
+  <div class="content-item">
+    <b>7. Prime Factorization:</b><br>
+    Prime factorization is the expression of a number as a product of prime factors.
+  </div>
+
+  <div class="content-item">
+    <b>8. Perfect Square:</b><br>
+    A perfect square is a non-negative integer whose square root is an integer.
+  </div>
+
+  <div class="content-item">
+    <b>9. Square Root by Factorization:</b><br>
+    It is a method in which prime factors are paired, and one factor from each pair is multiplied to obtain the positive square root.
+  </div>
+
+  <div class="content-item">
+    <b>10. Square Root of a Common Fraction:</b><br>
+    The square root of a suitable non-negative fraction is found by taking the square roots of its numerator and denominator separately.
+  </div>
+
+  <div class="content-item">
+    <b>11. Square Root of a Decimal Fraction:</b><br>
+    It is found by converting the decimal fraction into a common fraction, calculating the square root, and converting the result back into decimal form.
+  </div>
+</section>
+
+<!-- KEY POINTS -->
+<section class="box">
+  <h2 class="section-title">KEY POINTS</h2>
+
+  <div class="content-item">
+    <b>1.</b> The square of an even integer is even, and the square of an odd integer is odd.
+  </div>
+
+  <div class="content-item">
+    <b>2.</b> The number 1 is neither prime nor composite.
+  </div>
+
+  <div class="content-item">
+    <b>3.</b> The number 2 is the only even prime number.
+  </div>
+
+  <div class="content-item">
+    <b>4.</b> A perfect square has an even exponent for every prime factor in its prime factorization.
+  </div>
+
+  <div class="content-item">
+    <b>5.</b> When finding a square root by factorization, pair equal prime factors and take one factor from each pair.
+  </div>
+
+  <div class="content-item">
+    <b>6.</b> The symbol \(\sqrt a\) represents the non-negative, or principal, square root of \(a\).
+  </div>
+
+  <div class="content-item">
+    <b>7.</b> The equation \(x^2=a\), for \(a>0\), has two real solutions: \(x=\sqrt a\) and \(x=-\sqrt a\).
+  </div>
+
+  <div class="content-item">
+    <b>8.</b> A mixed fraction must be converted into an improper fraction before finding its square root.
+  </div>
+
+  <div class="content-item">
+    <b>9.</b> For a square with area \(A\), its side is \(\sqrt A\), and its perimeter is \(4\sqrt A\).
+  </div>
+
+  <div class="content-item">
+    <b>10.</b> For non-negative numbers, \(\sqrt a\sqrt b=\sqrt{ab}\).
+  </div>
+
+  <div class="content-item">
+    <b>11.</b> Square roots do not generally distribute over addition or subtraction.
+  </div>
+
+  <div class="content-item">
+    <b>12.</b> The square of a positive proper fraction is smaller than the fraction itself.
+  </div>
+
+  <div class="content-item">
+    <b>13.</b> The square of a decimal number between 0 and 1 is smaller than the original number.
+  </div>
+</section>
+
+<a href="class7.html" class="back-button">← Back to Chapters</a>
+
+<footer>
+  FBISE Class 7 Mathematics | Formula Hub
+</footer>
+
+<script>
+const formulaSection = document.getElementById("formula-section");
+
+if (formulaSection) {
+  formulaSection.querySelectorAll(".formula").forEach((formula) => {
+    const button = document.createElement("button");
+    button.className = "copy-btn";
+    button.type = "button";
+    button.textContent = "📋";
+    button.setAttribute("aria-label", "Copy formula");
+
+    button.addEventListener("click", async () => {
+      const clone = formula.cloneNode(true);
+      const copyButton = clone.querySelector(".copy-btn");
+
+      if (copyButton) copyButton.remove();
+
+      const textToCopy = clone.innerText.trim();
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(textToCopy);
+        } else {
+          const textarea = document.createElement("textarea");
+          textarea.value = textToCopy;
+          textarea.style.position = "fixed";
+          textarea.style.opacity = "0";
+          document.body.appendChild(textarea);
+          textarea.select();
+
+          const copied = document.execCommand("copy");
+          textarea.remove();
+
+          if (!copied) throw new Error("Copy failed");
+        }
+
+        button.textContent = "✓";
+        button.disabled = true;
+
+        setTimeout(() => {
+          button.textContent = "Copied";
+
+          setTimeout(() => {
+            button.textContent = "📋";
+            button.disabled = false;
+          }, 1500);
+        }, 1500);
+
+      } catch (error) {
+        button.textContent = "Failed";
+
+        setTimeout(() => {
+          button.textContent = "📋";
+          button.disabled = false;
+        }, 1500);
+      }
+    });
+
+    formula.appendChild(button);
+  });
+}
+</script>
+
+</body>
+</html>
